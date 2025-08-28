@@ -1,0 +1,117 @@
+---
+title: "Accuracy of open and Proprietary LLMs to analyse the methodology in journal articles"
+author: "Burnet Bioinformatics group"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    fig_width: 6
+    fig_height: 5
+    code_folding: show
+theme: cosmo
+---
+
+Twenty PMC articles were selected ramdomly from the supplementary file of our 2022 article
+(pkg1) and a further 20 were hand selected offer more diverse methods, including tools, 
+background use and FDR (pkg2).
+
+```{r,setup}
+
+library("kableExtra")
+library("beeswarm")
+knitr::opts_chunk$set(dev = 'svg') # set output device to svg
+
+```
+
+
+```{r,read1}
+
+pkg1 <- read.table("pkg1.tsv",sep="\t",header=TRUE,quote='"')
+pkg2 <- read.table("pkg2.tsv",sep="\t",header=TRUE,quote='"')
+
+pkg1 <- subset(pkg1,Model!="human")
+pkg2 <- subset(pkg2,Model!="human")
+
+pkg1 <- pkg1[,c(1,8:13)]
+pkg2 <- pkg2[,c(1,8:13)]
+
+a1 <- aggregate(. ~ Model, pkg1, mean )
+a2 <- aggregate(. ~ Model, pkg2, mean )
+
+a1 |> kbl(caption = "pkg1") |> kable_paper("hover", full_width = F)
+a2 |> kbl(caption = "pkg1") |> kable_paper("hover", full_width = F)
+
+p12 <- rbind(pkg1,pkg2)
+a12 <- aggregate(. ~ Model, p12, mean )
+
+a12 |> kbl(caption = "pkg1") |> kable_paper("hover", full_width = F)
+
+```
+
+Get some summary stats.
+
+```{r,stats1}
+
+rownames(a1) <- a1$Model ; a1[,1] = NULL
+rownames(a2) <- a2$Model ; a2[,1] = NULL
+rownames(a12) <- a12$Model ; a12[,1] = NULL
+
+al <- list("Set1"=colMeans(a1), "Set2"=colMeans(a2), "Both"=colMeans(a12) )
+
+al
+
+boxplot(al,beside=TRUE,ylim=c(0.6,0.9),col="white",frame=FALSE,
+  main="Accuracy by set", ylab="Accuracy relative to human")
+beeswarm(al,add=TRUE,cex=2,col="gray",pch=19)
+
+amx <- do.call(rbind,al)
+amx
+
+la <- lapply(1:length(al[[1]]), function(i) { unlist(lapply(al,function(x) {x[i]} ) ) })
+names(la) <- c("Tool","Vers","GeneSet","Background","StatTest","FDR")
+for ( i in 1:6) { names(la[[i]]) <- c("Set1","Set2","Both")  }
+
+par(cex.axis=0.8)
+boxplot(la,beside=TRUE,ylim=c(0.6,0.9),col="white",frame=FALSE,
+  main="Accuracy by question", ylab="Accuracy relative to human")
+beeswarm(la,add=TRUE,cex=2,col="gray",pch=19)
+
+```
+
+Now drill down to the model accuracy.
+
+```{r,fig1}
+
+aa <- list("Set1"=rowMeans(a1),"Set2"=rowMeans(a2),"Both"=rowMeans(a12))
+
+aamx <- do.call(rbind,aa)
+aamx2 <- aamx[,order(colMeans(aamx))]
+
+par(mar=c(8.9,4.1,4.1,2.1))
+
+mycols=c("gray20","gray50","gray90" )
+
+barplot(aamx2-0.5,beside=2,ylim=c(0.5,1),offset=0.5,col=mycols,
+  las=3,ylab="Accuracy relative to human")
+
+lapply(seq(0.5,1,0.1),function(h) {
+  abline(h=h,lty=2,lwd=0.5,col="gray")
+})
+
+legend("topleft", inset=.02, c("Set1","Set2","Both"),
+  fill=mycols, horiz=TRUE, cex=0.8)
+
+```
+
+## Session information
+
+For reproducibility.
+
+
+```{r,session}
+
+sessionInfo()
+
+
+```

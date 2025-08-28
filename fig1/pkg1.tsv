@@ -1,0 +1,281 @@
+Model	Tool Used	Tool version	Gene Set library 	Background List	Stat test used	FDR used	Tool Used	Tool version	Gene Set library 	Background List	Stat test used	FDR used	PMC ID
+deepseek-r1:70b	Not described	Not described	Not described	Yes	Hypergeometric test	Yes	0	1	1	0	1	1	PMC6350986
+gemma3:27b	GSEA	Not described	GO, KEGG, Reactome, MSigDB	Not described	Hypergeometric test, Fisher's exact test	Yes	1	1	0	1	0.5	1	PMC6350986
+llama3.3:70b	GSEA	Not described	Not described	Not described	Hypergeometric test, binomial test	Yes	1	1	1	1	0.5	1	PMC6350986
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	1	1	0	0	PMC6350986
+phi4:14b	Fortran	Not described	Vectorbase	Not described	Not described	Yes	0	1	0	1	0	1	PMC6350986
+qwen3:32b	R	Yes	Not described	Yes	Hypergeometric test, binomial test	Yes	0	0	1	0	0.5	1	PMC6350986
+qwq:32b	Not described	Not described	Not described	Yes	Hypergeometric test	Not described	0	1	1	0	1	0	PMC6350986
+gpt-oss:20b	Not described	Not described	Not described	Yes	Hypergeometric test	Not described	0	1	1	0	1	0	PMC6350986
+GPT-4.1-nano	Hypergeometric test	Not described	Not described	Not described	Hypergeometric test	Yes	0	1	1	1	1	1	PMC6350986
+GPT-4.1-mini	GSEA	Not described	Not described	Yes	Hypergeometric test	Not described	1	1	1	0	1	0	PMC6350986
+GPT-4.1	Not described	Not described	Not described	Yes	Hypergeometric test	Not described	0	1	1	0	1	0	PMC6350986
+Haiku3.5	GSEA	Not described	Not described	Yes	Hypergeometric test	Not described	1	1	1	0	1	0	PMC6350986
+Sonnet4	GSEA	Not described	Not described	Yes	Hypergeometric test	Not described	1	1	1	0	1	0	PMC6350986
+human	GSEA	No	Not mentioned	No	Hypergeometric test	Yes							PMC6350986
+deepseek-r1:70b	GSEA	Not described	Custom TRM	Not described	Hypergeometric test	Yes	0.3	0	0.5	0	0	1	PMC6370189
+gemma3:27b	GSEA	Not described	MSigDB	Not described	Hypergeometric test	Yes	0.3	0	0	0	0	1	PMC6370189
+llama3.3:70b	GSEA	Not described	MSigDB, Custom TRM	Not described	Not described	Yes	0.3	0	0.5	0	1	1	PMC6370189
+mistral-small3.1:24b	GSEA	Not described	Not described	Not described	Not described	Not described	0.3	0	0	0	1	0	PMC6370189
+phi4:14b	GSEA	Not described	Not described	Not described	Hypergeometric test	Yes	0.3	0	0	0	0	1	PMC6370189
+qwen3:32b	GSEA	Not described	Not described	Not described	Not described	Yes	0.3	0	0	0	1	1	PMC6370189
+qwq:32b	GSEA	Not described	TRM sets	Not described	Not described	Yes	0.3	0	0.5	0	1	1	PMC6370189
+gpt-oss:20b	GSEA	4.1.1	GO, TRM sets	Not described	Bootstrap permutation	Yes	0.3	1	1	0	0	1	PMC6370189
+GPT-4.1-nano	GOrilla, REVIGO, GSEA	Yes only for GSEA	GO, TRM sets	Yes	Hypergeometric test	Yes	1	1	1	1	0	1	PMC6370189
+GPT-4.1-mini	GOrilla, REVIGO, GSEA	Yes only for GSEA	GO, TRM sets	Yes	Hypergeometric test, permutation test	Yes	1	1	1	1	0	1	PMC6370189
+GPT-4.1	GOrilla, REVIGO, GSEA	Yes only for GSEA	GO, TRM sets	Yes	Not described	Yes	1	1	1	1	1	1	PMC6370189
+Haiku3.5	GOrilla, REVIGO, GSEA	Yes only for GSEA	GO, TRM sets	Yes	Bootstrap permutation	Yes	1	1	1	1	0	1	PMC6370189
+Sonnet4	GOrilla, REVIGO, GSEA	Yes only for GSEA	GO, TRM sets	Yes	Not described	Yes	1	1	1	1	1	1	PMC6370189
+human	GOrilla, REVIGO, GSEA	Yes - GSEA version 2.2.3	GO, TRM sets	Yes - in GOrilla	Not mentioned	Yes							PMC6370189
+deepseek-r1:70b	Not described	Not described	Not described	Not described	Not described	Not described	0	0	0	0	0	0	PMC6407597
+gemma3:27b	Not described	Not described	GO, KEGG	Not described	Hypergeometric test	Yes	0	0	0.5	0	1	1	PMC6407597
+llama3.3:70b	Not described	Not described	GO	Not described	Not described	Not described	0	0	1	0	0	0	PMC6407597
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	0	0	0	0	0	PMC6407597
+phi4:14b	DAVID, GSEA, Enrichr	Not described	GO, KEGG, Reactome, MSigDB	Not described	Hypergeometric test, Fisher's exact test	Not described	0	0	0.3	0	0.5	0	PMC6407597
+qwen3:32b	DAVID	Not described	GO	Not described	Not described	Not described	0	0	1	0	0	0	PMC6407597
+qwq:32b	DAVID	Not described	GO	Not described	Not described	Not described	0	0	1	0	0	0	PMC6407597
+gpt-oss:20b	Not described	Not described	GO, Reactome	Not described	Not described	Not described	0	0	0.5	0	0	0	PMC6407597
+GPT-4.1-nano	FunRich	2.1.2	Funrich	Yes	Hypergeometric test	Yes	1	1	0	1	1	1	PMC6407597
+GPT-4.1-mini	FunRich	2.1.2	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6407597
+GPT-4.1	FunRich	2.1.2	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6407597
+Haiku3.5	FunRich	2.1.2	GO	Not described	Hypergeometric test	Yes	1	1	1	0	1	1	PMC6407597
+Sonnet4	FunRich	2.1.2	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6407597
+human	FunRich	version 2.1.2	GO	Yes	Hypergeometric test	Yes							PMC6407597
+deepseek-r1:70b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	0	1	PMC6435149
+gemma3:27b	Not described	Not described	GO, KEGG	Not described	Hypergeometric test	Yes	0	1	0	1	0	0	PMC6435149
+llama3.3:70b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	0	1	PMC6435149
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	0	1	PMC6435149
+phi4:14b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	0	1	PMC6435149
+qwen3:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	0	1	PMC6435149
+qwq:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	0	1	PMC6435149
+gpt-oss:20b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6435149
+GPT-4.1-nano	IPA	Not described	Not described	Not described	Fisher's exact test	Not described	1	1	0	1	1	1	PMC6435149
+GPT-4.1-mini	IPA	Not described	Canonical pathways	Yes	Fisher's exact test	Not described	1	1	1	0	1	1	PMC6435149
+GPT-4.1	IPA	Not described	Canonical pathways	Not described	Fisher's exact test	Not described	1	1	1	1	1	1	PMC6435149
+Haiku3.5	IPA	Not described	Canonical pathways	Not described	Fisher's exact test	Not described	1	1	1	1	1	1	PMC6435149
+Sonnet4	IPA	Not described	GO, TarBase, ClinicalTrials.gov, BIND, Ingenuity Ontology, Human Phenotype Ontology	Yes	Fisher's exact test	Not described	1	1	0	0	1	1	PMC6435149
+human	IPA	No	Canonical pathways	No	Fisher's exact test	No							PMC6435149
+deepseek-r1:70b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+gemma3:27b	DAVID	Not described	GO, KEGG	Not described	Hypergeometric test	Not described	1	1	1	1	0	1	PMC6437077
+llama3.3:70b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+mistral-small3.1:24b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+phi4:14b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+qwen3:32b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+qwq:32b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+gpt-oss:20b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+GPT-4.1-nano	DAVID	Not described	GO, KEGG	Not described	Not described	Yes	1	1	1	1	1	0	PMC6437077
+GPT-4.1-mini	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+GPT-4.1	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+Haiku3.5	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+Sonnet4	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6437077
+human	DAVID	No	GO, KEGG	No	No	No							PMC6437077
+deepseek-r1:70b	Not described	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	1	1	1	PMC6439315
+gemma3:27b	KEGG	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	1	1	1	PMC6439315
+llama3.3:70b	Not described	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	1	1	1	PMC6439315
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6439315
+phi4:14b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6439315
+qwen3:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6439315
+qwq:32b	Not described	Not described	KEGG	Not described	Not described	Not described	0	0	0.5	1	1	1	PMC6439315
+gpt-oss:20b	Webgestalt	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	1	1	1	PMC6439315
+GPT-4.1-nano	Omics Bean, STRING	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6439315
+GPT-4.1-mini	Omics Bean	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6439315
+GPT-4.1	Omics Bean	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6439315
+Haiku3.5	Omics Bean	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6439315
+Sonnet4	Omics Bean	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6439315
+human	Omics Bean	No	KEGG, GO BP	No	No	No							PMC6439315
+deepseek-r1:70b	GSEA	Not described	Not described	Not described	Not described	Not described	0.5	1	0	1	1	1	PMC6454777
+gemma3:27b	Not described	Not described	GO, KEGG, Reactome, MSigDB	Not described	Hypergeometric test	Yes	0	1	0.67	1	0	0	PMC6454777
+llama3.3:70b	GSEA	Not described	Not described	Not described	Not described	Not described	0.5	1	0	1	1	1	PMC6454777
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6454777
+phi4:14b	GSEA	Not described	Not described	Not described	Not described	Not described	0.5	1	0	1	1	1	PMC6454777
+qwen3:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6454777
+qwq:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6454777
+gpt-oss:20b	DAVID, GSEA	David only	Not described	Not described	Not described	Not described	1	0.5	0	1	1	1	PMC6454777
+GPT-4.1-nano	DAVID, GSEA	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6454777
+GPT-4.1-mini	DAVID, GSEA	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6454777
+GPT-4.1	DAVID, GSEA	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6454777
+Haiku3.5	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	0.5	1	1	1	1	1	PMC6454777
+Sonnet4	DAVID, GSEA	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6454777
+human	DAVID, GSEA	No	GO, KEGG	No	No	No							PMC6454777
+deepseek-r1:70b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6528310
+gemma3:27b	IPA	Not described	Not described	Not described	Hypergeometric test	Yes	1	1	0	1	0	0	PMC6528310
+llama3.3:70b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6528310
+mistral-small3.1:24b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6528310
+phi4:14b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6528310
+qwen3:32b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6528310
+qwq:32b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6528310
+gpt-oss:20b	IPA	Not described	Not described	Not described	Not described	Not described	1	0	0	1	1	1	PMC6528310
+GPT-4.1-nano	IPA	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6528310
+GPT-4.1-mini	IPA	Not described	Not described	Not described	t-test	Not described	1	1	0	1	0	1	PMC6528310
+GPT-4.1	IPA	Not described	Canonical Pathways	Not described	t-test	Not described	1	1	1	1	0	1	PMC6528310
+Haiku3.5	IPA	Not described	Not described	Not described	t-test	Not described	1	1	0	1	0	1	PMC6528310
+Sonnet4	IPA	Not described	Canonical Pathways	Not described	Not described	Not described	1	1	1	1	1	1	PMC6528310
+human	IPA	No	Canonical Pathways	No	Not mentioned	No							PMC6528310
+deepseek-r1:70b	Not described	Not described	GO, KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6540325
+gemma3:27b	KEGG	Not described	GO, KEGG	Not described	Hypergeometric test	Yes	0	1	1	1	0	0	PMC6540325
+llama3.3:70b	Not described	Not described	GO, KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6540325
+mistral-small3.1:24b	Not described	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	1	1	1	PMC6540325
+phi4:14b	Not described	Not described	GO, KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6540325
+qwen3:32b	Not described	Not described	GO, KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6540325
+qwq:32b	Not described	Not described	GO, KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6540325
+gpt-oss:20b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6540325
+GPT-4.1-nano	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6540325
+GPT-4.1-mini	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6540325
+GPT-4.1	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6540325
+Haiku3.5	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6540325
+Sonnet4	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6540325
+human	DAVID	No	GO, KEGG	No	No	No							PMC6540325
+deepseek-r1:70b	IPA, Webgestalt	Not described	Canonical Pathways, MSigDB	Yes	Hypergeometric test, Fisher's exact test	Not described	0.3	1	0.5	1	1	1	PMC6544406
+gemma3:27b	IPA, Webgestalt, GSEA, STRING, Reactome	Not described	GO, KEGG, Reactome, MSigDB, Interpro	Yes	Hypergeometric test, Fisher's exact test	Yes	1	1	0.5	1	1	0	PMC6544406
+llama3.3:70b	IPA, Webgestalt, GSEA	Not described	KEGG, Reactome, Interpro, MSigDB	Yes	Hypergeometric test, Fisher's exact test	Yes	0.67	1	0.5	1	1	0	PMC6544406
+mistral-small3.1:24b	IPA, Webgestalt, GSEA	Not described	Not described	Not described	Hypergeometric test, Fisher's exact test	Not described	0.67	1	0	0	1	1	PMC6544406
+phi4:14b	IPA, Webgestalt, GSEA, STRING	Not described	Canonical pathways, Webgestalt, MSigDB, KEGG, Reactome, Interpro	No	Hypergeometric test, Fisher's exact test	Yes	0.8	1	0.67	0	1	0	PMC6544406
+qwen3:32b	IPA, Webgestalt, GSEA, KEGG, Reactome, STRING, Interpro	Not described	Canonical pathways, Webgestalt, MSigDB, KEGG, Reactome, Interpro	Yes	Hypergeometric test, Fisher's exact test	Not described	0.67	1	0.67	1	1	1	PMC6544406
+qwq:32b	IPA, Webgestalt, GSEA, STRING	Not described	Canonical Pathways, GO, KEGG, Reactome, MSigDB	Yes	Hypergeometric test, Fisher's exact test	Not described	0.8	1	0.67	1	1	1	PMC6544406
+gpt-oss:20b	IPA, Webgestalt, GSEA	Not described	KEGG, Reactome, Interpro, MSigDB	Yes	Hypergeometric test, Fisher's exact test	Not described	0.67	1	0.5	1	1	1	PMC6544406
+GPT-4.1-nano	Webgestalt, Pathway Commons, KEGG, Reactome, InterPro, STRING	Not described	KEGG, Reactome, InterPro, MSigDB (within GSEA), UCSC Genome Browser	Yes	Hypergeometric test	Yes	0.5	1	0.5	1	0.5	0	PMC6544406
+GPT-4.1-mini	IPA, Webgestalt, GSEA, STRING, Reactome, Interpro	Not described	Canonical pathways, Pathway commons, MSigDB, KEGG, Reactome	Yes	Hypergeometric test, Fisher's exact test	Yes	0.8	1	0.8	1	1	0	PMC6544406
+GPT-4.1	IPA, Webgestalt, GSEA, STRING, Reactome	Not described	Canonical Pathways, Pathway commons, KEGG, Reactome, Interpro, MSigDB cytogenetic	Yes	Hypergeometric test, Fisher's exact test	Yes	1	1	0.67	1	1	0	PMC6544406
+Haiku3.5	IPA, Webgestalt, GSEA, KEGG, Reactome	Not described	MSigDB, Pathway Commons, KEGG, Canonical pathways, Reactome	Yes	Hypergeometric test, Fisher's exact test	Yes	0.8	1	0.8	1	1	0	PMC6544406
+Sonnet4	IPA, Webgestalt, GSEA, STRING, Reactome	Not described	Canonical Pathways, Pathway commons, KEGG, Reactome, Interpro, MSigDB, COSMIC	Yes	Hypergeometric test, Fisher's exact test	Yes	1	1	0.67	1	1	0	PMC6544406
+human	IPA, Webgestalt, GSEA, STRING, Reactome	No	MSigDB, KEGG, Canonical pathways, Reactome	Yes	Hypergeometric test, Fisher's exact test	No							PMC6544406
+deepseek-r1:70b	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+gemma3:27b	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+llama3.3:70b	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+mistral-small3.1:24b	STRING	Not described	Not described	Not described	Not described	Not described	1	0	0	1	1	1	PMC6561249
+phi4:14b	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+qwen3:32b	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+qwq:32b	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+gpt-oss:20b	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+GPT-4.1-nano	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+GPT-4.1-mini	STRING	11	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6561249
+GPT-4.1	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+Haiku3.5	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+Sonnet4	STRING	11	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6561249
+human	STRING	Yes - STRING 11.0.	GO	No	Not mentioned	No							PMC6561249
+deepseek-r1:70b	Not described	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6567810
+gemma3:27b	Not described	Not described	GO, KEGG	Not described	Hypergeometric test	Yes	1	1	1	1	0	0	PMC6567810
+llama3.3:70b	Not described	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6567810
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6567810
+phi4:14b	Not described	Not described	GO, KEGG, Reactome	Not described	Not described	Not described	1	1	0.67	1	1	1	PMC6567810
+qwen3:32b	Not described	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6567810
+qwq:32b	Not described	Not described	Not described	Not described	Not described	Not described	1	1	0	1	1	1	PMC6567810
+gpt-oss:20b	clusterProfiler	3.14.3	KEGG	Not described	Not described	Not described	0	0	0.5	1	1	1	PMC6567810
+GPT-4.1-nano	Not described	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6567810
+GPT-4.1-mini	Not described	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6567810
+GPT-4.1	Not described	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6567810
+Haiku3.5	Not described	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6567810
+Sonnet4	Not described	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6567810
+human	Not mentioned	No	GO, KEGG	No	Not mentioned	No							PMC6567810
+deepseek-r1:70b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6570702
+gemma3:27b	DAVID, KEGG	Not described	GO, KEGG	Not described	Hypergeometric test	Yes	0.5	1	1	1	0	0	PMC6570702
+llama3.3:70b	DAVID, KEGG	Not described	GO, KEGG	Not described	Not described	Not described	0.5	1	1	1	1	1	PMC6570702
+mistral-small3.1:24b	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6570702
+phi4:14b	DAVID, KEGG	Not described	GO, KEGG	Not described	Not described	Yes	0.5	1	1	1	1	0	PMC6570702
+qwen3:32b	DAVID, GSEA	only for GSEA	GO, KEGG	Not described	Not described	Yes	0.5	1	1	1	1	0	PMC6570702
+qwq:32b	DAVID	Not described	GO, KEGG	Not described	Not described	Yes	1	1	1	1	1	0	PMC6570702
+gpt-oss:20b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6570702
+GPT-4.1-nano	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6570702
+GPT-4.1-mini	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6570702
+GPT-4.1	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6570702
+Haiku3.5	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6570702
+Sonnet4	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6570702
+human	DAVID	No	GO, KEGG	No	No	No							PMC6570702
+deepseek-r1:70b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+gemma3:27b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+llama3.3:70b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+mistral-small3.1:24b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+phi4:14b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+qwen3:32b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+qwq:32b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+gpt-oss:20b	IPA	Not described	Knowledgebase	Not described	Not described	Not described	1	1	0	1	1	1	PMC6576276
+GPT-4.1-nano	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+GPT-4.1-mini	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+GPT-4.1	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+Haiku3.5	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+Sonnet4	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6576276
+human	IPA	No	Not mentioned	No	Not mentioned	Not mentioned							PMC6576276
+deepseek-r1:70b	Not described	Not described	GO	Not described	Not described	Not described	0	1	1	1	1	1	PMC6579764
+gemma3:27b	Not described	Not described	GO, KEGG, Reactome	Not described	Hypergeometric test	Yes	0	1	0.33	1	0	0	PMC6579764
+llama3.3:70b	Not described	Not described	GEO, GO	Not described	Not described	Not described	0	1	0.5	1	1	1	PMC6579764
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6579764
+phi4:14b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6579764
+qwen3:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6579764
+qwq:32b	DAVID	6.8	Not described	Not described	Not described	Not described	0	0	0	1	1	1	PMC6579764
+gpt-oss:20b	Not described	Not described	GO	Not described	Not described	Not described	0	1	1	1	1	1	PMC6579764
+GPT-4.1-nano	PANTHER	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6579764
+GPT-4.1-mini	PANTHER	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6579764
+GPT-4.1	PANTHER	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6579764
+Haiku3.5	PANTHER	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6579764
+Sonnet4	PANTHER	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6579764
+human	PANTHER	No	GO	No	No	Not mentioned							PMC6579764
+deepseek-r1:70b	Not described	Not described	GO	Not described	Not described	Not described	0	1	1	1	1	1	PMC6597412
+gemma3:27b	Not described	Not described	GO, KEGG	Not described	Hypergeometric test	Yes	0	1	0.5	1	0	0	PMC6597412
+llama3.3:70b	Not described	Not described	GO	Not described	Not described	Not described	0	1	1	1	1	1	PMC6597412
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6597412
+phi4:14b	Not described	Not described	GO, KEGG, other specific ones	Not described	Not described	Not described	0	1	0.5	1	1	1	PMC6597412
+qwen3:32b	Not described	Not described	GO	Not described	Not described	Not described	0	1	1	1	1	1	PMC6597412
+qwq:32b	Not described	Not described	GO	Not described	Not described	Not described	0	1	1	1	1	1	PMC6597412
+gpt-oss:20b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	1	1	1	PMC6597412
+GPT-4.1-nano	DAVID	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6597412
+GPT-4.1-mini	DAVID	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6597412
+GPT-4.1	DAVID	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6597412
+Haiku3.5	DAVID	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6597412
+Sonnet4	DAVID	Not described	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6597412
+human	DAVID	No	GO	No	No	No							PMC6597412
+deepseek-r1:70b	KEGG	Not described	KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6607232
+gemma3:27b	DAVID	Not described	KEGG	Not described	Hypergeometric test	Yes	1	1	1	1	0	0	PMC6607232
+llama3.3:70b	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6607232
+mistral-small3.1:24b	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6607232
+phi4:14b	KEGG	Not described	KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6607232
+qwen3:32b	DAVID	6.8	KEGG	Not described	Not mentioned	Not described	1	0	1	1	1	1	PMC6607232
+qwq:32b	Not described	Not described	KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6607232
+gpt-oss:20b	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6607232
+GPT-4.1-nano	Not described	Not described	KEGG	Not described	Not described	Not described	0	1	1	1	1	1	PMC6607232
+GPT-4.1-mini	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6607232
+GPT-4.1	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6607232
+Haiku3.5	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6607232
+Sonnet4	DAVID	Not described	KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6607232
+human	DAVID	No	KEGG	No	No	No							PMC6607232
+deepseek-r1:70b	clusterProfiler	Not described	GO, KEGG	Yes	Hypergeometric test	Yes	0	1	1	0	0	0	PMC6635158
+gemma3:27b	KEGG	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	0	1	1	PMC6635158
+llama3.3:70b	KEGG	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	0	1	1	PMC6635158
+mistral-small3.1:24b	Not described	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	0	1	1	PMC6635158
+phi4:14b	KEGG	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	0	1	1	PMC6635158
+qwen3:32b	KEGG, GO	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	0	1	1	PMC6635158
+qwq:32b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	0	1	1	1	1	PMC6635158
+gpt-oss:20b	DAVID	6.8	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6635158
+GPT-4.1-nano	DAVID	6.8	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6635158
+GPT-4.1-mini	DAVID	6.8	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6635158
+GPT-4.1	DAVID	6.8	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6635158
+Haiku3.5	DAVID	6.8	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6635158
+Sonnet4	DAVID	6.8	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6635158
+human	DAVID	Yes - v6.8	GO, KEGG	No	No	No							PMC6635158
+deepseek-r1:70b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+gemma3:27b	IPA	Not described	Not described	Not described	Hypergeometric test	Yes	1	1	1	1	0	0	PMC6660058
+llama3.3:70b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+mistral-small3.1:24b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+phi4:14b	IPA	Not described	Canonical pathways	Not described	Not described	Not described	1	1	0	1	1	1	PMC6660058
+qwen3:32b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+qwq:32b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+gpt-oss:20b	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+GPT-4.1-nano	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+GPT-4.1-mini	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+GPT-4.1	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+Haiku3.5	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+Sonnet4	IPA	Not described	Not described	Not described	Not described	Not described	1	1	1	1	1	1	PMC6660058
+human	IPA	No	No	No	No	No							PMC6660058
+deepseek-r1:70b	DAVID	Not described	GO, KEGG	Not described	Hypergeometric test	Not described	1	0	0.5	1	1	1	PMC6676725
+gemma3:27b	DAVID	Not described	GO, KEGG	Not described	Hypergeometric test	Yes	1	0	0.5	1	0	0	PMC6676725
+llama3.3:70b	DAVID, STRING, GO	Not described	GO	Not described	Not described	Not described	0.5	0	1	1	1	1	PMC6676725
+mistral-small3.1:24b	Not described	Not described	Not described	Not described	Not described	Not described	0	0	0	1	1	1	PMC6676725
+phi4:14b	DAVID, STRING	Not described	GO	Not described	Not described	Not described	0.5	0	1	1	1	1	PMC6676725
+qwen3:32b	DAVID, GO	Not described	GO	Not described	Not described	Not described	0.5	0	1	1	1	1	PMC6676725
+qwq:32b	DAVID	6.8	GO, KEGG	Not described	Not described	Yes	1	1	0.5	1	1	0	PMC6676725
+gpt-oss:20b	DAVID	Not described	GO, Uniprot	Not described	Not described	Not described	1	0	0.5	1	1	1	PMC6676725
+GPT-4.1-nano	DAVID	6.8	UniprotKB Keyword	Not described	Not described	Not described	1	1	0	1	1	1	PMC6676725
+GPT-4.1-mini	DAVID	6.8	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6676725
+GPT-4.1	DAVID	6.8	GO	Not described	Not described	Not described	1	1	1	1	1	1	PMC6676725
+Haiku3.5	DAVID	6.8	GO, UniprotKB	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6676725
+Sonnet4	DAVID	6.8	GO, UniprotKB	Not described	Not described	Not described	1	1	0.5	1	1	1	PMC6676725
+human	DAVID	Yes - v6.8	GO	No	Not mentioned	Not mentioned							PMC6676725
