@@ -1,0 +1,13 @@
+Here's a breakdown of the pathway enrichment analysis methods used in the provided article, compiled into a table as requested:
+
+| **Question** | **Answer** |
+|---|---|
+| 1. What tool was used for pathway enrichment analysis? | KEGG (Kyoto Encyclopedia of Genes and Genomes) was used for pathway enrichment analysis. |
+| 2. Was a tool version number provided? | Not described. |
+| 3. What gene set library was queried (e.g., GO, KEGG, Reactome, or other)? | KEGG was specifically used as the gene set library. |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Not described. |
+| 5. What statistical test was used for enrichment analysis? | Not described. |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes, false discovery rate (FDR) correction was used. |
+
+**Important Note:** The article provides limited detail on the exact parameters used for the pathway enrichment analysis. Several aspects, like the statistical test or precise background list definition, are not explicitly stated.
+

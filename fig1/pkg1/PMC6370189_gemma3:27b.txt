@@ -1,0 +1,40 @@
+Here's a breakdown of the pathway/gene set enrichment analysis details from the provided text, formatted for a table:
+
+**1. What tool was used for pathway enrichment analysis?**
+
+GSEA (Gene Set Enrichment Analysis) was used.
+
+**2. Was a tool version number provided?**
+
+No, a tool version number was not provided in the text.
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+The article doesn't explicitly state *which* gene set library was queried within GSEA. It only references that gene sets related to TCM (Central Memory T cells) and TEM (Effector Memory T cells) were used for comparison. We can infer they likely used standard GSEA libraries (e.g., GO, KEGG, Reactome) to define these TCM/TEM gene sets, but the specific library isn't stated.
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+It is not explicitly stated whether a background gene list was defined. It's implied that the differential expression analysis provided the list of genes used as input for GSEA, but the background list for the enrichment wasn’t mentioned.
+
+**5. What statistical test was used for enrichment analysis?**
+
+The text doesn't specify the exact statistical test used within GSEA. GSEA employs a non-parametric method using the Kolmogorov-Smirnov statistic to evaluate the enrichment. However, this detail is not explicitly mentioned in the text.
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+Yes, false discovery rate (FDR) correction was used. The authors state that the enrichment was considered significant at P-value < 0.05 and FDR q-value < 0.25.
+
+
+
+**Table summarizing the information:**
+
+| Question | Answer |
+|---|---|
+| 1. Tool used for pathway enrichment analysis | GSEA (Gene Set Enrichment Analysis) |
+| 2. Tool version number provided | No |
+| 3. Gene set library queried | Not explicitly stated (likely standard GSEA libraries like GO, KEGG, Reactome to define TCM/TEM sets) |
+| 4. Background gene list defined | Not explicitly stated |
+| 5. Statistical test used | Not explicitly stated (likely Kolmogorov-Smirnov statistic as used within GSEA) |
+| 6. False discovery rate correction used | Yes (P-value < 0.05 and FDR q-value < 0.25) |
+
+

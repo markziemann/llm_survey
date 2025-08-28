@@ -1,0 +1,52 @@
+<think>
+Okay, let's tackle these questions step by step. First, I need to look through the Methods section and other relevant parts of the article to find the answers. 
+
+1. **What tool was used for pathway enrichment analysis?**  
+In the Methods section under "Data acquisition and statistical analyses," the authors mention using Ingenuity with the Global Canonical Pathways (GCP) tool. They also used Webgestalt and GSEA. So the tools are Ingenuity, Webgestalt, and GSEA.
+
+2. **Was a tool version number provided?**  
+Looking at the references, the tools are cited with versions. For example, R 2.10.0 and BRB-Array Tools 4.2.1 are mentioned, but Ingenuity, Webgestalt, and GSEA versions aren't specified. The answer here is no.
+
+3. **What gene set library was queried?**  
+The article mentions Ingenuity, which uses its own gene sets (Global Canonical Pathways). Webgestalt is used with hypergeometric test, but the specific libraries aren't named beyond what's in Webgestalt. KEGG, Reactome, etc., are mentioned in the context of String and Reactome but not as the primary libraries for enrichment. The main ones are Global Canonical Pathways (GCP) from Ingenuity and possibly others from Webgestalt.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**  
+Yes, the article states that the background proteins were all annotated proteins on the 16k microarray, except for cytogenetic maps where the whole human genome was used. So yes, a background was defined.
+
+5. **What statistical test was used for enrichment analysis?**  
+For Ingenuity, they use right-tailed Fisher’s exact test. Webgestalt uses hypergeometric test. GSEA uses methods from the Molecular Signature Database (MSigDB). So multiple tests are used depending on the tool.
+
+6. **Was false discovery rate correction used?**  
+The summary table includes FDR (False Discovery Rates), so yes, FDR correction was applied in the analysis.
+</think>
+
+1. **What tool was used for pathway enrichment analysis?**  
+   - **Ingenuity (Global Canonical Pathways tool)**, **Webgestalt**, and **GSEA** were used for pathway enrichment analysis.  
+
+2. **Was a tool version number provided?**  
+   - **Not described** for Ingenuity, Webgestalt, or GSEA. The article specifies versions for R (2.10.0) and BRB-Array Tools (4.2.1), but not for the pathway enrichment tools.  
+
+3. **What gene set library was queried?**  
+   - **Ingenuity Global Canonical Pathways (GCP)**, **KEGG**, **Reactome**, **Interpro**, and **Molecular Signature Database (MSigDB)** were queried.  
+
+4. **Was a background gene list defined for pathway enrichment analysis?**  
+   - **Yes**. For Ingenuity, Webgestalt, and String/Reactome, the background was "all annotated proteins on the 16k protein microarray." For cytogenetic mapping (GSEA), the background was the "whole human genome (as gene positions)."  
+
+5. **What statistical test was used for enrichment analysis?**  
+   - **Right-tailed Fisher’s exact test** (Ingenuity), **hypergeometric test** (Webgestalt), and **GSEA’s default methods** (Molecular Signature Database).  
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**  
+   - **Yes**. The article explicitly mentions "False Discovery Rates (FDR)" in the summary table of differentially reactive antigens.  
+
+---
+
+### **Summary Table**  
+| **Question** | **Answer** |  
+|--------------|------------|  
+| 1. Tool used for pathway enrichment analysis | Ingenuity (GCP), Webgestalt, GSEA |  
+| 2. Tool version provided? | Not described |  
+| 3. Gene set library queried | Ingenuity GCP, KEGG, Reactome, Interpro, MSigDB |  
+| 4. Background gene list defined? | Yes (16k microarray proteins or whole human genome) |  
+| 5. Statistical test used | Fisher’s exact test (Ingenuity), hypergeometric test (Webgestalt), GSEA methods |  
+| 6. FDR correction applied? | Yes |
+

@@ -1,0 +1,12 @@
+Here's a breakdown of the pathway enrichment analysis methods, extracted from the provided text, formatted for a table:
+
+| **Question** | **Answer** |
+|---|---|
+| 1. What tool was used for pathway enrichment analysis? | Ingenuity and Webgestalt were used. |
+| 2. Was a tool version number provided? | Ingenuity: Not described.  Webgestalt: Not described. |
+| 3. What gene set library was queried (eg: GO, KEGG, Reactome or other)? | KEGG, Reactome, Interpro, and Molecular Signature Database (MSigDB) were queried. Additionally, authors used gene sets derived from cytogenetic mapping, and publicly available microarray results. |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Yes, all annotated proteins presented on the 16k protein microarray were used as background, except for cytogenetic map analyses (GSEA) where the whole human genome was used. |
+| 5. What statistical test was used for enrichment analysis? | Right-tailed Fisher’s exact test was used by Ingenuity. Webgestalt used hypergeometric test. |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes, False Discovery Rate (FDR) correction was used. |
+
+

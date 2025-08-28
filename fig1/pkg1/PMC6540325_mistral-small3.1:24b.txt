@@ -1,0 +1,27 @@
+Sure. 4.
+
+   Survival analysis for hub genes in the dataset [119]GSE85217 ([120]7 MB. GSE85217. The difference in
+   survival between low and high expression of (A) AURKB, (B) CCNB1, (C) CCNB2, (D) CDC20, (E) CDK1, (F) CENPE, (G) KIF2C, (H) MAD2L1, (I) PLK, (J) PNAC and (K) TOP2A. Red lines represent high expression and blue lines represent low expression of the hub genes.
+
+---
+
+### Answers:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - The tool used for pathway enrichment analysis is not explicitly described in the article. It is implied that KEGG pathway analysis was used, but no specific tool was named.
+
+2. **Was a tool version number provided?**
+   - Not described.
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+   - KEGG
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - Not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Not described.
+

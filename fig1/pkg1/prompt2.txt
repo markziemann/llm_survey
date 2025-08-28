@@ -1,0 +1,10 @@
+Please carefully examine the scientific article for details about how pathway enrichment analysis was conducted. Focus on the Methods section, but you may also refer to Results, Figures, or Supplementary Materials if necessary. 
+Your task is to extract only what is explicitly reported, not what might be implied. Do not guess or infer missing details. If a detail is not present, write "Not described". 
+Please answer the following 6 questions. If more than one tool, method, or database is used, list all of them separately. 
+1. What tool was used for pathway enrichment analysis?: List all tools or software packages used (e.g., DAVID, GSEA, Enrichr, etc.) that are explicitly mentioned in the article for enrichment analysis. Do not include tools used only for preprocessing (e.g., Salmon). 
+2. Were enrichment tool version(s) described?: List the version numbers associated with each enrichment tool, if reported. 
+3. Which gene set libraries were used?: Identify all gene set libraries or databases the authors queried (e.g., GO, KEGG, Reactome, MSigDB, etc.). Only include what's actually stated in the article. 
+4. Does the article describe using a custom or specific background gene list for enrichment analysis? Your options include Yes, No or Not described. 
+5. What statistical test(s) were used in enrichment analysis?: State the name(s) of the statistical test(s) used for enrichment analysis (e.g., hypergeometric test, Fisher's exact test). Only include tests linked to enrichment. 
+6. Was multiple testing correction / FDR applied to enrichment analysis?: Only answer "Yes" if the article explicitly mentions FDR, false discovery rate, Benjamini-Hochberg, or a named correction method for the enrichment analysis. A p-value threshold alone is not sufficient. 
+Be terse and provide output in table format.

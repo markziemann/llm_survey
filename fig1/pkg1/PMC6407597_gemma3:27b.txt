@@ -1,0 +1,18 @@
+Here's a breakdown of the pathway enrichment analysis methods as described in the provided text, formatted for a table:
+
+| Question                                      | Answer                               |
+|-----------------------------------------------|--------------------------------------|
+| 1. What tool was used for pathway enrichment analysis? | Not described                        |
+| 2. Was a tool version number provided?        | Not described                        |
+| 3. What gene set library was queried?        | GO (Gene Ontology)                   |
+| 4. Was a background gene list defined?       | Not described                        |
+| 5. What statistical test was used?           | Not described                        |
+| 6. Was false discovery rate correction used? | Yes, false discovery rate correction was used. |
+
+**Explanation based on the text:**
+
+*   The text states "Functional enrichment analysis of the EV proteome for **GO** terms of the “cellular component” GO domain showed…." indicating use of Gene Ontology.
+*   The text states "Functional enrichment analysis… revealed that… were strikingly up-regulated…".  This indicates enrichment analysis was performed but doesn’t specify the statistical test.
+*   The text states "false discovery rate correction was used to control the number of false positives", confirming FDR correction was applied.
+*   The tool used, version number, background gene list and precise statistical test are *not* described in the provided text.
+

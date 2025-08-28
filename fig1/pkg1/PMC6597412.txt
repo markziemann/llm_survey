@@ -1,0 +1,686 @@
+Abstract
+
+Purpose
+
+   Breast cancer is the most frequently diagnosed malignancy in women
+   worldwide. MicroRNAs (miRNAs) are thought to serve as potential
+   biomarkers in various cancers, including breast cancer.
+
+Methods
+
+   We evaluated the miRNA expression profiles in 1,083 breast cancer
+   samples and 104 normal breast tissues from The Cancer Genome Atlas
+   database. We used the edgeR package of R software to analyze the
+   differentially expressed miRNAs in normal and cancer tissues, and
+   screened survival-related miRNAs by Kaplan-Meier analysis. A receiver
+   operating characteristic curve was generated to evaluate the accuracy
+   of these miRNAs as molecular markers for breast cancer diagnosis.
+   Furthermore, the functional role of these miRNAs was verified using
+   cell experiments. Targets of candidate miRNAs were predicted using 9
+   online databases, and Gene Ontology (GO) functional annotation and
+   pathway analyses were conducted using Database for Annotation,
+   Visualization and Integrated Discovery online tool.
+
+Results
+
+   A total of 68 miRNAs showed significantly different expression patterns
+   between the groups (p < 0.001), and 13 of these miRNAs were
+   significantly associated with poor survival (p < 0.05). Three miRNAs
+   with high specificity and sensitivity, namely, miR-148b-3p, miR-190b,
+   and miR-429, were selected. In vitro experiments showed that the
+   overexpression of these 3 miRNAs significantly promoted the
+   proliferation and migration of MDA-MB-468 and T47D cells and reduced
+   the apoptosis of T47D cells. GO and pathway enrichment analyses
+   revealed that the targets of these dysregulated miRNAs were involved in
+   many critical cancer-related biological processes and pathways.
+
+Conclusion
+
+   The miR-148b-3p, miR-190b, and miR-429 may serve as potential
+   diagnostic and prognostic markers for breast cancer. This study
+   demonstrated the roles of these 3 miRNAs in the initiation and
+   progression of breast cancer.
+
+   Keywords: Biological marker, Biological phenomenon, Breast neoplasm,
+   MicroRNA
+
+INTRODUCTION
+
+   Breast cancer, the most common malignant disease in women, is the
+   second leading cause of cancer-related death [[45]1,[46]2]. According
+   to the latest statistical report in China, the number of new breast
+   cancer incidences and related deaths in China each year accounts for
+   12.2% and 9.6% cases in the world, respectively [[47]2]. About 210,000
+   new breast cancer cases are reported in China every year, and the rate
+   is increasing every year by 2%. An estimated 2.5 million people will be
+   suffering from breast cancer in China by 2021 [[48]2]. Although the
+   improvement in the early examination and diagnosis techniques and
+   advances in surgery and comprehensive adjuvant therapy have
+   significantly improved the prognosis of patients, the overall survival
+   (OS) rate is not ideal. Accumulating evidences indicate that the early
+   diagnosis and treatment result in favorable prognoses [[49]3].
+   Therefore, it is crucial to identify novel diagnostic biomarkers and
+   prognostic factors with high sensitivity and specificity to meet the
+   clinical requirements for breast cancer.
+
+   MicroRNAs (miRNAs) are endogenous small-noncoding RNAs of 18–23
+   nucleotides that play a significant role in the regulation of gene
+   expression [[50]4]. miRNAs bind to the 3′-untranslated region of the
+   target messenger RNAs (mRNAs) and degrade or repress their translation.
+   Numerous studies have revealed that miRNAs perform pivotal functions in
+   diverse biological processes such as cell growth, differentiation,
+   metabolism, and apoptosis [[51]5]. Moreover, miRNAs are involved in
+   multiple cancer-related cell signaling pathways, including those
+   associated with breast cancer [[52]6]. The aberrant expression of
+   miRNAs in breast cancer has been previously reported and these may act
+   as either tumor suppressors or oncogenes [[53]7], suggestive of their
+   potential role in the diagnosis and prognosis of breast cancer [[54]8].
+   However, most studies have used microarrays or real-time quantitative
+   polymerase chain reaction (RT-qPCR), which are limited in terms of
+   range of detection. Furthermore, the small sample size and lack of
+   sensitivity and specificity of candidate miRNAs have limited the
+   clinical application of these biomarkers [[55]9]. Thus, it is essential
+   to identify new miRNAs and understand their mechanism of action in the
+   control of various steps involved in tumor malignancy and molecular
+   pathways involved in breast cancer progression.
+
+   The Cancer Genome Atlas (TCGA) is a large database of cancer and tumor
+   genetic mapping programs sponsored by the U.S. government and includes
+   gene expression, epigenome, non-coding RNA expression, and clinical
+   data. In the present study, we first identified the differentially
+   expressed miRNAs between breast cancer and normal tissues through the
+   analysis of TCGA database. Thirteen miRNAs that were significantly
+   associated with patient survival were obtained and of these, 3 miRNAs
+   (miR-148b-3p, miR-190b, and miR-429) were eventually used as a
+   signature for the diagnosis of breast cancer. The effects of these 3
+   miRNAs on biological behaviors of breast cancer cells were also
+   analyzed.
+
+METHODS
+
+Data collection
+
+   The miRNA-Seq data sets of 1,083 breast cancer and 104 normal samples
+   were collected from TCGA ([56]http://cancergenome.nih.gov/). Clinical
+   information of the samples in TCGA was matched with the data of miRNAs.
+   There were no concerns of ethical issues, as the data were retrieved
+   from TCGA. We extracted the expression matrix of miRNAs using Perl
+   Script, and the edgeR package of R software (R Foundation, Vienna,
+   Austria) was used to detect the differentially expressed miRNAs and
+   their relative fold change. Survival-related miRNAs were screened by
+   Kaplan-Meier analysis and a receiver operating characteristic (ROC)
+   curve was generated to calculate the area under the curve (AUC) at 95%
+   confidence interval (95% CI).
+
+Bioinformatic prediction of miRNA target genes and enrichment analysis
+
+   The potential targets of candidate miRNAs were predicted using 9 online
+   databases, including miRDB ([57]http://mirdb.org/), miRTarBase
+   ([58]http://mirtarbase.mbc.nctu.edu.tw/), TargetScan
+   ([59]http://www.targetscat.org/vert_72/), RNA22
+   ([60]https://cm.jefferson.edu/rna22/Precomputed/OptionController?specie
+   s=HomoSapiens&type=mRNA&version=MB21E78v2), PicTar
+   ([61]https://pictar.mdcberlin.de/), Tarbase
+   ([62]http://carolina.imis.athenainnovation.gr/diana_tools/web/index.php
+   ?r=tarbasev8%2Findex), PolymiRTSe
+   ([63]http://compbio.uthsc.edu/miRSNP/search.php), miRBase
+   ([64]http://www.mirbase.org/), and MiRNA
+   ([65]http://starbase.sysu.edu.cn/targetSite.php). Only the target genes
+   predicted by at least 4 databases were chosen. Gene Ontology (GO)
+   functional annotation and pathway analyses were conducted with Database
+   for Annotation, Visualization and Integrated Discovery online tool
+   ([66]https://david.ncifcrf.gov) and visualized by Cytoscape 3.4.0
+   software (Institute for Systems Biology, Seattle, USA).
+
+Clinical specimens and cell lines
+
+   The study included 75 patients with breast cancer that underwent
+   surgery at the First People's Hospital of Yunnan Province from 2015 to
+   2017. The breast cancer tissues and adjacent normal tissues were
+   confirmed by a pathologist. Tissue samples were immediately stored in
+   liquid nitrogen after the surgery. The protocol was approved by the
+   Ethical Committee of First People's Hospital of Yunnan Province (No.
+   2015JC006). This work was carried out in accordance with The Code of
+   Ethics of the World Medical Association (Declaration of Helsinki) and
+   informed consent was obtained from all human subjects. Six human breast
+   cancer cell lines (MDA-MB-468, MDA-MB-231, MCF-7, T47D, SK-BR-3, and
+   HCC-1806) and 1 normal mammary epithelial cell line (MCF-10A) were
+   purchased from the Peking Union Medical College Cell Culture Center
+   (Beijing, China) and cultured at 37°C in a humidified incubator with 5%
+   CO[2]. MDA-MB-468, MDA-MB-231, and MCF-7 cells were cultured in
+   Dulbecco's modified Eagle's medium (DMEM; C11995500BT, Thermo Fisher
+   Scientific, Waltham, USA) supplemented with 10% fetal bovine serum
+   (FBS, 10099141, Thermo Fisher Scientific), while T47D, SK-BR-3, and
+   HCC-1806 cells were maintained in Roswell Park Memorial Institute-1640
+   medium (C11875500BT, Thermo Fisher Scientific) supplemented with 10%
+   FBS. MCF-10A cells were cultured in DMEM/F12 (12500-062, Thermo Fisher
+   Scientific) medium supplemented with 10% horse serum (HyClone, Utah,
+   USA), 1 mg/mL epidermal growth factor (Merck KGaA, Darmstadt, Germany),
+   1 mg/mL cholera toxin (Merck KGaA), 20 mg/mL insulin (Merck KGaA), and
+   1 mg/mL hydrocortisone (Merck KGaA).
+
+RNA extraction and stem-loop RT-qPCR for the detection of miRNAs
+
+   Total RNA from tissues and cell lines was extracted using TRIzol
+   Reagent (T9424, Merck KGaA) according to the manufacturer's
+   instructions. Single-stranded complementary DNA was synthesized from
+   RNA using GoScript™ Reverse Transcription System (Promega, Wisconsin,
+   USA). For qPCR, a specific forward primer was designed for each miRNA
+   and reverse primers were targeted to the stem-loop sequence. Expression
+   levels of miRNAs were analyzed by qPCR using SYBR Green Master Mix
+   (Roche, Basel, Switzerland), and U6 was used as an internal control.
+   The expression level of each gene was calculated and normalized using
+   the 2^−ΔΔct method relative to U6 expression. The primer sequences used
+   were as follows: hsa-U6 forward, 5′-CTCGCTTCGGCAGCACA-3′ and reverse,
+   5′-AACGCTTCACGAATTTGCGT-3′; hsa-miR-148b-3p forward,
+   5′-TCTCTCCAGTCTACTCAGTGCATC-3′ and reverse,
+   5′-TATGGTTTTGACGACTGTGTGAT-3′; hsa-miR-190b forward,
+   5′-GGCGACGAGTGATATGTTTGATAT-3′ and reverse
+   5′-TATGGTTGTTCACGACTCCTTCAC-3′; and hsa-miR-429 forward,
+   5′-CCGCGCTAATACTGTCTGG-3′ and reverse 5′-GTGCACGCTCCGAGGT-3′.
+
+Transfection
+
+   Cells were transfected with 50 nM of miRNA mimic or 100 nM miRNA
+   inhibitor and their corresponding negative controls (RiboBio,
+   Guangzhou, China) using TransIntro EL transfection reagent (TransGen
+   Biotech, Beijing, China), as per the procedures described in the
+   manufacturer's instructions.
+
+Cell proliferation assay
+
+   Cells were seeded in 24-well plates and after 48 hours of transfection,
+   5-ethynyl-2′-deoxyuridine (EdU) was used to measure the proliferation
+   of breast cancer cells. Cells were exposed to 25 mM of EdU (RiboBio)
+   for 2 hours at 37°C and fixed with 4% paraformaldehyde in
+   phosphate-buffered saline (PBS). After permeabilization with 0.5%
+   Triton-X, the cells were reacted with Apollo reaction cocktail
+   (RiboBio), for 30 minutes, followed by staining with Hoechst 33342 for
+   30 minutes and visualization with inverted microscopy (TS100, Nikon,
+   Tokyo, Japan). Image Pro Plus 6.0 software (Media Cybernetics,
+   Washington, D.C., USA) was used to count the number of cells and to
+   evaluate cell proliferation. Percentage of EdU-positive cells was
+   calculated as (EdU-positive cells/Hoechst-stained cells) × 100%.
+
+Apoptosis analysis
+
+   The apoptotic rate of cells was measured using Annexin V-fluorescein
+   isothiocyanate Apoptosis Detection Kit (11988549001, Roche) according
+   to the manufacturer's instructions. Cells were seeded in 12-well plates
+   and transfected with miRNA mimics or inhibitor. After 48 hours, the
+   harvested cells were incubated in a buffer supplemented with 1 μL
+   Annexin V and 2 μL propidium iodide for 30 minutes at 15°C and analyzed
+   by flow cytometry (Becton Dickinson, Franklin Lakes, USA).
+
+Western blot analysis
+
+   Protein lysates were separated using sodium dodecyl sulfate
+   polyacrylamide electrophoresis gels and transferred onto polyvinylidene
+   fluoride membranes (Merck KGaA), followed by incubation with primary
+   antibodies, including poly (ADP-ribose) polymerase (PARP; CST, 9542S,
+   1:1000) and glyceraldehyde-3-phosphate dehydrogenase (ABclonal, AC001,
+   1:1000) overnight at 4°C. The membranes were washed thrice with
+   Tris-buffered saline and Tween-20 for 10 minutes and incubated with
+   secondary antibodies for 2 hours at room temperature. The protein bands
+   were examined with Immobilon Western Chemiluminescent reagent (Merck
+   KGaA) and images were captured with a chemiluminescence imaging system
+   (Tanon 5200, Shanghai, China).
+
+Wound healing assay
+
+   Wound healing assay was used to assess the migratory ability of tumor
+   cells. Cells (3 × 10^5 cells/well) were seeded in a 12-well plate and
+   transfected with miRNA mimics or inhibitor after overnight incubation.
+   After 6 hours, the cell layer was scratched using a pipette tip and
+   washed twice with PBS. These cells were cultured for 24 hours with 1%
+   low serum medium. Images of cell morphology were captured at initiation
+   time under Olympus microscope (Olympus Corporation, Tokyo, Japan). The
+   migratory ability was quantified and normalized by relative gap
+   distance.
+
+Transwell assays
+
+   After transfection for 6 hours, the cells were seeded in 6.5 mm
+   transwell chambers with 8 μm pores (3422, Corning Incorporated, New
+   York, USA). The upper chambers were filled with 200 μL of transfected
+   cells (8 × 10^4 cells), and the lower chambers were filled with 500 μL
+   of complete medium. After 24  hours of incubation, the non-migratory
+   cells that remained on the upper surface were removed with a cotton
+   swab. The migrated cells on the lower surface of the membrane insert
+   were fixed with 4% paraformaldehyde in PBS and stained with 0.1%
+   crystal violet. The number of cells in the lower chamber was counted
+   with light microscopy.
+
+Statistical analyses
+
+   Data were shown as the mean ± standard deviation (SD). All statistical
+   analyses were conducted using SPSS version 20 software (IBM Corp.,
+   Armonk, USA), GraphPad Prism 7 (GraphPad Software, La Jolla, USA), and
+   R language (version 3.3.1; [67]http://www.r-project.org/; R
+   Foundation). A value of p < 0.05 was considered statistically
+   significant. All experiments were performed at least thrice with
+   triplicate samples.
+
+RESULTS
+
+Selection of candidate miRNAs
+
+   As shown in the flow chart ([68]Figure 1A), 1,083 breast cancer samples
+   and 104 normal control breast tissue samples from TCGA database were
+   analyzed. A total of 68 miRNAs showed significantly different
+   expression patterns between groups ([69]Supplementary Table 1). Of
+   these, 50 miRNAs were downregulated and 18 miRNAs showed upregulated
+   expression in breast cancer specimens. In Kaplan-Meier analysis, 13
+   miRNAs were significantly associated with poor survival ([70]Figure 1B
+   and [71]Supplementary Figure 1). The ROC curve is a well-recognized
+   statistical method widely used for the identification of disease
+   prediction accuracy. Thirteen miRNAs were subjected to ROC curve
+   analysis, and finally 3 miRNAs with an AUC value higher than 0.8 were
+   selected. These included miR-148b-3p (AUC = 0.852; 95% CI, 0.819–0.885;
+   p < 0.001), miR-190b (AUC = 0.854; 95% CI, 0.827–0.881; p < 0.001), and
+   miR-429 (AUC = 0.936; 95% CI, 0.915–0.957; p < 0.001) ([72]Figure 1C).
+   To improve the predictive value of miRNAs, we constructed a binary
+   logistic regression model to evaluate the combination of these 3
+   miRNAs. The miRNA signature showed improved accuracy for the prediction
+   of breast cancer than each miRNA alone with an AUC value of 0.950 (95%
+   CI, 0.930–0.971, p < 0.001) ([73]Figure 1C), while the diagnostic
+   sensitivity and specificity reached 89.4% and 89.2%, respectively.
+   Taken together, these results indicate that the 3 miRNAs exhibited
+   reliable performance in the diagnosis of breast cancer.
+
+Figure 1. Identification of the 3 miRNAs. (A) Overall workflow of the study.
+(B) Kaplan-Meier survival curves showing different overall survival in groups
+of patients with low and high miRNAs expression. (C) ROC curves analysis for
+miR-148b-3p, miR-190b, and miR-429 differentiating tumor specimens from
+normal specimens.
+
+   [74]Figure 1
+   [75]Open in a new tab
+
+   miRNA = microRNA; HR = hazard ratio; CI = confidence interval; AUC =
+   area under the curve; ROC = receiver operating characteristic.
+
+Expression of miR-148b-3p, miR-190b, and miR-429 was enhanced in breast
+cancer tissues and cell lines
+
+   miR-148b-3p, miR-190b, and miR-429 showed high expression in TCGA
+   database ([76]Figure 2A and [77]Supplementary Figure 2). We examined
+   the expression levels of these 3 miRNAs using RT-qPCR in breast cancer
+   samples. The pathological features of patients are presented in Table
+   1. The outcome showed that the expression of the 3 miRNAs was higher in
+   breast cancer tissues than in normal controls. Although no significant
+   difference was observed between the groups, the changing trend of the 3
+   miRNAs was consistent with the observations from TCGA database
+   ([78]Figure 2B). Moreover, miR-148b-3p, miR-190b, and miR-429
+   expression was further confirmed in breast cancer cell lines. As shown
+   in [79]Figure 2C, miR-148b-3p and miR-190b were overexpressed in the 4
+   breast cancer cell lines (MCF-7, T47D, SK-BR-3, MDA-MB-468, and
+   HCC-1806) as compared with the normal mammary epithelial cell line
+   (MCF-10A) but were downregulated in MDA-MB-231 cells ([80]Figure 2C).
+   miR-429 expression was significantly upregulated in MCF-7, T47D,
+   MDA-MB-468, and HCC-1806 cells but was downregulated in SK-BR-3 and
+   MDA-MB-231 cells ([81]Figure 2C). These observations suggest that the
+   biological and clinical implication of miRNAs may differ among breast
+   cancer subtypes; hence, we carried out Kaplan-Meier analysis in
+   different breast cancer subtypes based on TCGA database. We found that
+   patients with high miR-148b-3p and miR-429 expression levels had worse
+   OS than those with low-level expression in all subtypes
+   ([82]Supplementary Figure 3A and B). However, in luminal A, basal-like,
+   and normal breast-like groups, high expression of miR-190b correlated
+   with better OS. On the other hand, luminal B and human epidermal growth
+   factor receptor 2 (HER2) groups showed high expression of miR-190b that
+   correlated with worse OS ([83]Supplementary Figure 3C).
+
+Figure 2. The expression of miR-148b-3p, miR-190b, and miR-429 was enhanced
+in breast cancer tissues and cell lines. (A) Expression levels of the 3
+miRNAs in TCGA. (B) Expression levels of the 3 miRNAs were examined in breast
+cancer samples. (C) Expression levels of the 3 miRNAs were examined in 7 cell
+lines.
+
+   [84]Figure 2
+   [85]Open in a new tab
+
+   TCGA = The Cancer Genome Atlas; miRNA = microRNA.
+
+   ^*p < 0.05, ^†p < 0.01, ^‡p < 0.001 vs. MCF-10A using 1-way analysis of
+   variance.
+
+Effects of miR-148b-3p, miR-190b, and miR-429 on breast cancer cell
+proliferation
+
+   To investigate the influence of miR-148b-3p, miR-190b, and miR-429 on
+   breast cancer cell proliferation, T47D and MDA-MB-468 cells were
+   treated with these miRNA mimics and inhibitors and the expression of
+   the 3 miRNAs was verified by RT-qPCR ([86]Supplementary Figure 4). Cell
+   proliferation was detected with EdU assay. As shown in [87]Figure 3A,
+   the proliferation ability of T47D cells significantly increased after
+   the overexpression of miR-148b-3p, miR-190b, and miR-429, but opposite
+   effects were observed after the silencing of these miRNAs. In
+   MDA-MB-468 cells, these miRNA mimics could significantly promote
+   proliferation and the inhibitors suppressed cell proliferation,
+   although the results observed with miR-148b-3p and miR-429 showed no
+   statistical difference ([88]Figure 3B).
+
+Figure 3. Effect of miR-148b-3p, miR-190b and miR-429 on breast cancer cell
+proliferation. The proliferative rate of T47D (A) and MDA-MB-468 (B)
+transfected with miRNA-control, miRNA mimics or miRNA inhibitors.
+
+   [89]Figure 3
+   [90]Open in a new tab
+
+   The data were representative of 3 technical repeats with the mean ±
+   standard deviation.
+
+   miRNA = microRNA; EdU = 5-Ethynyl-2′-deoxyuridine.
+
+   ^*p < 0.05, ^†p < 0.001 vs. control using 1-way analysis of variance.
+
+Effect of miR-148b-3p, miR-190b, and miR-429 on breast cancer cell apoptosis
+
+   To determine the effect of miR-148b-3p, miR-190b, and miR-429 on breast
+   cancer cell apoptosis, we performed flow cytometric analysis. The
+   results revealed the obvious decrease in the apoptosis of T47D cells
+   transfected with miRNA mimics, while the apoptosis rate increased for
+   the cells treated with miRNA inhibitors ([91]Figure 4A). Western
+   blotting results also confirmed that miR-148b-3p, miR-190b, and miR-429
+   inhibitors promoted PARP cleavage ([92]Figure 4B).
+
+Figure 4. Effect of miR-148b-3p, miR-190b and miR-429 on breast cancer cell
+apoptosis. A. The influence of miRNAs on T47D cells apoptosis was evaluated
+by flow cytometry. B. The PARP and cleaved PARP protein levels were measured
+after transfection with miRNA inhibitors in T47D cells.
+
+   [93]Figure 4
+   [94]Open in a new tab
+
+   The data were representative of 3 technical repeats with the mean ±
+   standard deviation.
+
+   PARP = poly (ADP-ribose) polymerase; miRNA = microRNA; GAPDH =
+   glyceraldehyde 3-phosphate dehydrogenase.
+
+   ^*p < 0.05, ^†p < 0.01 vs. control using 1-way analysis of variance.
+
+Effect of miR-148b-3p, miR-190b, and miR-429 on breast cancer cell migration
+
+   Wound healing assay was used to evaluate the effects of miR-148b-3p,
+   miR-190b, and miR-429 on the migratory behavior of MDA-MB-468 cells. As
+   shown in [95]Figure 5A and B, miRNA mimics significantly increased cell
+   migration, while the miRNA inhibitors dramatically decreased the
+   migration of treated cells. The analysis of the results of the above
+   experiments showed that miR-190b exerted the most significant effects
+   on cell proliferation, apoptosis, and migration. Therefore, we selected
+   MDA-MB-231 cells with low expression of miR-190b for verification. We
+   found that the overexpression of miR-190b dramatically decreased the
+   migratory ability of these cells ([96]Figure 5C). To confirm the above
+   observations, a transwell assay was performed; the number of cells
+   passing through the inserts was significantly lower in the
+   miR-190b-overexpressing group than in the control group ([97]Figure
+   5D).
+
+Figure 5. Effect of miR-148b-3p, miR-190b and miR-429 on breast cancer cell
+migration. The migration capacity of MDA-MB-468 cell transfected with miRNA
+mimics (A) or miRNA inhibitors (B) was detected by using wound-healing assay.
+(C) The capacity of MDA-MB-231 cell migration was decreased after treatment
+with miR-190b mimic based on the result of wound-healing assay. D. The
+ability of cell migration in MDA-MB-231 cells transfected with miR-190b mimic
+or inhibitor based on transwell. The data were representative of 3 technical
+repeats with the mean ± standard deviation.
+
+   [98]Figure 5
+   [99]Open in a new tab
+
+   miRNA = microRNA.
+
+   ^*p < 0.05, ^†p < 0.01, and ^‡p < 0.001 vs. control using 1-way
+   analysis of variance.
+
+Target prediction and enrichment analysis
+
+   To investigate the mechanisms underlying miR-148b-3p, miR-190b, and
+   miR-429 functions, 9 online databases were scanned to predict target
+   genes. We gathered target genes predicted by at least 4 algorithms to
+   obtain 405 target genes for miR-148b-3p, 76 target genes for miR-190b,
+   and 299 target genes for miR-429 ([100]Supplementary Table 2). These
+   genes were subjected to GO and pathway enrichment analyses
+   ([101]Supplementary Tables 3, [102]4, [103]5). The result revealed that
+   the targets of candidate miRNAs were involved in several critical
+   cancer-related pathways, including transforming growth factor
+   (TGF)-beta signaling pathway, Wnt signaling pathway, p53 pathway, p38
+   mitogen-activated protein kinase (MAPK) pathway and mammalian target of
+   rapamycin (mTOR) signaling pathway ([104]Figure 6).
+
+Figure 6. Interaction network of lncRNA, mRNA and pathways in breast cancer
+tumors. Each hexagon indicates miRNA. Each ellipse indicates mRNA. Each
+rhombus indicates pathways.
+
+   [105]Figure 6
+   [106]Open in a new tab
+
+   lncRNA = long non-coding RNA; mRNA =messenger RNA; miRNA = microRNA.
+
+DISCUSSION
+
+   At present, breast cancer is the most prevalent cancer among women and
+   is the leading cause of cancer-related deaths among females [[107]10].
+   Clinical data show that early diagnosis and treatment may be conducive
+   for the cure and prognosis of patients and can reduce the suffering in
+   breast cancer patients [[108]3]. However, the lack of relevant clinical
+   biomarkers with good sensitivity and specificity has limited the early
+   diagnosis and prognosis of breast cancer. Previous studies have
+   reported that miRNAs play vital roles in the initiation and progression
+   of breast cancer and that certain miRNAs may act as potential
+   diagnostic and prognostic biomarkers [[109]11]. However, these miRNAs
+   have not been widely exploited for clinical application, owing to the
+   use of different profiling platforms. Some studies have employed
+   microarray or RT-qPCR analyses, which generate signatures based on the
+   available number of miRNAs [[110]12,[111]13]. Some other studies have
+   included a limited number of patients and lacked effective clinical
+   data [[112]14].
+
+   TCGA is a large database of cancer and tumor genetic mapping programs
+   sponsored by the U.S. government and includes data from more than 1,000
+   patients with breast cancer. In this study, we used the available data
+   from TCGA and applied stringent filtering criteria to obtain highly
+   sensitive and specific biomarkers. We first used the edgeR package of R
+   language (R Foundation) to screen differentially expressed miRNAs,
+   followed by the analysis of survival curves using the first 68 miRNAs
+   according to the clinical information of patients with breast cancer.
+   As a result, 13 miRNAs showed significant correlation with the survival
+   time of patients. Furthermore, ROC curves were used to evaluate the
+   accuracy of these 13 miRNAs as molecular markers for the diagnosis of
+   breast cancer; 3 miRNAs with high specificity and sensitivity (p <
+   0.001, AUC > 0.8) were selected, including miR-148b-3p (AUC = 0.852;
+   95% CI, 0.819-0.885; p < 0.001), miR-190b (AUC = 0.854; 95% CI,
+   0.827–0.881; p < 0.001), and miR-429 (AUC = 0.936; 95% CI, 0.915–0.957;
+   p < 0.001). The ROC curve of the combination of the 3 differentially
+   expressed miRNAs showed an extremely high diagnostic accuracy with an
+   AUC value of 0.950 (95% CI, 0.930–0.971; p < 0.001). Together, the data
+   led us to conclude that the 3 miRNAs may serve as diagnostic and
+   prognostic markers for breast cancer.
+
+   The miRNA screening process employed in the present study may be
+   described as a layer-by-layer filtering method, which differs from the
+   methods used in other studies that screened miRNAs with a certain
+   index. For instance, Yin et al. [[113]15] downloaded and collected
+   miRNA and mRNA expression data from TCGA database, and identified the
+   abnormally expressed miRNAs and mRNAs in breast cancer by comparing
+   tumor samples with normal adjacent tissues, followed by the calculation
+   of the Spearman's correlation coefficient to predict target genes and
+   highlight the miRNAs associated with breast cancer. This study only
+   involved differential expression, did not combine the survival time of
+   patients, and had a large probability of false positives.
+
+   We studied the mechanism underlying the effects of the 3 selected
+   miRNAs and found that the expression of miR-148b-3p, miR-190b, and
+   miR-429 was high in TCGA database; however, no significant difference
+   was observed in the expression of these 3 miRNAs between the cancer and
+   normal groups in the validation set. The expression of miRNAs varied
+   between different types of breast cancers, and as the number of samples
+   we collected was insufficient, no significant difference was reported
+   between groups; however, the changing trend in the expression patterns
+   of these miRNAs was consistent with that observed in TCGA database.
+   Similarly, some differences in expression patterns were also observed
+   among different breast cancer cell lines. In comparison with the normal
+   breast cell line MCF-10A, MCF-7, T47D, MDA-MB-468, and HCC1806 cells
+   showed overexpression of miR-148b-3p, miR-190b, and miR-429, whereas
+   the expression of these miRNAs was downregulated in MDA-MB-231 cells,
+   consistent with the previously reported observations
+   [[114]16,[115]17,[116]18]. We carried out Kaplan-Meier analysis in
+   different breast cancer subtypes based on TCGA database and found that
+   the patients with high miR-190b expression had better OS than those
+   with low miR-190b expression in luminal A, basal-like, and normal
+   breast-like groups; however, the patients from luminal B and HER2
+   groups with high miR-190b expression had poor OS. These observations
+   suggest that the biological and clinical implications of miRNAs may
+   differ among breast cancer subtypes [[117]16,[118]17,[119]18].
+
+   The results reported for the miRNA miR-148b-3p, encoded on chromosome
+   12q13.13, showed similarities as well as discrepancies with the
+   previously reported data. Differences in experimental settings and
+   materials may have contributed to different results. As observed
+   herein, the expression of miR-148b-3p was shown to be upregulated in
+   the blood plasma of patients with breast cancer [[120]19] and was high
+   in luminal samples [[121]17]. However, another study showed that
+   miR-148b expression was downregulated in the serum samples from
+   patients with breast cancer [[122]20]. miR-148b was identified as a
+   relapse-associated miRNA and was shown to suppress breast cancer
+   progression by targeting a series of cancer-related oncogenes
+   [[123]21]. These results suggest the complex role of miR-148b-3p that
+   may be dependent on different tissue and cell types. Further functional
+   studies are warranted to characterize the potential role of miR-148b-3p
+   in breast cancer.
+
+   Few studies have reported the implications of miR-190b expression in
+   breast cancer. miR-190b was associated with estrogen-positive breast
+   cancer [[124]16] and hormone therapy resistance [[125]22]. de
+   Anda-Jáuregui et al. [[126]23] recently identified miR-190b among 5
+   other miRNAs as a small set of miRNAs expressed in the breast cancer
+   network; these authors proposed the important role of this mRNA set in
+   the control of biological functions dysregulated in breast cancer.
+   Naorem et al. [[127]24] reported the dysregulated miRNAs, including
+   miR-190b, in triple-negative breast cancer using a meta-analysis
+   approach. However, none of these studies explored the role of miR-190b.
+   In the present study, we reported that the overexpression of miR-190b
+   may significantly promote the proliferation and migration of MDA-MB-468
+   and T47D cells and reduce the apoptosis of T47D cells. In contrast,
+   Cizeron-Clairac et al. [[128]16] showed that miR-190b may probably have
+   no effect on cell proliferation. This discrepancy may be related to the
+   differences in the transfection efficiency.
+
+   As a member of the miR-200 family, miR-429 plays several complex roles
+   in the occurrence and development of cancer. miR-429 was overexpressed
+   in MCF-7, T47D, MDA-MB-468, and HCC1806 cells but showed downregulated
+   expression in MDA-MB-231 and SK-BR-3 cells, consistent with the results
+   reported in previous studies [[129]18,[130]25]. We analyzed cell
+   proliferation and migration and found that the overexpression of
+   miR-429 could significantly promote the proliferation and migration of
+   MDA-MB-468 and T47D cells. Some studies found that the re-expression of
+   one or more miR-200 family members may reduce cell proliferation and
+   migration [[131]26,[132]27]. However, miR-200 family members were also
+   shown to enhance mammary tumor cell migration
+   [[133]28,[134]29,[135]30]. This discrepancy may be related to the
+   differences in the cell lines and cancer subtypes analyzed. So, miRNAs
+   were expressed in a cell type-specific and cancer subtype-specific
+   manner.
+
+   To investigate the underlying mechanisms of action of miR-148b-3p,
+   miR-190b, and miR-429, we used 9 online databases and predicted the
+   target genes. Only the target genes predicted by at least 4 algorithms
+   were chosen and subsequently used for GO and pathway enrichment
+   analyses to explore the potential effects. The results revealed that
+   the targets of these dysregulated miRNAs were involved in many critical
+   cancer-related biological processes and pathways such as TGF-beta
+   signaling pathway, Wnt signaling pathway, p53 pathway, p38 MAPK
+   pathway, and mTOR signaling pathway. Thus, these miRNAs may not only
+   act as biomarkers for breast cancer but may also be considered as
+   targets for the development of new therapies.
+
+   To avoid the contingency caused by small sample size, this study
+   included 1,083 breast cancer samples and 104 normal breast tissue
+   samples from TCGA database. Therefore, the bias was reduced, and the
+   screened miRNAs were more representative candidates. The present study,
+   however, has several limitations. First, although the basic cellular
+   function of the 3 selected miRNAs was validated herein, the exact
+   target genes and pathways and the mechanism underlying their effects on
+   the survival time of patients were incompletely understood. Second, the
+   expression profiling of these 3 miRNAs was based on clinical tissues.
+   Circulating miRNAs have several advantages as biomarkers; hence, it is
+   necessary to detect the expression of these 3 miRNAs in the peripheral
+   blood of patients. At the same time, it is important to expand clinical
+   samples, improve clinical information, and analyze their correlation
+   with pathological index of patients.
+
+   In summary, we identified that miR-148b-3p, miR-190b, and miR-429 may
+   serve as potential breast cancer biomarkers using high-throughput data
+   analysis from TCGA dataset. We also discovered that these 3 miRNAs
+   affect breast cancer cell proliferation, apoptosis, and migration.
+   However, multicenter studies with large sample sizes are warranted to
+   validate our findings and further investigation of the roles of these 3
+   miRNAs is necessary.
+
+Footnotes
+
+   Funding: This work was supported by the National Natural Science
+   Foundation of China (grant number 81560451).
+
+   Conflict of Interest: The authors declare that they have no competing
+   interests.
+   Author Contributions:
+     * Conceptualization: Tang W, Sheng M.
+     * Data curation: Dai W, He J, Tang W.
+     * Formal analysis: Dai W, He J, Tang W.
+     * Funding acquisition: Dai W.
+     * Investigation: Zheng L, Bi M, Hu F.
+     * Resources: Chen M, Niu H, Yang J.
+     * Validation: Sheng M.
+     * Visualization: Dai W, He J.
+     * Writing - original draft: Dai W, He J, Sheng M.
+     * Writing - review & editing: Luo Y, Tang W.
+
+SUPPLEMENTARY MATERIALS
+
+   Supplementary Table 1
+
+   Differentially expressed miRNAs
+   [136]jbc-22-219-s001.xls^ (35.5KB, xls)
+   Supplementary Table 2
+
+   Target genes for 3 miRNAs
+   [137]jbc-22-219-s002.xls^ (55KB, xls)
+   Supplementary Table 3
+
+   GO functional annotation and pathway analyses of has-miR-148b-3p
+   [138]jbc-22-219-s003.xls^ (68.5KB, xls)
+   Supplementary Table 4
+
+   GO functional annotation and pathway analyses of has-miR-190b
+   [139]jbc-22-219-s004.xls^ (60.5KB, xls)
+   Supplementary Table 5
+
+   GO functional annotation and pathway analyses of has-miR-429
+   [140]jbc-22-219-s005.xls^ (61KB, xls)
+   Supplementary Figure 1
+
+   Kaplan-Meier survival curves showing different overall survival in
+   groups of patients with low and high miRNAs expression.
+   [141]jbc-22-219-s006.ppt^ (3.3MB, ppt)
+   Supplementary Figure 2
+
+   Expression level of has-miR-148b-3p (A), has-miR-190b (B), has-miR-429
+   (C) in different breast cancer subtypes.
+   [142]jbc-22-219-s007.ppt^ (2.5MB, ppt)
+   Supplementary Figure 3
+
+   Prognostic value of has-miR-148b-3p (A), has-miR-190b (B), and
+   has-miR-429 (C) in breast cancer subtypes varies among different
+   subtypes.
+   [143]jbc-22-219-s008.ppt^ (1.2MB, ppt)
+   Supplementary Figure 4
+
+   In MDA-MB-468 (A) and T47D (B) cell lines, expression of miRNAs was
+   significantly increased by miRNAs mimics but was decreased by miRNAs
+   inhibitors compared with the corresponding control.
+   [144]jbc-22-219-s009.ppt^ (1.1MB, ppt)
+
+References

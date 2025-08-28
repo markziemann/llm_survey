@@ -1,0 +1,20 @@
+Here are the answers to the questions based on the provided scientific article:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - The tools used for pathway enrichment analysis were Ingenuity, Webgestalt, GSEA and STRING.
+
+2. **Was a tool version number provided?**
+   - Not described.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - The gene set libraries queried were KEGG, Reactome, Interpro, and MSigDB.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes. The background proteins (random entries) used were all annotated proteins presented on the 16k protein microarray.
+
+5. **What statistical test was used for enrichment analysis?**
+   -  The statistical test used was the hypergeometric test (Webgestalt) and right-tailed Fisher’s exact test (Ingenuity).
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Not described.
+

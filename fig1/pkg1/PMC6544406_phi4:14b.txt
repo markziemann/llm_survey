@@ -1,0 +1,40 @@
+Based on the provided scientific article, here's how the pathway enrichment analysis was conducted:
+
+1. **Tool Used for Pathway Enrichment Analysis**: 
+   - Ingenuity and Webgestalt (Web-based Gene-set Analysis Toolkit) were used for pathway enrichment analyses.
+   - GSEA (Gene Set Enrichment Analysis) from the Molecular Signature Database (MSigDB) was also utilized.
+
+2. **Tool Version Number Provided**:
+   - Not described. The article does not specify version numbers for Ingenuity, Webgestalt, or GSEA.
+
+3. **Gene Set Library Queried**:
+   - Global Canonical Pathways in Ingenuity.
+   - Various tools within Webgestalt were used (not specified which libraries).
+   - Oncogenic and immunologic signatures from MSigDB in GSEA.
+
+4. **Background Gene List Defined for Pathway Enrichment Analysis**:
+   - For the 16k protein microarray analyses, all annotated proteins on the array were used as background.
+   - For cytogenetic mapping (GSEA), the whole human genome was applied as gene positions.
+
+5. **Statistical Test Used for Enrichment Analysis**:
+   - Right-tailed Fisher’s exact test in Ingenuity.
+   - Hypergeometric test in Webgestalt.
+   - Not explicitly stated for GSEA, but typically uses methods like Kolmogorov-Smirnov statistics or permutation tests.
+
+6. **False Discovery Rate Correction Used**:
+   - False discovery rates (FDR) were mentioned as part of the results output in some analyses (e.g., Ingenuity).
+   - The article does not explicitly state if FDR correction was applied for controlling false positives across all analyses, but it is commonly used in these contexts.
+
+Here's how this information can be collated into a table:
+
+| Question                                                                 | Answer                                |
+|--------------------------------------------------------------------------|---------------------------------------|
+| Tool Used for Pathway Enrichment Analysis                                | Ingenuity, Webgestalt, GSEA (MSigDB)  |
+| Tool Version Number Provided                                             | Not described                         |
+| Gene Set Library Queried                                                 | Global Canonical Pathways, MSigDB     |
+| Background Gene List Defined                                             | Annotated proteins on the array, Human genome for GSEA |
+| Statistical Test Used for Enrichment Analysis                            | Fisher’s exact test (Ingenuity), Hypergeometric test (Webgestalt) |
+| False Discovery Rate Correction Used                                     | Not explicitly stated across all tools |
+
+This table provides a structured summary of how pathway enrichment analysis was conducted in the study.
+

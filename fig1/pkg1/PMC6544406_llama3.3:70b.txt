@@ -1,0 +1,20 @@
+Here are the answers to the questions about pathway enrichment analysis:
+
+1. What tool was used for pathway enrichment analysis?
+The tools used for pathway enrichment analysis were Ingenuity, Webgestalt (Web-based Gene-set Analysis Toolkit), and GSEA (Gene Set Enrichment Analysis).
+
+2. Was a tool version number provided?
+No version number was provided for Ingenuity or Webgestalt, but the version of BRB-Array Tools used was 4.2.1, and R version was 2.10.0.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The gene set libraries queried were not explicitly stated for Ingenuity, but Webgestalt and GSEA analyzed various categories, including KEGG and Reactome.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Yes, the background proteins used were all annotated proteins presented on the 16k protein microarray, except for cytogenetic map analyses (GSEA) where the whole human genome was applied.
+
+5. What statistical test was used for enrichment analysis?
+Ingenuity used right-tailed Fisher’s exact test, and Webgestalt used hypergeometric test for enrichment analyses.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, False Discovery Rates (FDR) were calculated and provided in Supplementary Table 1 for differentially reactive antigens.
+

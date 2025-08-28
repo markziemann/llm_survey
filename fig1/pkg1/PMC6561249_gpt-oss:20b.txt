@@ -1,0 +1,53 @@
+Thinking...
+We need to answer 6 questions about pathway enrichment analysis. Must read Methods section: "Positive Selection Analysis" etc. Also GO category enrichment among positively selected genes was performed with the STRING database online software ([199]101). So only tool used is STRING. Let's confirm.
+
+Search for "enrichment" in article:
+
+- In positive selection analysis, they say: "GO category enrichment among positively selected genes was performed with the STRING database online software ([199]101)."
+
+Thus they used STRING for enrichment. Which version? In "Software Versions" section: STRING 11.0.
+
+Gene set libraries used: They mention GO category enrichment. So GO. Also might use "STRING" but that's a tool not a database. It may use GO. Let's check if other libraries: Possibly other gene sets were used? The results mention "GO category enrichment among positively selected genes was performed with the STRING database online software ([199]101)." That's the only mention. There's also "STRING" used. Maybe they didn't use KEGG etc. So gene set libraries: GO. But "STRING" also uses GO and other pathways but not explicitly said. The article says they used "STRING database online software". It might incorporate KEGG, Reactome, etc. But the article explicitly mentions GO category enrichment. So gene set library: GO.
+
+Background gene list: The article says "For each analysis, we used the species tree generated in this study. Using PAML ([198]61), each alignment was fit to the M8 and M8a codon models". Not background list.
+
+In enrichment analysis, the article says "GO category enrichment among positively selected genes was performed with the STRING database online software ([199]101)." Did they describe using a custom background gene list? It says "For each analysis, we used the species tree generated in this study. Using PAML, each alignment was fit..." That is about selection. For enrichment, "GO category enrichment among positively selected genes was performed with the STRING database online software". No background list. So answer: Not described.
+
+Statistical test(s) used: They might use hypergeometric test or Fisher's exact test. But not explicitly. In STRING online software, default is hypergeometric? Not described. So "Not described".
+
+Multiple testing correction: Not described. Only "Not described".
+
+Thus table with columns:
+
+- Tool used
+- Version(s)
+- Gene set libraries
+- Custom background gene list used?
+- Statistical test(s) used
+- Multiple testing correction applied?
+
+Let's fill:
+
+Tool: STRING
+Version: 11.0 (reported)
+Gene set library: GO
+Custom background: Not described
+Statistical test: Not described
+Multiple testing correction: Not described
+
+However, the article also used "GO category enrichment among positively selected genes" but they didn't mention a tool for enrichment aside from STRING. So only one.
+
+Make sure no other enrichment tools are mentioned. Search for "enrichment" in article: "GO category enrichment among positively selected genes was performed with the STRING database online software ([199]101)." That's it.
+
+Thus produce table with one row.
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **Tool(s) used for pathway enrichment analysis** | STRING |
+| **Enrichment tool version(s) described** | 11.0 |
+| **Gene set libraries used** | Gene Ontology (GO) |
+| **Custom/background gene list used for enrichment?** | Not described |
+| **Statistical test(s) used in enrichment analysis** | Not described |
+| **Multiple testing correction / FDR applied?** | Not described |
+

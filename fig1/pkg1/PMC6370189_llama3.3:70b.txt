@@ -1,0 +1,22 @@
+Here are the answers to your questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tools used were Cuffdiff2 for differential analysis and GSEA (Gene Set Enrichment Analysis) for pathway enrichment.
+
+2. Was a tool version number provided?
+No, the version numbers of the tools were not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The article does not explicitly mention which gene set library was used for the pathway enrichment analysis, but it mentions that "three pairwise comparisons were made" and that GSEA was used to analyze the data. However, in one section, it is mentioned that the "GO" terms are associated with certain biological processes.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+The article mentions that differential analysis was performed using Cuffdiff2, but it does not specify the exact statistical test used for the enrichment analysis. However, in the context of GSEA, it is likely that a statistical test such as the Kolmogorov-Smirnov test or the hypergeometric test was used.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, FDR (False Discovery Rate) q-value < 0.25 was mentioned as a threshold for significance in the GSEA analysis. 
+
+Let me know if you'd like me to help with anything else!
+

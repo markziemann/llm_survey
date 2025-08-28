@@ -1,0 +1,64 @@
+To determine the causal relationship between metabolic pathways and cell cycle regulation in cancer cells, more experiments are required.
+   [251] of CCNA2, CCNB1, CCNB2), E2F7, E2F8, and CDC20, CDC25A, CDC25C) and cell cycle
+   associated proteins (E2F7) in our study. The upregulation of these genes in our study is in agreement
+   with other independent studies, and validates the upregulation of cell cycle associated genes and proteins in cancers.
+   We also observed upregulation of different cyclins and cyclin dependent kinases in
+   HCC and other cancer types. The deregulation of these genes and associated proteins in our study is also in agreement
+   with the literature. In addition, it is a well known fact that
+   cancer cells have increased demand of nucleotides to replicate DNA. The upregulation
+   of genes involved in DNA replication (MCM3, MCM7, MCM2, MCM4, MCM6, MCM7,
+   nucleoside, MCM10, MCM8, MCM9]. Thus, the above facts are in agreement with our study
+   and validate the upregulation of these genes and associated proteins and
+   pyrimidine metabolism are also associated with upregulation of cell cycle related
+   proteins and genes. Therefore, the deregulation of these genes and associated
+   proteins validate our study. The pathway enrichment analysis conducted in the current article did not identify the molecular mechanism behind the
+   deregulated cell cycle in the development and progression of cancer cells,
+   there are many more questions need to be answered. First of all, we need to identify the
+   side. In addition, we also need to identify the development of HCC. The
+   pathway enrichment analysis on the genes and protein factors involved in
+   these events are the metabolic processes and cell cycle
+   dysregulation in HCC, or it is the
+   hyperactive proliferation of HCC which is the other way around.
+
+   In this study, we also need to identify the metabolic processes. We
+   need to be and progression of HCC. Therefore, further in this study we identify the dysregulation of metabolic pathways and (2)
+   of cell cycle regulatory pathways is the most effective strategy for reversing the
+   development of HCC. The pathway enrichment analysis also need to identify
+   tumor
+   suppressor miRNA driven induction of genes involved in the cell cycle
+   can be a novel strategy to suppress the progression of
+   HCC. Therefore, the authors suggest that further experiments need to be conducted to validate the study.
+
+### Questions and Answers
+
+1. **What tool was used for pathway enrichment analysis?**
+   - **Answer**: Not described
+
+2. **Was a tool version number provided?**
+   - **Answer**: Not described
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - **Answer**: Not described
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - **Answer**: Not described
+
+5. **What statistical test was used for enrichment analysis?**
+   - **Answer**: Not described
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - **Answer**: Not described
+
+**Summary Table**
+
+| Question                                                                                         | Answer         |
+|------------------------------------------------------------------------|----------------|
+| What tool was used for pathway enrichment analysis?                                    | Not described  |
+| Was a tool version number provided?                                                  | Not described |
+| What gene set library was queried (eg: GO, KEGG, Reactome or other)?                         | Not described    |
+| Was a background gene list defined for pathway enrichment analysis?                                   | Not described |
+| What statistical test was used for enrichment analysis?                                      | Not described |
+| Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Not described |
+
+Based on the information provided in the article, the authors did not describe the pathway enrichment analysis in detail. They stated that the metabolic and cell cycle pathways are deregulated in the HCC, but did not identify the specific tools and techniques used in the pathway enrichment analysis.
+

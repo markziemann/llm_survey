@@ -1,0 +1,527 @@
+Abstract
+
+   Gallbladder carcinoma (GBC) is a relatively rare but terminal
+   malignancy, and drug/chemical development is an important aspect of
+   prevention and treatment of GBC. Ursolic acid (UA), a pentacyclic
+   triterpenoid, has been reported to exhibit various pharmaceutical
+   effects. In the present study, the antiproliferative and anti-invasive
+   effects of UA and the associated mechanisms in GBC were examined. UA
+   was isolated from Isodon excisoides. The GBC cells (GBC-SD and NOZ)
+   were treated with UA and subjected to a Cell Counting Kit-8 assay. The
+   GBC-SD cells were subsequently selected for an Annexin V-FITC/propidium
+   iodide assay, Transwell chamber assay, RT^2 profiler polymerase chain
+   reaction (PCR) array and western blot analysis. The results indicated
+   that UA inhibited the proliferation and invasion and induced the
+   apoptosis of GBC-SD cells in a dose-dependent manner. Furthermore, the
+   PCR arrays demonstrated that there were 24 differentially expressed
+   genes between the UA-treated and untreated groups. These differentially
+   expressed genes suggested that UA induced the apoptosis of GBC-SD cells
+   through activation of the cell extrinsic pathway. According to Kyoto
+   Encyclopedia of Genes and Genomes pathway analysis of these
+   differentially expressed genes, the suppression of nuclear factor
+   (NF)-κB and protein kinase B (Akt) signaling pathways was further
+   validated. In summary, UA induces the apoptosis and inhibits the
+   invasion of GBC-SD cells, which may be associated with the suppression
+   of NF-κB and Akt signaling pathways. These results may offer a
+   potential therapeutic strategy for the chemoprevention or chemotherapy
+   of GBC in humans.
+
+   Keywords: ursolic acid, gallbladder carcinoma, apoptosis, invasion,
+   nuclear factor-κB, protein kinase B
+
+Introduction
+
+   Gallbladder carcinoma (GBC) is the most common malignant tumor of the
+   biliary tract and one of the common malignant tumor types of the
+   gastrointestinal tract ([40]1). GBC is infrequent in the majority of
+   developed countries, but common in certain specific geographical
+   regions of developing countries, including northern India, South
+   Karachi in Pakistan and eastern Europe ([41]2). GBC is characterized by
+   late diagnosis, metastasis and recurrence which occur readily, and poor
+   prognosis and survival rates ([42]2–[43]4). Surgery is considered the
+   only curative therapy for GBC. However, at diagnosis, <20% of patients
+   are suitable candidates for surgical treatment ([44]4). GBC should be
+   treated with systemic chemotherapy, and drug/chemical development is
+   important for the prevention and treatment of GBC.
+
+   Antitumor promotion with phytochemicals is currently regarded as an
+   efficient and reliable strategy for cancer chemoprevention and therapy.
+   The genus Isodon (formerly Rabdosia) comprising ~150 species of
+   undershrubs, subundershrubs and perennial herbs, is found throughout
+   the world, primarily in tropical and subtropical Asia ([45]5). Several
+   Isodon species are widely used in popular Chinese folk medicine for the
+   treatment of bacterial infections, inflammation, cancer and
+   hepatotoxicity ([46]5). A large number of secondary metabolites with
+   diverse biological activities have been isolated from this species.
+   These chemical constituents include diterpenoids, triterpenoids and
+   flavonoids ([47]6–[48]8). In the present study, ursolic acid (UA;
+   [49]Fig. 1A), a pentacyclic triterpenoid, was isolated from Isodon
+   excisoides. UA has been reported to exhibit various pharmaceutical
+   effects, including anticancer, antiangiogenic, antioxidant,
+   anti-inflammatory, antibacterial, hepatoprotective, cardioprotective,
+   antihyperlipidemic and hypoglycemic activities, among others
+   ([50]9,[51]10). The anticancer effects of UA are mediated by
+   suppression of the phosphoinositide-3-kinase (PI3K)/protein kinase B
+   (Akt), nuclear factor (NF)-κB and signal transducer and activator of
+   transcription 3 pathways with their regulated gene products, including
+   cyclin D1, Bcl-2, Bcl-xL, survivin, myeloid cell leukemia-1 and
+   vascular endothelial growth factor ([52]11). In addition, He et al
+   ([53]12) reported that there were 611 proteins possibly interacting
+   with UA and >49 functional clusters responding to UA. Numerous studies
+   have suggested that UA is a promising sensitizer for cancer therapy
+   ([54]11). Previous evidence has revealed that UA inhibits the growth of
+   GBC cells through inducing cell cycle arrest and apoptosis ([55]13).
+   However, the anti-invasive effect of UA and the associated mechanism in
+   GBC remain to be fully elucidated. Therefore, the present study aimed
+   to investigate the antiproliferative and anti-invasive effects of
+   purified UA in the GBC-SD human GBC cell line in vitro. The results
+   will assist in expanding current understanding of the anticancer effect
+   and mechanism of UA. Furthermore, the results may contribute to the
+   development of UA as a potent anticancer agent for GBC.
+
+Figure 1.
+
+   [56]Figure 1.
+   [57]Open in a new tab
+
+   Effects of UA on the proliferation and apoptosis of human GBC cells.
+   (A) Structure of UA. Effect of UA on the proliferation of (B) GBC-SD
+   and (C) NOZ cells. Cell survival was determined by Cell Counting Kit-8
+   assay and calculated relative to the vehicle-treated cells (0 µM UA).
+   GBC-SD and NOZ cells were inhibited in a time-dependent manner at 24
+   and 48 h after UA exposure. (D) UA induced apoptosis of GBC-SD cells.
+   Apoptosis of GBC-SD cells induced by different concentrations of UA (0,
+   10, 30 and 50 µM) for 24 h, evaluated using flow cytometry with an
+   Annexin V-FITC/PI assay. (E) Quantification of apoptotic rates. Data
+   are presented as the mean ± standard deviation from three independent
+   experiments. *P<0.05 and ***P<0.001, vs. control group (0 µM). UA,
+   ursolic acid; PI, propidium iodide.
+
+Materials and methods
+
+Plant material, cells and reagents
+
+   The aerial parts of I. excisoides were collected from Luanchuan County
+   in Henan Province, China in July 2014 and authenticated by Professor
+   Jicheng Li of Zhengzhou University (Zhengzhou, China). A voucher
+   specimen (no. 20140706167LY) was deposited in the herbarium of the
+   College of Pharmacy, Zhengzhou University. The human GBC cell lines
+   GBC-SD (cat. no. CC2502) and NOZ (cat. no. CC2501), which exhibit
+   correct short tandem repeat profiles, were originally purchased from
+   Guangzhou Cellcook Biotech Co., Ltd (Guangzhou, China) and stored in
+   the Henan Key Laboratory for Pharmacology of Liver Diseases (Institute
+   of Medical and Pharmaceutical Sciences, Zhengzhou University,
+   Zhengzhou, China). The reagents used included RPMI-1640 medium (cat.
+   no. SH30809.01) and high-glucose Dulbecco's modified Eagle's medium
+   (DMEM; cat. no. SH30022.01; Hyclone; GE Healthcare Life Sciences,
+   Logan, UT, USA), fetal bovine serum (FBS; cat. no. 900-108; Gemini Bio
+   Products, West Sacramento, CA, USA), Cell Counting Kit-8 (CCK-8; cat.
+   no. CK04; Dojindo Molecular Technologies Inc., Shanghai, China),
+   Annexin V-FITC/Propidium iodide (PI) Apoptosis Detection kit (cat. no.
+   70-AP101-60; Multi Sciences Biotech Co., Ltd., Hangzhou, China),
+   Transwell chambers with polycarbonate filters (8-µm pore size; cat. no.
+   3422; Corning, Inc., Corning, NY, USA), Matrigel (cat. no. 356234; BD
+   Biosciences, Franklin Lakes, NJ, USA), TRIzol reagent (cat. no.
+   15596-026; Invitrogen; Thermo Fisher Scientific, Inc., Waltham, MA,
+   USA), PrimeScript™ RT Reagent kit (cat. no. DRR037A; Takara
+   Biotechnology Co., Ltd., Dalian, China), RT^2 Profiler ‘human
+   apoptosis’ polymerase chain reaction (PCR) arrays (cat. no. PAHS-012Z)
+   and RT^2 Profiler ‘human extracellular matrix and adhesion molecules’
+   PCR arrays (cat. no. PAHS-013Z; Qiagen, Inc., Valencia, CA, USA),
+   EvaGreen 2X qPCR MasterMix-No Dye kit (cat. no. MasterMix-S; Applied
+   Biological Materials, Richmond, BC, Canada), Dimethylsulfoxide (DMSO;
+   cat. no. D8371), bovine serum albumin (BSA; cat. no. A8010), RIPA lysis
+   buffer (cat. no. R0020; Solarbio Science and Technology, Beijing,
+   China), phosphorylated (phosphor)-NF-κB p65 (Ser536) antibody (cat. no.
+   3033), NF-κB p65 antibody (cat. no. 3034), phospho-Akt (Ser473)
+   antibody (cat. no. 9271), Akt antibody (cat. no. 9272; Cell Signaling
+   Technology, Inc., Beverly, MA, USA) and GAPDH monoclonal antibody (cat.
+   no. 60004-1-lg; ProteinTech Group, Inc., Chicago, IL, USA). Other
+   chemicals and reagents were of analytical grade.
+
+Extraction, isolation and purification of UA from I. excisoides
+
+   The dried and powdered aerial parts of I. excisoides (3 kg) were
+   extracted with anhydrous ether (12 L). The extract was then filtered
+   and evaporated in a rotatory evaporator under reduced pressure. The
+   concentrated residue (89 g) was dissolved in methanol (3.6 L) and
+   activated carbon (108 g) was added. The mixture was heated under reflux
+   and further filtered and evaporated to produce a crude product (71 g).
+   The crude product was then successively separated by silica gel
+   chromatographic column and Sephadex LH-20 column chromatography, giving
+   a compound (56 mg). This compound was identified as UA on the basis of
+   its mass and nuclear magnetic resonance spectra. UA (ursolic acid,
+   C[30]H[48]O[3]): HR-EIMS m/z 456.3608 (456.3603 calcd. for
+   C[30]H[48]O[3]); ^1H-NMR (C[5]D[5]N, 400 MHz): δ 5.52 (1H, t, J=3.5 Hz,
+   H-12), 3.48 (1H, dd, J=9.9, 5.4 Hz, H-3α), 2.68 (1H, d, J=11.4 Hz,
+   H-18), 1.27, 1.05, 0.91, 1.08 and 1.25 (each 3H, s, H-23, H-24, H-25,
+   H-26 and H-27), 0.97 (3H, d, J=6.0 Hz, H-29) and 1.03 (3H, d, J=6.3 Hz,
+   H-30); ^13C-NMR (C[5]D[5]N, 100 MHz): δ 39.1 (C-1), 28.1 (C-2), 78.1
+   (C-3), 39.4 (C-4), 55.8 (C-5), 18.8 (C-6), 33.6 (C-7), 40.0 (C-8), 48.1
+   (C-9), 37.3 (C-10), 25.0 (C-11), 125.6 (C-12), 139.4 (C-13), 42.5
+   (C-14), 28.7 (C-15), 23.9 (C-16), 48.1 (C-17), 53.6 (C-18), 39.5
+   (C-19), 39.5 (C-20), 31.1 (C-21), 37.3 (C-22), 28.8 (C-23), 16.6
+   (C-24), 15.7 (C-25), 17.6 (C-26), 23.7 (C-27), 180.2 (C-28), 17.5
+   (C-29) and 21.5 (C-30).
+
+Cell culture and UA treatment
+
+   The GBC-SD and NOZ cells were cultured in RPMI-1640 or high-glucose
+   DMEM supplemented with 10% FBS at 37°C in a 5% CO[2] humidified
+   atmosphere, and routinely passaged at 2–3-day intervals. UA was
+   dissolved in DMSO to a 50 mM stock concentration. The final DMSO
+   concentration was accounted for ≤0.1% (v/v). DMSO (0.05%)-treated cells
+   were used as a vehicle control.
+
+Cell viability assay
+
+   A CCK-8 assay was performed to evaluate the effect of UA on cell
+   viability. A total of 1.2×10^4 cells/well were seeded in 96-well plates
+   overnight and then treated with varying concentrations of UA (0, 10,
+   20, 30, 40, 45 and 50 µM). The cells were incubated for either 24 or 48
+   h at 37°C in a humidified incubator, following which 10 µl CCK-8
+   solution was added into each well and incubated for a further 1 h. The
+   absorbance was measured at 450 nm in each well using a microplate
+   spectrophotometer (BioTek Instruments, Inc., Winooski, VT, USA). The
+   results are presented as the mean values of three independent
+   experiments performed over multiple days. Cell viability was calculated
+   using the following formula: Cell viability (%)=[optical density (OD)
+   of the experiment samples/OD of the control] × 100%. The half maximal
+   inhibitory concentration (IC[50]) value of UA against the GBC-SD or NOZ
+   cells was calculated using GraphPad Prism 5 (GraphPad Software, Inc.,
+   La Jolla, CA, USA).
+
+Apoptosis assays
+
+   Cell apoptosis was detected using an Annexin V-FITC/PI Apoptosis
+   Detection kit. In brief, the cells from the UA-treated (10, 30 and 50
+   µM) and untreated groups were seeded in 6-well plates (1×10^6
+   cells/well) and cultured for 24 h. The cells were collected, washed
+   with ice-cold PBS, and resuspended in binding buffer at a cell density
+   of 1×10^6 cells/ml. The cells were stained with 5 µl Annexin V-FITC and
+   10 µl PI (20 µg/ml) and then incubated in the dark at 25°C for 15 min.
+   Apoptotic cells were analyzed by flow cytometry (CytoFlex; Beckman
+   Coulter Inc., Brea, CA, USA). The percentage of apoptotic cells was
+   analyzed using FlowJo software (version 9.8.3, FlowJo LLC, Ashland, OR,
+   USA). The experiments were repeated three times.
+
+Cell invasion assay
+
+   A cell invasion assay was performed using 8-µm pore size Transwell
+   chambers. The upper side of the Transwell filter inserts was coated
+   with 80 µl diluted (1:8 in serum-free medium) Matrigel in 24-well
+   plates. The GBC-SD cells at a density of 1×10^5 cells/well were
+   suspended in serum-free RPMI-1640 medium and added to the upper
+   chambers containing various concentrations of UA (10, 30 and 50 µM).
+   The lower chambers were filled with 500 µl RPMI-1640 medium containing
+   20% FBS. After 24 h, the non-invaded cells were removed, and the
+   invasive cells were fixed with 95% ethanol, stained with 0.1% crystal
+   violet and images were captured (magnification, ×100) with a light
+   microscope (XDS-1B inverted biological microscope, Chongqing Optical &
+   Electrical Instrument Co., Ltd., Chongqing, China). The assay was
+   repeated in three independent experiments.
+
+RT^2 profiler PCR arrays for apoptosis and invasion
+
+   In brief, cells from the UA-treated (50 µM) and untreated groups were
+   seeded in 6-well plates (1×10^6 cells/well) and cultured for 24 h.
+   Total RNA was extracted from each experimental group using TRIzol
+   reagent and quantified by spectrophotometry. Subsequently, 1 µg of
+   total RNA was reverse transcribed with the PrimeScript™ RT Reagent kit,
+   according to the manufacturer's protocol. RT^2 Profiler ‘human
+   apoptosis’ PCR arrays and RT^2 Profiler ‘human extracellular matrix and
+   adhesion molecules’ PCR arrays were performed in duplicate according to
+   the manufacturer's protocol. The PCR was performed as follows: 10 min
+   at 95°C and 40 cycles (15 sec at 95°C, 1 min at 60°C). The specificity
+   of the SYBR Green assay was confirmed by melting curve analysis.
+   Relative fold changes in mRNA levels were calculated following
+   normalization to housekeeping control gene targets using the
+   comparative Cq method ([58]14).
+
+Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis
+
+   In order to investigate the signaling pathways that may be involved in
+   the effects of UA on GBC-SD cells, KEGG pathway analysis of
+   differentially expressed genes was performed using the Database for
+   Annotation, Visualization and Integrated Discovery
+   ([59]https://david.ncifcrf.gov/) ([60]15,[61]16). Pathway terms with
+   P<0.05 were considered statistically significant.
+
+Western blot analysis
+
+   Following treatment with UA (0, 10, 30 and 50 µM) for 6 h, the GBC-SD
+   cells were washed with PBS and lysed in RIPA lysis buffer. Based on
+   total protein concentrations calculated from the BCA assays, the total
+   cell lysates (15 µg total protein) were separated via SDS-PAGE (8% gel)
+   and then transferred onto polyvinylidene difluoride membranes in a
+   standard transfer buffer. Following blocking with 1% BSA (blocking
+   solution) for 1.5 h at room temperature, the membranes were incubated
+   with primary antibodies to phospho-NF-κB p65 (Ser536; 1:1,000), NF-κB
+   p65 (1:1,000), phospho-Akt (Ser473; 1:1,000), Akt (1:1,000) or GAPDH
+   (1:5,000) overnight at 4°C. The membranes were washed three times with
+   TBST and then incubated with HRP-conjugated secondary antibodies
+   (1:5,000; cat. no. SA00001-1/SA00001-2; ProteinTech Group, Inc.,
+   Chicago, IL, USA) for 2 h at room temperature. Following extensive
+   washing in TBST, the protein signals were visualized using enhanced
+   chemiluminescence (ECL) western blotting substrate (cat. no. B500014;
+   ProteinTech Group, Inc., Chicago, IL, USA) and an ECL system (Bio-Rad
+   Laboratories, Inc., Hercules, CA, USA). Equal protein loading was
+   assessed by normalizing against the expression of GAPDH. Quantification
+   of protein bands densitometry was carried out using ImageJ software
+   (version 1.8.0_112; National Institutes of Health, Bethesda, MD, USA).
+
+Statistical analysis
+
+   All data are expressed as the mean ± standard deviation. Statistical
+   analysis was performed using SPSS 22.0 (IBM Corp., Armonk, NY, USA).
+   Groups were compared using one-way analysis of variance. P<0.05 was
+   considered to indicate a statistically significant difference.
+
+Results
+
+Structural determination of UA isolated from I. excisoides and cell viability
+assay
+
+   Consistent with previous results ([62]17,[63]18), UA was isolated from
+   an Isodon species (I. excisoides). UA was identified by comparison of
+   its HR-EIMS, ^1H-NMR and ^13C-NMR spectra data with those previously
+   reported for UA ([64]19,[65]20), and to an authentic sample
+   (Sigma-Aldrich; Merck KGaA, Darmstadt Germany). The proliferation
+   inhibition effect of UA on GBC-SD and NOZ cells was determined using a
+   CCK-8 assay. Within the dose range and time period measured, UA was
+   able to inhibit cell proliferation in a dose- and time-dependent manner
+   ([66]Fig. 1B and C). Furthermore, the IC[50] values of UA at the same
+   exposure time for GBC-SD cells were marginally lower compared with
+   those for NOZ cells. The IC[50] values for GBC-SD cells at 24 and 48 h
+   were 57.44 and 39.12 µM, respectively, and the values for NOZ cells
+   were 61.58 and 41.81 µM, respectively. Therefore, GBC-SD cells were
+   selected to further investigate the effect of UA on the invasive
+   capacity of GBC cells. In addition, the IC[50] value for GBC-SD cells
+   at 48 h was lower than that reported in the literature (for example,
+   the IC[50] value for GBC-SD cells at 48 h was previously reported to be
+   47.6 µM) ([67]13), which may derive from differences in experimental
+   design and operation.
+
+UA induces apoptosis of GBC-SD cells in a dose-dependent manner
+
+   The UA-induced apoptosis of GBC-SD cells was determined using an
+   Annexin V-FITC/PI assay. As indicated in [68]Fig. 1D and E, UA
+   treatment increased the apoptosis of GBC-SD cells in a dose-dependent
+   manner. The apoptotic rates of the cells were 11.98, 17.37 and 55.50%
+   following treatment with 10, 30 and 50 µM UA, respectively, which were
+   all increased compared with the apoptotic rate of GBC-SD cells cultured
+   under normal conditions (9.96%). The apoptotic rates of GBC-SD cells in
+   the middle (30 µM) and high (50 µM) dose groups were statistically
+   significant (P<0.05). UA (10, 30 or 50 µM) treatment had no significant
+   effect on the distribution of GBC-SD cells in the cell cycle (data not
+   shown). These results indicate that UA inhibits GBC-SD cell
+   proliferation by inducing apoptosis.
+
+UA inhibits the invasion of GBC-SD cells in a dose-dependent manner
+
+   Cell invasion is a driving force in the process of tumor metastasis
+   formation. Therefore, the effects of UA on invasion in GBC-SD cells was
+   evaluated ([69]Fig. 2A and B). The in vitro invasion assay indicated
+   that UA at concentrations of 10–50 µM significantly reduced the rate of
+   GBC-SD cell invasion when compared with the control group following
+   cell treatment for 24 h (P<0.01). Furthermore, UA at concentrations of
+   10 and 30 µM did not significantly reduce the viability of GBC-SD cells
+   following cell treatment for 24 h ([70]Fig. 1B). These results
+   suggested that the inhibition of GBC-SD cell invasion by UA did not
+   result from a reduction of cell viability. These observations suggested
+   that UA was able to regulate the invasive capacity of GBC-SD cells in a
+   dose-dependent manner.
+
+Figure 2.
+
+   [71]Figure 2.
+   [72]Open in a new tab
+
+   Effects of UA on cell migration and signaling pathways (NF-κB and Akt).
+   Effects of UA on GBC-SD cell migration, evaluated using a Transwell
+   assay. Cells suspended in serum-free RPMI-1640 were overlaid in the
+   upper chamber of each Transwell. Following incubation with different
+   concentrations of UA for 24 h, penetrating cells were stained with
+   crystal violet and recorded under a microscope mounted with a CCD
+   camera. (A) Images depicting migration of GBC-SD cells. (B) Quantified
+   data are expressed as the mean ± standard deviation from three
+   independent experiments. ***P<0.001, vs. control group (0 µM). (C)
+   Effect of UA treatment on the NF-κB and Akt signaling pathways. In
+   GBC-SD cells treated with various UA concentrations for 6 h, expression
+   of NF-κB p65, p-NF-κB p65 (Ser536), Akt and p-Akt (Ser473) was analysed
+   by western blotting. GAPDH was used as the sample loading control.
+   Quantification of protein bands densitometry was carried out using
+   ImageJ software. Data are presented as the mean ± standard deviation
+   from three independent experiments. *P<0.05 and ***P<0.001, vs. control
+   group (0 µM). UA, ursolic acid; NF-κB, nuclear factor κB; Akt, protein
+   kinase B; p-, phosphorylated.
+
+Effects of UA on GBC-SD cells are at least in part via NF-κB and Akt
+signaling pathways
+
+   As UA induced apoptosis and inhibited invasion in GBC-SD cells, the
+   expression of 168 key genes involved in these two processes was
+   subsequently evaluated with a PCR array. The cells were incubated with
+   UA (50 µM) for 24 h, and 168 related genes (84 apoptosis-related genes
+   and 84 adhesion/invasion-related genes) were analyzed, compared with
+   untreated GBC-SD cells. Of these 168 genes, there were 24 with log[2]
+   fold change values of either >1.5 or ≥1.5, which were considered
+   differentially expressed ([73]Table I). Of these 24 genes, eight
+   apoptosis-related genes were screened. Of these eight genes, three
+   genes encoding pro-apoptotic members of the tumor necrosis factor (TNF)
+   family, including TNF (log[2] fold change: 3.17), lymphotoxin-α (log[2]
+   fold change: 2.19) and CD27 (log[2] fold change: 3.56) were enhanced in
+   the UA-treated GBC-SD cells compared with the control groups ([74]Table
+   I). Therefore, these results suggested that UA induces apoptosis in
+   GBC-SD cells through activation of the cell extrinsic pathway, which is
+   initiated by members of the TNF superfamily ([75]21,[76]22). TNF is
+   able to trigger either the formation of complex-I, driving the
+   activation of NF-κB and an inflammatory response, or the formation of
+   complex-II, which can trigger apoptosis ([77]23). Of the 24
+   differentially expressed genes, a further 16 adhesion/invasion-related
+   genes were screened out, including nine upregulated and seven
+   downregulated genes. These upregulated and downregulated genes may have
+   multiple effects on the invasion of GBC-SD cells. KEGG pathway analysis
+   of the 24 differentially expressed genes was performed using the
+   Database for Annotation, Visualization and Integrated Discovery
+   ([78]15,[79]16). According to KEGG pathway enrichment analysis, the
+   differentially expressed genes were significantly associated with
+   NF-κB, TNF, PI3K-Akt and other signaling pathways ([80]Table II). To
+   determine whether UA regulates the NF-κB and Akt signaling pathways,
+   the effect of UA on the expression and activation of proteins in these
+   signaling pathways was detected by western blotting. As shown in
+   [81]Fig. 2C, the GBC-SD cells treated with UA exhibited a significant
+   and dose-dependent reduction in total NF-κB p65 and Akt, and a marginal
+   decrease in total p-NF-κB p65 (Ser536) and p-Akt (Ser473). Therefore,
+   it was demonstrated that the effects of UA on GBC-SD cells were, at
+   least in part, mediated through the NF-κB and Akt signaling pathways.
+
+Table I.
+
+   Genes with >1.5-fold change in expression between GBC-SD cells treated
+   with UA and the control group.
+   RT^2 profiler PCR arrays Gene symbol GenBank accession no. Description
+   Log[2] fold change^[82]a
+   Human apoptosis NOL3 [83]NM_003946 Nucleolar protein 3 (apoptosis
+   repressor with CARD domain) −2.56
+   LTA [84]NM_000595 Lymphotoxin α (TNF superfamily, member 1) 2.19
+   TNFSF8 [85]NM_001244 Tumor necrosis factor (ligand) superfamily, member
+   8 −1.87
+   BCL2L2 [86]NM_004050 BCL2-like 2 −1.80
+   BCL2A1 [87]NM_004049 BCL2-related protein A1 2.50
+   BCL2L10 [88]NM_020396 BCL2-like 10 (apoptosis facilitator) 2.60
+   CD27 [89]NM_001242 CD27 molecule 3.56
+   TNF [90]NM_000594 Tumor necrosis factor 3.17
+   Human COL11A1 [91]NM_080629 Collagen, type XI, α1 −2.90
+   extracellular matrix SELL [92]NM_000655 Selectin L −2.58
+   and adhesion molecules MMP11 [93]NM_005940 Matrix metallopeptidase 11
+   −2.38
+   MMP9 [94]NM_004994 Matrix metallopeptidase 9 −2.03
+   MMP2 [95]NM_004530 Matrix metallopeptidase 2 −1.81
+   SPARC [96]NM_003118 Secreted protein, acidic, cysteine-rich
+   (osteonectin) −1.78
+   VCAN [97]NM_004385 Versican −1.76
+   FN1 [98]NM_002026 Fibronectin 1 1.56
+   ICAM1 [99]NM_000201 Intercellular adhesion molecule 1 1.66
+   ITGA2 [100]NM_002203 Integrin, α2 1.68
+   ITGA1 [101]NM_181501 Integrin, α1 1.75
+   PECAM1 [102]NM_000442 Platelet/endothelial cell adhesion molecule 2.16
+   HAS1 [103]NM_001523 Hyaluronan synthase 1 2.22
+   KAL1 [104]NM_000216 Kallmann syndrome 1 sequence 2.26
+   MMP10 [105]NM_002425 Matrix metallopeptidase 10 4.41
+   MMP1 [106]NM_002421 Matrix metallopeptidase 1 4.79
+   [107]Open in a new tab
+   ^a
+
+   Values are presented as log[2] fold change, and fold-change values were
+   calculated as 2^−ΔΔCq for genes in treated cells relative to control
+   cells
+
+Table II.
+
+   Kyoto Encyclopedia of Genes and Genomes pathway analysis of
+   differentially expressed genes.
+   Term^[108]a Genes P-value
+   hsa04064: NF-κB signaling pathway ICAM1, TNF, BCL2A1, LTA 0.001
+   hsa05205: Proteoglycans in cancer TNF, MMP9, ITGA2, MMP2, FN1 0.001
+   hsa04512: ECM-receptor interaction ITGA1, ITGA2, COL11A1, FN1 0.001
+   hsa04668: TNF signaling pathway ICAM1, TNF, MMP9, LTA 0.002
+   hsa04670: Leukocyte transendothelial migration ICAM1, MMP9, PECAM1,
+   MMP2 0.002
+   hsa04514: Cell adhesion molecules (CAMs) ICAM1, SELL, PECAM1, VCAN
+   0.004
+   hsa05219: Bladder cancer MMP9, MMP2, MMP1 0.004
+   hsa05144: Malaria ICAM1, TNF, PECAM1 0.006
+   hsa05200: Pathways in cancer MMP9, ITGA2, MMP2, MMP1, FN1 0.011
+   hsa04510: Focal adhesion ITGA1, ITGA2, COL11A1, FN1 0.011
+   hsa05410: Hypertrophic cardiomyopathy (HCM) TNF, ITGA1, ITGA2 0.014
+   hsa04060: Cytokine-cytokine receptor interaction TNF, CD27, LTA, TNFSF8
+   0.015
+   hsa05414: Dilated cardiomyopathy TNF, ITGA1, ITGA2 0.016
+   hsa04640: Hematopoietic cell lineage TNF, ITGA1, ITGA2 0.016
+   hsa05323: Rheumatoid arthritis ICAM1, TNF, MMP1 0.017
+   hsa05146: Amoebiasis TNF, COL11A1, FN1 0.024
+   hsa04151: PI3K-Akt signaling pathway ITGA1, ITGA2, COL11A1, FN1 0.043
+   [109]Open in a new tab
+   ^a
+
+   Pathway terms with P<0.05 were considered statistically significant.
+
+Discussion
+
+   UA is a pentacyclic triterpenoid widely found in the plant kingdom. It
+   has attracted attention in recent years due to it numerous activities
+   and low toxicity ([110]10). It exerts anticancer effects in various
+   cancer cell lines ([111]24), and inhibits the growth of GBC cells
+   through inducing cell cycle arrest and apoptosis ([112]13). The present
+   study identified that low doses of UA (10, 30 and 50 µM) did not affect
+   cell cycle but induced cell apoptosis in GBC-SD cells. In addition,
+   previous studies have reported that UA can cause cell death by
+   autophagy or necrosis ([113]25,[114]26). These results indicate that UA
+   inhibits GBC-SD cell proliferation primarily by inducing cell death via
+   apoptosis, and possibly also via autophagy or necrosis. To the best of
+   our knowledge, no previous studies have reported the anti-invasive
+   effect of UA on GBC. It was identified in the present study that UA
+   significantly reduced the rate of GBC-SD cell invasion. Furthermore,
+   the effects of UA on GBC-SD cells were at least partly mediated via the
+   suppression of NF-κB and Akt signaling pathways.
+
+   The anticancer mechanism of UA is complex and multifaceted. The results
+   of the present study suggested that UA induced the apoptosis of GBC-SD
+   cells through activation of the cell extrinsic pathway. However, a
+   previous study demonstrated that activation of the
+   mitochondrial-mediated apoptotic pathway is also involved in UA-induced
+   GBC-SD cell apoptosis ([115]13). Another study on gastrointestinal
+   cancer demonstrated that UA modulates the expression of executioner
+   caspase (C-3, C-8 and C-9) proteins involved in the intrinsic and
+   extrinsic pathways of apoptosis ([116]27). UA-induced apoptosis can be
+   mediated by an increase in activated extracellular signal regulated
+   kinase 1/2, Janus kinase and p38 mitogen-activated protein kinase
+   ([117]28). UA-induced GBC-SD cell apoptosis may also be involved in the
+   intrinsic and extrinsic pathways of apoptosis. In addition, inhibition
+   of the NF-κB and Akt signaling pathways by UA has been reported in
+   other cell types ([118]29,[119]30), which is consistent with the
+   present study. The pro-survival Akt and NF-κB signaling pathways are
+   constitutively activated in several types of cancer, and contribute to
+   cancer development and progression. The anticancer effects of certain
+   dietary natural compounds are mediated by targeting the Akt and NF-κB
+   pathways ([120]31,[121]32). The NF-κB pathway also has the ability to
+   cross-talk with Akt pathways in various cancer types. The suppression
+   of Akt may contribute to inhibiting downstream targets, including NF-κB
+   p-65 and the mRNA levels of matrix metalloproteinase 2 (MMP2) and MMP9
+   in GBC-SD cells ([122]33). These two genes were downregulated in the
+   present study ([123]Table I) and are critical to tumor invasion.
+   Certain clinical studies with a small number of patients have
+   demonstrated the safety and efficacy of UA in cancer therapy ([124]11).
+   Future investigations are required to analyze the precise mechanisms of
+   UA and to exploit its full potential for GBC chemotherapy.
+
+   In conclusion, UA was isolated from I. excisoides. The
+   antiproliferative and anti-invasive effects of UA in GBC-SD cells were
+   investigated and validated. Furthermore, UA was demonstrated to induce
+   apoptosis and inhibit invasion in GBC-SD cells, which may be associated
+   with the suppression of NF-κB and Akt signaling pathways. The effects
+   of UA in GBC-SD cells suggest that UA may be a candidate agent for the
+   chemoprevention and/or treatment of GBC progression.
+
+Acknowledgements

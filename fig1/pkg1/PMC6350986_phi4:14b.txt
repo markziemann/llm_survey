@@ -1,0 +1,16 @@
+Based on the information provided from the scientific article, here are the details regarding how the pathway enrichment analysis was conducted:
+
+1. **Tool Used for Pathway Enrichment Analysis:** Not described.
+
+2. **Tool Version Number Provided:** Not described.
+
+3. **Gene Set Library Queried (e.g., GO, KEGG, Reactome or other):** Gene annotations were obtained from Vectorbase using BioMart. Specific pathways like mitochondrial and redox categories were combined for gene set enrichment analysis (GSEA), but the exact pathway databases queried are not detailed.
+
+4. **Background Gene List Defined:** Not explicitly described in the provided text.
+
+5. **Statistical Test Used for Enrichment Analysis:** The statistical significance of gene-wise averages was determined using the Benjamini-Hochberg False Discovery Rate (FDR, alpha = 0.01). A cut-off of 4.0 was established for these averages.
+
+6. **False Discovery Rate Correction Used:** Yes, the Benjamini-Hochberg FDR method was used to control for false positives in the pathway enrichment analysis.
+
+These details are summarized based on the information provided and might lack some specifics as they were not fully detailed in the article excerpt.
+

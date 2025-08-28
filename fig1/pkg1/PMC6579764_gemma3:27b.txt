@@ -1,0 +1,39 @@
+Here's a breakdown of the pathway enrichment analysis details as described in the provided text, formatted for a table.
+
+**1. What tool was used for pathway enrichment analysis?**
+
+Not described.
+
+**2. Was a tool version number provided?**
+
+Not described.
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+The article mentions analysis of “early differentiation genes” and refers to pathways related to TGFB and BMP signaling, but doesn't explicitly name a single, comprehensive gene set library used for broader pathway enrichment. Gene markers representing mesoderm, endoderm, primitive endoderm, extraembryonic lineages, ectoderm and differentiation related to TGFB/BMP signaling were analysed but not via an enrichment tool.
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+Not described. The text does not state whether a background gene list (e.g., the entire transcriptome) was used to calculate enrichment significance.
+
+**5. What statistical test was used for enrichment analysis?**
+
+Not described. The article doesn't mention any specific statistical test used to determine the significance of pathway enrichment.
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+Not described. The text doesn't state whether any multiple testing correction method, such as false discovery rate (FDR) control, was applied.
+
+**Summary Table:**
+
+| Question                                         | Answer              |
+|--------------------------------------------------|----------------------|
+| 1. Tool used for pathway enrichment analysis?      | Not described        |
+| 2. Tool version number provided?                   | Not described        |
+| 3. Gene set library queried?                        | Not described        |
+| 4. Background gene list defined?                   | Not described        |
+| 5. Statistical test used for enrichment analysis? | Not described        |
+| 6. False discovery rate correction used?          | Not described        |
+
+**Important Note:** The text primarily *describes* analysis of specific pathways (TGFB, BMP, differentiation markers) and genes, rather than a formal, systematic pathway enrichment analysis using a dedicated tool and statistical framework. The authors observed changes in the expression of genes related to these pathways, but didn’t perform an official pathway enrichment analysis to identify statistically overrepresented pathways.
+

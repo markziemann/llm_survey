@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+GSEA (Gene Set Enrichment Analysis) is mentioned, but it appears that a custom method using in-house FORTRAN scripts and statistical calculations was used for pathway enrichment analysis.
+
+2. Was a tool version number provided?
+Not described for the specific pathway enrichment analysis tool, but version numbers are provided for other tools used in the analysis, such as GSNAP (version 2013-10-28) and Varscan2 (v2.3.5).
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+Not described, but functional groups were assigned to categories such as ‘apoptosis’, ‘chemosensory response’, ‘cytoskeletal/structural’, etc.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Yes, the background gene list appears to be all coding genes (n = 14,626) and all coding genes in the reference genome (n = 18,081).
+
+5. What statistical test was used for enrichment analysis?
+Hypergeometric tests and binomial probability distributions were calculated.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, the Benjamini-Hochberg False Discovery Rate (FDR) with alpha = 0.01 was used.
+

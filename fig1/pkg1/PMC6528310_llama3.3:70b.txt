@@ -1,0 +1,20 @@
+Here are the answers to your questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is IPA (Ingenuity Pathway Analysis).
+
+2. Was a tool version number provided?
+Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+Not described, but it is mentioned that IPA pathway analysis was used, which suggests that the IPA knowledge base was queried.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+Not described.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described.
+

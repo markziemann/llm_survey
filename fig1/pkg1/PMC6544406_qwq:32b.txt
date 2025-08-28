@@ -1,0 +1,49 @@
+<think>
+Okay, let's see. I need to figure out the answers to these six questions about the pathway enrichment analysis in this article. Let me start by looking through the Methods section again.
+
+First, the user is asking what tool was used. In the Data acquisition and statistical analyses part, under the paragraph starting with "Differentially reactive protein names were submitted...", they mention using Ingenuity and WebGestalt. Specifically, Ingenuity's Global Canonical Pathways (GCP) tool and WebGestalt for Pathway-Commons analyses. So the tools are Ingenuity and WebGestalt. Also, they used String and Reactome for other analyses like protein-protein interactions, but the main enrichment tools are Ingenuity and WebGestalt.
+
+Second, the version numbers. The methods mention WebGestalt but don't specify a version. Ingenuity's website is given, but no version number. The String database link is provided, but again, no version. So probably, the answer here is that version numbers weren't provided for these tools.
+
+Third, the gene set libraries. Ingenuity uses its own canonical pathways, which are likely their proprietary database. WebGestalt uses various tools different from Ingenuity, and the text says they used KEGG, Reactome, Interpro, etc., via String and Reactome websites. Wait, actually in the paragraph, after mentioning WebGestalt, it says they used hypergeometric test and selected top 10 categories. Also, for WebGestalt, they mention using hypergeometric test. So the gene set libraries include KEGG, Reactome, and others via different tools. The exact library names would be like KEGG, Reactome, Interpro, and Pathway Commons perhaps. But the question is what library was queried. Since they used WebGestalt, which can query multiple like KEGG, Reactome, etc., and Ingenuity's own pathways. So the answer would list the libraries as Ingenuity's GCP, KEGG, Reactome, and Interpro.
+
+Fourth, background gene list. The methods state: "In each analysis, as background proteins (i.e. random entries), we have used all annotated proteins presented on the 16k protein microarray; except for cytogenetic map analyses (GSEA) where the whole human genome (as gene-positions) was applied." So yes, they defined a background: for most analyses, it's the annotated proteins on the microarray, except for GSEA where it's the whole genome. So the background was defined.
+
+Fifth, statistical test. For Ingenuity, they mention using right-tailed Fisher's exact test. For WebGestalt, they used hypergeometric test. So the tests are Fisher's exact and hypergeometric, depending on the tool.
+
+Sixth, FDR correction. The class comparison in BRB-Array Tools used FDR, as mentioned in the supplementary table note (FDR is listed). For pathway analysis, Ingenuity might use FDR, but the text says they used Fisher's exact, but doesn't explicitly mention FDR here. However, in the BRB-Array Tools analysis, they mention FDR. For WebGestalt, hypergeometric test, but whether they applied FDR? The question is about the pathway enrichment part. Since the main class comparison used FDR, but in the pathway analysis, the text says "right-tailed Fisher's exact" for Ingenuity and "hypergeometric test" for WebGestalt, but doesn't specify if they applied FDR correction in the enrichment. Wait, the question is whether FDR was used to control false positives in the pathway analysis. The BRB-Array Tools had FDR, but for the pathway tools, the methods don't explicitly state FDR correction for the enrichment tests. They might report p-values adjusted with FDR, but the text isn't clear. Let me check again. The supplementary table 1 mentions FDR, but that's for the initial differential analysis. The pathway analysis part says Ingenuity uses Fisher's exact, WebGestalt uses hypergeometric, but does it say FDR? Hmm. The answer might be that it's not described whether FDR was applied in the pathway enrichment specifically beyond the initial FDR in class comparison. The authors might just report p-values without FDR here, but the question is whether the pathway tools applied FDR. Since the question is asking if the authors used FDR to control FPs in the pathway analysis, and the methods don't mention it beyond BRB-Array Tools, maybe the answer is no, or it's not described. Wait, the question 6 is about FDR in the pathway enrichment analysis itself. The methods say in the BRB tool they used FDR, but for pathway analysis, the tools (Ingenuity, WebGestalt) may have their own methods. For example, WebGestalt uses hypergeometric, but does it adjust for multiple testing? The user might need to see if the authors mention FDR in the pathway part. The text says in the pathway analyses: "Webgestalt uses hypergeometric test for enrichment analyses and for each analysis the top 10 most significant categories were selected". It doesn't mention FDR, so perhaps they didn't use it, or it's not described. Similarly, Ingenuity's Fisher's exact test, but FDR not mentioned. Therefore, the answer might be "not described" for FDR in the pathway enrichment steps specifically, except the initial FDR in the class comparison.
+</think>
+
+1. **What tool was used for pathway enrichment analysis?**  
+   Ingenuity (Global Canonical Pathways tool), WebGestalt (Pathway-Commons analyses), and String/Reactome for protein-protein interactions and functional classifications.  
+
+2. **Was a tool version number provided?**  
+   No version numbers were provided for any of the tools (Ingenuity, WebGestalt, String, Reactome).  
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome, or other)?**  
+   - **Ingenuity**: Proprietary "Global Canonical Pathways" (GCP) database.  
+   - **WebGestalt**: KEGG, Reactome, and Pathway-Commons.  
+   - **String**: KEGG, Reactome, and InterPro protein domains.  
+
+4. **Was a background gene list defined for pathway enrichment analysis?**  
+   Yes. The background was defined as all annotated proteins on the 16k protein microarray, except for cytogenetic map analyses (GSEA), which used the whole human genome as background.  
+
+5. **What statistical test was used for enrichment analysis?**  
+   - **Ingenuity**: Right-tailed Fisher’s exact test.  
+   - **WebGestalt**: Hypergeometric test.  
+
+6. **Was false discovery rate (FDR) correction used to control the number of false positives in the pathway enrichment analysis?**  
+   Not explicitly described for the pathway enrichment analyses themselves. FDR was applied in the initial class comparison using BRB-Array Tools (for differential antigen identification), but the pathway tools (Ingenuity, WebGestalt) were not stated to use FDR for enrichment correction. The methods only mention FDR in the context of the BRB-Array Tools analysis.  
+
+---
+
+### Summary Table:
+| Question                                                                 | Answer                                                                                                                                 |
+|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Tool used for pathway enrichment analysis?                             | Ingenuity (GCP), WebGestalt (KEGG/Reactome/Pathway-Commons), String/Reactome (protein interactions/function).                          |
+| 2. Tool version number provided?                                          | No.                                                                                                                                 |
+| 3. Gene set library queried?                                              | Ingenuity’s GCP, KEGG, Reactome, InterPro.                                                                                           |
+| 4. Background gene list defined?                                          | Yes (annotated proteins on microarray; whole genome for cytogenetic map analyses).                                                   |
+| 5. Statistical test used for enrichment?                                  | Fisher’s exact test (Ingenuity), hypergeometric test (WebGestalt).                                                                    |
+| 6. FDR correction used for pathway enrichment?                            | Not described explicitly for pathway tools (FDR applied in BRB-Array Tools for differential antigen analysis).                        |
+

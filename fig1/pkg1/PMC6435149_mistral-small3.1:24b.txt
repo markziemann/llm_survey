@@ -1,0 +1,24 @@
+Toxotherapy and cancer risk reduction [[181]82, [146]83]. Although there are many genes that have been shown to be associated
+   with cancer development [[182], the precise mechanism of STAT3
+   acetylation may result in the DNA methylation and tumor suppressor gene
+   re-expression of these genes [[183]  [[147]84, [148]85.
+
+**Questions:**
+1. What tool was used for pathway enrichment analysis?
+   - not described
+
+2. Was a tool version number provided?
+   - not described
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+   - not described
+
+4. Was a background gene list defined for pathway enrichment analysis?
+   - not described
+
+5. What statistical test was used for enrichment analysis?
+   - not described
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+   - not described
+

@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis was the STRING database online software.
+
+2. Was a tool version number provided?
+Yes, the version number of the STRING database online software used was 11.0.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The gene set library queried was GO (Gene Ontology).
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+A likelihood-ratio test of nested models (χ^2 test on twice the difference in reported log likelihoods) was used to determine significance, but it's not clear if this is directly related to the pathway enrichment analysis. For the pathway enrichment itself, the method is not described.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described. However, for the positive selection analysis, no multiple hypothesis correction was performed, which might imply that a similar approach could have been taken for the pathway enrichment analysis, but this is speculative and not directly stated.
+

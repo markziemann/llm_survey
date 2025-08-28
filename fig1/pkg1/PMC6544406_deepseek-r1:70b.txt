@@ -1,0 +1,35 @@
+<think>
+Okay, I need to answer six specific questions about how the pathway enrichment analysis was conducted in this scientific article. Let me go through each question one by one and try to find the relevant information from the provided text.
+
+1. **What tool was used for pathway enrichment analysis?**
+   - Looking at the Methods section, I see mentions of Ingenuity, Webgestalt, GSEA, String, and Reactome. Specifically, it says they used Ingenuity's Global Canonical Pathways (GCP) tool and Webgestalt for pathway-commons analyses. Additionally, GSEA was used for comparing with oncogenic and immunologic signatures.
+
+2. **Was a tool version number provided?**
+   - The article mentions BRB-Array Tools 4.2.1 and R 2.10.0, but I don't see any version numbers specified for the pathway analysis tools like Ingenuity or Webgestalt.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - The Methods section states that they used various tools which likely access different libraries. For example, using GSEA with MSigDB would include oncogenic and immunologic signatures. Webgestalt might use its own databases like KEGG or Reactome, but the article doesn't explicitly state which specific gene set libraries were queried beyond mentioning the tools.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes, they used all annotated proteins on the 16k protein microarray as the background except for cytogenetic map analyses where the whole human genome was applied via GSEA using Genome Reference Consortium Human Build 38.
+
+5. **What statistical test was used for enrichment analysis?**
+   - The article mentions that Ingenuity uses a right-tailed Fisher’s exact test, and Webgestalt uses a hypergeometric test for enrichment analyses.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - In the Data section under Supplementary Table 1, it's mentioned that FDR was calculated, so yes, they did use some form of multiple testing correction, specifically False Discovery Rate (FDR).
+</think>
+
+Here is a table summarizing how pathway enrichment analysis was conducted:
+
+| **Question**                                      | **Answer**                                                                                                                                                                                                 |
+|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Pathway Enrichment Tool(s) Used                 | Ingenuity (Global Canonical Pathways tool), Webgestalt, GSEA, String, Reactome.                                                                                                                                                             |
+| 2. Tool Version Numbers Provided                  | Not described.                                                                                                                                                                                              |
+| 3. Gene Set Libraries Queried                     | MSigDB (via GSEA for oncogenic and immunologic signatures). Other libraries like KEGG or Reactome are implied through tools but not explicitly stated.                                                |
+| 4. Background Gene List Defined                   | Yes, all annotated proteins on the 16k array were used as background except for cytogenetic analyses using the whole human genome (GRCh38).                                                                        |
+| 5. Statistical Test Used                          | Right-tailed Fisher’s exact test (Ingenuity), Hypergeometric test (Webgestalt).                                                                                                                             |
+| 6. False Discovery Rate Correction Applied        | Yes, FDR was used as indicated in Supplementary Table 1 for controlling false positives.                                                                                                                    |
+
+This table provides a clear overview of the methodology and tools used in the pathway enrichment analysis for the study.
+

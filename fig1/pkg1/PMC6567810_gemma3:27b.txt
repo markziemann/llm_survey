@@ -1,0 +1,12 @@
+Here's a breakdown of the pathway enrichment analysis based on the provided text, presented in a table format as requested.
+
+| Question | Answer |
+|---|---|
+| **1. What tool was used for pathway enrichment analysis?** | Three online miRNA-target-predicting databases were used: miRBD, TargetScan, and miRWalk.  |
+| **2. Was a tool version number provided?** | Not described. |
+| **3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)?** | KEGG was used. The text specifically states, “pathway enrichment analysis was performed…to query the KEGG database." |
+| **4. Was a background gene list defined for pathway enrichment analysis?** |  It's implied a background list was used. They selected target genes located in the *intersection* of the three databases to reduce false positives. This suggests they were comparing identified target genes against a larger set to determine significance.|
+| **5. What statistical test was used for enrichment analysis?** | Not described. |
+| **6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?** | Yes. The authors state, "False discovery rate correction was used to control the number of false positives in the pathway enrichment analysis." |
+
+

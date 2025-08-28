@@ -1,0 +1,61 @@
+Thinking...
+We need to parse the Methods for pathway enrichment analysis.
+
+From Methods:
+
+"With the DEmRNAs uploaded to the online tool DAVID, the DEmRNAs were significantly enriched in biological processes (BP), including angiogenesis, positive regulation of cell migration, cellular response to hypoxia, apoptosis, and neuroblast proliferation (Fig. [78]3a). For molecular function (MF), the DEmRNAs were involved in protein binding, transcription factor binding, platelet-derived growth factor receptor binding, sequence-specific DNA binding, chromatin binding, and fibronectin binding (Fig. [79]3a). In addition, the GO cell component (CC) analysis also showed that the DEmRNAs were significantly enriched in nuclear chromatin, cell surface, extracellular space, apical plasma membrane, and basolateral plasma membrane (Fig. [80]3a)."
+
+Also:
+
+"Susceptible pathways and clusters
+
+   The KEGG pathway map from DAVID indicated that the co-differentially expressed DEmRNAs were significantly enriched in the PI3K-Akt signaling pathway and the pathways in cancer, the AMPK, FOXO, and chemokine signaling pathways (Fig. [86]4a)."
+
+So they used DAVID. It is an online tool. They used gene set libraries: GO biological process, GO molecular function, GO cellular component, and KEGG.
+
+Now: Are enrichment tool versions described? The article says "DAVID" but no version number. Did they mention DAVID 6.8 or something? I don't see. Not described.
+
+Custom background gene list: They used DEmRNAs list for enrichment. No mention of custom background list. They likely used default background (all genes). Not described.
+
+Statistical test used: For enrichment, they used "DAVID" which uses a modified Fisher's exact test/hypergeometric? But not specified. The article states "The DEmRNAs were significantly enriched in ... –log10 of the enrichment p values ...". They mention "–log10 of the enrichment p values for selected GO categories (BP, CC, MF) plotted relative to fold enrichments". They don't mention the statistical test. They also mention "The KEGG pathway map from DAVID indicated that ...". No test described.
+
+So answer: No, Not described.
+
+Multiple testing correction: Not described. They mention p-value threshold? They mention "Significantly enriched" but not FDR. In the figure, they use -log10 of p-values. Not specified. So No.
+
+Thus produce table:
+
+Tool: DAVID
+
+Version: Not described
+
+Gene set libraries: GO, KEGG
+
+Custom background: Not described
+
+Statistical tests: Not described
+
+Multiple testing correction: Not described
+
+Wait the question: "Was multiple testing correction / FDR applied to enrichment analysis?" Only answer Yes if explicitly mention. Not described else.
+
+Thus answer: Not described.
+
+Also "Does the article describe using a custom or specific background gene list for enrichment analysis? Options Yes, No or Not described." Not described.
+
+Ok table with six columns: Question, Answer.
+
+Let's create table: columns: #, Question, Answer.
+
+Let's produce.
+...done thinking.
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | What tool was used for pathway enrichment analysis? | DAVID |
+| 2 | Were enrichment tool version(s) described? | Not described |
+| 3 | Which gene set libraries were used? | Gene Ontology (GO); Kyoto Encyclopedia of Genes and Genomes (KEGG) |
+| 4 | Does the article describe using a custom or specific background gene list for enrichment analysis? | Not described |
+| 5 | What statistical test(s) were used in enrichment analysis? | Not described |
+| 6 | Was multiple testing correction / FDR applied to enrichment analysis? | Not described |
+

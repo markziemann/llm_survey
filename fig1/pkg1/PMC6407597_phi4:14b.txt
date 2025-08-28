@@ -1,0 +1,13 @@
+Here's how you can structure the information from the article into a table format based on the questions provided:
+
+| Question | Answer |
+|----------|--------|
+| 1. What tool was used for pathway enrichment analysis? | Not explicitly described in the text. |
+| 2. Was a tool version number provided? | Not applicable, as no specific tool is mentioned. |
+| 3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)? | Gene Ontology (GO) and manually curated biological pathways were used for enrichment analysis. |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Not described explicitly in the text. |
+| 5. What statistical test was used for enrichment analysis? | Specific statistical tests are not detailed in the provided text. |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | The text mentions that functional enrichment analysis and other analyses were conducted, but it does not specify whether a false discovery rate correction was applied. |
+
+The information is based on the details given in your summary, as no explicit mention of tools or methods for statistical testing and corrections was provided in the article excerpt you shared.
+

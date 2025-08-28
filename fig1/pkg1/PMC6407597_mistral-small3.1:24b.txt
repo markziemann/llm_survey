@@ -1,0 +1,15 @@
+Here is no difference in the size distribution between control and CSE exposure. Thus, the type of EV populations may not be different, but the molecular content of the EVs may be different.
+
+### Collated Table of Answers:
+
+| Question                                                                              | Answer                                                                                                                                                                                                                       |
+|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. What tool was used for pathway enrichment analysis?                          | Not described.                                                                                                                                                               |
+| 2. Was a tool version number provided?                                         | Not described.                                                                                                                                                                |
+| 3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)                                     | Not described.                                                                                                                                                |
+| 4. Was a background gene list defined for pathway enrichment analysis?     | Not described.                                                                                                                                                               |
+| 5. What statistical test was used for enrichment analysis?                                    | Not described.                                                                                                                                                                |
+| 6. Was false discovery rate correction used to control the number of false positives in the analysis?    | Not described.                                                                                                                                                |
+
+In summary, there was insufficient information provided in the article to fully understand the methods used for pathway enrichment analysis. The authors should have provided details of the method and statistical analysis in their article.
+

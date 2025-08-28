@@ -1,0 +1,904 @@
+Abstract
+
+   We previously found that hypoxia induced renal tubular epithelial cells
+   (RTECs) release functional extracellular vesicles (EVs), which mediate
+   the protection of remote ischaemic preconditioning (RIPC) for kidney
+   ischaemia-reperfusion (I/R) injury. We intend to investigate whether
+   the EVs were regulated by hypoxia-inducible factor 1α (HIF-1α) and
+   Rab22 during RIPC. We also attempted to determine the potentially
+   protective cargo of the EVs and reveal their underlying mechanism.
+   Hypoxia preconditioning (HPC) of human kidney 2 (HK2) cells was
+   conducted at 1% oxygen (O[2]) for different amounts of time to simulate
+   IPC in vitro. EVs were isolated and then quantified. HIF-1α- and
+   Rab22-inhibited HK2 cells were used to investigate the role of the
+   HIF-1α/Rab22 pathway in HPC-induced EV production. Both normoxic and
+   HPC EVs were treated in vivo to assess the protective effect of I/R
+   injury. Moreover, microRNA (miRNA) sequencing analysis and
+   bioinformatics analysis was performed. We revealed that the optimal
+   conditions for simulating IPC in vitro was no more than 12 h under the
+   1% O[2] culture circumstance. HPC enhanced the production of EVs, and
+   the production of EVs was regulated by the HIF-1α/Rab22 pathway during
+   HPC. Moreover, HPC EVs were found to be more effective at attenuating
+   mice renal I/R injury. Furthermore, 16 miRNAs were upregulated in HPC
+   EVs. Functional and pathway analysis indicated that the miRNAs may
+   participate in multiple processes and pathways by binding their targets
+   to influence the biochemical results during RIPC. We demonstrated that
+   HIF-1α/Rab22 pathway mediated RTEC-derived EVs during RIPC. The HPC EVs
+   protected renal I/R injury potentially through differentially expressed
+   miRNAs. Further study is needed to verify the effective EV-miRNAs and
+   their underlying mechanism.
+
+   Keywords: extracellular vesicles, ischaemic preconditioning,
+   ischaemia-reperfusion injury, hypoxia, microRNA
+
+Introduction
+
+   Renal ischaemia-reperfusion (I/R) injury, the major cause of acute
+   kidney injury (AKI), is a severe complication after major surgery and
+   kidney transplantation. In addition, it is associated with increased
+   morbidity and mortality[56]^1^,[57]^2. Therefore, it is imperative to
+   develop potent interventions to prevent ischaemia-induced acute kidney
+   injury.
+
+   Ischaemic preconditioning (IPC), which was first described in the heart
+   by Murry et al. [58]^3, consists of short sublethal cycles of
+   ischaemia-reperfusion prior to the prolonged ischaemic insult.
+   Subsequently, the phenomenon in which IPC of one organ was observed to
+   protect remote organs, was defined as remote ischaemic preconditioning
+   (RIPC) [59]^4. Currently, RIPC represents a more clinically practical
+   strategy for limiting organ injury that has been successfully applied
+   to the protection of cardiac, renal, and other organs against I/R
+   injury [60]^5^,[61]^6. However, its mechanism is still largely unknown
+   and has attracted much attention in recent years.
+
+   A number of different mechanisms have been suggested, including roles
+   for humoral mediators and neurally mediated mechanisms. As novel
+   circulating mediators, extracellular vesicles (EVs) have recently been
+   proposed to mediate the cardioprotection of RIPC [62]^7^,[63]^8. EVs
+   are membrane-bound vesicles secreted from almost all cell types, which
+   can modulate intercellular communication by transfer of their bioactive
+   cargos [64]^9. According to different sizes and intracellular origins,
+   EVs can be characterised into different categories, but two major
+   subsets capture most of the interest: namely exosomes (30-150 nm
+   diameter, which are derived from multivesicular bodies (MVBs)) and
+   microvesicles (MVs) (100-1,000 nm diameter, which are shed from the
+   plasma membrane) [65]^10.
+
+   In our previous work [66]^11, we established a new animal model of RIPC
+   firstly, which was IPC for right kidney protecting against I/R injury
+   of left kidney. We found that hypoxia induced renal tubular epithelial
+   cells (RTECs) to release functional EVs, which mediated the alleviation
+   of kidney I/R injury.
+
+   Here, to push our investigations further, we sought to answer two
+   questions. Firstly, how does the hypoxia during RIPC regulate the
+   secretion of EVs? Hypoxia is a central component of ischaemia, and the
+   hypoxia-inducible factor 1α (HIF-1α) transcription factor plays a
+   crucial role in coordinating the transcriptional response to hypoxia
+   [67]^12. HIF-1α-mediated organ protection in RIPC has been demonstrated
+   both pre-clinically and clinically [68]^13^,[69]^14. Recent studies
+   have indicated that hypoxia enhanced secretion of EVs in cancer cells
+   in an HIF-1α-dependent manner [70]^15^,[71]^16.
+
+   Moreover, Rab22 (also known as Rab22a), one of the small GTPases, has
+   been found to be a downstream target of HIF-1α, and facilitates the
+   shedding of breast cancer cells by MVs [72]^16. Actually, small GTPases
+   of the Rab subfamily are involved in regulation of intracellular
+   membrane trafficking events. To date, approximately 70 distinct Rab
+   proteins have been identified in human systems with different Rab
+   proteins being specific for distinct pathways that regulate the
+   transport, docking and fusion of vesicles [73]^17. With reference to
+   vesicular secretion, Rab11, Rab27 and Rab35 have been found to be
+   involved in exosomal release via exocytosis in different cell lines in
+   the former studies [74]^18, while Rab22 has been found to localise to
+   endosomal compartments and to the plasma membrane and play a major role
+   in endosomal function endocytic and phagocytic pathways
+   [75]^18^,[76]^19. Here, enlighten by Wang's study [77]^16, we assume
+   that the expression of Rab22 in RTECs is positively correlated with
+   HIF-1α and the productions of RTEC-derived EVs are mediated by
+   HIF-1α/Rab22 pathway during RIPC.
+
+   EVs are believed to exert their functions by transfer their cargos to
+   receptor cells. We supposed that the RIPC-induced EVs act as a
+   protective role by changing their contents under hypoxia. Thus, the
+   second question is whether the cargo changes of the RIPC induced EVs.
+   The cargos of EVs are complex, including a great diversity of proteins,
+   lipids and nucleic acids that can act as messengers for cell contacting
+   [78]^20^,[79]^21. RNAs are proved to be the major bioactive cargos in
+   EVs, along with some kinds of non-coding RNAs, including microRNAs
+   (miRNAs), long non-coding RNAs (lncRNAs), and circular RNAs (circRNAs)
+   [80]^22. Among them, miRNAs are the most widely studied in the past
+   years. We focused on miRNAs because both previous results and our study
+   show the particular enrichment of miRNAs in EVs [81]^11^,[82]^23.
+   Additionally, the roles of miRNAs in I/R injury have been gradually
+   revealed recent years. Some of them were reported to alleviate I/R
+   injury, such as miR-132, miR-21 and miR-489 [83]^24^-[84]^26, while
+   some were proven to aggravate the injury, such as miR-24, miR-218 and
+   miR-128-3p [85]^27^-[86]^29. Hence, we attempted to determine whether
+   the changes of the miRNA profile in RIPC induced EVs, while the
+   potentially functional miRNAs require further study.
+
+   Therefore, in the present study, we aimed to investigate whether the
+   RTEC-derived EVs are regulated by the HIF-1α/Rab22 pathway during the
+   RIPC process. In addition, miRNA sequencing analysis and bioinformatics
+   analysis were performed to find potentially protective miRNAs and their
+   mechanism.
+
+Materials and methods
+
+Animal experiments
+
+   All animal experiments were performed on male C57BL/6 mice, weighing
+   20-25g (10-12 weeks of age), obtained from the Comparative Medicine
+   Centre of Yangzhou University (Yangzhou, China). Mice were housed at a
+   constant temperature, with a 12:12 h light-dark cycle and free access
+   to water and rodent food. All protocols were approved by the Committee
+   on the Ethics of Animal Experiments of Southeast University (Nanjing,
+   China). All surgeries were performed under intraperitoneal sodium
+   pentobarbital anaesthesia, and all efforts were made to minimise
+   suffering.
+
+   RIPC was performed on the right kidneys after performing a back midline
+   incision. For induction of RIPC, the right renal artery underwent 3
+   cycles of 5 min of ischaemia and 5 min of reperfusion using
+   non-traumatic microvascular clamps. Mice were killed 10 min, 30 min and
+   24 h after reperfusion; and their bilateral kidneys and blood were
+   collected for examination. For induction of IR, bilateral kidney was
+   subjected to ischaemia for 35 min. For the treatment of renal I/R
+   injury, PKH26-labelled EVs (50 μg suspended in 100 μl PBS) were
+   injected intravenously 24 h before the operation of IR. Mice were
+   killed 24 h after reperfusion, and their kidneys and blood were
+   collected for examination.
+
+Cell culture
+
+   Human RTECs (HK-2 cells) were obtained from a commercial source
+   (Shanghai Institutes for Biological Sciences, Shanghai, China) cultured
+   in Dulbecco's Modified Eagle Medium/Nutrient Mixture F-12 (DMEM/F12)
+   medium (Thermo Fisher, Grand Island, NY, USA) supplemented with 10%
+   foetal bovine serum (FBS) (ExCell Bio, Shanghai, China), 100 μg/ml
+   streptomycin and 100 U/ml penicillin, (Gibco, Thermo Fisher) within a
+   humidified atmosphere containing 5% CO[2] at 37℃. For EV isolation,
+   cells were cultured in conditioned media supplemented with
+   exosome-depleted FBS (System Biosciences, Palo Alto, CA, USA). Cell
+   counts and quantification were performed using a hemocytometer, and
+   viability was determined by 0.1% (w/v) Trypan blue (Sigma-Aldrich,
+   Merck KGaA, Darmstadt, Germany) exclusion.
+
+Hypoxic preconditioning
+
+   Hypoxic preconditioning (HPC), simulating IPC in vitro, was conducted
+   within a hypoxic chamber at 1% O[2] and 37℃ in a 5% CO[2] humidified
+   environment with the balance provided by nitrogen. The oxygen tension
+   in the chamber was monitored and maintained by a computerised sensor
+   probe. The time of HPC time was according to the experimental design.
+
+Cell transfection and reagents
+
+   Cell transfection was performed with Lipofectamine 2000 (Invitrogen;
+   Thermo Fisher) according to the manufacturer's protocol. Briefly, cells
+   were seeded in a 10-cm dish at 70% confluence one day prior to
+   transfection. Nucleotides formed transfection complexes with
+   Lipofectamine 2000, and were added to cells and incubated for 6-8 h
+   prior to refreshing the medium. Small interfering RNAs (siRNAs) were
+   synthesised by GenePharma Co., Ltd., (Shanghai, China) based on the
+   following sequences: HIF-1α siRNA: sense 5' CCAACCUCAGUGUGGGUAUdTdT 3'
+   and antisense 5' AUACCCACACUGAGGUUGGdTdT 3', and Rab22 siRNA: sense 5'
+   GGAUACAGGUGUAGGUAAAdTdT 3' and antisense 5' UUUACCUACACCUGUAUCCdTdT 3'.
+   FAM labeled siRNA was used to assess the efficiency of transfection.
+   Cells which expressed green fluorescence stably were considered to
+   successful transfection. The efficiency of transfection was more than
+   90% (Figure [87]S1).
+
+Cell terminal deoxynucleotidyl transferase dUTP nick end labelling (TUNEL)
+assay
+
+   To label nuclei of apoptotic cells, HK2 cells were plated on glass
+   coverslips in a 35-mm dish under different treatment conditions, and
+   then fixed in 4% paraformaldehyde post-treatment. An In Situ Cell Death
+   Detection Kit (Roche, Mannheim, Germany) was used to perform the
+   terminal TUNEL staining, according to the manufacturer's protocol. The
+   number of TUNEL-positive nuclei was counted and divided by the number
+   of 4′,6-diamidino-2-phenylindole (DAPI)-stained nuclei to calculate the
+   percentage of TUNEL-positive cells.
+
+Cell immunofluorescence assay
+
+   Different treated HK2 cells, plated on glass coverslips in a 35-mm dish
+   were fixed with 4% paraformaldehyde, permeabilised with 0.2% Triton
+   X-100 and blocked with 10% bovine serum albumin (BSA). The cells were
+   then incubated with primary antibodies: monoclonal mouse anti-human
+   HIF-1α (ab1, Abcam, Cambridge, MA, USA) and monoclonal rabbit
+   anti-human RAB22A antibodies (ab137093, Abcam); followed by incubation
+   with secondary antibodies: Cy3-conjugated goat anti-mouse
+   immunoglobulin G (IgG, GB21301, ServiceBio, Wuhan, China) and
+   fluorescein isothiocyanate (FITC)-conjugated goat anti-rabbit IgG
+   (GB22303, ServiceBio). DAPI, (G1012, ServiceBio) was used to stain
+   nuclei. The samples were visualised using the Pannoramic 250 Flash
+   series digital scanner and software (3DHistech, Budapest, Hungary).
+
+Immunohistochemical (IHC) staining
+
+   The IHC kit (G1210, ServiceBio) was used for IHC staining. Kidney
+   tissues were fixed in 4% paraformaldehyde (pH 7.4) and embedded in
+   paraffin, and then cut into 4-μm thicknesses. The sections were
+   incubated with primary antibodies: monoclonal mouse anti-human HIF-1α
+   (1:100, ab1, Abcam) and polyclonal rabbit anti-human RAB22A (1:50,
+   12125-1-AP, Proteintech, Rosemont, IL, USA) at 4℃ overnight. After
+   washing with phosphate-buffered saline (PBS), the sections were then
+   incubated with horseradish peroxidase (HRP)-conjugated IgG for 30 min,
+   followed by 3,3'-diaminobenzidine (DAB). Finally, the sections were
+   counterstained with haematoxylin. The staining intensity of HIF-1α and
+   RAB22A was assessed by two independent pathologists.
+
+Periodic acid-Schiff (PAS) staining
+
+   To detect renal injury, kidneys were fixed in 4% paraformaldehyde (pH
+   7.4), gradually dehydrated, embedded in paraffin, cut into 4-µm
+   sections and subjected to PAS staining. Histopathological scoring was
+   conducted in a blinded manner and given based on grading of tubular
+   cell necrosis or swelling, tubular casts, brush border loss and
+   interstitial infiltration by multi-nucleated cells in 10 randomly
+   chosen, non-overlapping fields (200× magnification). According to the
+   severity of changes on a semi-quantitative scale, scores were given as
+   follows: 0 was no injury, 1 mild, 2 moderate, 3 severe and 4 very
+   severe.
+
+Plasma creatinine assay
+
+   Blood samples were obtained through cardiac puncture at the indicated
+   times. Plasma creatinine was measured using the sarcosine oxidase
+   method by a commercial creatinine assay kit (C011-2, NJJC-Bio, Nanjing,
+   China).
+
+Extracellular vesicle extraction
+
+   After culture in the presence or absence of hypoxia, conditioned medium
+   was carefully collected and subjected to a series of centrifugation at
+   800 g for 10 min, 2,000 g for 20 min and 10,000 g for 30 min at
+   constant 4℃. The resultant supernatant was finally subjected to
+   ultracentrifugation in a SW41 swing rotor (Beckman Coulter, Fullerton,
+   CA, U.S.) for 1 h at 4℃ to collect EVs in pellets. EV pellets were
+   resuspended in 100 µl of particle-free PBS for subsequent assays
+   immediately or stored at 4℃ short-term (1-7 days) or -20℃ long-term.
+   Cell counts and viability were also determined at the time of harvest
+   as described above to account for differences in cell growth and
+   normalisation of the cell numbers.
+
+Nanoparticle tracking analysis(NTA)
+
+   We completed NTA with ZetaView PMX 110 (Particle Metrix, Meerbusch,
+   Germany) and corresponding software ZetaView 8.04.02 SP2. To analyse
+   the size distribution and concentration of the EVs. Isolated EVs were
+   appropriately diluted in particle-free PBS and resuspended before being
+   injected into the sample cell chamber. Size distributions and particle
+   concentrations were assessed at 11 positions. Polystyrene particles
+   sized 110 nm were used to calibrate the ZetaView system. Temperature
+   was maintained around 23℃ and 37℃. EV concentration analysis was
+   normalised with the total number of cells from the corresponding dish.
+
+Transmission electron microscopy (TEM)
+
+   TEM was conducted by the Electron Microscopy Core of Southeast
+   University. Ten microlitres of EV pellet solution was loaded onto a
+   formvar/carbon-coated 200-mesh copper electron microscopy grid,
+   incubated at room temperature for 5 min and then subjected to negative
+   staining with 3% aqueous phosphor-tungstic acid for 1 min. The grid was
+   washed with particle-free PBS and allowed to semidry at room
+   temperature before observation in transmission electron microscope
+   (HITACHI H7650 TEM; Tokyo, Japan).
+
+Flow cytometry (FCM) analysis
+
+   For detecting EVs with FCM, the EVs that were resuspended in PBS were
+   stained by the EVs-specific antibodies: FITC-conjugated anti-CD63
+   (557288, BD, San Jose, CA, USA), FITC-conjugated anti-CD81 (557288, BD)
+   for positive staining, or FITC-conjugated IgG1 (ab91356, Abcam) as a
+   negative control. The fluorescence-labelled EVs were analysed with an
+   Accuri C6 flow cytometer (BD).
+
+Western blotting analysis
+
+   Cell lysate and EV proteins were extracted with ice-cold
+   radioimmunoprecipitation assay (RIPA) buffer. Protein concentration was
+   quantified with a BCA Protein Assay Kit (Keygen Biotech, Nanjing,
+   China). Total EV proteins loading for Western blot were normalised with
+   the total cell number of the corresponding dishes as described above.
+   Protein was separated by 10% sodium dodecyl sulfate-polyacrylamide gel
+   electrophoresis and transferred to a polyvinylidene difluoride membrane
+   (MilliporeSigma, Burlington, MA, USA) The membrane was blocked with 5%
+   BSA for 1 h at room temperature and then immunoblotted with primary
+   antibodies at 4℃ overnight. The blot membrane was then washed three
+   times and incubated with secondary antibodies at 37℃ for 1 h. The blot
+   signal was revealed with enhanced chemiluminescence (ECL, Beyotime,
+   Shanghai, China). Primary antibodies used were monoclonal rabbit
+   anti-human HIF-1α (1:500, ab51608, Abcam), monoclonal rabbit anti-human
+   RAB22A (1:2000, ab137093, Abcam), polyclonal rabbit anti-human HSP70
+   (1:1000, 10995-1-AP, Proteintech), monoclonal mouse anti-human TSG101
+   (1:1000, MA1-23296, Thermo Fisher) and monoclonal mouse anti-human
+   β-actin (1:3000, 7D2C10, Proteintech). Secondary antibodies used were
+   HRP-labelled anti-rabbit IgG (1:3000, #7074, Cell Signalling
+   Technology, Danvers, MA, USA) and HRP-labeled anti-mouse IgG (1:3000,
+   #7076, Cell Signalling Technology).
+
+Quantitative analyses of EVs
+
+   We quantified the production of EVs mainly by EV-specific protein
+   quantification. To increase the accuracy of quantitative analysis,
+   enzyme-linked immunosorbent assay (ELISA) and western blot, these two
+   methods were both used. For ELISA analysis, we used an ExoTEST™ kit for
+   detecting CD9-positive EVs (exosomes) which was purchased from
+   HansaBioMed (Tallinn, Estonia). The assays were performed in accordance
+   with the manufacturer's instructions. For western blot, we used the
+   protein levels of HSP70 as the indicator of EV quantity. Western
+   blotting analysis was conducted as described above.
+
+MicroRNA library construction and sequencing
+
+   To analyse RNA contents in EVs, a Qiagen RNA isolation kit was used to
+   extract total RNA and RNA was analysed using the Agilent 2100
+   bioanalyser (Agilent Tech, U.S.). MiRNA profiling of EVs from normoxic
+   and IPC HK2 cell culture medium was performed by the Professional Ribo
+   Biotech Corporation (Guangzhou, China). Briefly, total RNA samples were
+   fractionated on a 15% Tris-borate-EDTA (TBE) polyacrylamide gel
+   (Invitrogen, Thermo Fisher) and small RNAs ranging between 18 and 30
+   nucleotides (nt) were used for library preparation. Small RNAs were
+   reverse transcribed and amplified by polymerase chain reaction (PCR).
+   The PCR products were sequenced using the Illumina HiSeq 2500 platform.
+   The filtering criteria for up or downregulated genes were fold change
+   of ≥ 2 and P < 0.05.
+
+Bioinformatics analysis
+
+   The putative target genes of miRNAs were determined through examination
+   of the overlapped intersection from 3 databases (miRDB, TargetScan and
+   miRWalk). Gene ontology (GO) and the Kyoto Encyclopaedia of Genes and
+   Genomes (KEGG) were utilized to analyse the main function and
+   significant pathways of the selected putative target genes. The
+   filtering criterion of significance was defined as P < 0.05 for both GO
+   and KEGG analyses. The potential regulatory networks between miRNAs and
+   target genes were assembled and visualised using Cytoscape software. A
+   directed edge (connection) from a miRNA to one of its targets exists if
+   their relationship is functionally regulated. We then calculated the
+   degree of the network that was defined as the number of neighbours
+   (edges) of a node. The higher degree of connectivity that a given node
+   has, the more biologically important role it plays in the regulatory
+   network.
+
+Statistical analysis
+
+   All dates are expressed as means ± SD. Statistical analysis was
+   conducted using SPSS 16.0 statistical software. Comparisons between two
+   groups were performed by Student's t-test. For multiple comparisons,
+   analysis of variance (ANOVA) was used, followed by post-hoc analysis
+   using the least significant difference (LSD). P < 0.05 was considered
+   statistically significant. Each experiment was conducted independently
+   at least three times.
+
+Results
+
+Optimal conditions for simulating IPC in vitro with HK2 cells were no more
+than 12 h under the 1% oxygen culture circumstance
+
+   We screened the optimal conditions for simulating IPC in vitro with HK2
+   cells mainly through biological changes, such as cell morphology,
+   proliferation, apoptosis and the activation of HIF-1α. HK2 cells were
+   divided to different groups, and HPC in 1% oxygen content environment
+   from 0-72 h (Fig. [88]1a). We observed the gradual morphological
+   changes of cells under the hypoxic environment after 24 h. Cells
+   changed from a regular long spindle shape to irregular, disorganised
+   shapes (Fig. [89]1b). Moreover, the number of cells significantly
+   decreased as the hypoxic time increased, which reflected that prolonged
+   hypoxic time influenced cell proliferation (Fig. [90]1c). There was no
+   significant effect on cell apoptosis within 24 h, but significant
+   apoptosis occurred in cells after 1% hypoxia more than 24 h (Fig.
+   [91]1d and e). The expression level of HIF-1α was tested by western
+   blot. With the prolongation of hypoxic time, the accumulation of HIF-1α
+   in the cell reached a peak within 12 h. The increase of hypoxic time
+   after 12 h did not increase the expression, while HIF-1α gradually
+   degraded (Fig. [92]1f and g). In summary, through the above
+   investigations, we believe that the optimal conditions for the
+   simulation of IPC with HK2 cells should be no more than 12 h in a 1%
+   oxygen content environment.
+
+Figure 1.
+
+   [93]Figure 1
+   [94]Open in a new tab
+
+   Optimal condition screening for simulating IPC in vitro with HK2 cells
+   under the 1% oxygen culture circumstance. (a) Schema of the protocols
+   of screening for optimal conditions of simulating IPC in vitro with HK2
+   cells. (b) Morphology and amount changes of cells under the hypoxic
+   environment, magnification 200×. (c) The relative living cell numbers
+   in each group, (* P<0.05 compare with 0 h). (d) Cell TUNEL assay and
+   (e) the quantification (*, #, ∆, P<0.05 compare with 0 h, 12 h, 24 h,
+   respectively). (f) HIF-1α was tested by western blot and (g)
+   semi-quantification (* P<0.05 compare with 0 h).
+
+The changes of EVs production and characterisation after HPC
+
+   EVs were isolated from the conditioned media of HK2 cells by serial low
+   speed centrifugation followed by ultracentrifugation.
+
+   Firstly, we examined the impact of HPC on EVs secretion in HK2 cells.
+   The cells were exposed to normoxia or IPC for 6, 12 and 24 h. ELISA
+   analysis indicated that the yield of CD9-positive EVs increased with
+   the time of HPC. This trend reached a significant difference,
+   particularly at 12 h and 24 h, respectively, 2.13-fold and 2.34-fold
+   higher than normoxia (Fig. [95]2a). This time dependence was expected
+   because more EVs were secreted into culture medium as the hypoxic
+   incubation time increased. Our western blot analysis also showed a
+   time-dependent increase of EV protein HSP70 under IPC, and this
+   increase did not achieve statistical significance until 12 h (Fig.
+   [96]2b, c). Therefore, to conduct follow-up analysis, we divided the
+   EVs into the normoxia and HPC groups, and the EVs obtained from
+   conditioned medium under the HPC environment for 12 h were selected to
+   represent the HPC group for the above reasons.
+
+Figure 2.
+
+   [97]Figure 2
+   [98]Open in a new tab
+
+   The changes of EV production and characterisation after HPC. (a)
+   Relative quantity of EVs, ExoTESTTM method (*, #, P<0.05 compared with
+   0 h, 6 h, respectively). (b) EVs protein HSP70 western blot analysis
+   and (c) semi-quantification (*, #, P<0.05 compared with 0 h, 6 h,
+   respectively). (d) TEM assay. (e) NTA assay. (f) The proteins of CD63
+   and CD81were detected by FCM analysis. (g) Western blot of EV fractions
+   confirmed the presence of the EV proteins HSP70 and TSG101 and (h)
+   semi-quantification after normalisation with equal cell numbers (*
+   P<0.05).
+
+   Furthermore, a serial of analysis was conducted to investigate the
+   characterisation of normoxic and HPC EVs. Transmission electron
+   microscopy revealed the both groups of EVs exhibited similar
+   morphologies as round- (“cup”) or oval-shaped (“dish”) lipid bilayer
+   vesicles (Fig. [99]2d). Samples examined by NTA showed that the size
+   ranged from 30-500 nm in both groups. However, mean size was
+   14943±487nm (normoxia) and 17390±330 (IPC), respectively. Both groups
+   exhibited a peak at 120 nm, while another distinct peak at 240 nm was
+   observed in HPC sample (Fig. [100]2e). Such results seemed to indicate
+   that increased EVs produced in the HPC environment mainly concentrated
+   in the size of 240 nm, which mainly belonged to MVs rather than
+   exosomes. We also characterised four protein markers of EVs by FCM
+   analysis and western blot analysis. FCM analysis detected CD63 and
+   CD81, two widely accepted markers of EVs, in the isolated samples. As
+   shown in Fig. [101]2f, the proteins of CD63 and CD81were positively
+   expressed in normoxic or HPC EVs. Western blot of EV fractions
+   confirmed the presence of the EVs proteins HSP70 and TSG101 (Fig.
+   [102]2g). As expected, the HPC EV sample showed higher content of HSP70
+   and TSG101 than that of normoxia after normalisation with equal cell
+   numbers (Fig. [103]2h). Moreover, more total RNAs could be extracted
+   form HPC EV samples than normoxic ones after cell number normalisation.
+   Bioanalyser profile of EVs showed the presence of different subsets of
+   RNAs and, in particular, enrichment for small RNAs (about 25 nt) (data
+   not shown).
+
+   These results not only verify our EV isolation protocol but also
+   indicate that HPC can enhance the EV production of HK2 cells and
+   influence some characteristics of EVs.
+
+The production of EVs was regulated by the HIF-1α/Rab22 pathway during IPC
+
+   IPC-enhanced Rab22 expression was HIF-1α-dependent in vivo and in
+   vitro. IHC was conducted to detect HIF-1α and Rab22 protein expression
+   in the IPC and sham mice kidneys. Results showed that HIF-1α was
+   expressed strongly in IPC renal tubules with the expression of Rab22
+   enhanced accordingly. These 2 proteins showed a synchronic expression
+   in vivo (Fig. [104]3a, b). Furthermore, HK2 cells were exposed to
+   normoxia or HPC, harvested and tested at different time points. Both
+   western blot analysis (Fig. [105]3c, d) and immunofluorescent assay
+   (Fig. [106]3e, f) revealed that hypoxic exposure gradually affected the
+   expression of HIF-1α and Rab22 in cells, and both of them peaked at the
+   time point of HPC for 12 h but decreased at HPC for 24 h. These results
+   were in agreement with the results in vivo. To further prove the role
+   of HIF-1α in hypoxia-induced Rab22 expression in tubular epithelia, we
+   turned to gene expression-inhibited cells. Therefore, we established
+   HIF-1α and Rab22 knockdown HK2 cells by transfecting HIF-1α and Rab22
+   siRNA. Compared with negative control (NC), scrambled
+   sequence-transfected cells and HIF-1α siRNA-transfected cells had both
+   lower HIF-1α and Rab22 expressions under hypoxic conditions. However,
+   Rab22 siRNA-transfected cells had only decreased Rab22 expressions.
+   These results indicated that hypoxia enhanced HIF-1α-dependent Rab22
+   expression (Fig. [107]3g, h).
+
+Figure 3.
+
+   [108]Figure 3
+   [109]Open in a new tab
+
+   The production of EVs was regulated by the HIF-1α/Rab22 pathway during
+   HPC. (a) Immunohistochemistry staining and (b) semi-quantification
+   analysis of HIF-1α and Rab22 in sham and IPC mice kidneys
+   (magnification 400×, n=5, * P<0.05). (c) Western blot and (d)
+   semi-quantification of HIF-1α and Rab22 expression in cells under HPC
+   (*, #, ∆, P<0.05 compared with 0 h, 6 h, 12 h, respectively). (e)
+   Cellular immunofluorescent assay and (f) semi-quantification of the
+   expression of HIF-1α and Rab22 (*, #, P<0.05 compare with 0 h, 12 h,
+   respectively). (g) Western blot analysis and (h) semi-quantification of
+   the expression of HIF-1α and Rab22 in HIF-1α siRNA-transfected cells,
+   Rab22 siRNA-transfected cells and their negative control (NC) cells
+   under HPC (* P<0.05, NS, no signification). (i) Western blot analysis
+   and (j) semi-quantification of the expression of EVs protein HSP70 in
+   HIF-1α, Rab22 inhibited and NC HK2 cells under HPC (* P<0.05). (k)
+   Relative quantity of EVs in HIF-1α and Rab22 inhibited HK2 cells under
+   HPC by ExoTESTTM analysis (* P<0.05).
+
+   We further tested the HIF-1α- or Rab22- inhibited HK2 cells to
+   investigate the role of the HIF-1α/Rab22 pathway in HPC-induced EV
+   production. We quantified the production of EVs by western blot and
+   ELISA analysis. The no gene expression-inhibited cells under the HPC
+   produced more EV protein HSP70 than cells in normoxia. However, HIF-1α-
+   inhibited cells nearly eliminated the increase in EVs production under
+   the HPC, compared to NC cells. Similarly, the HPC-induced EVs
+   production was also largely attenuated in Rab22- inhibited cells (Fig.
+   [110]3i, j). Consistently, ELISA analysis indicated that HPC induced
+   the expression of EV protein CD9 was also suppressed in HIF-1α, and
+   Rab22 inhibitedHK2 cells (Fig. [111]3k). These results revealed that
+   HPC-induced EVs were regulated by the HIF-1α/Rab22 pathway.
+
+HPC EVs were more effective to attenuate mice renal I/R injury than normoxic
+EVs
+
+   To investigate the role of EVs in I/R injury protection, 4 groups of
+   mice models were studied: sham surgery (sham), bilateral renal
+   ischaemia reperfusion injected with PBS (IR+PBS), or with EVs from HK2
+   cells cultured under normoxic conditions (IR+NOR EV), or with EVs from
+   post hypoxic HK2 cells (IR+HPC EV). To mimic the process that EVs
+   derived from the RTECs during RIPC that we injection the hypoxic EVs
+   before I/R injury, and PKH26 labelled-EVs or PBS vehicle were given
+   intravenously 24 h pre-ischaemia (Fig. [112]4a). No mortality was
+   observed during the operation.
+
+Figure 4.
+
+   [113]Figure 4
+   [114]Open in a new tab
+
+   HPC EVs were more effective to attenuate mice renal I/R injury than
+   normoxic EVs. (a) EV tracing in treated IRI kidney, green boxes
+   indicate the location of representative EVs (Red), magnification 400×.
+   (b) Representative renal sections from different groups (PAS staining,
+   magnification 400×). (c) Renal injury scoring and quantitative analysis
+   for different groups. (d) Serum creatinine levels in different groups.
+   (Groups: sham surgery (SHAM), renal ischaemia reperfusion injected with
+   PBS (IR+PBS), with EVs from HK2 cells cultured under normoxic
+   conditions (IR+NOR EV) or with EVs from HPC HK2 cells (IR+HPC EV); *,
+   #, P<0.05 compared with SHAM, IRI+PBS, respectively).
+
+   By PAS staining, we observed that all renal tubules were damaged in the
+   I/R injury group compared with sham surgery animals. After treatment
+   with EVs, the morphological changes of the kidney were alleviated and
+   only the group treated with HPC EVs reached a statistically
+   significant, difference compare with the PBS-treated group (Fig.
+   [115]4b, c). Renal function was evaluated using serum creatinine (SCr).
+   Results showed Scr levels in sham-operated mice remained within normal
+   limits. In contrast, there was a rapid and similar increase in SCr in
+   all I/R injury groups after 24 hours. Similarly, SCr was lower in the
+   EV-treated group than in the PBS-treated group, and HPC EVs treated
+   group had a significant difference than the PBS-treated group (Fig.
+   [116]4d). This means that HPC EVs but not the EVs, could significantly
+   improve renal function of ischaemic injured kidneys.
+
+HPC modulated the expression of a subset of miRNAs in EVs
+
+   To discover candidate EV-packaged miRNAs (EV-miRNAs) associated with
+   renal protection induced by HPC, we utilized miRNA sequencing for
+   expression profiling of miRNAs in HPC and normoxic cell derived EVs
+   (Table [117]S1). A total of 16 differentially expressed EV-miRNAs (fold
+   change ≥2, P value<0.05) were initially screened, and they were all
+   upregulated in HPC versus the normoxic group. Detailed information of
+   the 16 differentially expressed EV-miRNAs is summarised in Fig. [118]5.
+
+Figure 5.
+
+   [119]Figure 5
+   [120]Open in a new tab
+
+   HPC modulated the expression of a subset of miRNAs in EVs.
+   Differentially expressed miRNAs were analysed by hierarchical
+   clustering of log2 value. Fold change enal ischaemia reperfusion
+   injected with PBS (IR+PBS), with EVs from HK2 cells culturedt (a) for
+   differential gene expression, red and green colours indicate up- or
+   downregulated miRNAs, respectively. The clustered heat map (b), profile
+   (c) and number (d) of the differentially expressed miRNAs are shown.
+
+Prediction and pathway enrichment analysis of target genes of differentially
+expressed miRNAs
+
+   In order to further reveal the role of upregulated EV-miRNAs during
+   HPC, online miRNA prediction databases miRDB, TargetScan and miRWalk
+   were used to identify their putative target genes. The results showed
+   that 438 common putative target genes can regulated by 13 of the
+   dysregulated EV-miRNAs identified in our screen (Fig. [121]6a), while 3
+   miRNAs, including miR-127-3p, miR-136-3p and miR-411-5p, had no common
+   predicted genes. Among the dysregulated EV-miRNAs, miR-124-3p had the
+   highest number of target genes with the number of 119, while the others
+   had no more than 60, with the numbers between 6-58 (Fig. [122]6b).
+
+Figure 6.
+
+   [123]Figure 6
+   [124]Open in a new tab
+
+   Target gene prediction of differentially expressed miRNAs and
+   bioinformatics analysis of target genes. (a) Venn diagram showing the
+   overlap of candidate target genes. (b) Bar charts showing the number of
+   target genes for dysregulated miRNAs. The chart fragments represent the
+   number of target genes associated with each term. (c) Biological
+   process, (d) cellular components and (e) molecular function assessed by
+   GO analysis. (f) KEGG pathway enrichment analyses for target genes. The
+   terms are listed on the Y-axis, while the P-values are listed on the
+   X-axis.
+
+   Furthermore, to determine the potential function of these dysregulated
+   EV-miRNAs, we performed enrichment analysis for the 438 common putative
+   target genes utilizing GO terms. Results associated with these genes
+   were related to the cell proliferation, cellular respiration,
+   transcription, response to dietary excess, stem cell population
+   maintenance, signal transduction, blood vessel development and protein
+   deubiquitination (Fig. [125]6c), demonstrating that these EV-miRNAs are
+   probably related to I/R injury protection. The target genes of these
+   EV-miRNAs are also primarily located in cytoplasmic stress granule,
+   clathrin-coated vesicle, early endosome, dendritic spine, etc. (Fig.
+   [126]6d), with transcriptional activator/repressor activity, DNA
+   binding, phosphatidylinositol binding, ATP binding, etc. as the
+   dominating dysfunctional molecular function annotations (Fig. [127]6e).
+
+   We studied the KEGG pathways of selected target genes so as to further
+   uncover the biological function of the EV-miRNAs (Figure. 6f). The most
+   enriched dysfunctional pathways included the insulin signalling
+   pathway, Wnt signalling pathway, FoxO signalling pathway and mTOR
+   signalling pathway, etc. The KEGG pathway analysis reveals the function
+   of the signature EV-miRNAs partly, and signal-related function was
+   highlighted among all the subsystems, which was consistent with GO
+   terms of these selected genes.
+
+Integration of a regulatory network for miRNA-target genes
+
+   We assembled and visualised the associations between the miRNAs and
+   target genes by constructing a regulatory network for miRNA-target
+   genes utilizing the Cytoscape. The degree of the network was defined as
+   the number of edges of a node. The nodes with a higher degree
+   centrality are considered biologically more important genes within the
+   networks. In our study, the higher-degree interactive network contained
+   9 miRNAs, 15 genes and 31 miRNA-target gene connections (Fig. [128]7).
+   These genes were target by more than one dys-regulated miRNAs might
+   play more important roles in I/R injury protection.
+
+Figure 7.
+
+   [129]Figure 7
+   [130]Open in a new tab
+
+   Construction of a regulatory network for integrated miRNA-target genes.
+   The predicted interaction network of miRNAs and target genes was
+   constructed by Cytoscape software. Yellow triangles refer to
+   dysregulated miRNAs, while green elliptic points indicate the target
+   genes.
+
+Discussion
+
+   Our previously work was the first to establish a new animal model of
+   RIPC, which was right kidney IPC protecting against I/R injury of left
+   kidney [131]^11. At approximately the same time, Tuorkey et al.
+   [132]^30 reported a similar kidney RIPC model, demonstrating that
+   kidney RIPC showed better efficacy against I/R injury as a novel and
+   applicable model. We revealed that transient ischaemia/RIPC of right
+   kidney could affect RTECs, making the latter releasing functional EVs
+   to alleviate I/R injury of remote left kidney through the circulatory
+   system in an EV-dependent manner. In the current study, we used human
+   RTECs to simulate RIPC in vitro, indicating that the EV production is
+   enhanced by HPC, This has been further proven to be partly regulated by
+   the HIF-1α/Rab22 pathway. In addition, the HPC cell derived-EVs reveal
+   a protective function of renal I/R injury in mice. Then, miRNAs, one
+   category of the main cargos of EVs are identified to find potentially
+   protective EV-packed miRNAs and their underlying mechanisms.
+
+   Multiple pathophysiological responses are believed to contribute to the
+   I/R injury, such as increase of intracellular calcium, pH changes,
+   depletion of adenosine triphosphate, generation of reactive oxygen
+   species (ROS), changes of mitochondrial pore permeability, activation
+   of macrophages and release of pro-inflammatory cytokines, which
+   ultimately from the basis of tissue damage and cellular death
+   [133]^31^-[134]^33. Current recognition of cellular ''cross-talk'' and
+   molecular events have introduced new logical strategies to sequentially
+   combat the events occurring in relation to I/R injury, which includes
+   preconditioning strategies. Actually, either direct or remote IPC,
+   which is a short period of oxygen deprivation and reperfusion, protects
+   various tissues against subsequent sustained ischaemic insults to
+   reduce the extent of injury. Studies have demonstrated that IPC/RIPC
+   can protect organs suffering from I/R injury via promoting cell
+   proliferation and inhibiting cell apoptosis [135]^34^-[136]^36.
+   Furthermore, this procedure itself is not considered to cause
+   noteworthy injury to the organs. It has been proven that IPC/RIPC
+   regulates HIF-1α levels and apoptosis to attenuate organ injury
+   [137]^14^, [138]^37^-[139]^39. Therefore, in the present study, we
+   investigated the optimal conditions to simulate IPC in vitro and
+   focused on cell proliferative and apoptotic events, as well as the
+   regulation of the HIF-1α. We drew the conclusion that optimum
+   conditions to simulate IPC in vitro with HK2 cells were no more than 12
+   h under the 1% oxygen culture circumstance. Because we observed that
+   hypoxic exposure of HK2 cells within 12 h had no significant effect on
+   proliferation and apoptosis, while the HIF-1α levels in cells increased
+   dramatically and peaked at approximately 12 h.
+
+   EVs have recently been proved to play an important role in RIPC-induced
+   protection of the myocardium ischaemic injury
+   [140]^7^,[141]^40^,[142]^41. However, the report on the role of EVs in
+   the RIPC-induced renal ischaemic protective process is still rare.
+   According to our pervious data, we believe that the protective EVs were
+   induced by hypoxia during the process of RIPC. Our present data
+   [143]^11 indicate that EV production in RTECs is increased remarkably
+   during hypoxia, which is consistent with previous studies in malignant
+   cells [144]^15^,[145]^16. Consistently, Borges et al. [146]^42 showed
+   the increase of production of exosome during hypoxia of mouse and human
+   RTECs. Besides, Zhang et al. [147]^43 also evaluated the enhanced
+   production of exosome during hypoxia of rat RTECs by complementary
+   techniques, suggesting the induction of exosomes under hypoxia
+   conditions. Noteworthily, our hypoxia condition was observed to more
+   favourable to the increase of production of the MVs than the exosomes
+   when evaluated by nanoparticle tracking assay. This tendency was not
+   noticed before.
+
+   Our work has further demonstrated a crucial role of HIF-1α/Rab22
+   pathway in EVs production during HPC in HK2 cells. It has been proved
+   that hypoxia-mediated exosome production is HIF-1α-dependent both in
+   malignant cells and benign epithelial cells
+   [148]^15^,[149]^16^,[150]^43. However, the specific downstream target
+   genes whereby HIF-1α regulates EVs under hypoxia is unclear. Wang et
+   al. [151]^16 demonstrated hypoxia-induced increased MVs formation in an
+   HIF/Rab22-dependent manner in breast cancer cells, and Rab22 was proven
+   to be a direct HIF target gene. Inspired by this study, we investigated
+   HIF-1α-dependent Rab22 expression both in vivo and in vitro. Moreover,
+   hypoxia-induced EV production was decreased both in HIF-1α-inhibited
+   and Rab22-inhibited HK2 cells. Together, these results support the role
+   of the HIF-1α/Rab22 pathway in mediating EV biogenesis and secretion in
+   HPC RTECs.
+
+   Our previous study has shown that EVs derived from HPC HK2 cells had
+   obvious therapeutic effects for rat renal I/R injury [152]^11. However,
+   we didn't compare the efficacy with non-HPC EVs. The results cannot be
+   adequately demonstrated that the therapeutic effect was due to HPC
+   implementation. Our current results show that, to mimic RIPC,
+   pre-injection of HPC EVs can significantly attenuate subsequent mice
+   renal I/R injury and improve renal function of I/R injured kidneys
+   rather than normoxic EVs. The results have amply confirmed the unique
+   kidney I/R injury protective function of HPC EVs. Actually, hypoxic
+   cell derived-EVs were always demonstrated to promote tumour growth,
+   invasion and metastasis and were also reported to be pro-fibrotic
+   during kidney fibrosis rather than physiological protection
+   [153]^16^,[154]^42^,[155]^44^-[156]^46. Consistent with our results,
+   Dominguez et al. [157]^47 showed that EVs from adult rat RTECs
+   successfully treat rats with established severe I/R injury
+   intravenously 24 and 48 h after I/R. Furthermore, EVs from HPC cells
+   were more effective. Taken their and our results together, the HPC EVs
+   derived from RTECs can alleviate both subsequent and established renal
+   I/R injury. Zhang et al. [158]^43 suggested that exosomes from hypoxic
+   RTECs could prevent RTEC apoptosis after ATP depletion. Their study
+   indicated a time window for RTECs to produce cellular protective
+   exosomes under hypoxic exposure. Interestingly, the exosomes extracted
+   during 16 and 24 h of hypoxic exposure were protective, however those
+   extracted from over 24 h of hypoxic exposure were no more protective.
+   This time window in their work further prove the rationality of our
+   choice of optimal conditions of simulate IPC in HK2 cells in turn.
+
+   Here, we successfully injected human EVs into immunocompetent mice.
+   Previous studies haven shown that not only allogeneic but also
+   xenogenic EVs could induce some therapeutic effects in immunocompetent
+   small and large animal models, and no significantly acute immune
+   rejection was elicited [159]^48^-[160]^52. Possible reasons is that the
+   EVs are acellular therefore likely to be less immunogenic than cells.
+   On the other hand, EVs have been suggested to be able to modulate
+   immunity [161]^53^, [162]^54. Particularly in our study, another
+   possible reason is that normal renal tubular epithelial cells express
+   very low or negative major histocompatibility complex (MHC) Ⅱ and
+   costimulatory molecules (e.g. CD80 and CD86) which impair the
+   activation of immune cells [163]^55^, [164]^56. However, the phenomenon
+   and its specific mechanisms still requires further investigation.
+
+   How do the EVs from HPC cells protect renal I/R injury? Our present
+   study does not conclude a clear answer to the question. Nonetheless,
+   HPC may change the cargos of EVs that are considered to be the primary
+   mediators affecting recipient cells [165]^22^,[166]^46^,[167]^47. Our
+   interests focus on miRNAs, because our results show the particular
+   enrichment of small RNAs (about 25 nt) in EVs, and the role of miRNAs
+   in I/R injury has been gradually revealed in recent years. Our study
+   found a total of 16 differentially expressed EV-miRNAs, and all of them
+   were up-regulated in HPC EVs versus normoxic EVs. At present, many of
+   these miRNAs have been reported to play various roles in
+   hypoxic/ischaemic insult (Table [168]S2). Some of the miRNAs have
+   attracted more attentions, some are not. The mechanisms by which these
+   miRNAs act are varied. Sometimes, the effect of the same miRNA might be
+   reported to the contrary conclusion. This suggests that we need to pay
+   more attention to the role of miRNAs in IPC, RIPC or I/R injury. To
+   deepen the understanding of biological functions of these EV-miRNAs, we
+   utilized three online miRNA-target-predicting database (miRBD,
+   TargetScan and miRWalk) to predicte the target genes. Target genes
+   located in the intersection of three databases were chosen for further
+   analyses so that to reduce false positives. Results showed these
+   up-regulated EV-miRNAs were associated with 438 target genes. To
+   further understand the role of these up-regulated miRNAs, pathway
+   enrichment analysis was performed on all 438 genes. Our results
+   indicated that these target genes were involved multiple processes,
+   such as cell proliferation, cellular respiration and transcription.
+   Moreover, multiple pathways, such as the insulin signalling pathway,
+   Wnt signalling pathway, FoxO signaling pathway and mTOR signalling
+   pathway, etc. are involved. These miRNAs are suspected of influencing
+   the corresponding processes and pathways in RIPC/IPC by binding their
+   targets, thereby affecting the consequences of I/R injury. Our
+   miRNA-target gene regulatory network shows that a single miRNA can
+   target multiple genes, and different miRNAs can regulate the same gene.
+   These genes are considered biologically more important genes in the
+   network and are supposed to play more vital roles in I/R injury
+   protection. Signal transducer and activator of transcription 3 (STAT3),
+   was demonstrated to be required and dependent on the RIPC to ameliorate
+   pulmonary I/R injury [169]^57. Similarly, Wang et al. reported that
+   RIPC attenuated diabetic heart I/R injury by mitigating high
+   glucose-induced protein kinase C (PKC)-ԑ overexpression and,
+   subsequently, activating STAT3 [170]^58. Paradoxically, inhibition of
+   STAT3 phosphorylation was reported to promote neurological function
+   recovery following ischaemic stroke by RIPC treatment or epigenetically
+   regulated with miR-126a [171]^59^,[172]^60. Inhibiting specificity
+   protein 1 (SP1) by miR-374 could exert protective effects by activating
+   the phosphatidylinositol-4,5-bisphosphate 3-kinase/protein kinase B
+   (PI3K/AKT) pathway in rat models of myocardial I/R after sevoflurane
+   preconditioning [173]^61. However, another study revealed that EVs from
+   human-induced pluripotent stem cell-derived mesenchymal stromal cells
+   (hiPSC-MSCs) protect against kidney I/R injury via transmitting SP1,
+   and transcriptional activating of sphingosine kinase 1 and inhibiting
+   necroptosis [174]^62. In addition to these studies, peroxisome
+   Proliferator-Activated Receptor Gamma Coactivator 1 Alpha (PPARGC1A), a
+   well characterised positive regulator of mitochondrial function and
+   oxidative metabolism has been shown to regulate oxidative stress, which
+   is directly associated with IPC and I/R injury [175]^63^,[176]^64.
+   Inhibiting the expression of nuclear receptor coactivator 1 (NRCOA1)
+   has been shown to reduce inflammation and apoptosis and thus protect
+   the rat and cell models of cerebral I/R injury [177]^65. Huang et al.
+   [178]^66 reported that I/R injury influenced DNA hydroxymethylation and
+   tet methylcytosine dioxygenase 1 (TET1) gene expression in mouse
+   kidneys, which may contribute to the regulation of gene transcription
+   during renal I/R injury. Recently, there have been several reports
+   about the role of related genes in preconditioning or I/R injury.
+   However, some conclusions about the role of genes are actually
+   contradictory, and there are still many genes involved in
+   preconditioning or I/R injury that remain to be studied further. In
+   short, the function of the differentially expressed EV-miRNAs and their
+   target genes in RIPC-induced renal I/R injury protection remain largely
+   unknown. Further insight to these regulatory mechanisms will facilitate
+   to the management of renal I/R injury.
+
+   Limitations in our study should be noted. Firstly, we tried to uncover
+   the mechanism of RIPC to alleviate renal I/R injury by producing
+   protective EVs through simulation of IPC in vitro. However, the actual
+   biochemical reactions in vivo are quite complex, and the conditions in
+   vitro are still very different. Secondly, due to the limitations of
+   hardware and funding, we used the transient transfected cells rather
+   than stable HIF-1α, Rab22-deficient or over-expressed cell lines, which
+   partly influenced the persuasion of the experimental results. In
+   addition, the reliability of our results would be greatly enhanced if
+   renal-specific HIF-1α and Rab22 knockdown animal models were studied.
+   However, it is still difficult to say the production of IPC EVs depends
+   entirely on HIF-1α and the downstream pathway because many
+   transcription factors as well as cellular signalling pathways are
+   activated during RIPC that may mediate the effect. Moreover, EVs play a
+   biological regulatory role through their nucleic acid, protein and
+   other contents, although our focus was only on miRNAs. Lastly, these
+   differentially expressed miRNAs, regardless of their expression,
+   function and underlying mechanism, need to be further verified in vitro
+   and in vivo in the future.
+
+   In summary, in this study, we demonstrated that the HIF-1α/Rab22
+   pathway regulated the production of RETC-derived EVs during RIPC. The
+   HPC EVs protected renal I/R injury potentially through differentially
+   expressed EV-miRNAs. Further study is needed to verify the effective
+   EV-miRNAs and underlying mechanism.
+
+Supplementary Material
+
+   Supplementary figures and tables.
+   [179]Click here for additional data file.^ (1.2MB, pdf)
+
+Acknowledgments

@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+Not described, but it is mentioned that "9 online databases" were used to predict target genes and subsequently used for GO and pathway enrichment analyses.
+
+2. Was a tool version number provided?
+No
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+GO (Gene Ontology) and other unspecified pathways (mentioned as "TGF-beta signaling pathway, Wnt signaling pathway, p53 pathway, p38 MAPK pathway, and mTOR signaling pathway")
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described
+
+5. What statistical test was used for enrichment analysis?
+Not described
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described
+

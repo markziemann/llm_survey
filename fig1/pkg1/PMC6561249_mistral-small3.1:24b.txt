@@ -1,0 +1,20 @@
+Let's break down the information found in the Methods section.
+
+1. **What tool was used for pathway enrichment analysis?**
+   - STRING database online software.
+
+2. **Was a tool version number provided?**
+   -  not described.
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)**
+   - STRING database.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - not described.
+

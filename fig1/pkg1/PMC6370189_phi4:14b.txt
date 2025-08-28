@@ -1,0 +1,33 @@
+To address your questions regarding the pathway enrichment analysis from the article, here's a structured response:
+
+1. **Tool Used for Pathway Enrichment Analysis:**
+   - The tool used was GSEA (Gene Set Enrichment Analysis).
+
+2. **Version Number of the Tool:**
+   - Not described in the provided text.
+
+3. **Gene Set Library Queried:**
+   - The libraries queried included KEGG, GO (Gene Ontology), Reactome, and Hallmark gene sets.
+
+4. **Background Gene List Defined:**
+   - A background gene list was defined, consisting of genes expressed at an FPKM ≥ 1 in any of the samples being compared.
+
+5. **Statistical Test Used for Enrichment Analysis:**
+   - The enrichment analysis used a weighted Kolmogorov-Smirnov statistic.
+
+6. **False Discovery Rate Correction:**
+   - Yes, false discovery rate (FDR) correction was applied to control the number of false positives in the pathway enrichment analysis.
+
+This information can be collated into a table as follows:
+
+| Question | Answer                      |
+|----------|-----------------------------|
+| 1. Tool Used                     | GSEA                         |
+| 2. Version Number                | Not described                |
+| 3. Gene Set Library              | KEGG, GO, Reactome, Hallmark |
+| 4. Background Gene List          | Genes with FPKM ≥ 1         |
+| 5. Statistical Test              | Weighted Kolmogorov-Smirnov  |
+| 6. False Discovery Rate Correction | Yes                         |
+
+This table summarizes the key details about the pathway enrichment analysis as described in the article.
+

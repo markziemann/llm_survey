@@ -1,0 +1,31 @@
+<think>
+Okay, I'm trying to answer these questions about how pathway enrichment analysis was conducted in this scientific article. The focus is on the Methods section and other relevant parts.
+
+1. **What tool was used for pathway enrichment analysis?**
+   - Looking through the Methods, it mentions using GSEA (Gene Set Enrichment Analysis) for functional categories. So GSEA was the tool.
+
+2. **Was a tool version number provided?**
+   - The article doesn't mention any specific version of GSEA or other tools used in the pathway analysis. It only details the bioinformatics pipeline without version numbers.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - The article doesn't specify which gene set libraries were used for enrichment. They mention functional groups like apoptosis and transport but don't reference standard databases like GO or KEGG.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes, they used all coding genes (n=14,626) as the background list when comparing functional subsets.
+
+5. **What statistical test was used for enrichment analysis?**
+   - They used hypergeometric tests to compare each functional subset against the background. Additionally, in-house scripts calculated heterogeneity χ² values.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Yes, they applied the Benjamini-Hochberg False Discovery Rate (FDR) with an alpha of 0.01 and a cut-off of 4.0 for significance.
+</think>
+
+| Question                                                                 | Answer                                                                                       |
+|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **1. What tool was used for pathway enrichment analysis?**               | GSEA (Gene Set Enrichment Analysis)                                                           |
+| **2. Was a tool version number provided?**                              | Not described                                                                               |
+| **3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)?** | Not described; functional groups like apoptosis and transport were mentioned but not linked to standard databases. |
+| **4. Was a background gene list defined for pathway enrichment analysis?** | Yes, all coding genes (n=14,626) were used as the background.                                     |
+| **5. What statistical test was used for enrichment analysis?**           | Hypergeometric tests and in-house scripts calculating heterogeneity χ² values.                     |
+| **6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?** | Yes, Benjamini-Hochberg FDR with alpha=0.01 was applied.                                           |
+

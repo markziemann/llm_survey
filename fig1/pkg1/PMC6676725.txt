@@ -1,0 +1,526 @@
+Abstract
+
+   Protein interactions are crucial for maintaining homeostasis. Heat
+   shock factor 1 (HSF1), a transcription factor that interacts with
+   various proteins, is highly expressed in squamous cell carcinoma (SCC)
+   of the cervix. The aim of the present study was to investigate the
+   protein interaction profile of HSF1 in cervical SCC. Proteins
+   interacting with HSF1 in SCC tissue and non-cancerous control (Ctrl)
+   tissue were obtained by immunoprecipitation, separated by SDS-PAGE,
+   identified by matrix-assisted laser
+   desorption/ionization-time-of-flight mass spectrometry and analyzed
+   using bioinformatics methods. A total of 220 and 241 proteins were
+   identified by mass spectrometry in the tissues of Ctrl and SCC samples,
+   respectively, among which 172 were detected exclusively in SCC (Pro-S),
+   151 exclusively in Ctrl (Pro-C) and 69 in both groups (Pro-B). The
+   protein interaction profiles were different in each group; the STRING
+   database identified three proteins that interacted with HSF1 directly,
+   including insulin-like growth factor 1 receptor and small nuclear
+   RNA-activating protein complex subunit 4 in Pro-C and small
+   ubiquitin-related modifier 1 in Pro-S. Functional enrichment analysis
+   of Gene Ontology revealed that the top terms were alternative splicing
+   in Pro-S and polymorphism in Pro-C. In Pro-S, more categories were
+   related to protein modification, such as phosphorylation,
+   ubiquitination and acetylation. Therefore, HSF1 may influence the
+   occurrence and development of cervical SCC by interacting with specific
+   proteins.
+
+   Keywords: heat shock factor 1, protein interaction, squamous cell
+   carcinoma of cervix, immunoprecipitation, mass spectrometry
+
+Introduction
+
+   Cervical cancer is one of the most common malignant gynecological
+   tumors, and squamous cell carcinoma of the cervix (SCC) is the most
+   common histological subtype ([34]1). According to a 2015 report by the
+   Chinese Cancer Registry, cervical cancer has an incidence rate of 9.89
+   per 100,000 and a mortality rate of 2.6 per 100,000 ([35]2). Further
+   clarification of the molecular mechanisms underlying cervical cancer
+   may lead to the development of improved treatment options for this
+   disease.
+
+   Heat shock factor 1 (HSF1) was first identified as a classical
+   transcriptional factor activated in the heat shock response ([36]3).
+   Upon activation by a variety of stimuli such as heat shock, infection
+   and heavy metal toxicity, HSF1 forms trimers, translocates into the
+   nucleus and induces various heat shock proteins (HSPs) by binding to
+   heat shock elements (HSEs) on HSP promoters ([37]4,[38]5). Accumulating
+   evidence has suggested that HSF1 is a powerful modifier of
+   carcinogenesis; HSF1 levels are elevated in several cancers, including
+   breast ([39]6), ovarian ([40]7) and cervical cancer ([41]8). Activated
+   or elevated HSF1 is often associated with resistance to chemotherapy
+   drugs or poor prognosis ([42]9). A previous study revealed that
+   HSF1^−/− mice are resistant to chemically induced tumors, and that
+   HSF1^−/− mouse embryonic fibroblasts resist oncogene-induced
+   transformation ([43]10). However, the underlying mechanisms of the
+   resistance remain to be determined.
+
+   Several studies have reported that HSF1 promotes a specific
+   transcriptional program in highly malignant cells ([44]11), as well as
+   distinct transcriptional programs in cancer-associated fibroblasts and
+   adjacent cancer cells ([45]12). It is currently unknown why HSF1
+   regulates the transcription of different genes under different
+   conditions. HSF1 has been reported to interact with numerous protein
+   factors and serves multiple roles in various physiological and
+   pathological processes, such as nuclear factor of interleukin 6
+   ([46]13), 14-3-3 epsilon ([47]14), heat shock transcription factor
+   binding protein 1 ([48]15) and 26S subunit, non-ATPase 10/gankyrin
+   ([49]16). Interactions with different proteins under various conditions
+   may enable HSF1 to perform multiple functions. Therefore, clarifying
+   the protein interaction profile of HSF1 in SCC may help identify the
+   functions of HSF1.
+
+   In the present study, proteins that bind to HSF1 in the cervical
+   tissues of patients with SCC and control subjects were obtained by
+   using immunoprecipitation (IP) and separated by SDS-PAGE. The gel bands
+   were analyzed by matrix-assisted laser desorption/ionization-time of
+   flight mass spectrometry (MALDI-TOF-MS) to identify the proteins. Based
+   on these results, interaction networks and potential molecular
+   functions of the identified proteins were analyzed by bioinformatic
+   methods.
+
+Materials and methods
+
+Patients and tissue samples
+
+   Cervical tissue samples were collected from four patients diagnosed
+   with squamous cell carcinoma (SCC) of the cervix, who underwent total
+   hysterectomy, as well as four control (Ctrl) patients diagnosed with
+   hysteromyoma or adenomyosis with unaffected cervical tissue in
+   Affiliated Hospital of Guangdong Medical University (Zhanjiang, China)
+   between February and August 2013 ([50]Table SI). All patients in the
+   SCC group were not complicated with other types of pelvic cancer and
+   did not receive chemoradiotherapy within 3 months before surgery.
+   Disease staging was performed following the International Federation of
+   Gynecology and Obstetrics (FIGO) classification. In addition, two
+   groups met three major criteria: i) Higher HSF1 expression in SCC
+   compared to Ctrl; ii) matched for age in the two groups (43±2.94 years
+   in SCC; 45.25±3.69 years in Ctrl); iii) similar clinical stage for SCC
+   patients (three were in stage IIa and one in stage Ib2). The study was
+   approved by the Medical Ethics Committee of the Affiliated Hospital of
+   Guangdong Medical University (Zhanjiang, China; reference no.
+   PJ2013046) and written informed consent was obtained from all patients
+   before surgery. Patients were not treated with chemotherapy or
+   radiotherapy for 3 months prior to surgery.
+
+Protein extraction
+
+   Total protein from each sample (200 mg) was extracted in
+   radioimmunoprecipitation assay (RIPA) lysis buffer (EMD Millipore,
+   Billerica, MA, USA) plus 0.01% phenylmethylsulfonyl fluoride and
+   protease/phosphatase inhibitor cocktail (Cell Signaling Technology,
+   Inc., Danvers, MA, USA) in a homogenizer on ice, and insoluble debris
+   was removed by centrifugation for 10 min at 10,800 × g at 4°C. Protein
+   concentrations were determined using a bicinchoninic acid assay kit
+   (Beyotime Institute of Biotechnology, Beijing, China).
+
+IP and electrophoresis
+
+   PureProteome protein G/A beads and a magnetic stand (EMD Millipore)
+   were used to immunoprecipitate the proteins that bound to HSF1,
+   following the manufacturer's protocol. Briefly, 100 µl G/A beads were
+   incubated with rabbit polyclonal HSF1 antibody (1:50, cat. no. ab2923;
+   Abcam, Cambridge, UK) at 25°C for 10 min with continuous mixing.
+   Following washing with PBS containing 0.1% Tween 20 (pH 7.4), the
+   immobilized capture antibody was incubated with pooled protein (500 µg,
+   in equal amounts from 4 samples) at 4°C overnight with continuous
+   mixing. The immunoprecipitates were washed with PBS containing 0.1%
+   Tween 20 (pH 7.4), eluted by boiling in RIPA buffer and resolved by 10%
+   SDS-PAGE.
+
+Gel staining
+
+   The gels were stained with Coomassie Brilliant Blue R250 (0.1% R250,
+   40% methanol, 10% glacial acetic acid) at 25°C for 20 min and then
+   washed 4 times with washing buffer (10% methanol, 10% glacial acetic
+   acid) for 10 min each time. To avoid interference from heavy/light
+   antibody chains in MS analysis, 10 pairs of bands distant from the
+   antibody chains exhibiting differences between the SCC and Ctrl groups
+   were cut from the gel.
+
+In-gel digestion
+
+   In-gel digestions were prepared as described by Ostling et al ([51]17).
+   Briefly, gel sections were minced into 1 mm^3 pieces and washed 4 times
+   with 100 mM ammonium bicarbonate (NH[4]HCO[3]) in 50% acetonitrile
+   (ACN; Thermo Fisher Scientific, Waltham, MA, USA). The gel fragments
+   were subjected to reduction using 10 mM dithiothreitol (Sigma-Aldrich;
+   Merck KGaA, Darmstadt, Germany) in 100 mM NH[4]HCO[3] buffer at 60°C
+   for 1 h. Alkylation was performed in a solution of 55 mM iodoacetamide
+   (Sigma-Aldrich; Merck KGaA) in 100 mM NH[4]HCO[3] for 30 min at 25°C in
+   the dark followed by in-gel digestion with 10 µl of trypsin (25 ng/µl;
+   Promega Corporation, Madison, WI, USA) in 50 mM NH[4]CO[3] at 37°C for
+   14–16 h. Subsequently, the supernatant was transferred to a new
+   microcentrifuge tube and 100 µl of 60% ACN containing 0.1%
+   trifluoroacetic acid (TFA; Sigma-Aldrich; Merck KGaA) was added to the
+   remaining debris, which was then treated by sonication for 15 min to
+   collect the supernatant at room temperature. The two parts of the
+   supernatant were combined and vacuum-dried to a volume of 10 µl. The
+   vacuum-dried supernatant was concentrated with a ZipTips^®C18 (EMD
+   Millipore) and washed 3 times with 0.1% TFA. The samples were
+   subsequently eluted with buffer (0.1% TFA and 50% ACN) and 1 µl
+   α-cyano-4-hydroxycinnamic acid (5 mg/ml) was added before spotting onto
+   the target plate.
+
+MALDI-TOF-MS
+
+   Peptide mass fingerprinting (PMF) and sequence analysis were carried
+   out on a MALDI-TOF/TOF mass spectrometer (4800 Proteomics Analyzer;
+   Applied Biosystems; Thermo Fisher Scientific, Inc.). Internal standard
+   calibration of the PMF spectra was performed using the autolysis
+   products of trypsin. Peptide mass maps were acquired in positive
+   reflection mode at an accelerating voltage of 25 kV and laser intensity
+   of 6,000, averaging 1,200 laser shots per MALDI-TOF spectrum and 2,400
+   shots per TOF/TOF spectrum (the resolution was 20,000). The top 10
+   precursor ion mass peaks with a mass range of 800–4,000 Da were
+   selected for tandem TOF/TOF analysis. Two analysis types, combined MS
+   and MS/MS, were used to examine the human NCBInr
+   ([52]ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz) and Swissprot
+   ([53]ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowle
+   dgebase/complete/)databases using Mascot software (version 2.2; Matrix
+   Science Ltd.) to identify proteins that bind to HSF1. Searches were
+   performed to allow for carbamidomethylation, oxidation and a maximum of
+   one missed trypsin cleavage. Peptide tolerance and MS/MS tolerance were
+   both 0.2 Da. Confidently identified proteins had a statistically
+   significant protein score (P<0.05 based on combined MS and MS/MS
+   spectra).
+
+Bioinformatics analysis
+
+   The interactions of MS-identified proteins from SCC and Ctrl samples
+   were preliminarily confirmed using the STRING (version 10.5) online
+   database ([54]https://string-db.org). Functional categories and the
+   Gene Ontology (GO) terms biological process, cellular component and
+   molecular function of MS-identified proteins were analyzed using the
+   Database for Annotation, Visualization and Integrated Discovery (DAVID
+   6.8; [55]http://david.ncifcrf.gov).
+
+Results
+
+Proteins binding to HSF1
+
+   In order to investigate the effect of HSF1, four SCC samples with
+   higher HSF1 expression levels than the Ctrl samples were used in the
+   current study ([56]Fig. S1). A total of 392 different proteins were
+   identified by MS, with 241 and 220 proteins in SCC and Ctrl samples,
+   respectively. The proteins were distributed as follows: 172 proteins
+   only occurred in SCC (termed Pro-S), 151 proteins were identified only
+   in Ctrl (termed Pro-C), and 69 proteins were identified in the two
+   groups (termed Pro-B) and were removed from further analysis ([57]Table
+   I). Furthermore, the immunoprecipitated proteins binding to HSF1
+   yielded a different SDS-PAGE electropherogram ([58]Fig. S2).
+
+Table I.
+
+   Proteins binding to heat shock factor 1 identified by mass
+   spectrometry.
+   Set Proteins
+   Pro-C (n=151) ACP7, AEBP1, AGO3, AKNAD1, ANKLE1, ARIH2OS, ASPM, ATP5I,
+   ATPAF1, BICDL2, C10orf90, C15orf56, C17orf58, C20orf96, C6orf223,
+   C9orf3, CALCB, CALHM2, CATSPERG, CCT3, CCT8, CDK10, CEP250, CEP57,
+   CEP97, CHD2, CHD8, CHST9, COL18A1, CPNE8, CSNK1G2-AS1, CSPP1, CXorf23,
+   DAOA, DIP2C, DKFZP434L187, DNAH10, DNAH11, DNAH6, DPCD, DRP2, DSTYK,
+   DUSP1, ECHDC1, FANK1, FAT2, FAT4, FAU, FMN2, FNIP1, FRA10AC1, GAB1,
+   GLI3, GMFB, GOLGA4, HACE1, HECW1, HRG, IGF1R, IGHA1, IGHG4, IGHM,
+   IGSF21, IL21, IPMK, IPPK, ITPR1, KCNH8, KDM2A, KIF13A, KLHL34, KRT10,
+   KRT9, LDOC1, LOXL2, LRRC27, LTA, MCEE, MGAT3, MICALL2, MIR4697HG,
+   MRPL49, MRPS7, MTCL1, MTIF2, MTO1, MX2, MYCBP, NEB, NEBL, NEU3, NR1I3,
+   NRAP, NUP160, PCDHB15, PCDHGC4, PDCD7, PGK2, PHLDA3, PLEKHA5, PPARGC1A,
+   PPP4R1, PRTG, PTPN23, RASSF3, RBM12B, RCAN2, RD3, RFC3, RFX2, RIPK2,
+   RND1, RPL13, RPL36AL, RPS20, RPS28, RTL1, S100P, SBDS, SCAPER, SCGB1D2,
+   SH2D1B, SHOX2, SLC15A2, SLC4A1AP, SMARCA5, SMC5, SNAPC4, SNX31, STAT4,
+   TAF6, TAP1, TENM2, TLN2, TMEM266, TMEM59L, TP53TG1, TSGA13, TTN,
+   TUBGCP2, TXNDC8, UBD, USP28, WFDC11, ZC2HC1B, ZC3H18, ZMYND10, ZNF148,
+   ZNF536, ZNF770, ZNF837
+   Pro-S (n=172) AASS, ABCG4, ALK, ALPL, AMIGO2, AMPD3, AP2A1, AP3D1,
+   ARHGAP32, ARHGEF18, ATN1, ATP13A4, ATP5G3, ATXN7, AURKC, BAHCC1,
+   BCL2L11, BIRC6, BLZF1, BTN3A3, C7orf13, CAB39L, CACNA1H, CASP5,
+   CCDC105, CCL17, CCT2, CFAP57, CHAT, CHRNB4, CIC, CLASP2, CNTN1, COA4,
+   COL4A3BP, CTNNBIP1, CUL4B, CUX2, DDX41, DDX56, DEF8, DLEC1, DMWD,
+   DNAJC22, DVL3, DYNC1LI1, ENO1, ENPP3, FAM46C, FBXO42, FDXACB1, FGFRL1,
+   FHOD3, FLJ42569, FMNL2, FREM2, GAREM2, GEMIN4, GLRB, GLTP, GRAP, GUSB,
+   HDAC11, HECW2, HELLS, HIST1H1T, HLA-DPA1, ICAM3, IGHV3-30, IGHV3-33,
+   IKZF4, ITIH5, KAT2A, KDM2B, KDM5B, KIF14, KLHL25, KRR1, KRT16, LMNB1,
+   LRP4, MAP4K3, MDH1B, MESP1, MRM1, MRPS18A, MS4A10, MYO15A, MYO1A, MYT1,
+   MYT1L, NEDD8, NPC1L1, NPHP3, NRXN1, NSD1, NXF3, OR1S2, OR2T7, OR6T1,
+   OTUD4, OTUD7A, PADI6, PATE2, PCNX3, PDGFRL, PDK4, PHB2, PHRF1, PKD1L1,
+   PLXNB3, PNLIPRP3, PNN, PPP1R42, PRDX3, PRPF4, PSMB10, PSMB3, PSMC3,
+   RALGDS, RBBP5, RCN3, RGL1, RHPN1, RIMKLA, RIMS2, RIPK4, RNF139, RNF168,
+   RPGRIP1L, RTTN, RYR2, SAG, SERBP1, SETD1A, SH2B3, SH2D4B, SHISA7,
+   SLC25A30, SLFN11, SMARCA5, SMIM21, SORD, SOWAHC, SPECC1L, SQRDL, SRRM1,
+   ST20, STAR, SUMO1, TBC1D10C, TBC1D4, TENM1, TENM3, TERT, TESK2, TFAP4,
+   TGM7, TMEM215, TNK1, TRABD, TSSK6, TXNRD2, VPS13A, WNT2B, YIF1A,
+   ZDHHC2, ZFP64, ZNF185, ZNF438, ZNF506, ZNF790
+   Pro-B (n=69) ACSM3, ANKRD6, ARFGEF3, ASTE1, ATP5O, BCLAF1, BDP1, BRWD1,
+   BTN3A2, C2CD2L, CCDC81, CCDC88A, CDKN2AIP, CLIP3, COX6A2, DIO3,
+   DNAJC19, DPF1, DPH5, EFCAB10, GALP, GRIK2, GRIN1, HAX1, HSPE1, HYPK,
+   IDH1, IFNA2, IGHA2, IGHG1, IGHG2, IGHG3, IGHM, IGHV2-70, IGHV3-23,
+   IGKC, IL4, KRT1, MAST4, MBLAC2, MMEL1, NBR1, NPFFR1, NPHS1, PCBD2,
+   PFDN6, PHKG1, POLL, POLR2G, PRL, PROSC, PTH2, PYDC1, RAB6B, RPAP1,
+   RPL10, RYR3, SART1, SDR42E2, SLC46A3, SLIRP, SYT11, TAS2R14, TRIM32,
+   UBE3D, UMPS, URI1, ZBTB10, ZNF292
+   [59]Open in a new tab
+
+   Pro-B, proteins identified by mass spectrometry occurring in both
+   groups; Pro-C, proteins identified by mass spectrometry in the control
+   group only; Pro-S, proteins identified by mass spectrometry in the
+   cervical squamous cell carcinoma group only.
+
+Interaction analysis
+
+   The STRING website was used to determine whether the proteins
+   identified by MS bound to HSF1. A total of 151 proteins from the Pro-C
+   set were entered along with HSF1, which produced a network consisting
+   of 144 nodes and 61 edges. In this network, HSF1 was indicated to
+   interact with insulin-like growth factor 1 receptor and small nuclear
+   RNA-activating protein complex subunit 4; these proteins interacted
+   with others to form a highly complex network ([60]Fig. 1A).
+
+Figure 1.
+
+   [61]Figure 1.
+   [62]Open in a new tab
+
+   Interaction network predicted using the STRING website. (A and B)
+   Interaction network of proteins identified by mass spectrometry found
+   only in (A) Pro-C or (B) Pro-S. Pro-C, proteins in the control group
+   only; Pro-S, proteins in the cervical squamous cell carcinoma group
+   only.
+
+   HSF1 and the 172 proteins from the Pro-S set were also entered, and a
+   network consisting of 167 nodes and 92 edges was obtained. The results
+   identified an interaction between HSF1 and small ubiquitin-related
+   modifier 1 (SUMO1). Additionally, SUMO1 was indicated to interact with
+   other proteins to construct a highly complicated network, which
+   included neural precursor cell-expressed developmentally downregulated
+   protein 8 (NEDD8), cullin-4B, receptor-interacting serine-threonine
+   kinase 4 (RIPK4), and disheveled segment polarity protein 3 (DVL3) from
+   the Pro-S set ([63]Fig. 1B).
+
+Functional classification
+
+   Subsequently, 151 proteins from the Pro-C set and 172 proteins from the
+   Pro-S set were entered into DAVID bioinformatics resources. Two of
+   these proteins, immunoglobulin heavy constant µ and caspase 5, were not
+   recognized by the database and removed from further analysis.
+   Therefore, 150 proteins from Pro-C and 171 proteins from Pro-S were
+   subjected to functional classification according to the UniProtKB
+   Keywords original database in DAVID. Following this analysis, 130/150
+   proteins from Pro-C and 147/171 proteins from Pro-S were present in the
+   output. The results revealed the distribution of Pro-S proteins into
+   functional categories that differed from those of Pro-C ([64]Fig. 2).
+   The predominant category in Pro-S was ‘alternative splicing’ (57.31%),
+   whereas the largest category in Pro-C was ‘polymorphism’ (70.00%).
+   ‘Phosphoprotein’ was the second largest category in both groups,
+   representing 55.56% of proteins in Pro-S and 48.00% of proteins in
+   Pro-C. The third largest category was related to cellular localization
+   in both sets; however, this category was ‘nuclear localization’
+   (31.58%) in Pro-S and ‘cytoplasmic localization’ (36.00%) in Pro-C.
+   Furthermore, five categories were present in the two groups at
+   comparable frequencies: ‘Coiled coil’, ‘ATP binding’, ‘nucleotide
+   binding’, ‘cytoskeleton’ and ‘cilium’. A considerable fraction of the
+   proteins indicated to bind HSF1 in Pro-S were associated with protein
+   modifications, including ‘acetylation’ (22.81%), ‘ubiquitin-like (Ubl)
+   conjugation’ (12.28%) and ‘Ubl conjugation pathway’ (7.02%).
+
+Figure 2.
+
+   [65]Figure 2.
+   [66]Open in a new tab
+
+   Functional classification of proteins identified by MS. (A and B)
+   Functional classification of proteins identified by MS as binding to
+   HSF1 in (A) Pro-C or (B) Pro-S. HSF1, heat shock factor; MS, mass
+   spectrometry; Pro-C, proteins in the control group only; Pro-S,
+   proteins in the cervical squamous cell carcinoma group only.
+
+GO term analysis
+
+   The protein sets obtained for Pro-S and Pro-C were subjected to GO term
+   analysis. For the cellular component category, 79/150 proteins in Pro-C
+   and 82/171 proteins in Pro-S were identified. The results revealed that
+   the proteins were mainly located in the cytoplasm and nucleoplasm in
+   Pro-C, whereas the proteins were in the cytosol, nucleoplasm and
+   membrane in Pro-S ([67]Fig. 3A). For the molecular function category,
+   49/150 proteins in Pro-C and 31/171 proteins in Pro-S were analyzed.
+   The largest category was ‘ATP binding’ in the two sets and the category
+   ‘poly (A) RNA binding’ also has large proportion in Pro-C ([68]Fig.
+   3B). For the biological process category, 39/150 proteins in Pro-C and
+   51/171 proteins in Pro-S were analyzed. The largest two categories were
+   ‘protein phosphorylation’ and ‘negative regulation of the canonical Wnt
+   signaling pathway’ in Pro-S, and ‘translation’ and ‘positive regulation
+   of apoptotic process’ in Pro-C ([69]Fig. 3C).
+
+Figure 3.
+
+   [70]Figure 3.
+   [71]Open in a new tab
+
+   GO term analysis of proteins identified by MS. (A) The cellular
+   component, (B) molecular function and (C) biological process of GO
+   analysis. GO analysis of proteins occurred only in (A-a, B-a, C-a)
+   Pro-C or (A-b, B-b, C-b) Pro-S. GO, Gene Ontology; HSF1, heat shock
+   factor 1; MS, mass spectrometry; Pro-C, proteins in the control group
+   only; Pro-S, proteins in the cervical squamous cell carcinoma group
+   only.
+
+Discussion
+
+HSF1 may bind to distinct proteins in SCC
+
+   Tumorigenesis is a complex process involving various protein factors
+   and molecular pathways. HSF1 is a transcription factor involved in
+   multiple diseases through interactions with numerous proteins,
+   including nuclear factor-interleukin-6 and 14-3-3ε ([72]14,[73]18).
+   This is the first study, to the best of our knowledge, to examine the
+   function of HSF1 at the interactional proteome level in SCC. Clear
+   differences in the proteins that bind to HSF1 were observed between
+   cervical SCC tissue and Ctrl tissue, which indicated that the proteins
+   binding to HSF1 were distinct in the two tissue types.
+
+HSF1 may participate in alternative splicing in SCC
+
+   The proteins identified by MS as only present in SCC or Ctrl tissues
+   were classified using the online functional annotation tool DAVID. The
+   largest category of proteins binding to HSF1 in Pro-S were involved in
+   alternative splicing. Alternative splicing enables the production of
+   different combinations of exons from the same genomic template and
+   therefore increases protein complexity ([74]19). In cervical cancer,
+   alternative splicing of numerous genes, including Numb ([75]20),
+   survivin Dex3 ([76]21) and RAB1B, member RAS oncogene family ([77]22),
+   has been reported. Additionally, the serine/arginine rich family of
+   proteins dictate splice site recognition ([78]23). HSF1 is a
+   serine-rich protein ([79]24), which suggests that HSF1 may interact
+   with certain proteins to participate in alternative splicing of genes
+   in SCC. However, the association between HSF1, alternative splicing and
+   cervical cancer has not been widely examined.
+
+HSF1 may have unique phosphorylation in SCC
+
+   Phosphoproteins was the second largest category in Pro-C and Pro-S.
+   HSF1 is a serine-rich constitutively phosphorylated mediator of the
+   stress response ([80]24) and can be phosphorylated at multiple sites,
+   including Ser230 ([81]25), Ser303 and Ser307 ([82]26). The inducible
+   phosphorylation of HSF1 is correlated with its transcriptional
+   activation ([83]27). piR-823 may influence whether HSF1 phosphorylation
+   functions as a tumor promoter ([84]28). Therefore, HSF1 phosphorylation
+   status may serve a role in the genesis and progression of cervical
+   cancer. Among the phosphoproteins in Pro-S, two common kinases were
+   detected: RIPK4 and mitogen-activated protein kinase kinase kinase
+   kinase 3 (MAP4K3; [85]Table I). RIPK4 functions as a node in the
+   protein network for the Pro-S set. Increased RIPK4 expression is
+   associated with the progression and favorable prognosis of cervical
+   cancer ([86]29); RIPK4 promotes canonical Wnt signaling by
+   phosphorylating disheveled segment polarity protein 2 ([87]30). HSF1
+   Ser326 is a substrate of p38 mitogen-activated protein kinases
+   ([88]31). These data suggested that distinct kinases may be activated
+   and interact with HSF1 in cervical cancer.
+
+   SUMO1 was identified in the ‘alternative splicing’ and
+   ‘phosphoproteins’ categories (data not shown) and was confirmed by
+   String to interact with HSF1. SUMO1 was demonstrated to regulate HSF1
+   DNA-binding activity through sumoylation at Lys298 ([89]32). No
+   previously published studies have investigated the correlation of
+   SUMO1, HSF1 and cervical cancer. Therefore, whether the interaction
+   between SOMU1 and HSF1 is involved in the occurrence and development of
+   cervical cancer deserves attention.
+
+HSF1 may exhibit greater translocation into the nucleus in SCC
+
+   The third largest functional category was ‘nucleus’ in Pro-S and
+   ‘cytoplasm’ in Pro-C. Although GO cellular component analysis revealed
+   that the cytoplasm was the largest and nucleoplasm the second largest
+   term in both Pro-S and Pro-C, the ratio of protein in the nucleoplasm
+   vs. cytoplasm was higher in Pro-S (0.87) compared with in Pro-C (0.64).
+   HSF1 is activated and translocates from the cytoplasm into the nucleus
+   under stress conditions ([90]4). The results of the present study
+   indicated that more HSF1 translocated to the nucleus in cervical SCC
+   compared with normal tissue. Therefore, blocking the translocation of
+   HSF1 during malignant transformation, for example, in human papilloma
+   virus infection, may represent a therapeutic strategy.
+
+   In the molecular function GO analysis, ‘ATP binding’ was the largest
+   category in Pro-C and Pro-S. In this category, dynein light
+   intermediate chain 1 (DYNC1LI1) was identified in ATP binding and
+   nucleotide binding categories (data not shown). DYNC1LI1 is a
+   transporter in eukaryotic cells that serves important roles in the
+   development and function of the mammalian nervous system ([91]33) and
+   malignancy of glioma ([92]34). HSF1 has been reported to reinforce cell
+   death resistance in glioma ([93]35). The translocation of HSF1 under
+   stress is not well-understood; further studies of the role of DYNC1LI1
+   in SCC may clarify the mechanism of HSF1 translocation.
+
+HSF1 may influence acetylation in SCC
+
+   The fourth largest functional category in the Pro-S group was
+   acetylation. Acetylation introduces an acetyl functional group into a
+   chemical compound, which is an important modification of proteins at
+   co-translational and post-translational level. Studies of histone
+   acetylation in cervical cancer have revealed that histone H3 acetyl K9
+   was correlated with low grading and low FIGO staging scores ([94]36).
+   Col et al reported that HSF1 regulates the acetylation of pericentric
+   chromatin such as histone H3K9 or H3K4 under heat stress ([95]37).
+   These data suggested that HSF1 may promote the development of cervical
+   cancer by influencing the acetylation of H3K9.
+
+HSF1 may bind to a distinct ubiquitin protein ligase in SCC
+
+   The fifth largest functional category in the Pro-S group was ‘coiled
+   coil’. Coiled coil is a structural motif in proteins in which 2–7
+   a-helices are coiled together resembling strands of a rope ([96]38). In
+   the present study, two coiled-coil proteins were identified in the same
+   E3 ubiquitin protein ligase family: HECT, C2 and WW domain-containing
+   E3 ubiquitin protein ligase (HECW) 1 and HECW2; HECW1 was identified in
+   Pro-C and HECW2 was identified in Pro-S ([97]Table I). HECW1 interacts
+   with RNF43 to enhance pro-apoptotic activity through p53 ([98]39).
+   HECW2 enhances endothelial cell-to-cell junctions, and its deficiency
+   impairs angiogenesis ([99]40). This suggested that HSF1 may interact
+   with different members of the E3 ubiquitin protein ligase family under
+   pathological and normal conditions.
+
+HSF1 and Wnt signaling pathway
+
+   Although the Wnt signaling pathway appeared very low in the functional
+   categories (2.92%, [100]Fig. 2B), the biological process related to Wnt
+   signaling pathway appeared four times in GO analysis for Pro-S
+   ([101]Fig. 3C b). The reason may be there were fewer members of this
+   pathway. Wnt signaling pathway is involved in the development and
+   metastasis of cervical cancer ([102]41,[103]42). HSF1 increases
+   Wnt/β-catenin pathway activation ([104]43), which suggested that HSF1
+   may be involved in the carcinogenesis of cervical cancer by regulating
+   the Wnt signaling pathway. Interestingly, in the present study, the
+   biological processes included not only positive but also negative
+   regulation of canonical Wnt signaling pathway. It is possible that HSF1
+   may increase Wnt pathway activation indirectly by antagonizing the
+   effect of a protein which can negative regulate the Wnt signaling
+   pathway. The biological process of ‘negative regulation of the
+   canonical Wnt signaling pathway’ included six proteins: Proteasome
+   subunit β (PSMB) 10; nephrocystin 3; DVL3; low-density lipoprotein
+   receptor-related protein 4; PSMB3; and the proteasome 26S subunit,
+   ATPase 3 (PSMC3) (data not shown). Among these proteins, PSMB10, PSMB3,
+   PSMC3 and DVL3 formed a quadrilateral network as part of a larger
+   network with HSF1 through NEDD8 and SUMO1 ([105]Fig. 1B). Further
+   studies are needed to explore whether HSF1 is able to regulate the Wnt
+   signaling pathway by binding to this protein.
+
+   Although SUMO1 was the only protein identified in Pro-S and interacting
+   with HSF1 directly ([106]Fig. 1B), the results of the present study
+   indicated possible indirect interactions between HSF1 and numerous
+   proteins in the context of cervical cancer. The current study provided
+   insight into the mechanism by which HSF1 influences the development of
+   cervical cancers. However, owing to its preliminary nature, the study
+   has some deficiencies such as small sample size and incomprehensive
+   selection of reagents. For example, the RIPA buffer may disrupt weak
+   non-covalent protein-protein interactions. In addition, we only chose
+   10 paired bands with obvious difference for MS. All these may possibly
+   result in certain proteins, which have been reported as interactional
+   proteins of HSF1, not being identified. Thus, future studies need to be
+   conducted to confirm these interactions and to explore their functions
+   in cervical SCC.
+
+Supplementary Material
+
+   Supporting Data
+   [107]Supplementary_Data.pdf^ (373.9KB, pdf)
+
+Acknowledgements

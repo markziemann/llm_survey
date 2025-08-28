@@ -1,0 +1,24 @@
+Here's a breakdown of the pathway enrichment analysis methods used in the article, presented in a format suitable for a table:
+
+1. **What tool was used for pathway enrichment analysis?**
+   Ingenuity Pathway Analysis (IPA)
+
+2. **Was a tool version number provided?**
+   Not described
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+   Not described (The article states pathways were recognised, but doesn't specify the database IPA used. It mentions canonical pathways, implying a curated knowledge base, but the specific library isn't stated.)
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   Not described
+
+5. **What statistical test was used for enrichment analysis?**
+   Not described
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   P-values < 0.05 were considered statistically significant, suggesting a form of multiple testing correction was likely applied within IPA, though the specific method (e.g., FDR, Benjamini-Hochberg) isn’t explicitly stated.
+
+
+
+
+

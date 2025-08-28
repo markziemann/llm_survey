@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The article does not specifically mention a tool used for pathway enrichment analysis, but it mentions that "pathway enrichment analysis was performed on all 438 genes" and that "three online miRNA-target-predicting database (miRBD, TargetScan and miRWalk) to predicte the target genes" were used. However, it is likely that a separate tool was used for pathway enrichment analysis, but it is not described.
+
+2. Was a tool version number provided?
+Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+KEGG (Kyoto Encyclopedia of Genes and Genomes) is mentioned as one of the pathways involved, specifically "the insulin signalling pathway, Wnt signalling pathway, FoxO signaling pathway and mTOR signalling pathway, etc."
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+Not described.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described. However, it is mentioned that "Target genes located in the intersection of three databases were chosen for further analyses so that to reduce false positives", which suggests that some method was used to reduce false positives, but it is not clear if this is related to false discovery rate correction.
+

@@ -1,0 +1,19 @@
+Here's a breakdown of the pathway enrichment analysis methods used in the provided text, presented in a table-ready format.
+
+| **Question** | **Answer** |
+|---|---|
+| 1. What tool was used for pathway enrichment analysis? | Database for Kyoto Encyclopedia of Genes and Genomes (KEGG) |
+| 2. Was a tool version number provided? | Not described |
+| 3. What gene set library was queried (eg: GO, KEGG, Reactome or other)? | KEGG |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Yes, differentially expressed genes were used as the query gene list, and it is implied that all genes in the study comprised the background list. |
+| 5. What statistical test was used for enrichment analysis? | Not described |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes, P-value was used as a threshold and pathways with P<0.05 were considered statistically significant.|
+
+**Important Notes & Caveats:**
+
+*   The level of detail regarding the pathway enrichment analysis is limited. The authors do not explicitly state *how* the enrichment was performed beyond stating they used KEGG.
+*   It's unclear if any specific statistical software was used to perform the analysis.
+*   Details about the exact statistical method used to calculate the p-values are missing.
+*   It's also not clear how the list of differentially expressed genes was generated (e.g., which statistical test and criteria were used).
+
+

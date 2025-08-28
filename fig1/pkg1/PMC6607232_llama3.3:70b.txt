@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is not described, but it mentions that the analysis was done using the "Kyoto Encyclopedia of Genes and Genomes (KEGG)".
+
+2. Was a tool version number provided?
+Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+KEGG (Kyoto Encyclopedia of Genes and Genomes).
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+The statistical test used is not explicitly described, but it mentions that "Pathway terms with P<0.05 were considered statistically significant".
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described.
+

@@ -1,0 +1,33 @@
+Based on the provided abstract and sections from the scientific article, here's an examination of how pathway enrichment analysis was conducted:
+
+1. **Tool Used for Pathway Enrichment Analysis:**  
+   - The tool used is not explicitly mentioned in the provided text.
+
+2. **Tool Version Number Provided:**  
+   - Not described
+
+3. **Gene Set Library Queried (e.g., GO, KEGG, Reactome or other):**  
+   - The gene set library queried includes KEGG, as indicated by references to the "AMPH addiction pathway."
+
+4. **Background Gene List Defined for Pathway Enrichment Analysis:**  
+   - Not described
+
+5. **Statistical Test Used for Enrichment Analysis:**  
+   - The specific statistical test used is not detailed in the provided text.
+
+6. **False Discovery Rate Correction Used to Control Number of False Positives:**  
+   - It is mentioned that a "false discovery rate (FDR) correction" was used, indicating control over false positives.
+
+Here's the collated information:
+
+| Question                                                                 | Answer         |
+|--------------------------------------------------------------------------|----------------|
+| What tool was used for pathway enrichment analysis?                      | Not described  |
+| Was a tool version number provided?                                       | Not described  |
+| What gene set library was queried (e.g., GO, KEGG, Reactome or other)?    | KEGG           |
+| Was a background gene list defined for pathway enrichment analysis?       | Not described  |
+| What statistical test was used for enrichment analysis?                   | Not described  |
+| Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes (FDR correction) |
+
+If you need further details, reviewing the full Methods section or related supplementary materials in the article would be necessary.
+

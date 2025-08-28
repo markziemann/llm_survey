@@ -1,0 +1,124 @@
+Abstract
+
+Objectives
+
+   The objectives of this study were to identify differentially expressed
+   transcripts and gene pathways in the vertebral bone of pigs receiving
+   very high doses of vitamin A supplementation. Prior studies have
+   ascertained that excessive vitamin A intake exhibits
+   compartment-specific effects in bone tissue; these include regulating
+   mineralisation genes in cortical bone containing bone marrow. Due to
+   vertebral bone containing bone marrow, the hypothesis was that vitamin
+   A will upregulate genes and pathways within vertebral bone that will
+   favour bone mineralisation.
+
+Methods
+
+   A total of 64 indoor UK pigs, fed standard commercial diets, were split
+   into 8 groups (n = 8 per group) and received daily dosing of retinyl
+   propionate (RP) (0 up to 10,000 µg RP/kg BW) for 17 weeks. Vertebral
+   bone was sampled from the 13^th thoracic vertebrae and RNA was
+   extracted. RNA from control pigs and pigs receiving 10,000 µg RP/kg BW
+   was labelled and hybridised on an Agilent 4^*44k microarray. Genespring
+   was used to identify differentially expressed transcripts, and
+   Ingenuity Pathway Analysis (IPA) was applied to recognise gene pathways
+   associated with vitamin A supplementation. qRT-PCR was then performed
+   to confirm differential gene expression on selected biomarkers.
+   Kruskal-Wallis test was used to determine significant changes in gene
+   expression in response to vitamin A dose.
+
+Results
+
+   A total of 318 transcripts were observed to be differentially
+   regulated > 2-fold in the vertebral bone of pigs receiving 10,000 µg
+   RP/kg BW, 199 transcripts (62.6%) were observed to be upregulated
+   (P < 0.05). Genes relating to Rho-GTPases and regulation of
+   cytoskeletal dynamics, such as CDC42 and FLNA, persisted among
+   canonical pathways (P < 0.05). qRT-PCR confirmed an 8.17-fold
+   upregulation of FLNA in vertebral bone of pigs receiving 3000 µg RP/kg
+   BW (P < 0.01), but no clear effect of treatment was observed on CDC42
+   expression (P = 0.147).
+
+Conclusions
+
+   Due to its role in the regulation of cytoskeletal reorganisation, of
+   which subsequently affects both bone formation and resorption, the
+   results suggest that high vitamin A intake potentially influences bone
+   metabolism through interacting with the Rho-GTPase pathway.
+
+Funding Sources
+
+   Bill and Melinda Gates Foundation.
+     __________________________________________________________________
+
+   Articles from Current Developments in Nutrition are provided here
+   courtesy of American Society for Nutrition
+   (BUTTON) Close
+
+ACTIONS
+
+     * [32]View on publisher site
+     * [33]PDF (57.1 KB)
+     * (BUTTON) Cite
+     * (BUTTON) Collections
+     * (BUTTON) Permalink
+
+PERMALINK
+       https://pmc.ncbi.nlm (BUTTON) Copy
+
+RESOURCES
+
+(BUTTON) Similar articles
+
+(BUTTON) Cited by other articles
+
+(BUTTON) Links to NCBI Databases
+
+Cite
+
+   (BUTTON)
+     * (BUTTON) Copy
+     * [34]Download .nbib .nbib
+     * Format: [NLM]
+
+Add to Collections
+
+   ( ) Create a new collection
+   (*) Add to an existing collection
+
+   Name your collection * ____________________
+   Choose a collection
+   Unable to load your collection due to an error
+   [35]Please try again
+
+   (BUTTON) Add (BUTTON) Cancel
+
+   Follow NCBI
+   [36]NCBI on X (formerly known as Twitter) [37]NCBI on Facebook [38]NCBI
+   on LinkedIn [39]NCBI on GitHub [40]NCBI RSS feed
+
+   Connect with NLM
+   [41]NLM on X (formerly known as Twitter) [42]NLM on Facebook [43]NLM on
+   YouTube
+
+
+    [44]National Library of Medicine
+    8600 Rockville Pike
+    Bethesda, MD 20894
+
+     * [45]Web Policies
+     * [46]FOIA
+     * [47]HHS Vulnerability Disclosure
+
+     * [48]Help
+     * [49]Accessibility
+     * [50]Careers
+
+     * [51]NLM
+     * [52]NIH
+     * [53]HHS
+     * [54]USA.gov
+
+   (BUTTON) Back to Top
+
+References

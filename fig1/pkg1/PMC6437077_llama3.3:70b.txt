@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is DAVID web server.
+
+2. Was a tool version number provided?
+No, the authors did not provide a version number for the DAVID web server.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The authors queried both GO and KEGG pathway libraries.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described. The authors did not provide information on whether a background gene list was defined.
+
+5. What statistical test was used for enrichment analysis?
+Not described. The authors did not specify the statistical test used for enrichment analysis in the DAVID web server.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described. The authors did not mention whether false discovery rate correction was used to control the number of false positives.
+

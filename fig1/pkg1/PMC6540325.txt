@@ -1,0 +1,443 @@
+Abstract
+
+   Medulloblastoma (MB) is the most common malignant brain tumor in
+   children. The aim of the present study was to predict biomarkers and
+   reveal their potential molecular mechanisms in MB. The gene expression
+   profiles of [33]GSE35493, [34]GSE50161, [35]GSE74195 and [36]GSE86574
+   were downloaded from the Gene Expression Omnibus (GEO) database. Using
+   the Limma package in R, a total of 1,006 overlapped differentially
+   expressed genes (DEGs) with the cut-off criteria of P<0.05 and
+   |log[2]fold-change (FC)|>1 were identified between MB and normal
+   samples, including 540 upregulated and 466 downregulated genes.
+   Furthermore, the Gene Ontology (GO) and the Kyoto Encyclopedia of Genes
+   and Genomes (KEGG) pathway enrichment analysis were also performed
+   using the Database for Annotation, Visualization and Integrated
+   Discovery (DAVID) online tool to analyze functional and pathway
+   enrichment. The Search Tool for Retrieval of Interacting Genes database
+   was subsequently used to construct a protein-protein interaction (PPI)
+   network and the network was visualized in Cytoscape. The top 11 hub
+   genes, including CDK1, CCNB1, CCNB2, PLK1, CDC20, MAD2L1, AURKB, CENPE,
+   TOP2A, KIF2C and PCNA, were identified from the PPI network. The
+   survival curves for hub genes in the dataset [37]GSE85217 predicted the
+   association between the genes and survival of patients with MB. The top
+   3 modules were identified by the Molecular Complex Detection plugin.
+   The results indicated that the pathways of DEGs in module 1 were
+   primarily enriched in cell cycle, progesterone-mediated oocyte
+   maturation and oocyte meiosis; and the most significant functional
+   pathways in modules 2 and 3 were primarily enriched in mismatch repair
+   and ubiquitin-mediated proteolysis, respectively. These results may
+   help elucidate the pathogenesis and design novel treatments for MB.
+
+   Keywords: medulloblastoma, bioinformatics, differentially expressed
+   genes, biomarkers, modules
+
+Introduction
+
+   Medulloblastoma (MB) is the most common solid tumor in children,
+   comprising 15–20% of pediatric central nervous system tumors
+   ([38]1,[39]2). MB may occur at all ages, however its peak incidence is
+   between 4 and 7 years ([40]3). In 2016, the World Health Organization
+   classified MB into four subtypes, including WNT-activated,
+   SHH-activated, group 3 and group 4, by combining molecular profiling
+   with histology ([41]4). In addition, as these tumors occur in the
+   posterior fossa, clinical symptoms are often too vague for accurate and
+   prompt diagnosis ([42]5). The therapeutic options include maximal safe
+   surgical resection, radiation and chemotherapy ([43]3). However,
+   cerebellar mutism may occur in >25% of the cases following maximal
+   surgical resection in patients with high-risk MB; recovering patients
+   may still experience dysarthria and neurocognitive dysfunction ([44]6).
+   In addition, adjuvant chemotherapy and radiotherapy may lead to hearing
+   loss and the development of secondary tumors ([45]6). The main cause of
+   mortality in MB is metastatic disease, which is unresectable ([46]7).
+   Although multimodal therapy significantly improves the prognosis of MB,
+   approximately one-third of the patients eventually succumb to the
+   disease ([47]3). Therefore, further research on the underlying
+   molecular mechanisms is imperative, in order to design more efficient
+   and precise treatment strategies to improve patient survival.
+
+   With the completion of the Human Genome Project, molecular diagnosis
+   and therapy have become available in clinical practice, which is
+   helpful for improving the accuracy and efficacy of diagnosis and
+   treatment ([48]4). Using bioinformatics and microarray analysis, it is
+   possible to further examine the underlying gene characteristics and
+   molecular mechanisms involved in the proliferation, invasion and
+   metastasis of MB ([49]8,[50]9). For example, mitotic kinases and WEE1
+   G2 checkpoint kinase were identified as rational therapeutic targets
+   for MB by performing an integrated genomic analysis using structural
+   and functional methods ([51]10).
+
+   In the present study, 4 databases with 115 samples of MB and normal
+   tissues were downloaded from the Gene Expression Omnibus (GEO)
+   database. Following screening of differentially expressed genes (DEGs)
+   though package Limma in R, Gene Ontology (GO) and Kyoto Encyclopedia of
+   Genes and Genomes (KEGG) analyses were performed to analyze the
+   potential functional and pathway enrichment, and a protein-protein
+   interaction (PPI) network was subsequently constructed using the Search
+   Tool for Retrieval of Interacting Genes (STRING) database and
+   visualized with Cytoscape software, in order to identify biomarkers and
+   examine the potential underlying molecular mechanisms in MB. Therefore,
+   the results of the present study may improve our understanding of MB,
+   identify potential biomarkers and indicate methods of diagnosis and
+   treatment for future research.
+
+Materials and methods
+
+Microarray data
+
+   In the present study, the gene expression profiles of [52]GSE35493
+   ([53]11), [54]GSE50161 ([55]12), [56]GSE74195 ([57]13) and [58]GSE86574
+   ([59]https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE86574) were
+   downloaded from the GEO database
+   ([60]http://www.ncbi.nlm.nih.gov/geo/). A total of 115 samples,
+   including 78 MB and 37 normal samples, had been hybridized on the
+   Affymetrix Human Genome U133 Plus 2.0 Array (HG-U133_Plus_2) on the
+   [61]GPL570 platform. [62]GSE35493 included 17 MB and 9 normal samples,
+   [63]GSE50161 included 22 MB and 13 normal samples, [64]GSE74195
+   included 23 MB and 5 normal samples, and [65]GSE86574 included 16 MB
+   and 10 normal samples. [66]GSE85217 from the [67]GPL22286 platform
+   included 613 MB samples.
+
+Identification of DEGs
+
+   The raw data in CEL files were transformed into gene symbols based on
+   the downloaded platform annotation files. The data were preprocessed,
+   including background correction, normalization and summarization, via R
+   3.4.1 software ([68]https://www.r-project.org/) ([69]14). Following
+   robust multiarray average normalization, Limma in R package (version
+   3.26.9) was used to screen DEGs ([70]15). The genes meeting the cut-off
+   criteria of adjusted P<0.05 and |log[2]fold-change (FC)|>1 were
+   selected as the DEGs.
+
+Functional and pathway enrichment analysis
+
+   After acquiring the DEGs, GO enrichment analysis and KEGG pathway
+   enrichment analysis were performed through DAVID
+   ([71]https://david.ncifcrf.gov/) online tool to identify functional
+   categories of DEGs ([72]16). GO analysis of DEGs included biological
+   process (BP), molecular function (MF) and cell component (CC). In
+   addition, the terms with P<0.05 were considered to indicate a
+   statistically significant difference.
+
+Construction of the PPI network and selection of modules
+
+   To identify hub genes and screen modules, the DEGs were uploaded to
+   STRING (version 10.5; [73]http://www.string-db.org/) to analyze and set
+   up the PPI network ([74]17). Subsequently, the network was visualized
+   in Cytoscape (version 3.5.1; [75]www.cytoscape.org) ([76]18). The
+   Cytoscape software was applied to search for hub genes with CytoHubba,
+   a plugin to hub an object from complex networks, and modules with
+   Molecular Complex Detection (MCODE) ([77]19,[78]20). Furthermore, hub
+   genes in selected modules were analyzed via DAVID to examine pathway
+   enrichment.
+
+Survival analysis
+
+   To assess the association between hub genes and survival, 613 MB
+   samples with clinical data from [79]GSE85217 were selected and survival
+   curves were drawn by recruiting the survival package in R.
+
+Results
+
+Identification of DEGs
+
+   Basing on the cut-off criteria of P<0.05 and |log[2]fold-change
+   (FC)|>1, a total of 6,305, 4,185, 2,506 and 4,253 DEGs between MB and
+   normal samples were screened from [80]GSE35493, [81]GSE50161,
+   [82]GSE74195 and [83]GSE86574, respectively. DEGs from [84]GSE35493
+   included 5,242 upregulated and 1,063 downregulated genes. DEGs from
+   [85]GSE50161 included 3,025 upregulated and 1,160 downregulated genes.
+   DEGs from [86]GSE74195 included 1,315 upregulated and 1,191
+   downregulated genes. DEGs from [87]GSE86574 included 2,772 upregulated
+   and 1,481 downregulated genes. In addition, a total of 1,006 mutual
+   DEGs were screened, among those 4 datasets, by performing a Venn
+   diagram analysis ([88]Fig. 1), where 540 were upregulated and 466 were
+   downregulated.
+
+Figure 1.
+
+   Figure 1.
+   [89]Open in a new tab
+
+   Venn diagram of differentially expressed genes among the 4 datasets.
+
+Functional and pathway enrichment analysis
+
+   Submitting 1,006 mutual DEGs to DAVID provided further insight into the
+   function of these DEGs and the molecular mechanisms implicated in MB.
+   The top 10 significant terms of each GO category ([90]Table I) and the
+   top 10 terms of KEGG category ([91]Table II) were selected. The GO
+   analysis results demonstrated that overlapped DEGs were significantly
+   associated with cell division, mitotic nuclear division and chemical
+   synaptic transmission in the BP category; cell junction, condensed
+   chromosome kinetochore and postsynaptic membrane in the CC category;
+   and protein binding, microtubule binding and chromatin binding in the
+   MF category (P<0.05) ([92]Table I). In addition, the enriched KEGG
+   pathway analysis results primarily included cell cycle, DNA replication
+   and retrograde endocannabinoid signaling ([93]Table II).
+
+Table I.
+
+   Top 10 significant GO terms of BP, MF and CC.
+   Category Term Description Count P-value
+   BP GO:0051301 Cell division 77 1.54×10^−27
+   BP GO:0007067 Mitotic nuclear division 55 6.14×10^−20
+   BP GO:0007268 Chemical synaptic transmission 45 1.47×10^−13
+   BP GO:0000082 G1/S transition of mitotic cell cycle 28 1.02×10^−12
+   BP GO:0007062 Sister chromatid cohesion 27 8.76×10^−12
+   BP GO:0006260 DNA replication 33 1.23×10^−11
+   BP GO:0000070 Mitotic sister chromatid segregation 12 1.48×10^−08
+   BP GO:0007059 Chromosome segregation 18 4.14×10^−08
+   BP GO:0000086 G2/M transition of mitotic cell cycle 24 5.11×10^−07
+   BP GO:0007076 Mitotic chromosome condensation 8 4.23×10^−06
+   CC GO:0030054 Cell junction 65 8.14×10^−14
+   CC GO:0000777 Condensed chromosome kinetochore 24 2.74×10^−11
+   CC GO:0045211 Postsynaptic membrane 37 8.92×10^−11
+   CC GO:0014069 Postsynaptic density 34 1.40×10^−10
+   CC GO:0005654 Nucleoplasm 206 2.20×10^−09
+   CC GO:0030425 Dendrite 43 3.92×10^−08
+   CC GO:0000775 Chromosome, centromeric region 16 8.32×10^−08
+   CC GO:0030496 Midbody 24 9.65×10^−08
+   CC GO:0043025 Neuronal cell body 40 1.67×10^−07
+   CC GO:0005874 Microtubule 39 3.78×10^−07
+   MF GO:0005515 Protein binding 531 3.92×10^−09
+   MF GO:0008017 Microtubule binding 32 7.31×10^−08
+   MF GO:0003682 Chromatin binding 40 4.88×10^−05
+   MF GO:0005524 ATP binding 110 7.45×10^−05
+   MF GO:0019901 Protein kinase binding 38 1.00×10^−04
+   MF GO:0005201 Extracellular matrix structural constituent 13
+   1.27×10^−04
+   MF GO:0005509 Calcium ion binding 60 1.87×10^−04
+   MF GO:0017075 Syntaxin-1 binding 7 1.88×10^−04
+   MF GO:0004890 GABA-A receptor activity 7 2.63×10^−04
+   MF GO:0005219 Ryanodine-sensitive calcium-release channel activity 4
+   5.07×10^−04
+   [94]Open in a new tab
+
+   GO, Gene Ontology; BP, biological process; MF, molecular function; CC,
+   cell component.
+
+Table II.
+
+   Top 10 significant Kyoto Encyclopedia of Genes and Genomes pathways.
+   Term Description Count P-value Genes
+   hsa04110 Cell cycle 28 3.95×10^−11 E2F5, DBF4, TTK, CHEK1, PTTG1,
+   CHEK2, CCNE2, CDC45, MCM7, CDKN2C, CDK1, ESPL1, CDK6, CDC20, MCM2,
+   CDK4, MCM3, WEE1, CDC25A, MCM5, CCNB1, MAD2L1, CCNB2, CCND2, PLK1,
+   PCNA, BUB1B, ABL1
+   hsa03030 DNA replication 14 7.26×10^−09 MCM2, RNASEH2A, MCM3, MCM5,
+   PRIM1, RFC3, RFC4, MCM7, POLE2, RFC2, POLD1, PRIM2, PCNA, FEN1
+   hsa04723 Retrograde endocannabinoid signaling 22 1.50×10^−08 GABRD,
+   GABRG1, GABRA2, GABRA1, GNAI3, GABRA4, GABRB2, GABRB1, GNG13, MAPK10,
+   GRIA4, RIMS1, KCNJ3, ITPR1, SLC17A7, SLC32A1, KCNJ6, KCNJ9, GRIA1,
+   MGLL, GNG3, GNG4
+   hsa04727 GABAergic synapse 20 2.14×10^−08 GABRD, GABRG1, GABRA2,
+   GABARAPL1, GABRA1, GNAI3, SLC6A1, GABRA4, GABRB2, GABRB1, GABBR1,
+   GNG13, GABBR2, GLS2, SLC32A1, KCNJ6, ABAT, GNG3, GNG4, GAD1
+   hsa05032 Morphine addiction 19 3.66×10^−07 GABRD, GABRG1, GABRA2,
+   GNAI3, GABRA1, GABRA4, GABRB2, GABRB1, GABBR1, GNG13, GABBR2, KCNJ3,
+   ADORA1, SLC32A1, KCNJ6, KCNJ9, PDE1A, GNG3, GNG4
+   hsa05033 Nicotine addiction 12 2.42×10^−06 SLC17A7, GABRD, SLC32A1,
+   GABRG1, GABRA2, GABRA1, GABRA4, GRIA1, GABRB2, GABRB1, GRIN2A, GRIA4
+   hsa04728 Dopaminergic synapse 20 1.55×10^−05 SCN1A, CALY, PPP2R3A,
+   GNAI3, KIF5A, GRIN2A, GNG13, MAPK10, GRIA4, KCNJ3, ITPR1, KCNJ6, KCNJ9,
+   PPP1R1B, GRIA1, CREB3L4, CAMK2B, GNG3, PPP3CA, GNG4
+   hsa04713 Circadian entrainment 16 5.91×10^−05 GNAI3, GRIN2A, GNG13,
+   GRIA4, KCNJ3, ITPR1, KCNJ6, KCNJ9, GRIA1, RYR3, RYR1, RYR2, CAMK2B,
+   GUCY1B3, GNG3, GNG4
+   hsa03430 Mismatch repair 8 8.58×10^−05 EXO1, MSH6, RFC3, RFC4, RFC2,
+   MSH2, POLD1, PCNA
+   hsa04115 p53 signaling pathway 13 9.34×10^−05 CCNB1, CCNE2, CDK1,
+   TP53I3, CCNB2, CCND2, RRM2, SIAH1, CHEK1, CDK6, CHEK2, CDK4, GTSE1
+   [95]Open in a new tab
+
+Module screening from the PPI network
+
+   Among the 4 datasets, the overlapped 1,006 DEGs were analyzed with the
+   PPI network via STRING, and interaction with a score >0.9 was
+   subsequently obtained in the following analysis. Furthermore, the hub
+   genes with degrees >44 were screened out based on CytoHubba. In total,
+   11 nodes were screened out as hub genes, including CDK1 (degree=90),
+   CCNB1 (degree=68), CCNB2 (degree=60), PLK1 (degree=60), CDC20
+   (degree=57), MAD2L1 (degree=53), AURKB (degree=50), CENPE (degree=46),
+   TOP2A (degree=45), KIF2C (degree=45) and PCNA (degree=45; [96]Fig. 2A).
+   Among the 11 hub genes, the node with the highest degree (90) was CDK1.
+   Additionally, four heat maps of the expression of 11 hub genes in
+   [97]GSE35493, [98]GSE50161, [99]GSE74195 and [100]GSE86574 are
+   presented in [101]Fig. 3.
+
+Figure 2.
+
+   [102]Figure 2.
+   [103]Open in a new tab
+
+   PPI network and modules of DEGs in MB. (A) PPI network. (B) Module 1.
+   (C) Module 2. (D) Module 3. The circular nodes represent DEGs. The
+   edges/lines stand for the regulatory association between two nodes. The
+   top 11 hub genes are highlighted with red circles. PPI, protein-protein
+   interaction; DEGs, differentially expressed genes; MB, medulloblastoma.
+
+Figure 3.
+
+   [104]Figure 3.
+   [105]Open in a new tab
+
+   Hub gene expression heat maps among the 4 databases. (A) Hub gene
+   expression heat map of [106]GSE35493. (B) Hub gene expression heat map
+   of [107]GSE50161. (C) Hub gene expression heat map of [108]GSE74195.
+   (D) Hub gene expression heat map of [109]GSE86574. Red, upregulation;
+   blue, downregulation.
+
+   Furthermore, following MCODE analysis, 7 modules were identified to be
+   available and the top 3 significant modules are presented in [110]Fig.
+   2B-D. Furthermore, the top 3 pathways in each module are listed in
+   [111]Table III. Module 1 had 29 nodes, 404 edges and the highest score
+   (score=28.857). In this module, the top 3 enriched KEGG pathways were
+   cell cycle, progesterone-mediated oocyte maturation, and oocyte
+   meiosis. In addition, module 2 (score=11.6) had 31 nodes and 174 edges,
+   and the pathways were primarily associated with mismatch repair, DNA
+   replication and nucleotide excision repair. Module 3 (score=10) had 10
+   nodes and 45 edges, which were significantly enriched in
+   ubiquitin-mediated proteolysis (P<0.05; [112]Table III).
+
+Table III.
+
+   Top 10 significant KEGG pathways of the DEGs in top 3 modules.
+   Module Term KEGG names Count P-value Genes
+   Module 1 hsa04110 Cell cycle 8 5.80×10^−11 CCNB1, CDK1, CDC20, CCNB2,
+   PLK1, BUB1B, MAD2L1, ESPL1
+   hsa04914 Progesterone-mediated oocyte maturation 5 4.65×10^−06 CCNB1,
+   CDK1, PLK1, MAD2L1, CCNB2,
+   hsa04114 Oocyte meiosis 5 1.14×10^−05 CDK1, MAD2L1, PLK1, CDC20, ESPL1
+   Module 2 hsa03430 Mismatch repair 6 3.25×10^−10 EXO1, RFC3, RFC4, RFC2,
+   POLD1, PCNA
+   hsa03030 DNA replication 6 3.59×10^−09 RFC3, RFC4, POLE2, RFC2, POLD1,
+   PCNA
+   hsa03420 Nucleotide excision repair 6 1.45×10^−08 RFC3, RFC4, POLE2,
+   RFC2, POLD1, PCNA
+   Module 3 hsa04120 Ubiquitin mediated proteolysis 4 7.41×10^−05 FBXW7,
+   SIAH1, UBE2S, UBE2E2
+   [113]Open in a new tab
+
+   KEGG, Kyoto Encyclopedia of Genes and Genomes; DEGs, differentially
+   expressed genes.
+
+Survival analysis
+
+   The survival curves for hub genes in the dataset [114]GSE85217 are
+   presented in [115]Fig. 4. The expressions of CCNB1 (P=0.03108), CCNB2
+   (P=0.00336), CDC20 (P=0.026), KIF2C (P=0.01622), MAD2L1 (P=0.00145),
+   PLK1 (P=0.00325) and TOP2A (P=0.01387) were negatively associated with
+   patient survival time.
+
+Figure 4.
+
+   [116]Figure 4.
+   [117]Open in a new tab
+
+   Survival analysis for hub genes in the dataset [118]GSE85217. The
+   difference in survival between low and high expression of (A) AURKB
+   (P=0.63726), (B) CCNB1 (P=0.03108), (C) CCNB2 (P=0.00336), (D) CDC20
+   (P=0.02600), (E) CDK1 (P=0.70024), (F) CENPE (P=0.12852), (G) KIF2C
+   (P=0.01622), (H) MAD2L1 (P=0.00145), (I) PCNA (P=0.21227), (J) PLK1
+   (P=0.00325) and (K) TOP2A (P=0.01387). Red lines represent high
+   expression and blue lines represent low expression of the hub genes.
+
+Discussion
+
+   Identifying the molecular mechanisms of MB, which has unique gene
+   expression signatures, is of critical importance for targeted diagnosis
+   and treatment ([119]21). In the present study, 78 MB and 37 normal
+   samples were collected from the GEO database for bioinformatics
+   analysis, aiming to identify hidden biomarkers and elucidate the
+   molecular mechanisms in MB. A total of 1,006 mutual DEGs were screened
+   from the four microarray datasets [120]GSE35493, [121]GSE50161,
+   [122]GSE74195 and [123]GSE86574 using the Limma in R package.
+
+   The GO analysis results of the DEGs revealed that the overlapped DEGs
+   were primarily associated with mitosis, including cell division,
+   mitotic nuclear division, G[1]/S transition of the mitotic cell cycle,
+   sister chromatid cohesion, sister chromatid segregation, chromosome
+   segregation, G[2]/M transition of the mitotic cell cycle, and mitotic
+   chromosome condensation in the BP category. In addition, Aurora kinase
+   B regulates multiple stages of mitosis, and its inhibitors may inhibit
+   the growth of Group 3 MBs and prolong survival ([124]22). These results
+   suggested that it may be possible to treat MB by regulating the key
+   biomarkers of mitosis ([125]23,[126]24). In addition, it was also
+   observed that these genes were enriched in cell junction, condensed
+   chromosome kinetochore, protein binding, microtubule binding and
+   chromatin binding. Certain RNA binding proteins, including MSI1, DDX3X
+   and CCAR1, were reported to play important roles in the growth and/or
+   maintenance of MB ([127]25).
+
+   Following KEGG pathway analysis, the genes were found to be
+   significantly associated with cell cycle, DNA replication, retrograde
+   endocannabinoid signaling, GABAergic synapse, morphine addiction,
+   nicotine addiction, dopaminergic synapse, circadian entrainment,
+   mismatch repair, and p53 signaling pathway. A previous study reported
+   that the defect of NEO1, which was necessary for cell cycle
+   progression, arrests cells at the G[2]/M phase in MB ([128]26). These
+   results indicated that cannabinoids, morphine and nicotine, consistent
+   with previous studies, were likely associated with the progression of
+   brain tumors ([129]27–[130]29). Therefore, these pathway analysis
+   results may enable the prediction of novel therapeutic targets.
+
+   Furthermore, the top 11 hub genes, including CDK1, CCNB1, CCNB2, PLK1,
+   CDC20, MAD2L1, AURKB, CENPE, TOP2A, KIF2C and PCNA, were identified
+   using the PPI network. It was reported that inhibiting the catalytic
+   activity of CDK1 using VMY-1-103 may severely disrupt the mitotic cycle
+   of MB cells ([131]24). It was previously reported that the combined
+   expression of MYC, LDHB and CCNB1 as potential prognostic biomarkers
+   may predict survival and provide a more accurate basis for the targeted
+   therapy of patients with MB ([132]30). The inhibitors of PLK1, an
+   oncogenic kinase that controls cell cycle and proliferation, inhibited
+   mitosis in MB cells, and patients expressing high levels of PLK1 were
+   considered as high-risk. All findings indicated that PLK1 is a possible
+   therapeutic target for patients with MB ([133]31,[134]32). In another
+   study, it was reported that the expression levels of TOP2A may be a
+   potential biomarker for sensitivity to etoposide in patients with MB
+   ([135]33). PCNA, which may be used to demonstrate the proliferative
+   phase of the cell cycle, was significantly associated with MB grade,
+   suggesting that PCNA may be a biomarker for assessing grade and the
+   possibility of recurrence in MB ([136]34).
+
+   However, 6 hub genes, including CCNB2, CDC20, MAD2L1, AURKB, CENPE and
+   KIF2C, have yet to be verified, to the best of our knowledge, in MB by
+   systematic searches through PubMed, there were a number of studies on
+   other tumors, particularly brain tumors, including glioma
+   ([137]33–[138]44). It was reported that CDC20 was a critical regulator
+   of tumor-initiating cell proliferation and survival of glioblastoma
+   cells ([139]35). Combining the findings of other studies, CDC20 was
+   found to play a role in cell cycle progression, apoptosis and brain
+   development, and these findings indicated that it may be a potential
+   novel target for therapeutic intervention in brain tumors, particularly
+   MB ([140]36,[141]37). In addition, the RNA levels of CDC20 and MAD2L1
+   were associated with glioma grade, which suggested a clinical benefit
+   as a biomarker ([142]38). Other studies demonstrated that MAD2L1 was of
+   diagnostic value in several tumors, including salivary duct carcinomas,
+   breast cancer and acute lymphoblastic leukemia ([143]39–[144]41).
+   Furthermore, CCNB2 was predicted as a tumor-associated factor similar
+   to CCNB1 ([145]42). AURKA was reported to be the target of some
+   molecule inhibitors, such as BMS-754807 and SIX3, aiming to inhibit
+   diffuse intrinsic pontine glioma or astrocytoma ([146]43,[147]44). The
+   knockdown of CENPE, which is highly expressed in pediatric glioma,
+   combined with temozolomide treatment, was found to lead to inhibition
+   of glioma cell proliferation ([148]45). KIF2C was reported to be
+   associated with histopathological glioma grades, which indicated this
+   gene may be a potential biomarker for prognosis in patients with glioma
+   ([149]46). Taken together, although their significance has yet to been
+   confirmed, to the best of our knowledge, these findings suggest that
+   the 6 hub genes may be potential biomarkers in the diagnosis, treatment
+   and prognosis of MB.
+
+   In conclusion, the findings of the present study provided an integrated
+   bioinformatics analysis of 1,006 overlapped DEGs that may be involved
+   in the growth, recurrence and metastasis of MB. A total of 11 hub
+   genes, including CDK1, CCNB1, CCNB2, PLK1, CDC20, MAD2L1, AURKB, CENPE,
+   TOP2A, KIF2C and PCNA, were identified as novel potential biomarkers.
+   These findings may provide further insight into the underlying
+   molecular mechanisms and identify novel biomarkers for evaluating the
+   diagnosis and prognosis, and advance the treatment of MB. However,
+   further molecular biological research is required to confirm the
+   clinical value of our findings.
+
+Acknowledgements

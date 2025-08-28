@@ -1,0 +1,22 @@
+To address your questions about the pathway enrichment analysis conducted in the study, here's a breakdown based on the information provided:
+
+1. **Tool Used for Pathway Enrichment Analysis:**
+   - The tool used was Ingenuity Pathway Analysis (IPA).
+
+2. **Tool Version Number Provided:**
+   - No version number of IPA is mentioned.
+
+3. **Gene Set Library Queried:**
+   - The specific gene set library queried by IPA is not described in the article.
+
+4. **Background Gene List Defined for Pathway Enrichment Analysis:**
+   - There is no mention of a background gene list being defined for pathway enrichment analysis.
+
+5. **Statistical Test Used for Enrichment Analysis:**
+   - The statistical test used was likely part of IPA's internal algorithms, but the specific test applied by IPA is not detailed in the article.
+
+6. **False Discovery Rate Correction:**
+   - There is no mention of false discovery rate (FDR) correction being used to control for false positives in the pathway enrichment analysis.
+
+If more details are needed beyond what is provided, consulting the full publication or supplementary materials might be necessary.
+
