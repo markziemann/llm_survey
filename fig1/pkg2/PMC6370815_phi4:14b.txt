@@ -1,0 +1,33 @@
+To analyze how the pathway enrichment analysis was conducted in this scientific article, let's examine the details provided:
+
+1. **Tool Used for Pathway Enrichment Analysis:**
+   - The tool used is R-package `piano_1.16.4`.
+
+2. **Tool Version Number Provided:**
+   - Yes, the version number is specified as `piano_1.16.4`.
+
+3. **Gene Set Library Queried:**
+   - The gene set library queried includes KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways.
+
+4. **Background Gene List Defined for Pathway Enrichment Analysis:**
+   - Yes, the background gene list is defined as whole gene sets with corresponding Entrez-IDs of the Agilent 8 × 60 K Whole Human Genome Oligo Microarray.
+
+5. **Statistical Test Used for Enrichment Analysis:**
+   - Fisher’s exact test was used for enrichment analysis, specifically mentioned for KEGG pathway analysis.
+
+6. **False Discovery Rate Correction Used:**
+   - Yes, false discovery rate correction using Benjamini-Hochberg was applied for multiple testing in the GO annotations. It is also implied that similar corrections were applied to the KEGG analysis by mentioning Fisher’s exact test with such a correction in context.
+
+Here's how you can collate this information into a table:
+
+| Question | Answer |
+|----------|--------|
+| Tool used for pathway enrichment analysis | R-package `piano_1.16.4` |
+| Tool version number provided | `piano_1.16.4` |
+| Gene set library queried | KEGG |
+| Background gene list defined | Whole gene sets with corresponding Entrez-IDs of the Agilent 8 × 60 K Whole Human Genome Oligo Microarray |
+| Statistical test used for enrichment analysis | Fisher’s exact test |
+| False discovery rate correction used | Benjamini-Hochberg |
+
+If further details were necessary or if some information was not explicitly stated, "not described" would be the appropriate response. However, in this case, all aspects have been addressed with sufficient detail from the text provided.
+

@@ -1,0 +1,20 @@
+Here are the answers to your questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is ToppFun, which is part of the ToppGene suite.
+
+2. Was a tool version number provided?
+Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The gene set libraries queried are GO (Gene Ontology) and possibly others, as the article mentions "GO functional enrichment analysis" and also mentions miRNA targets from various databases (PITA, TOP).
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+Not described, but the article mentions that the results were obtained through ToppFun, which likely uses a hypergeometric test or similar statistical method for enrichment analysis.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, the article mentions that the results were corrected for false discovery rate (FDR) using the Benjamini-Hochberg method, as indicated by the mention of "FDR: False discovery rate; B&H: Benjamini-Hochberg".
+

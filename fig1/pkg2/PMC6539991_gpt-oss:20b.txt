@@ -1,0 +1,88 @@
+Thinking...
+We need to examine the article for the methods of pathway enrichment analysis.
+
+We saw from the methods section:
+
+> 2.4 Pathway enrichment analysis of DEGs
+> ... They used the R software package "clusterProfiler" with the "enrichPathway" function.
+
+Also, for Gene-Pathway network, they mention mapping into KEGG and Biocarta. They used "KEGG and Biocarta databases".
+
+We need to extract only what is explicitly reported.
+
+Let’s parse the Methods:
+
+They wrote:
+
+"2.4 Pathway enrichment analysis of DEGs
+To investigate the potential mechanisms underlying the changes in DEGs, the R software package 'clusterProfiler' with the 'enrichPathway' function was used. The enriched pathways were screened with the Benjamini-Hochberg (BH) multiple test correction method and adjusted p-value < 0.05. The R package 'clusterProfiler' was also used for Gene Ontology (GO) enrichment analysis of the DEGs, including the 'biological process', 'cellular component', and 'molecular function' annotations."
+
+So:
+
+Tool used: clusterProfiler
+
+Version described: Not described
+
+Gene set libraries used: KEGG? They mention mapping into KEGG and Biocarta databases later in gene-pathway network, but not for enrichment. For pathway enrichment analysis, the article specifically says clusterProfiler with enrichPathway function. enrichPathway is typically used for KEGG pathways or Reactome? Let's examine. clusterProfiler's enrichPathway is used to query Reactome or KEGG? Wait clusterProfiler includes functions enrichKEGG, enrichGO. enrichPathway is for Reactome? clusterProfiler has enrichPathway for Reactome pathways. The article says "clusterProfiler with the 'enrichPathway' function was used". It also states: "The R package 'clusterProfiler' was also used for Gene Ontology (GO) enrichment analysis of the DEGs, including the 'biological process', 'cellular component', and 'molecular function' annotations." So gene set libraries: GO biological process, cellular component, molecular function.
+
+Also earlier in results: "Pathway enrichment analysis indicated that 86 pathways are closely associated with the 25 hub genes." They mention "KEGG and Biocarta databases" mapping into complicated sub-network. But for enrichment analysis, they used clusterProfiler for enrichment of the hub genes with KEGG? Wait "By mapping the hub genes into the complicated sub-network according to the KEGG and Biocarta databases, a potential gene-pathway network was constructed".
+
+But earlier they said: "Pathway enrichment analysis indicated that 86 pathways are closely associated with the 25 hub genes. In particular, it was identified that viral infection and carcinogenesis pathways were significantly enriched, including 'viral carcinogenesis', 'HTLV-1 infection' and 'hepatitis B', which supports the association of virus with the three gynecological cancer types, particularly CC. Furthermore, cancer-association pathways, including 'pathways in cancer' and 'proteoglycans in cancer' were revealed to be associated with the biological process of the three malignant tumor types." Those are KEGG pathways. But they didn't explicitly mention the database. But the article likely used clusterProfiler for KEGG enrichment. But they also mention using "KEGG" and "Biocarta" databases for mapping of gene-pathway network. For enrichment, only clusterProfiler was used. Gene set libraries: GO terms, KEGG pathways, Biocarta? But clusterProfiler can handle GO and KEGG, and Biocarta as a database of pathways. They mention mapping into KEGG and Biocarta databases for gene-pathway network, but that is a mapping step, not enrichment. However, the question: "Which gene set libraries were used?" includes GO, KEGG, Reactome, etc. They say "The R package 'clusterProfiler' was also used for Gene Ontology (GO) enrichment analysis of the DEGs, including the 'biological process', 'cellular component', and 'molecular function' annotations." So GO is used. They didn't mention KEGG or others for enrichment analysis. But earlier they say: "By mapping the hub genes into the complicated sub-network according to the KEGG and Biocarta databases, a potential gene-pathway network was constructed". But mapping into KEGG is part of the network construction. But it's not enrichment analysis per se? The question: "Which gene set libraries were used?" This refers to gene set libraries used for enrichment analysis. Since they used clusterProfiler for enrichment analysis of DEGs, they used GO terms for GO enrichment, and KEGG? The article didn't explicitly say clusterProfiler used KEGG. But clusterProfiler can perform KEGG enrichment via enrichKEGG. Did they use that? They mention: "The R package 'clusterProfiler' was also used for Gene Ontology (GO) enrichment analysis of the DEGs, including the 'biological process', 'cellular component', and 'molecular function' annotations." So they used GO. They didn't mention KEGG. But earlier in results they say 86 pathways. That must come from clusterProfiler's enrichPathway, which typically uses Reactome? Actually clusterProfiler's enrichPathway uses Reactome? Wait clusterProfiler's enrichPathway is part of Reactome. Let me recall: In clusterProfiler, the function "enrichPathway" is used for Reactome pathway enrichment, with annotation. Yes, clusterProfiler provides 'enrichPathway' to query Reactome pathways. So they used clusterProfiler's enrichPathway. They didn't specify the library. But it's implicit that enrichPathway queries the Reactome database. But the article didn't explicitly state "Reactome". So we should not list Reactome unless explicitly mentioned. It may not be described. The article doesn't mention Reactome. So the gene set libraries used: GO only.
+
+But earlier they also say "86 pathways are closely associated with the 25 hub genes" and mention "viral carcinogenesis, hepatitis B, etc." These are KEGG pathways. But the article didn't say they used KEGG for enrichment. They might have used clusterProfiler's enrichKEGG? But they didn't mention it. The method states they used clusterProfiler's enrichPathway function. But the results list KEGG pathways (viral carcinogenesis, hepatitis B, etc.) These come from which database? Usually these are from KEGG. But the article didn't mention using KEGG in the methods. The gene set libraries used: GO (biological process, cellular component, molecular function). They didn't mention KEGG or Reactome.
+
+However, they used clusterProfiler for enrichment analysis, but not mention version. They didn't mention custom background gene list.
+
+Statistical test used: clusterProfiler uses hypergeometric test by default. But article didn't mention the test. The methods didn't mention the test. So "Not described".
+
+Multiple testing correction: clusterProfiler default uses BH? But the article didn't mention. They only mention "Benjamini-Hochberg (BH) multiple test correction method and adjusted p-value < 0.05." So yes multiple testing correction FDR applied. So answer: Yes.
+
+Now compile the table with columns: Tool, Version(s), Gene set libraries, Custom background, Statistical test, Multiple testing correction.
+
+We have only one tool: clusterProfiler.
+
+Tool: clusterProfiler
+
+Version: Not described.
+
+Gene set libraries: GO (biological process, cellular component, molecular function). Not mention KEGG.
+
+Custom background: Not described. They didn't say they used custom background.
+
+Statistical test: Not described.
+
+Multiple testing correction: Yes.
+
+Let's produce table.
+
+Note: The instructions: "If more than one tool, method, or database is used, list all of them separately." So only clusterProfiler.
+
+Also they may have used "Biocarta" for mapping gene-pathway network, but not enrichment. So not included.
+
+So table:
+
+| Question | Answer |
+|---|---|
+| Tool used for pathway enrichment analysis? | clusterProfiler |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | Gene Ontology (GO): Biological Process, Cellular Component, Molecular Function |
+| Custom background list? | Not described |
+| Statistical test(s) used? | Not described |
+| Multiple testing correction? | Yes |
+
+But we need table format with 6 rows.
+
+Let's produce.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **Tool used for pathway enrichment analysis** | clusterProfiler |
+| **Enrichment tool version(s) described** | Not described |
+| **Gene set libraries used** | Gene Ontology (GO): Biological Process, Cellular Component, Molecular Function |
+| **Custom/background gene list used?** | Not described |
+| **Statistical test(s) used in enrichment analysis** | Not described |
+| **Multiple testing correction / FDR applied?** | Yes |
+
+

@@ -1,0 +1,22 @@
+Based on the information provided from the scientific article, here's an assessment of how pathway enrichment analysis was conducted:
+
+1. **Tool Used for Pathway Enrichment Analysis:**  
+   The tool used is Metacore®.
+
+2. **Tool Version Number Provided:**  
+   Not described in the article.
+
+3. **Gene Set Library Queried:**  
+   Gene Ontology (GO) cell process enrichment was performed, as indicated by references to gene ontologies and specific ontology terms related to cellular processes.
+
+4. **Background Gene List Defined for Pathway Enrichment Analysis:**  
+   It is implied that phospho-regulated proteins IDs were matched to corresponding genes which were then used for the analysis, but a specific background list is not described in detail.
+
+5. **Statistical Test Used for Enrichment Analysis:**  
+   A p-value and false discovery rate (FDR) are mentioned as part of the enrichment analysis process, suggesting that statistical significance testing was involved, though the exact test type isn't specified.
+
+6. **False Discovery Rate Correction Used:**  
+   Yes, false discovery rate (FDR) correction is used to control for false positives in the pathway enrichment analysis, as indicated by references to FDR in the tables.
+
+This information can be organized into a table format if needed for further analysis or reporting.
+

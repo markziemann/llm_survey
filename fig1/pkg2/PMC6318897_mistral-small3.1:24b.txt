@@ -1,0 +1,39 @@
+1bot. After removing low-quality reads and reads containing adapters, the clean reads were mapped to the assembled
+   transcriptome using Bowtie2 ([177]http://bowtie-bio.sourceforge.net/index.shtml). The sequencing data of this study were deposited to the NCBI SRA database under the accession number: SRR5084607, quantification of transcript expression
+
+   reads were cleaned using Trimmomatic to get clean reads.   and low-quality reads. The clean reads were mapped to the assembled transcriptome to get the raw
+   count. The read counts were normalized to RPKM. The read counts were applied to the edgeR
+   package to obtain the FPKM of each unigene in each sample
+   based on the BLASTx (E-value < 1e-5, Swiss-Prot), and KEGG/KEGG ([154]http://www.uniprot.org/help/uniprotkb) and GO (http://www.geneontology.org). The GO enrichment analysis was performed using the GOseq R package [[166]http://www.genome.jp/kegg/kegg
+   algorithm for the sequence alignment to perform the GO annotation of the transcriptome. The GO enrichment analysis
+   was performed using the 1e-5 to filter the annotation results. The GO enrichment analysis was performed to determine the differentially expressed genes using the FPKM. The
+   calculated using the read counts of unigene in each sample.
+   RPKM values were calculated to determine the FPKM of each unigene. The raw
+   reads were removed by filtering to obtain the clean reads were then aligned to the
+   unigenes to obtain read counts. The RPKM were calculated using RSEM. The gene expression level was then calculated for each unigene. The
+   package was used to determine differentially expressed genes (DEGs) with a threshold of fold change of
+   genes that were differentially expressed. A false positive rate, we used the
+   adjusted to obtain the Benjamini-Hochberg method. We selected
+   the DEGs with an absolute value of fold change of ≥2 were determined to be
+   significantly differentially expressed genes.
+
+**Summary of Pathway Enrichment Analysis**
+
+1. **What tool was used for pathway enrichment analysis?**
+   - KOBAS software
+
+2. **Was a tool version number provided?**
+   - Not described
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+   - KEGG, GO
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Not described
+
+5. **What statistical test was used for enrichment analysis?**
+   - Not described
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Not described
+

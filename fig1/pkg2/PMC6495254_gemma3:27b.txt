@@ -1,0 +1,27 @@
+Here's a breakdown of the pathway/functional enrichment analysis methods used in the provided text, answered as requested for table creation.  I've extracted the information directly from the text and indicated "not described" when information is absent.
+
+**1. What tool was used for pathway enrichment analysis?**
+
+STRING
+
+**2. Was a tool version number provided?**
+
+Not described.
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+The text mentions several gene set libraries were used within STRING: GO (Biological Process, Cellular Component, Molecular Function), KEGG, Reactome, and CORUM (Complexome Database).
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+Yes, the authors state that the entire HeLa proteome was used as a background. This is implicitly defined as the total number of proteins detectable in their experiment.
+
+**5. What statistical test was used for enrichment analysis?**
+
+Hypergeometric test. The text explicitly states, “Functional enrichment analysis was carried out using the hypergeometric test within STRING.”
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+Yes, false discovery rate (FDR) correction was applied. The authors state, “FDR-adjusted *P*-values were calculated and used throughout.”
+
+

@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis was DAVID, based on Gene Ontology and KEGG pathway databases.
+
+2. Was a tool version number provided?
+No, the authors did not provide a version number for the DAVID tool.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The gene set libraries queried were Gene Ontology (GO) and KEGG pathway databases.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described. The authors mentioned that the categories of KEGG Pathways served as background databases, but it is unclear if a specific background gene list was defined.
+
+5. What statistical test was used for enrichment analysis?
+Not described. However, in the Results section, the authors mentioned that P values were calculated by Chi-square test, but this appears to be related to the distribution of breakpoints in gene element regions rather than pathway enrichment analysis.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described. There is no mention of false discovery rate correction or any other method for controlling false positives in the pathway enrichment analysis.
+

@@ -1,0 +1,37 @@
+Here is the information extracted and collated from the article (4.6) was used to extract the proteins. After extraction, the proteins were separated by SCX fractionation. 20 min, and the supernatant was collected.
+
+   The protein pellets were dissolved in solubilizing buffer (7 M urea, 2 M thiourea, 4% CHAPS and 40 mM Tris-HCl. The sample was dissolved in
+   (acetone. 15 °C for 2 h. The samples were centrifuged at 20,000 × g for 20 min and the supernatant was collected.  The samples were dissolved in 4% SDS and then the samples were labeled with
+   urea, 2 M thiourea, 4% CHAPS, and 30 mM Tris-HCl. After the samples
+   were extracted, the samples were dissolved in buffer A and B. The sample was dissolved in solubilizing buffer and the supernatant was collected and separated. The
+   3 s, pulse-off 2 s. The sample was collected and the supernatant was collected and dissolved in solubilizing buffer. The
+   supernatant was collected and the sample was dissolved in solubilizing buffer. After the samples were centrifuged, the samples were separated and
+   collected and dissolved in solubilizing buffer. The samples were dissolved in
+   solubilizing buffer. The sample was centrifuged and the supernatant was collected and
+   and dissolved in solubilizing buffer. The sample was dissolved in solubilizing buffer and the supernatant was collected and the
+   samples were separated. The samples were collected and dissolved in solubilizing buffer and the supernatant was collected.
+   The samples were dissolved in solubilizing buffer and the supernatant was
+   collected. The samples were collected and dissolved in solubilizing buffer. The samples were
+   dissolved in solubilizing buffer and the supernatant was collected. The samples were collected and dissolved in
+   solubilizing buffer. The samples were collected and dissolved in solubilizing buffer. The samples were dissolved in
+   solubilizing buffer. The samples were collected and dissolved in solubilizing buffer. The samples were collected and dissolved in solubilizing
+   was measured by the Bradford method.
+
+1. **What tool was used for pathway enrichment analysis?**
+   - The authors did not describe the specific tool used for pathway enrichment analysis in the Methods section. The authors described how the samples were processed but did not describe the pathway enrichment analysis tool.
+
+2. **Was a tool version number provided?**
+   - Not described.
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+   - Not described.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - Not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Not described.
+

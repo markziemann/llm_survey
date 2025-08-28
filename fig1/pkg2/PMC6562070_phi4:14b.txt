@@ -1,0 +1,33 @@
+Based on the information provided from the scientific article, here is an examination of how pathway enrichment analysis was conducted:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - The tool used for pathway enrichment analysis was PANTHER (Protein ANalysis THrough Evolutionary Relationships).
+
+2. **Was a tool version number provided?**
+   - No specific version number of the PANTHER tool is mentioned in the text.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - The gene sets queried included those from Gene Ontology (GO) and the Kyoto Encyclopedia of Genes and Genomes (KEGG).
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes, the entire genome was used as a reference set for GO terms.
+
+5. **What statistical test was used for enrichment analysis?**
+   - The specific statistical tests are not described in detail in the article provided.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Yes, a false discovery rate (FDR) cutoff of 0.05 or less was applied for significance.
+
+Here is how this information can be tabulated:
+
+| Question | Answer |
+|----------|--------|
+| Tool Used | PANTHER |
+| Tool Version Number | Not described |
+| Gene Set Library Queried | GO, KEGG |
+| Background Gene List Defined | Yes (entire genome for GO) |
+| Statistical Test Used | Not described |
+| FDR Correction Used | Yes (cutoff of 0.05 or less) |
+
+This table summarizes the pathway enrichment analysis details as described in the article.
+

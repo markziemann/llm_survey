@@ -1,0 +1,23 @@
+<think>
+Okay, I need to figure out how the pathway enrichment analysis was conducted in this article. Let me start by reading through the Methods section carefully because that's where such details are usually found.
+
+First, under the "DEG enrichment analysis" subsection, it mentions that KOBAS software was used for the DEG-related KEGG pathways. So, the tool used is KOBAS. I don't see a version number mentioned here, so probably not provided.
+
+Next, they queried KEGG pathways, as stated in the text. It doesn't mention using GO or Reactome, just KEGG via KOBAS and GO through Blast2GO for Gene Ontology analysis. So the gene set libraries are KEGG and GO, but since the question is about pathway enrichment specifically, it's KEGG.
+
+Regarding a background gene list, the text doesn't specify whether they used one or not. It just says that KOBAS was used to obtain the DEG-related pathways with a p-value cutoff of 0.05.
+
+The statistical test isn't detailed beyond mentioning that significantly enriched pathways were those with p < 0.05. No specifics on which test, like hypergeometric or others.
+
+Lastly, there's no mention of false discovery rate correction for pathway analysis. They do use FDR in the DEG analysis using EdgeR, but not explicitly stated for KOBAS pathway enrichment.
+</think>
+
+| Question | Answer |
+|----------|--------|
+| 1. What tool was used for pathway enrichment analysis? | KOBAS software |
+| 2. Was a tool version number provided? | Not described |
+| 3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)? | KEGG |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Not described |
+| 5. What statistical test was used for enrichment analysis? | Not described beyond p-value < 0.05 |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Not described |
+

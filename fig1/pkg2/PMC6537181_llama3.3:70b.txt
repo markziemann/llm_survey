@@ -1,0 +1,20 @@
+Here are the answers to the questions about pathway enrichment analysis:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is Blast all software against the KEGG database, and also OmicShare tools.
+
+2. Was a tool version number provided?
+No, the tool version number was not provided.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The KEGG database was queried for pathway enrichment analysis.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+Not described, but it is mentioned that KEGG pathways with a Q-value ≤0.05 are significantly enriched in DEGs.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, it is mentioned that the Q-value (which is a measure of false discovery rate) was used to determine significant enrichment, with a threshold of Q-value ≤0.05.
+

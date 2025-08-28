@@ -1,0 +1,48 @@
+<think>
+Okay, I need to figure out the answers to the six questions about the pathway enrichment analysis in this article. Let me start by reading through the provided Methods section and other relevant parts again carefully.
+
+First question: What tool was used for pathway enrichment analysis? The Methods mention using DAVID Bioinformatic Resources. In the section about gene enrichment, they refer to DAVID server. Also, in the Additional files, like Additional file 2, it's mentioned that DAVID was used. So the tool is DAVID.
+
+Second question: Was a tool version number provided? I need to check if they specified the version of DAVID. Looking through the text, under the Methods, they mention "DAVID Bioinformatic Resources 6.8 server". So the version is 6.8. That's provided.
+
+Third question: What gene set library was queried? The article mentions GO terms. For example, in the tissue-restricted gene enrichment analysis, they talk about GO terms, and the Additional files like Additional file 3 refer to GO terms. There's no mention of KEGG or Reactome, so it's likely only GO.
+
+Fourth question: Was a background gene list defined? The Methods say that for the tissue-restricted analysis, they used a list of 10,919 genes expressed in bovine skeletal muscle from EMBL-EBI Expression Atlas as the background. This list is detailed in Additional file 12. So yes, a background list was defined using those expressed genes.
+
+Fifth question: Statistical test used. The Methods state that the statistical test was the Benjamini-Hochberg FDR correction. Wait, actually, the test for enrichment itself is probably a hypergeometric test, which is common in DAVID. But the question is about the statistical test for enrichment. The Methods mention applying the Benjamini-Hochberg correction, which is for FDR. But the actual test might be hypergeometric. However, the user is asking for the test used for enrichment. Since DAVID uses a modified Fisher's exact test, but the article says they adjusted p-values using BH. The exact test might not be specified, but the article mentions "statistical test adjusted applying the Benjamini-Hochberg p-value correction" in Additional file 2's description. Wait, the main text says "the significance of each enriched term was adjusted applying the Benjamini-Hochberg p-value correction". So the test is likely Fisher's exact or hypergeometric, but the article doesn't specify beyond DAVID's methods. Since DAVID uses a modified Fisher's exact test for enrichment, but the user just wants what's stated here. The article says they used DAVID, which uses these tests, but the exact test isn't named, but the correction is mentioned. Wait, the question is about the statistical test used for the enrichment analysis itself, not the correction. The article might not explicitly state it beyond DAVID's default. Since the user is focusing on what's in the article, perhaps the answer is that they used DAVID's built-in test (which is Fisher's exact), but the article doesn't specify beyond DAVID. Alternatively, maybe the test used is hypergeometric. Since the article mentions "enriched clusters across meat quality related phenotypes determined by the DAVID server" and "statistical test adjusted applying the Benjamini-Hochberg p-value correction", but the exact test (like hypergeometric) might not be explicitly mentioned. Hmm. The user instructions say to answer based on what's provided. The Methods section under gene enrichment says "the significance of each enriched term was adjusted applying the Benjamini-Hochberg p-value correction". That implies that the test used is the one DAVID uses, which is typically a Fisher's exact test. Since the article doesn't specify beyond DAVID, perhaps the answer is that the statistical test isn't explicitly stated, but the correction is. Wait, but the question is about the statistical test for enrichment, not the FDR correction. Let me check again. The Methods section for the tissue-restricted analysis says they used DAVID, and in the Additional file 2 description, it says "Significance of each enriched term was adjusted applying the Benjamini-Hochberg p-value correction." So the test is not explicitly named, but DAVID uses Fisher's exact. Since the article doesn't state it, maybe the answer is "not described" but actually they used DAVID which does use Fisher's exact. But since the user wants what's in the article, perhaps it's not described explicitly. Alternatively, maybe the answer is hypergeometric, but I need to check. Alternatively, the article might not specify beyond DAVID's methods. Hmm, tricky. Let me see if the Methods section mentions the test. The Methods under gene enrichment says "the significance of each enriched term was adjusted applying the Benjamini-Hochberg p-value correction." So the test itself is not named. So the answer might be "not described", but since DAVID uses Fisher's exact, maybe the user expects to note that DAVID uses that. But since the article doesn't state it, perhaps the answer is not described. Wait, but the question is about what's in the article. Since it's not explicitly stated, maybe the answer is "not described". Alternatively, maybe the statistical test is part of DAVID's operation. Since the user is asking for what's in the article, and the article says they used DAVID, but doesn't specify the test, then the answer is "not described".
+
+Wait, but the user's question 5 is "What statistical test was used for enrichment analysis?" and the article says they used DAVID, which typically uses Fisher's exact test. However, unless the article explicitly says, maybe it's considered not described here. Alternatively, perhaps the test is hypergeometric. Hmm. I'll have to check the exact wording again. The Methods mention DAVID and the correction, but not the test. So the answer is "not described".
+
+Sixth question: Was FDR correction used? The article says they applied Benjamini-Hochberg correction, which is a FDR method. So yes, FDR correction was used.
+
+Wait, the fifth question is about the statistical test (e.g., hypergeometric, Fisher's exact), and the sixth is about FDR correction. The article mentions FDR (Benjamini-Hochberg) in the Methods, so question 6 is yes. For question 5, since the article does not explicitly name the test (they just say "DAVID server" which uses Fisher's exact), then perhaps the answer is not described. Alternatively, maybe the test is hypergeometric. Since the user is asking for what's in the article, it's safer to say it's not explicitly described beyond using DAVID.
+
+Putting it all together:
+
+1. DAVID
+2. Yes, version 6.8
+3. GO
+4. Yes, background list of 10,919 genes expressed in bovine skeletal muscle
+5. Not explicitly described (but DAVID uses Fisher's exact test)
+6. Yes, Benjamini-Hochberg FDR correction
+</think>
+
+1. **Tool used for pathway enrichment analysis:** DAVID (DAVID Bioinformatic Resources)  
+2. **Tool version number provided:** Yes, version 6.8  
+3. **Gene set library queried:** GO (Gene Ontology)  
+4. **Background gene list defined:** Yes, a list of 10,919 genes expressed in bovine skeletal muscle (from EMBL-EBI Expression Atlas assays E-MTAB-2798 or E-MTAB-2596) was used as the background.  
+5. **Statistical test used for enrichment analysis:** Not explicitly described in the article. The text mentions using DAVID but does not specify the exact statistical test (e.g., hypergeometric, Fisher's exact).  
+6. **False discovery rate (FDR) correction used:** Yes, the Benjamini-Hochberg correction was applied to adjust p-values for multiple testing.  
+
+---
+
+### Table Format:
+| Question | Answer |
+|----------|--------|
+| 1. Tool used for pathway enrichment analysis? | DAVID (DAVID Bioinformatic Resources) |  
+| 2. Tool version number provided? | Yes (version 6.8) |  
+| 3. Gene set library queried? | GO (Gene Ontology) |  
+| 4. Background gene list defined? | Yes (10,919 genes expressed in bovine skeletal muscle) |  
+| 5. Statistical test used for enrichment analysis? | Not explicitly described |  
+| 6. FDR correction used? | Yes (Benjamini-Hochberg) |
+

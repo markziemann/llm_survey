@@ -1,0 +1,13 @@
+Here is an organized table summarizing the details of the pathway enrichment analysis based on the provided article:
+
+| Question | Answer |
+|----------|--------|
+| What tool was used for pathway enrichment analysis? | Blast2GO, WEGO, and KOBAS software were used. |
+| Was a tool version number provided? | No version numbers were specified in the text. |
+| What gene set library was queried (e.g., GO, KEGG, Reactome or other)? | Gene Ontology (GO) for Blast2GO and WEGO; KEGG pathways for KOBAS. |
+| Was a background gene list defined for pathway enrichment analysis? | Not described in the article. |
+| What statistical test was used for enrichment analysis? | The text does not specify the exact statistical tests, but mentions p-values were used to determine significance. |
+| Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | False discovery rate (FDR) correction using Benjamini and Hochberg’s approach was applied for DEG analysis, but it is not explicitly stated if this method was also used specifically for pathway enrichment. |
+
+This table captures the relevant information extracted from the article regarding how the pathway enrichment analysis was conducted. If further details are required or clarification on specific points, consulting the original text may be beneficial.
+

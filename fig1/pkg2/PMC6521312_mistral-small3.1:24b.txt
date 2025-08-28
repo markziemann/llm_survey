@@ -1,0 +1,69 @@
+1518 performed on the Agilent 120 Infinity II UHPLC connected to an Agilent
+   Quadrupole mass spectrometer (Agilent Technologies, Santa Clara, CA, USA).
+   The LC column used was a Scherzo SM-C18 column (100 μm,
+   08.00) (Agilent Technologies). The mass spectrometric conditions
+   and multiple reaction monitoring transitions were the same as previously
+   300 Å, 18 column (2.0 mm, 3 μm) (Imtakt, Kyoto, Japan) at 40 °C with a gradient of 0.350 mL/min and 5 μL, respectively.
+   The following gradients were used: (A) 0.1% formic acid and
+   (B) 0.1% formic acid in acetonitrile. The column
+   gradient was as follows: 0–15 min, 0–100% B; 15–16 min, 100% B; 16–17 min,
+   0% B; 17–20 min, 5% B. The MS parameters were as follows: gas temperature, 200 °C;
+   gas flow, 15 L/min; nebulizer pressure, 20 psi; sheath gas temperature, 350
+   °C; capillary voltage and fragmentation voltage were
+   optimization. The dynamic MRM transitions. The optimized collision energies and MRM
+   transitions for each metabolite are listed in [144]Table S2. The quantification was performed
+   C-2-amphetamine was used as an internal standard for quantification.
+   The raw data were processed and analyzed using MassHunter Quantitative
+   Analysis B.04
+   (Agilent Technologies, Santa Clara, CA, USA). All of the metabolites
+   14.1 (Umetrics, Umeå, Sweden) software to determine the clustering and
+   pattern recognition of the dataset and to evaluate the overall differences between the
+   metabolomic data were normalized using generalized log transformation and mean-centering. The
+   multivariate analysis was conducted by OPLS-DA. PLS-DA and OPLS-DA were
+   based on R^2 and Q^2 values, which were
+   estimates of the goodness-of-fit and predictive ability of the
+   model. The univariate analysis were determined using the Mann–Whitney
+   Wilcoxon test and Wilcoxon rank-sum test. Statistical analysis
+   categorical variables. Multiple comparisons were adjusted for false discovery
+   using the Benjamini-Hochberg multiple comparison correction. Metabolite sets
+   enrichment analysis. The ROC curve and Youden index were applied to evaluate the diagnostic values of the
+   basis of the AUC and Youden index for further validation. The validation analysis was carried out
+   using Dunn’s test. The ORs and corresponding 95%
+   CIs for the risk of cervical cancer. The combined effects of
+   HPV and metabolites was performed using the seven selected metabolites. The combined
+   analyzed using MetPA and the enrichment analysis. The data were analyzed
+   using the MetPA 4.0 (Xia Lab, Montreal, Canada). The
+   Canada). Metabolic pathways were assessed using MetPA software and were enriched for the
+   assess the association between the metabolites and the risk of cervical cancer. The
+   adjustment for the covariates. All of the statistical tests were conducted using the SPSS 22.0
+   and alcohol consumption using SPSS Statistics 22.0 software
+   (IBM, Armonk, NY, USA). The metabolites.
+   ^13C[6]-phenylalanine was used as an internal
+   standard. The metabolites and the cervical cancer risk using
+   multivariate model. The data were analyzed using R 3.6.3. The
+   data were analyzed using the SPSS software.
+
+   The statistical analyses were performed using the R platform (Version 3.6.3 and the SPSS software 22.0.
+
+---
+
+### Answers to the Questions:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - MetaboAnalyst 4.0.
+
+2. **Was a tool version number provided?**
+   - Not described.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - Not described.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - Not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Not described.
+

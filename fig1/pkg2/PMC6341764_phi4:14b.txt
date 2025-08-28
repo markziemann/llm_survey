@@ -1,0 +1,22 @@
+Based on the provided scientific article, here are the details regarding how pathway enrichment analysis was conducted:
+
+1. **Tool Used for Pathway Enrichment Analysis:**  
+   The tool used is DAVID (Database for Annotation, Visualization and Integrated Discovery).
+
+2. **Tool Version Number Provided:**  
+   Not described.
+
+3. **Gene Set Library Queried:**  
+   It seems that the gene set library queried includes GO (Gene Ontology) or similar pathway databases, as indicated by terms like "DAVID Functional Annotation Clustering" which typically involve these libraries, but it's not explicitly stated.
+
+4. **Background Gene List Defined for Pathway Enrichment Analysis:**  
+   Not described.
+
+5. **Statistical Test Used for Enrichment Analysis:**  
+   The statistical test used is not explicitly mentioned in the provided text.
+
+6. **False Discovery Rate Correction Used:**  
+   It's indicated that false discovery rate correction was likely considered, as DAVID commonly employs this method to control for false positives, but it’s not explicitly confirmed in the provided details.
+
+This summary extracts the relevant details from the article and notes where specific information is lacking or not described.
+

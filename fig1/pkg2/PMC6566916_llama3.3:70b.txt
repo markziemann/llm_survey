@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is not explicitly described, but it appears that an R package named "q-value" was used to calculate the Q-values, which represent the false discovery rate (FDR).
+
+2. Was a tool version number provided?
+Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The article mentions that rice proteins were mapped to multiple public databases, including Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG), suggesting that these libraries were queried.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Yes, the article states that "using all the proteins as background" was used to calculate the p-value and Q-value.
+
+5. What statistical test was used for enrichment analysis?
+Fisher's exact test was used to calculate the p-values.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, the article states that the Q-values were calculated by an R package named "q-value" and that the threshold of significance was defined as FDR < 0.05.
+

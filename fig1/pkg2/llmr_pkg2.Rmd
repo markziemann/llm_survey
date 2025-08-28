@@ -1,0 +1,338 @@
+---
+title: "Using ChatGPT in R to analyse the methodology in journal articles"
+author: "Burnet Bioinformatics group"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    fig_width: 13
+    fig_height: 9
+    code_folding: show
+theme: cosmo
+---
+
+## Introduction
+
+There is a major problem with the state of methodology of enrichment analysis with many articles lacking
+details about what was done, undermining the validitiy of the scientific results.
+Here we want to show how to use AI APIs to examine the methods in articles.
+This approach can be used to evaluate articles in the review phase.
+
+We are using ChatGPT nano for this.
+
+```{r,setup}
+
+library(LLMR)
+
+# get API key - keep it secret
+OPENAI_API_KEY <- readLines("../../openai.key")[1]
+
+```
+
+## First test
+
+In the first test, we just ask a simple question.
+
+```{r,test1}
+
+# Create a configuration with more parameters
+openai_cfg_4nano <- llm_config(
+  provider = "openai",
+  model = "gpt-4.1-nano",
+  api_key = OPENAI_API_KEY,
+  temperature = .5,
+  max_tokens = 250
+)
+
+openai_cfg_4mini <- llm_config(
+  provider = "openai",
+  model = "gpt-4.1-mini",
+  api_key = OPENAI_API_KEY,
+  temperature = .5,
+  max_tokens = 2500
+)
+
+openai_cfg_4max <- llm_config(
+  provider = "openai",
+  model = "gpt-4.1",
+  api_key = OPENAI_API_KEY,
+  temperature = .5,
+  max_tokens = 500
+)
+
+openai_cfg_5nano <- llm_config(
+  provider = "openai",
+  model = "gpt-5-nano",
+  api_key = OPENAI_API_KEY,
+  temperature = .5,
+  max_tokens = 2500
+)
+
+openai_cfg_5mini <- llm_config(
+  provider = "openai",
+  model = "gpt-5-mini",
+  api_key = OPENAI_API_KEY,
+  temperature = .5,
+  max_tokens = 500
+)
+
+openai_cfg_5max <- llm_config(
+  provider = "openai",
+  model = "gpt-5",
+  api_key = OPENAI_API_KEY,
+  temperature = .5,
+  max_tokens = 500
+)
+
+openai_cfg <- openai_cfg_4nano
+# Ask a simple question
+resp <- call_llm( openai_cfg, c(
+    system = "You are an expert data scientist. You always respond in terse
+    bullet lists.",
+    user = "When will you ever use OLS?"
+  ),
+  json = TRUE
+)
+
+cat("GPT-4-mini says:\n", resp, "\n")
+
+# Ask a simple question
+resp <- call_llm( openai_cfg, c(
+    system = "You are helpful chatbot assistant.",
+    user = "Write a sea shanty about the joys of bioinformatics"
+  ),
+  json = TRUE
+)
+
+cat("GPT-4o-mini says:\n", resp, "\n")
+
+# Ask a simple question
+resp <- call_llm( openai_cfg, c(
+    system = "You are helpful chatbot assistant.",
+    user = "Write me a witty and funny knock-knock joke."
+  ),
+  json = TRUE
+)
+
+cat("GPT-4o-mini says:\n", resp, "\n")
+
+
+```
+
+## Try Anthropic model
+
+Models to try:
+
+* claude-3-5-haiku-20241022 (sml)
+* claude-sonnet-4-20250514 (med)
+* claude-opus-4-1-20250805 (lge)
+
+
+```{r,test2}
+
+ANTHROPIC_API_KEY <- readLines("../../anthropic.key")[1]
+
+anthropic_cfg_haiku <- llm_config(
+  provider = "anthropic",
+  model = "claude-3-5-haiku-20241022",
+  api_key = ANTHROPIC_API_KEY,
+  temperature = .5,
+  max_tokens = 500
+)
+
+anthropic_cfg_sonnet <- llm_config(
+  provider = "anthropic",
+  model = "claude-sonnet-4-20250514",
+  api_key = ANTHROPIC_API_KEY,
+  temperature = .5,
+  max_tokens = 1500
+)
+
+anthropic_cfg_opus <- llm_config(
+  provider = "anthropic",
+  model = "claude-opus-4-1-20250805",
+  api_key = ANTHROPIC_API_KEY,
+  temperature = .5,
+  max_tokens = 5000
+)
+
+anthropic_cfg <- anthropic_cfg_haiku
+
+# Ask a simple question
+resp <- call_llm( anthropic_cfg, c(
+    system = "You are helpful chatbot assistant.",
+    user = "Write me a witty, funny and original knock-knock joke."
+  ),
+  json = TRUE
+)
+
+cat("claude-3-5-haiku says:\n", resp, "\n")
+
+```
+
+## Extract information from articles
+
+In this next example, we will load a text file and then ask ChatGPT about it.
+This allows us to run a checklist against articles.
+
+First step is to read in our articles into a list of text vectors.
+
+```{r,text_read}
+
+pmclist <- readLines("PMCsample.txt")
+articlenames <-paste(pmclist,".txt",sep="")
+articles <- lapply(articlenames,readLines)
+articles <- lapply(articles,paste,collapse = "\n")
+names(articles) <- pmclist
+
+text_content <- articles[[19]]
+
+str(text_content)
+
+```
+
+Next step is to prepare the question.
+
+```{r,question}
+
+question <- readLines("prompt2.txt")
+
+question <- paste(question,collapse="\n ")
+
+question
+
+```
+
+Create the prompt combining the text and the question.
+
+```{r,prompt}
+
+prompt <- paste("Here is a text:\n", text_content,"\nQuestion: ", question, "\nAnswer:")
+
+response <- call_llm(config = openai_cfg , prompt, verbose = TRUE)
+
+cat("LLM output:\n",response, "\n")
+
+```
+
+Seems to work.
+
+## Vectorised analysis GPT4 nano
+
+Now make it process all the articles in the package.
+
+```{r,llm_vectorise_4nano}
+
+res1 <- lapply(articles,function(text_content) {
+  prompt <- paste("Here is a text:\n", text_content,"\nQuestion: ", question, "\nAnswer:")
+  response <- call_llm(config = openai_cfg , prompt, verbose = TRUE)
+  return(response)
+})
+
+names(res1) <- pmclist
+
+res1
+
+saveRDS(res1,"res4nano.Rds")
+
+```
+
+## Now with GPT4 mini
+
+```{r,llm_vectorise_4mini}
+
+openai_cfg <- openai_cfg_4mini
+
+res1 <- lapply(articles,function(text_content) {
+  prompt <- paste("Here is a text:\n", text_content,"\nQuestion: ", question, "\nAnswer:")
+  response <- call_llm(config = openai_cfg , prompt, verbose = TRUE)
+  return(response)
+})
+
+names(res1) <- pmclist
+
+res1
+
+saveRDS(res1,"res4mini.Rds")
+
+```
+
+## Now with full-fat GPT4 
+
+```{r,llm_vectorise_4max}
+
+openai_cfg <- openai_cfg_4max
+
+res1 <- lapply(articles,function(text_content) {
+  prompt <- paste("Here is a text:\n", text_content,"\nQuestion: ", question, "\nAnswer:")
+  response <- call_llm(config = openai_cfg , prompt, verbose = TRUE)
+  Sys.sleep(60)
+  return(response)
+})
+
+names(res1) <- pmclist
+
+res1
+
+saveRDS(res1,"res4max.Rds")
+
+```
+
+## Try Anthropic haiku 3.5
+
+Now make it process all the articles in the package.
+
+```{r,llm_vectorise_haiku}
+
+anthropic_cfg <- anthropic_cfg_haiku
+
+res1 <- lapply(articles,function(text_content) {
+  prompt <- paste("Here is a text:\n", text_content,"\nQuestion: ", question, "\nAnswer:")
+  response <- call_llm(config = anthropic_cfg , prompt, verbose = TRUE)
+  Sys.sleep(60)
+  return(response)
+})
+
+names(res1) <- pmclist
+
+res1
+
+saveRDS(res1,"resHaiku.Rds")
+
+```
+
+## Try Anthropic sonnet 4
+
+```{r,llm_vectorise_sonnet}
+
+anthropic_cfg <- anthropic_cfg_sonnet
+
+res1 <- lapply(articles,function(text_content) {
+  prompt <- paste("Here is a text:\n", text_content,"\nQuestion: ", question, "\nAnswer:")
+  response <- call_llm(config = anthropic_cfg , prompt, verbose = TRUE)
+  Sys.sleep(60)
+  return(response)
+})
+
+names(res1) <- pmclist
+
+res1
+
+saveRDS(res1,"resSonnet.Rds")
+
+```
+
+## Conclusion
+
+We managed to get ChatGPT API calls working in R including the examination of journal articles in text format.
+This opens the door to other applications such as checklisting previous literature and helping journals to
+identify articles lacking methodological information.
+
+## Session
+
+```{r,session}
+
+sessionInfo()
+
+```

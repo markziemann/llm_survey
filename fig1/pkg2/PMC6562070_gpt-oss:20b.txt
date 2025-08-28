@@ -1,0 +1,108 @@
+Thinking...
+We need to examine the article for pathway enrichment analysis details. The Methods section for pathway enrichment analysis: Under "miR‐SNP association" part, we see:
+
+"These genes were overrepresented in five pathways in PANTHER (Table 4)."
+
+In the methods section earlier, it states:
+
+"After adjusting P-values for multiple hypothesis testing, no miR‐SNPs were significantly associated with ped‐MS in the genome‐wide analyses at FDR < 0.05. There were 255 target genes with 3’ UTR miR‐SNPs associated at P < 0.01 in the genome‐wide analysis that were used as input for pathway analyses. These genes were overrepresented in five pathways in PANTHER (Table 4)."
+
+Thus the enrichment tool is PANTHER. Are there any other tools used for pathway enrichment? Let's check the text. In the MIGWAS part, they mention:
+
+"These genes were overrepresented in five pathways in PANTHER (Table 4)."
+
+Wait, Table 4 is from miR-SNP analysis. Table 4 includes pathways: Histamine H1 receptor mediated signaling (PANTHER Pathway), 5-HT2 receptor mediated signaling (PANTHER Pathway), MHC Protein Complex (GO Cellular Component), Integral component of lumenal side of endoplasmic reticulum membrane (GO Cellular Component), Interferon gamma signaling (Reactome Pathway). So the pathway enrichment used "PANTHER Pathway" as well as GO Cellular Component and Reactome Pathway. The methods mention: "These genes were overrepresented in five pathways in PANTHER (Table 4)." Then under "Pathway enrichment" they mention using "PANTHER (Table 4)."
+
+Also, the Methods earlier mention:
+
+"After adjusting P-values for multiple hypothesis testing, no miR‐SNPs were significantly associated with ped‐MS in the genome‐wide analyses at FDR < 0.05. There were 255 target genes with 3’ UTR miR‐SNPs associated at P < 0.01 in the genome‐wide analysis that were used as input for pathway analyses. These genes were overrepresented in five pathways in PANTHER (Table 4)."
+
+Now, for "Which statistical test(s) were used in enrichment analysis?" The Methods mention:
+
+"These genes were overrepresented in five pathways in PANTHER (Table 4)."
+
+But we need to see if they specify the test. Let's search for "Fisher" or "hypergeometric" in the methods. The text:
+
+"These genes were overrepresented in five pathways in PANTHER (Table 4)."
+
+The table 4 includes:
+
+"For each pathway, the total number of protein‑coding genes in the pathway is given, followed by the number of those genes expected by chance to be found among the 255 ped‑MS genes, the actual number found, the P‑value for statistical overrepresentation (adjusted for multiple hypothesis tests), and the list of ped‑MS associated genes in the pathway."
+
+So the test is likely Fisher's exact test or hypergeometric test. Let's see if they mention "Fisher's exact test". In the Methods: "The miR‑SNP analysis... The 255 target genes were used as input for pathway analyses. These genes were overrepresented in five pathways in PANTHER (Table 4)." But not mention test. However, Table 4's description says "the P-value for statistical overrepresentation (adjusted for multiple hypothesis tests)" which is used to compute significance. The test might be something like the "overrepresentation test" that PANTHER uses, which is typically Fisher's exact test. The Methods: "For each pathway, the total number of protein‑coding genes in the pathway is given, followed by the number of those genes expected by chance to be found among the 255 ped‑MS associated protein‑coding genes, the actual number found, the P‑value for statistical overrepresentation (adjusted for multiple hypothesis tests), and the list of ped‑MS associated genes in the pathway." So they describe the test used implicitly: they talk about expected number and observed number, and compute a P-value. Typically that is a hypergeometric or Fisher's exact test. But did they explicitly state which test? The Methods: "The 255 target genes with 3’ UTR miR‑SNPs associated at P<0.01 in the genome‑wide analysis were used as input for pathway analyses. These genes were overrepresented in five pathways in PANTHER (Table 4)." No explicit test name. In the supplementary or earlier methods: "The miR‑SNP pathway analysis" section earlier in the article may mention the test. Let's search: "Fisher" or "hypergeometric". I read the text again:
+
+"These genes were overrepresented in five pathways in PANTHER (Table 4)."
+
+In the results: Table 4's description includes:
+
+"Pathway name (PANTHER annotation source) # Protein‑coding genes in pathway # Expected in 255 ped‑MS genes # Found in 255 ped‑MS genes P‑value (FDR) Ped‑MS genes in pathway"
+
+Thus, they used an overrepresentation test. They mention "P‑value (FDR)" in Table 4. They mention that they adjusted for multiple hypothesis tests. They didn't specify the test. But the text: "The P-value for statistical overrepresentation (adjusted for multiple hypothesis tests)". But they didn't mention the name of the test. But maybe the Methods mention: "Statistical overrepresentation tests of top miR‑SNP hits yielded two receptor‑mediated signaling pathways" but no test. So for "What statistical test(s) were used in enrichment analysis?" The article might not explicitly name the test. They used "overrepresentation test" which is likely a Fisher's exact test. But we can't infer; we should only report what is explicitly described. So we need to check if they describe the test. The Methods section says: "These genes were overrepresented in five pathways in PANTHER (Table 4)." No mention of the test.
+
+But maybe earlier in the article: "These genes were overrepresented in five pathways in PANTHER (Table 4)." The test is not specified. So answer "Not described".
+
+Similarly, for "Was multiple testing correction / FDR applied to enrichment analysis?" The article says "P‑value (FDR)" in Table 4. So yes, FDR applied.
+
+Also, "Which gene set libraries were used?" The table includes "Histamine H[1] Receptor mediated signaling (PANTHER Pathway)", "5-HT[2] type receptor mediated signaling (PANTHER Pathway)", "MHC Protein Complex (GO Cellular Component)", "Integral component of lumenal side of endoplasmic reticulum membrane (GO Cellular Component)", "Interferon gamma signaling (Reactome Pathway)". So the gene set libraries: "PANTHER Pathway", "GO Cellular Component", "Reactome Pathway". Also the earlier results for miR-SNP analysis used "PANTHER (Table 4)" which includes these. So we need to list all gene set libraries or databases: PANTHER Pathway, Gene Ontology (GO), Reactome Pathway. They mention GO Cellular Component explicitly. The gene set library used for enrichment is not explicitly mentioned as the entire GO database but they mention "GO Cellular Component" annotation source. So we should list "GO Cellular Component" as a gene set library.
+
+Also earlier, the text: "These genes were overrepresented in five pathways in PANTHER (Table 4)." The gene set library: "Histamine H[1] Receptor mediated signaling (PANTHER Pathway)" indicates that they used PANTHER Pathway. "MHC Protein Complex (GO Cellular Component)" indicates they used GO Cellular Component. "Integral component of lumenal side of endoplasmic reticulum membrane (GO Cellular Component)" indicates GO. "Interferon gamma signaling (Reactome Pathway)" indicates Reactome. So the gene set libraries used: PANTHER Pathway, GO (Cellular Component), Reactome Pathway.
+
+Also earlier, "The miR‑SNP analysis yielded two receptor‑mediated signaling pathways..." they mention "histamine H1 receptor mediated signaling (PANTHER Pathway)" and "5-HT2 type receptor mediated signaling (PANTHER Pathway)" and "MHC Protein Complex (GO Cellular Component)", "Integral component of lumenal side of endoplasmic reticulum membrane (GO Cellular Component)", "Interferon gamma signaling (Reactome Pathway)".
+
+Thus the gene set libraries: "PANTHER Pathway", "GO Cellular Component", "Reactome Pathway".
+
+Also, earlier for pathway enrichment analysis of MIGWAS? Wait, MIGWAS is for enrichment of miRNA-target networks; that's separate.
+
+For the miR-SNP pathway enrichment, they used "PANTHER" as the tool. In the Methods: "The 255 protein‑coding genes containing miR‑SNPs associated with ped‑MS (P < 0.01) are statistically overrepresented (Table 4). For each pathway, the total number of protein‑coding genes in the pathway is given... the P‑value for statistical overrepresentation (adjusted for multiple hypothesis tests)". That indicates they used a "statistical overrepresentation test" but didn't specify the test. The tool: "PANTHER". They didn't specify a version. The gene set libraries: "GO (Gene Ontology)", "Reactome". Did they use a custom background? The text says: "For each pathway, the total number of protein‑coding genes in the pathway is given, followed by the number of those genes expected by chance to be found among the 255 ped‑MS associated protein‑coding genes." That implies they used the expected number of genes; but the background gene list is not explicitly described. It might be default background of the library. So the answer: "Not described". Actually, the question: "Does the article describe using a custom or specific background gene list for enrichment analysis?" Options: Yes, No or Not described. There's no mention of background gene list in the methods or results. So "Not described".
+
+Now compile the table:
+
+Columns:
+Tool used for pathway enrichment analysis
+Version(s) described
+Gene set libraries used
+Custom background used? (Yes/No/Not described)
+Statistical tests used
+Multiple testing correction applied to enrichment?
+
+Row: "PANTHER".
+
+Also, "miR‑SNP analysis" used "PANTHER" as the enrichment tool. That is the only tool used. There's no other tool mentioned for enrichment (like DAVID, GSEA etc.). So answer: PANTHER. Version not described. Gene set libraries: "Histamine H1 receptor mediated signaling (PANTHER Pathway)", "5-HT2 type receptor mediated signaling (PANTHER Pathway)", "MHC Protein Complex (GO Cellular Component)", "Integral component of lumenal side of endoplasmic reticulum membrane (GO Cellular Component)", "Interferon gamma signaling (Reactome Pathway)". But the question: Which gene set libraries were used? Should list "PANTHER Pathway", "GO Cellular Component", "Reactome Pathway". And maybe "Gene Ontology" but not specified as "GO Biological Process" or "GO Molecular Function". It says "GO Cellular Component". So we list "Gene Ontology (Cellular Component)".
+
+Also "Not described" for background gene list. Statistical test: "Statistical overrepresentation" - but they didn't mention "Fisher's exact test" but the method used by PANTHER may be hypergeometric. But they didn't specify. So "Not described". But they mention "The P-value for statistical overrepresentation (adjusted for multiple hypothesis tests)". So maybe they used a hypergeometric test. But the article didn't specify the test name. So we answer "Not described".
+
+Multiple testing correction: They mention "P‑value (FDR)" in Table 4. So yes, FDR applied. But the question: "Was multiple testing correction / FDR applied to enrichment analysis? Only answer 'Yes' if the article explicitly mentions FDR, false discovery rate, Benjamini-Hochberg, or a named correction method." The table includes "P‑value (FDR)". So yes, multiple testing correction applied.
+
+Let's fill the table:
+
+| Tool | Version | Gene Set Libraries | Custom Background | Statistical Test | Multiple Testing Correction |
+|------|---------|--------------------|-------------------|------------------|-----------------------------|
+| PANTHER | Not described | PANTHER Pathway, Gene Ontology (Cellular Component), Reactome Pathway | Not described | Not described | Yes |
+
+But the table says "List all tools or software packages used (e.g., DAVID, GSEA, Enrichr, etc.)". So we should list only the tool: PANTHER. Also "Which gene set libraries were used?" We need to list "GO Cellular Component", "Reactome Pathway". They mention "Histamine H1 receptor mediated signaling (PANTHER Pathway)". That implies the library "PANTHER Pathway". And "GO Cellular Component" and "Reactome Pathway". Also "Gene Ontology". So we list "GO Cellular Component" (Gene Ontology), "PANTHER Pathway" (PANTHER), "Reactome Pathway" (Reactome).
+
+We also might need to include "Gene Ontology" because they mention "GO Cellular Component".
+
+Also, we need to confirm that the article explicitly says "GO Cellular Component". Yes: "MHC Protein Complex (GO Cellular Component)", "Integral component of lumenal side of endoplasmic reticulum membrane (GO Cellular Component)". So yes, GO Cellular Component.
+
+Now answer the 6 questions:
+
+1. What tool was used for pathway enrichment analysis? -> PANTHER
+2. Were enrichment tool version(s) described? -> Not described
+3. Which gene set libraries were used? -> PANTHER Pathway, GO Cellular Component, Reactome Pathway
+4. Does the article describe using a custom or specific background gene list for enrichment analysis? -> Not described
+5. What statistical test(s) were used in enrichment analysis? -> Not described
+6. Was multiple testing correction / FDR applied to enrichment analysis? -> Yes
+
+Now present output in table format.
+...done thinking.
+
+| Question | Answer |
+|----------|--------|
+| **What tool was used for pathway enrichment analysis?** | PANTHER |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | PANTHER Pathway, GO Cellular Component (Gene Ontology), Reactome Pathway |
+| **Does the article describe using a custom or specific background gene list for enrichment analysis?** | Not described |
+| **What statistical test(s) were used in enrichment analysis?** | Not described |
+| **Was multiple testing correction / FDR applied to enrichment analysis?** | Yes |
+

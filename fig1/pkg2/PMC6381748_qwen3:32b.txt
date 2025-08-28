@@ -1,0 +1,52 @@
+<think>
+Okay, let me try to figure out the answers to these questions based on the information provided in the article. First, I need to look through the Methods section and other relevant parts to find details about the pathway enrichment analysis.
+
+1. **What tool was used for pathway enrichment analysis?**
+   The article mentions "Gene Ontology (GO) enrichment analysis" and "Kinase-substrate enrichment analysis (KSEA)." In the Methods section, they probably used software like Metacore® because they reference using Metacore® for assigning genes to gene ontologies. So the tool might be Metacore®.
+
+2. **Was a tool version number provided?**
+   I don't recall any mention of a specific version number for Metacore® or any other tool in the Methods section. The article just refers to using Metacore® without specifying the version.
+
+3. **What gene set library was queried?**
+   The GO enrichment analysis would use the Gene Ontology database. The KSEA might use a kinase-substrate database. The article says they matched phospho-regulated protein IDs to corresponding genes and used Metacore® for GO assignments, so the gene set libraries are likely Gene Ontology (for GO analysis) and possibly a kinase-substrate database for KSEA.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   The article doesn't explicitly mention defining a background gene list. They talk about matching protein IDs to genes and using Metacore® for enrichment, but there's no detail on the background list. So it's probably not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   The article mentions p-values and false discovery rates (FDR) in the context of enrichment analysis. For GO analysis, they likely used a hypergeometric test or Fisher's exact test, which are common for enrichment. The KSEA might use a similar statistical approach. However, the exact test isn't specified, so it's not described unless inferred.
+
+6. **Was false discovery rate correction used?**
+   The article does mention FDR in the context of the enrichment analysis, stating that they calculated false discovery rates (FDR) for the GO terms. So the answer is yes.
+</think>
+
+1. **What tool was used for pathway enrichment analysis?**  
+   **Metacore®** was used for Gene Ontology (GO) enrichment analysis.  
+
+2. **Was a tool version number provided?**  
+   **Not described**.  
+
+3. **What gene set library was queried?**  
+   **Gene Ontology (GO)** was queried for cell process enrichment analysis.  
+
+4. **Was a background gene list defined for pathway enrichment analysis?**  
+   **Not described**. The article does not specify whether a background gene list was explicitly defined.  
+
+5. **What statistical test was used for enrichment analysis?**  
+   **Not described**. The article mentions p-values and false discovery rates (FDR) but does not specify the exact statistical test (e.g., hypergeometric, Fisher’s exact test).  
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**  
+   **Yes**. The article explicitly states that false discovery rate (FDR) was calculated for enrichment analysis (e.g., "false discovery rate, FDR" in the description of GO enrichment).  
+
+---
+
+**Summary Table**  
+| Question | Answer |
+|----------|--------|
+| 1. Tool used for pathway enrichment | **Metacore®** |
+| 2. Tool version number | **Not described** |
+| 3. Gene set library queried | **Gene Ontology (GO)** |
+| 4. Background gene list defined | **Not described** |
+| 5. Statistical test used | **Not described** |
+| 6. FDR correction used | **Yes** |
+

@@ -1,0 +1,12 @@
+Here’s a breakdown of the pathway enrichment analysis methods described in the provided text, presented in a table format as requested:
+
+| **Question** | **Answer** |
+|---|---|
+| 1. What tool was used for pathway enrichment analysis? | R-3.4.1 with additional package piano_1.16.4 |
+| 2. Was a tool version number provided? | Yes, R-3.4.1 and piano_1.16.4 |
+| 3. What gene set library was queried (eg: GO, KEGG, Reactome or other)? | Gene Ontology (GO), KEGG (Kyoto Encyclopedia of Genes and Genomes) |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Yes, the background was defined as "whole gene sets with corresponding Entrez-IDs of the Agilent 8 × 60K Whole Human Genome Oligo Microarray" |
+| 5. What statistical test was used for enrichment analysis? | Fisher’s exact test |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes, Benjamini-Hochberg correction was used. |
+
+

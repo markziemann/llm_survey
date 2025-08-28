@@ -1,0 +1,13 @@
+Based on your request and the provided scientific article excerpt, here is the collation of information regarding the pathway enrichment analysis:
+
+| Question | Answer |
+|----------|--------|
+| 1. What tool was used for pathway enrichment analysis? | The tool used for pathway enrichment analysis was "mummichog." |
+| 2. Was a tool version number provided? | No, the article does not provide a version number for mummichog. |
+| 3. What gene set library was queried (e.g., GO, KEGG, Reactome, or other)? | The gene set library queried was "KEGG." |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Yes, the background gene list was defined as "all features detected in the metabolomics data after quality control-based filtering," which consisted of approximately 8,000 features. |
+| 5. What statistical test was used for enrichment analysis? | The article does not explicitly mention the specific statistical test used for pathway enrichment analysis. |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes, the article mentions that a "false discovery rate" (FDR) threshold was applied with an FDR < 0.05 for mummichog predictions. |
+
+This table summarizes how the pathway enrichment analysis was conducted according to the provided details from the scientific article.
+

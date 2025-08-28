@@ -1,0 +1,46 @@
+<think>
+Okay, I need to figure out how the pathway enrichment analysis was conducted in this article. Let me go through the provided text carefully. The user mentioned that the information might be in the Methods section, but since the actual Methods aren't here, I have to look through the other sections like the Results, Discussion, and the supplementary materials listed as Additional files.
+
+First, looking at the Acknowledgements and the main text, the question is about the pathway enrichment analysis. The user listed several points to answer: tool used, version, gene set library, background gene list, statistical test, and FDR correction.
+
+Starting with the first question: What tool was used? In the main text under the Results section, there's mention of "Kinase-substrate enrichment analysis upon 5, 30 and 60 min of continuous glucose stimulation" in Additional file 13. The term KSEA is used, which stands for Kinase Substrate Enrichment Analysis. However, pathway enrichment analysis might be different. Looking further, in the description of Additional file 8, 9, 10, 11, they refer to Gene Ontology (GO) enrichment analysis using Metacore®. The text says, "Subsequently genes were assigned to gene ontologies using Metacore®." So Metacore is the tool here. Also, in Additional file 14, Figure S6 mentions KSEA output, so KSEA is part of the analysis but for kinase substrates. The GO enrichment uses Metacore.
+
+Second, the tool's version: The article doesn't mention any version number for Metacore. The term is just stated without a version.
+
+Third, the gene set library: The GO terms are used (Gene Ontology), as per the supplementary files' descriptions. The files S6, S7, S8 all mention GO cell process and localization enrichments. So the library is GO.
+
+Fourth, background gene list: The Methods aren't explicit, but looking at the supplementary descriptions, like in Additional file 8: "Phospho-regulated proteins IDs... were matched to the corresponding genes. Subsequently genes were assigned to gene ontologies using Metacore®." It seems the background might be all genes in the dataset or the entire genome, but they don't specify. Since they don't mention defining a background list beyond the genes identified in their study, maybe the background is the set of all proteins measured? The text isn't clear on this. The user might need to note that it's not described.
+
+Fifth, statistical test: The KSEA (Kinase Substrate Enrichment Analysis) is mentioned with p-values. In the supplementary files, like Additional file 13, the KSEA scores have p-values indicated with asterisks. For the GO analysis, since Metacore performs enrichment, likely using Fisher's exact test or similar. The exact test isn't specified, but common for GO is Fisher's. The article doesn't detail the test, so maybe it's not described.
+
+Sixth, FDR correction: In the supplementary files, like Additional file 8, the tables mention "false discovery rate, FDR", so they did use FDR correction. The exact method (like Benjamini-Hochberg) isn't specified, but FDR was applied.
+
+So compiling the answers:
+
+1. Tool: Metacore® for GO enrichment; KSEA for kinase analysis, but the question is about pathway enrichment which is GO via Metacore.
+2. Version: Not provided.
+3. Gene set: GO (Gene Ontology).
+4. Background: Not described.
+5. Statistical test: Not explicitly stated, but possibly Fisher's exact test (common in GO), but article doesn't specify.
+6. FDR: Yes, mentioned in tables with FDR.
+</think>
+
+1. **Tool used for pathway enrichment analysis**: Metacore® was used for Gene Ontology (GO) enrichment analysis. Kinase Substrate Enrichment Analysis (KSEA) was mentioned for kinase activity analysis, but the primary pathway enrichment (e.g., GO terms) relied on Metacore®.  
+2. **Tool version number**: Not provided.  
+3. **Gene set library queried**: Gene Ontology (GO) terms (biological processes and cellular components).  
+4. **Background gene list defined**: Not explicitly described. The analysis appears to use phospho-regulated proteins identified in the study as the basis, but the background set (e.g., all proteins in the dataset or the entire genome) was not specified.  
+5. **Statistical test**: Not explicitly stated. However, enrichment analysis typically uses Fisher’s exact test for GO terms, which is common in such tools. The text refers to p-values and FDR, but the specific test is not detailed.  
+6. **False discovery rate (FDR) correction**: Yes, FDR correction was applied, as indicated in supplementary tables (e.g., "false discovery rate, FDR" in Additional Files 8–11). The exact method (e.g., Benjamini-Hochberg) was not specified.  
+
+---
+
+### Table Summary:
+| Question | Answer |
+|----------|--------|
+| 1. Tool used | Metacore® (Gene Ontology enrichment); KSEA (kinase substrate analysis) |  
+| 2. Tool version | Not described |  
+| 3. Gene set library | Gene Ontology (GO) |  
+| 4. Background gene list | Not described |  
+| 5. Statistical test | Not explicitly stated (likely Fisher’s exact test for GO) |  
+| 6. FDR correction | Yes (FDR reported, method unspecified) |
+

@@ -1,0 +1,97 @@
+Thinking...
+We need to find pathway enrichment analysis method details in article. Search the article text for "enrichment" or "enrichment analysis" etc. Let's scan through the article text. I see "Gene ontology enrichment analysis in phosphoproteins exclusively regulated either at 5, 30 or 60 min." earlier.
+
+Also I saw "Gene Ontology localization enrichment on significantly regulated phospho-proteins after 5, 30 and 60 min of glucose stimulation" referencing Metacore. They mention using Metacore (Metacore®). Let's read the Results/Methods for gene ontology analyses.
+
+Search for "gene ontology" within article. I saw earlier:
+
+- In the methods, they might mention "Metacore" for gene ontology enrichment.
+
+Let's find the Methods section. In the excerpt, we didn't see the Methods section yet. Let's search for "Methods" within the article. The excerpt provided includes the "Methods" text: I see subheadings: "Sample collection and protein extraction", "Mass spectrometry and peptide identification", "Quantitative phosphoproteomics", "Differentially regulated proteins and phosphosites", "Gene set enrichment analysis".
+
+Let's find "Gene set enrichment analysis" section. The excerpt might contain a subheading like "Gene set enrichment analysis" in the Methods. Let's search for "Gene set enrichment analysis" within the given text. I can do a quick search mentally but it's long. But we can find relevant parts.
+
+In the results section, I see references to "Metacore®" used for gene ontology enrichment: "Phospho-regulated proteins IDs (Uniprot KB) were matched to the corresponding genes. Subsequently genes were assigned to gene ontologies using Metacore®. The table displays a cell process enrichment analysis (p‑value and false discovery rate, FDR) and the list of genes significantly regulated in every particular category."
+
+Also earlier: "Gene Ontology localization enrichment on significantly regulated phospho‑proteins after 5, 30 and 60 min of glucose stimulation." So they used Gene Ontology. The gene set library is "Gene Ontology".
+
+They also used "Metacore®" for GO mapping.
+
+Also "KSEA" was used for kinase enrichment analysis. But KSEA is not a pathway enrichment tool; it's a kinase-substrate enrichment analysis tool. But the question is about pathway enrichment analysis, not necessarily kinase enrichment. The article also performed GO enrichment for phosphoproteins.
+
+Also in the Supplementary tables S5-6-7-8 etc. They used Metacore for gene ontology. They mention false discovery rate.
+
+Also they mention "Gene set libraries" like "Reactome", "KEGG" maybe? But not sure. Let's search the article for "Reactome", "KEGG" etc. The excerpt didn't show those, but they might be in supplementary materials. For now we only consider explicitly reported details.
+
+Thus: Tools used: Metacore® (used for gene ontology enrichment). They also might use Metacore for other gene set libraries. Also "Metacore" might be used for GO mapping.
+
+They might also use "Metacore" for other gene set libraries like "Reactome" or "Pathway". But need to check.
+
+Also earlier I saw "Metacore" for gene ontology cell process enrichment analysis. So likely the only tool used for enrichment is "Metacore".
+
+But maybe they also used "GOstats" or "DAVID" or "Enrichr" etc. But I didn't see mention of those.
+
+Let's search for "DAVID" or "GSEA" within the text: scanning: I don't see any.
+
+Check for "Reactome" or "KEGG": scanning: I don't see any mention.
+
+Search for "MSigDB": no.
+
+Search for "Kyoto Encyclopedia of Genes and Genomes": no.
+
+Search for "Reactome" again: no.
+
+Search for "Pathway" maybe: "Pathway enrichment analysis" maybe in Methods? Let's check again the article excerpt for any mention: "gene set libraries", "pathway enrichment".
+
+In the Results, they mention "Gene Ontology localization enrichment on significantly regulated phospho‑proteins after 5, 30 and 60 min of glucose stimulation." and "Gene ontology cell process enrichment on significantly regulated phospho‑proteins after 5, 30 and 60 min of glucose stimulation." So they used GO.
+
+Also "gene set libraries or databases" used: "Gene Ontology" (specifically "localization" and "cell process" categories). They might use "Gene Ontology" but not other libraries. They might have used "Metacore" for mapping gene IDs to GO categories. So the only library is "Gene Ontology".
+
+But there might be also "Reactome" used via Metacore? But not explicitly stated.
+
+Also the article may have used "Metacore" for "Cell process" mapping. So we list "Gene Ontology" as library.
+
+Now: Did they use a custom or specific background gene list? We need to check. In the "Results" they mention "False discovery rate, FDR" and they might mention background gene list? I don't recall mention of a custom background. The default background for GO analysis in Metacore is usually the genome background. They didn't mention customizing. So we answer "Not described" if not mentioned.
+
+Statistical test(s) used: Usually hypergeometric or Fisher's exact test. But the article might mention "Fisher's exact test" or "hypergeometric" as part of Metacore. It may not mention; we need to find. In the supplementary materials: Table S5, S6, S7, S8: "Gene Ontology enrichment analysis" - they show p-values and false discovery rate. They don't mention statistical test. Metacore may use "Fisher exact test" but not specified.
+
+But in the article, it says: "The table displays a cell process enrichment analysis (p‑value and false discovery rate, FDR)". That indicates they applied multiple testing correction. But the test itself is not stated.
+
+Thus: Statistical test: Not described? Wait, they mention "Fisher's exact test"? Let's search: I saw "p‑value and false discovery rate, FDR" but not test.
+
+Also for "Gene ontology enrichment" they mention "p‑value and false discovery rate, FDR". That is the multiple testing correction. But test used not described.
+
+Thus "What statistical test(s) were used in enrichment analysis?" likely not described. So "Not described".
+
+Now we need to produce a table with the 6 columns: tool, version(s), gene set libraries, custom background used? (Yes/No/Not described), statistical test(s), multiple testing correction/FDR.
+
+Let's fill.
+
+Tool: Metacore®.
+
+Version: Not described. There's no version number.
+
+Gene set libraries: Gene Ontology (GO). Possibly "localization" and "cell process" categories within GO. They might have used "Cell process" GO terms (which are subcategories of GO). So library: Gene Ontology (GO). They might also have used "Reactome" or "KEGG"? Not in text.
+
+Custom background gene list: Not described. So answer "Not described".
+
+Statistical test(s): Not described.
+
+Multiple testing correction: Yes (they mention false discovery rate, FDR). So yes.
+
+Also they performed "Gene ontology enrichment analysis" in supplementary tables. The only tool used is Metacore. So all set.
+
+Now produce table.
+...done thinking.
+
+| Question | Answer |
+|----------|--------|
+| **Tool used for pathway enrichment analysis** | Metacore® |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | Gene Ontology (GO) – localization and cell‑process categories |
+| **Did the article describe using a custom or specific background gene list for enrichment analysis?** | Not described |
+| **What statistical test(s) were used in enrichment analysis?** | Not described |
+| **Was multiple testing correction / FDR applied to enrichment analysis?** | Yes |
+
+
+

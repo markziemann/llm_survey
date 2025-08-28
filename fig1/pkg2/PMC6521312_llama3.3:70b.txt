@@ -1,0 +1,22 @@
+Here are the answers to the questions about pathway enrichment analysis:
+
+1. What tool was used for pathway enrichment analysis?
+MetaboAnalyst version 4.0 (Xia Lab, McGill University, Montreal, QC, Canada) was used for pathway analysis.
+
+2. Was a tool version number provided?
+Yes, the version number of MetaboAnalyst is 4.0.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+Not described.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+Not described.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Not described, but it is mentioned that FDR (False Discovery Rate) is an abbreviation in the article, however, its relation to pathway analysis is not explicitly stated. 
+
+Let me know if you'd like me to help with anything else!
+

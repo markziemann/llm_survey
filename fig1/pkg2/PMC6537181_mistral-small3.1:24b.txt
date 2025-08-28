@@ -1,0 +1,67 @@
+100 in μg of galacturonic acid equivalents (GAE) per gram of sample. Samples were processed for RNA extraction were prepared from total RNA using TruSeq RNA Sample Preparation Kit (Illumina, San Diego, CA, USA). The RNA samples were subjected to poly (A) selection and were fragmented into short pieces by adding the fragmentation buffer. cDNA libraries were synthesized by
+   random hexamer primer. Finally, paired-end sequencing was performed on an
+   RNA was isolated from each sample using the Quick RNA isolation kit
+   (Huayueyang, China). RNA was quantified and checked for integrity
+   integrity was assessed by the Agilent 2100 RNA. The
+   Illumina sequencing was performed by RNA clean kit (Huayueyang, China).
+
+   The quality of the RNA sample was evaluated by the 2100 Chip (Agilent, USA). The RNA purity was assessed by Nanodrop2100 (Thermo
+   Fisher 1.2% agarose gel (Sigma). The quantity of RNA
+   samples were reverse transcribed to cDNA. Finally, the RNA samples were
+   (Thermo Fisher, USA).
+
+   **De novo assembly and functional annotation**
+   RNA samples were pooled and sequenced to generate a transcriptomes. A reference transcriptome was
+   created. Raw sequencing reads were filtered to remove low-quality reads and adapters
+   using the Trinity program ([182]51) to obtain the clean reads. The
+   raw sequence data and the processed were uploaded to the NCBI Sequence Read Archive
+   (SRA) under accession number SRP114346.
+
+   The clean reads were aligned to the reference transcriptome to identify the unigenes. Clean
+   reads that contained poly-N reads, and reads with low quality
+   were filtered. After that, the unigenes were clustered into unigenes were
+   grouped by TGICL. Transdecoder was then used to
+   obtain the functional annotation. The assembled sequences were searched against the NCBI Nr protein database. The unigenes were
+   blasted using Blastx (2.2.2.8.0. The best hits against the database were selected. The non-redundant database
+   (http://www.ncbi.nlm.nih.gov/), SwissProt database ([187]Knowledgebase (http://www.uniprot.org/), and the COG database ([198]http://www.ncbi.nlm.nih.gov/COG) database ([199]http://www.ncbi.nlm.nih.gov/kegg), and the GO database ([200]http://geneontology.org/) using default settings. The unigenes were aligned to the
+   Orthologous Groups of proteins (COG) database ([201]http://www.ncbi.nlm.nih.gov/COG) using
+   default settings. The differential expressed unigenes was calculated
+   million (RPKM). The gene expression patterns were examined. Unigenes that were performed
+   between libraries. DEGs were analyzed by the method. The FPKM values were compared
+   ([202]59). The significant differentially expressed unigenes were identified. Unigenes with
+   were selected when the FPKM. The unigenes had a threshold of FDR ≤0.05. The
+   expression of unigenes ≥1. Unigenes that were expressed were filtered. The differentially
+   expressed unigenes were performed. GO and KEGG enrichment analyses of the reference library. The GO and
+   KEGG enrichment analyses.
+
+   **Quantitative RT-qPCR validation**
+
+   RT-qPCR was used to validate the expression levels of the candidate genes. The
+   expression patterns of DEGs were validated using a RT-qPCR. The candidate unigenes
+   were validated. The expression of the genes was analyzed. The expression of DEGs were
+   ≤0.01 were selected. The expression profiles were subjected to KEGG and GO
+   enrichment analyses. The enrichment analysis was performed. The
+   unigenes were annotated. The enriched unigenes were analyzed. The pathways
+   enrichment were selected. The KEGG and GO enrichment were visualized. The GO and
+   KEGG tools.
+
+### Answers:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - The tool used for pathway enrichment analysis was not explicitly described in the article.
+
+2. **Was a tool version number provided?**
+   - Not described.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - The Kyoto Encyclopedia of Genes and Genomes (KEGG) database was used.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - Not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - The False Discovery Rate (FDR) ≤0.05 was used to control the number of false positives.
+

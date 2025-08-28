@@ -1,0 +1,34 @@
+Here's a breakdown of the pathway enrichment analysis details from the provided text, formatted for a table.
+
+**1. What tool was used for pathway enrichment analysis?**
+
+MAGMA (Molecular Gene-set Analysis of GWAS) was used for pathway enrichment analysis.
+
+**2. Was a tool version number provided?**
+
+Yes, MAGMA v1.2.3 was used.
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+Multiple gene set libraries were queried, including:
+
+*   Gene Ontology (GO) biological processes
+*   KEGG pathways
+*   Reactome pathways
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+Yes, a background gene list was defined as all genes with a valid SNP in the GWAS data.
+
+**5. What statistical test was used for enrichment analysis?**
+
+A competitive gene set test was used, which takes into account the total number of SNPs tested.
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+Yes, false discovery rate (FDR) correction was used with the Benjamini-Hochberg procedure to control for multiple testing.
+
+
+
+
+

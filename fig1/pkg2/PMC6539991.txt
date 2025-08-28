@@ -1,0 +1,720 @@
+Abstract
+
+   Cervical, endometrial and vulvar cancer are three common types of
+   gynecological tumor that threaten the health of females worldwide.
+   Since their underlying mechanisms and associations remain unclear, a
+   comprehensive and systematic bioinformatics analysis is required. The
+   present study downloaded [33]GSE63678 from the GEO database and then
+   performed functional enrichment analyses, including gene ontology and
+   pathway analysis. To further investigate the molecular mechanisms
+   underlying the three types of gynecological cancer, protein-protein
+   interaction (PPI) analysis was performed. A biological network was
+   generated with the guidance of the Kyoto Encyclopedia of Genes and
+   Genomes database and was presented in Cytoscape. A total of 1,219 DEGs
+   were identified for the three types of cancer, and 25 hub genes were
+   revealed. Pathway analysis and the PPI network indicated that four main
+   types of pathway participate in the mechanism of gynecological cancer,
+   including viral infections and cancer formation, tumorigenesis and
+   development, signal transduction, and endocrinology and metabolism. A
+   preliminary gynecological cancer biological network was constructed.
+   Notably, following all analysis, the phosphoinositide 3-kinase
+   (PI3K)/Akt pathway was identified as a potential biomarker pathway.
+   Seven pivotal hub genes (CCNA2, CDK1, CCND1, FGF2, IGF1, BCL2 and
+   VEGFA) of the three gynecological cancer types were proposed. The seven
+   hub genes may serve as targets in gynecological cancer for prevention
+   and early intervention. The PI3K/Akt pathway was identified as a
+   critical biomarker of the three types of gynecological cancer, which
+   may serve a role in the pathogenesis. In summary, the present study
+   provided evidence that could support the treatment of gynecologic
+   tumors in the future.
+
+   Keywords: cervical cancer, endometrial carcinoma, vulvar carcinoma,
+   bioinformatics, phosphoinositide 3-kinase/Akt
+
+Introduction
+
+   A gynecological tumor is a type of malignant tumor that occurs in the
+   female reproductive system and seriously threatens the life of the
+   patient. Among the types of gynecological tumor, cervical cancer (CC),
+   endometrial carcinoma (EC) and vulvar carcinoma (VC) are the top three
+   most common tumors of the female genital system, besides ovarian cancer
+   ([34]1). Despite an overall decline in the incidence and mortality
+   rates due to increased understanding of the disease, gynecological
+   cancer remains a significant health care burden worldwide ([35]1).
+   Early detection and treatment are essential for improving patient
+   outcomes; however, these require improved understanding of the
+   molecular pathology of the disease, in addition to identification of
+   appropriate biomarkers and drug targets. Previous studies have
+   demonstrated that the occurrence of CC is closely associated with human
+   papillomavirus (HPV) infection ([36]2–[37]4). VC can be separated into
+   two types, including one type that more frequently occurs in young
+   females. This type involves the progression of a vulvar intraepithelial
+   neoplasia caused by HPV infection, particularly HPV 16 and 18 ([38]5).
+   Based on pathogenetic perspectives, EC is also classified into two
+   groups according to estrogen dependence ([39]6). Although there have
+   been a number of previous etiology studies, the exact pathogenesis of
+   these three types of cancer remains unclear.
+
+   There are certain pathological and etiological associations between CC
+   and VC, as both are squamous cell cancers and both are associated with
+   HPV infection ([40]2,[41]5). Unlike CC and VC, EC is associated with
+   sex hormones, which is similar to common invasive tumors in females,
+   including breast and ovarian cancer ([42]6). In addition, clinical
+   diagnoses of these three cancer types rely predominantly on pathology
+   ([43]7). Precise biomarkers in early stages of CC, EC and VC remain
+   unknown.
+
+   It is understood that cervical, endometrial and vulvar tissues all
+   originate from the same embryological origin, the paramesonephric
+   ducts, which give rise to the whole female reproductive tract and
+   develop into different organs, following complex regulatory process
+   ([44]8). For this reason, although there a number of differences
+   between CC, EC and VC, it has been hypothesized that these three types
+   of gynecological tumor share a similar mechanism and certain specific
+   marker molecules may be common to their tumorigenesis and development.
+   Therefore, a comprehensive analysis may improve understanding of these
+   three types of tumor.
+
+   Advancements in biotechnology have improved the availability of
+   high-throughput data, including genomic, proteomic and metabolomics
+   data, which supports in-depth scientific research. High-throughput data
+   can assist with effective early diagnosis, prognosis prediction and
+   investigations of molecular mechanisms for numerous types of disease.
+   The present study used [45]GSE63678 microarray data downloaded from the
+   Gene Expression Omnibus (GEO) to determine the differentially expressed
+   genes (DEGs, which were identified between cancerous samples and
+   non-cancerous samples) of CC, EC and VC ([46]9). Subsequently,
+   functional enrichment analyses were performed, including gene ontology
+   (GO) and pathway analysis, and a protein-protein interaction (PPI)
+   network was generated to identify the significant biological terms
+   associated with the DEGs. The genes that were screened out by the PPI
+   network were considered as the hub genes, which may serve important
+   roles in the mechanism of CC, EC and VC. In addition, a gene-pathway
+   network was constructed and further analysis was performed. The
+   complete flowchart of the present study is presented in [47]Fig. 1. In
+   summary, the current study may provide a new perspective for
+   elucidating the biological significance of three types of gynecological
+   cancer, and assist with the identification of potential candidate
+   biomarkers for diagnosis, prognosis and therapy.
+
+Figure 1.
+
+   [48]Figure 1.
+   [49]Open in a new tab
+
+   Flowchart of the study. CC, cervical cancer; EC, endometrial cancer;
+   VC, vulvar cancer, PPI, protein-protein interaction.
+
+Materials and methods
+
+Microarray data
+
+   The gene expression profile [50]GSE63678 on the platform of the
+   [51]GPL571 Affymetrix Human Genome U133A 2.0 Array was downloaded from
+   the GEO database ([52]http://www.ncbi.nlm.nih.gov/geo/). [53]GSE63678
+   is a dataset submitted by Pappa et al ([54]9), containing 18 cancer
+   samples, including five cervical, seven endometrial and six vulvar
+   samples, and 17 normal samples, including, five cervical, five
+   endometrial and seven vulvar samples.
+
+Identification of DEGs
+
+   GEO2R ([55]http://www.ncbi.nlm.nih.gov/geo/geo2r) is an interactive
+   network analysis tool of the GEO database based on R, in which two sets
+   of samples can be compared under the same experimental conditions
+   ([56]10). Associated gene data were divided into CC, EC and VC groups.
+   Subsequently, the GEO2R ([57]10) tool and limma package ([58]11)
+   available through Bioconductor (version 3.8) of R Studio (version 3.5)
+   were used to compare the gene expression of the CC, EC and VC groups.
+   P<0.05 and a fold-change >2 were considered to indicate a DEG. The
+   distribution of the DEGs in the three tumor types was presented as a
+   Venn diagram using FunRich software (version 3.0) ([59]12).
+
+Construction of the PPI network and identification of hub genes
+
+   Search Tool for the Retrieval of Interacting Genes
+   ([60]http://string-db.org/; version 10.5) is a software system that is
+   commonly used to search for known proteins and predict interactions
+   ([61]13). The experimentally validated interactions with a combined
+   score >0.7 were selected as significant and DEGs with a connection
+   number <2 were removed. The PPI network was visualized using Cytoscape
+   ([62]https://cytoscape.org/; version 3.6.0). The nodes with degree,
+   closeness and betweenness scores higher than the mean, as calculated by
+   the Cytoscape plugin Centiscape, were considered hub nodes.
+
+GO analysis of the hub genes
+
+   WEB-based Gene SeT AnaLysis Toolkit ([63]http://www.webgestalt.org/;
+   revision 2017) is a popular software tool for functional enrichment
+   analysis, which covers seven biological contexts, including GO
+   ([64]14). Therefore, this software was used in the present study for GO
+   enrichment analysis. The false discovery rate (FDR) was set at <0.05 to
+   conduct the GO analysis of the DEGs.
+
+Pathway enrichment analysis of the hub genes
+
+   The hub genes were uploaded to ToppGene
+   ([65]https://toppgene.cchmc.org/,) for pathway enrichment analysis. The
+   two frequently used databases, Kyoto Encyclopedia of Gene and Genomes
+   (KEGG; [66]www.genome.jp/kegg) and Biocarta ([67]www.biocarta.com),
+   were used to perform this analysis ([68]15). The FDR was set at <0.05.
+
+Pathway crosstalk analysis
+
+   The enriched pathways were recruited for further crosstalk analysis to
+   investigate the associations between them. As described previously
+   ([69]15), to measure the association between two pathways, Jaccard
+   coefficient (JC)=A∩B/A∪B and overlap coefficient (OC)=A∩B/min(|A|,|B|)
+   were adopted, where A and B are the gene items contained in the two
+   pathways, min is the minimum, ∩ is the intersection of A and B, and ∪
+   is the union of A and B. Since limited biological information was
+   available, pathways containing <3 genes were excluded. Similarly, the
+   pathway pairs with <2 overlapping genes were removed. Subsequently, the
+   pathway network was presented with Cytoscape according to the JC and OC
+   value of each selected pair ([70]16), and the MCODE plug-in ([71]17)
+   (version 1.4.2; [72]apps.cytoscape.org/apps/MCODE) for Cytoscape was
+   used to find clusters and highly interconnected regions in any network
+   was used to analyze the clusters.
+
+Gene-pathway network analysis
+
+   To further investigate the developmental mechanisms of CC, EC and VC,
+   the hub genes were mapped into a crosstalk network. By analyzing the
+   interactions between the genes and pathways with KEGG and Biocarta, the
+   connected nodes were linked with arrows. The gene-pathway network was
+   constructed and visualized in Cytoscape. The degree was calculated and
+   nodes with a degree greater than the mean degree of all nodes were
+   selected to constitute a sub network.
+
+Results
+
+Identification of DEGs
+
+   Following screening with the criteria of P<0.05 and fold-change >2, a
+   total of 1,219 DEGs were identified. In the CC group 138 DEGs were
+   revealed, including 87 upregulated genes. In addition, 479 DEGs were
+   identified in the EC group, including 272 upregulated genes. Finally,
+   734 DEGs, including 172 upregulated genes, were revealed in the VC
+   group. As demonstrated in [73]Fig. 2A, 84, 378 and 630 DEGs were
+   exclusively identified in CC, EC and VC groups, respectively. However,
+   23 DEGs were present in both the CC and EC group, 73 DEGs were
+   identified in both the EC and VC groups, and 26 DEGs were revealed in
+   both the CC and VC groups. Furthermore, five mutual genes, including
+   signal sequence receptor subunit 1 (SSR1), flap structure-specific
+   endonuclease 1 (FEN1), cyclin A2 (CCNA2), signal transducer and
+   activator of transcription 1 (STAT1) and C-X-C motif chemokine ligand
+   12 (CXCL12), were identified in all three groups.
+
+Figure 2.
+
+   [74]Figure 2.
+   [75]Open in a new tab
+
+   DEGs in CC, EC and VC. (A) Venn diagram of three gynecological tumor
+   types. The yellow circles represent the DEGs in CC, the blue circles
+   represent the DEGs in EC and the red circles represent the DEGs in VC.
+   The overlapping areas indicate the shared genes of any two or three
+   groups. (B) The protein-protein interaction network of the 25 hub
+   genes. The circle nodes represent genes. Red indicates genes in CC,
+   yellow represents genes in EC and green indicates genes in VC. The
+   thickness of the line between any two nodes represents the strength of
+   the connection. (C) Gene ontology analysis of 25 DEGs. The results are
+   presented for the following three categories: Biological process,
+   cellular component and molecular function DEG, differentially expressed
+   gene; CC, cervical cancer; EC, endometrial cancer; VC, vulvar cancer.
+
+Hub genes and PPI network
+
+   Following calculation by Centiscape, the mean values of degree,
+   closeness and betweenness were 12.64080, 3.73×10-4 and 2081.81034,
+   respectively. Additionally, 25 hub genes were identified, including six
+   downregulated genes and 19 upregulated genes ([76]Table I). Three
+   histone cluster family members were revealed as hub genes, including
+   histone H2B type 1-H (HIST1H2BH), histone cluster 1 H2B family member D
+   (HIST1H2BD) and histone cluster 1 H2B family member K (HIST1H2BK), and
+   the five hub genes were cell cycle regulatory proteins, including
+   CCNA2, cyclin B1 (CCNB1), cyclin D1 (CCND1), aurora kinase A (AURKA)
+   and cell division cycle 20 (CDC20). Furthermore certain genes
+   associated with tumor progression were identified, including vascular
+   endothelial growth factor A (VEGFA), FYN proto-oncogene, Src family
+   tyrosine kinase (FYN), baculoviral IAP repeat containing 5 (BIRC5) and
+   the apoptosis regulator B-cell lymphoma 2 (BCL2).
+
+Table I.
+
+   Topological parameters of the hub genes.
+   Gene      Degree Betweeness  Closeness  Group   Regulation
+   Mean         13  2081.81034 3.73×10^−4    –         –
+   CDK1       115   20448.4838 5.21×10^−4 CC/EC    Up
+   CCNB1      100   16335.9142 5.23×10^−4 CC/EC    Up
+   CDC20        92  8148.54809 4.76×10^−4 EC       Up
+   CCNA2        91  8126.90458 4.89×10^−4 CC/EC/VC Up
+   AURKA        90  9181.94344 4.76×10^−4 EC/VC    Up
+   TOP2A        87  21409.6376 5.15×10^−4 EC/VC    Up
+   UBE2C        82  14916.6491 4.82×10^−4 EC/VC    Up
+   BIRC5        80  16279.0157 5.13×10^−4 EC/VC    Up
+   PCNA         62  26080.2036 5.25×10^−4 CC/EC    Up
+   VEGFA        56  32712.0335 5.43×10^−4 VC       Up
+   PIK3R1       46  24576.8505 4.91×10^−4 VC       Down
+   HIST1H2BK    43  8689.20717 4.70×10^−4 CC/VC    Up
+   HIST1H2BD    43  8689.20717 4.70×10^−4 VC       Up
+   HIST1H2BH    42  8291.98846 4.70×10^−4 VC       Up
+   ACACB        41  40853.547  4.98×10^−4 VC       Down
+   CXCL8        40  28927.396  5.16×10^−4 VC       Up
+   H2AFZ        39  8793.56814 4.67×10^−4 CC       Up
+   IGF1         38  16278.2011 5.07×10^−4 CC/VC    Down
+   ACLY         37  34157.4527 4.81×10^−4 EC       Up
+   CCND1        36  28548.907  5.39×10^−4 EC       Up
+   GAPDH        33  41598.1258 5.39×10^−4 EC       Up
+   PPP2R5C      32  10238.8057 4.75×10^−4 CC       UP
+   FYN          32  17254.3572 5.22×10^−4 CC/VC    Down
+   FGF2         32  19465.3169 5.20×10^−4 EC       Down
+   BCL2         32  17923.6004 4.86×10^−4 VC       Down
+   [77]Open in a new tab
+
+   CC, cervical cancer; EC, endometrial cancer; VC, vulvar cancer.
+
+   The PPI network of the 25 hub genes with 25 nodes and 114 edges is
+   presented in [78]Fig. 2B. The top five genes with the highest degrees
+   were CDK1, CCNB1, CDC20, CCNA2 and AURKA. All five of these genes are
+   associated with cell cycle regulation, which indicates that cell cycle
+   dysfunction serves an important role in the development of
+   gynecological tumors.
+
+GO enrichment analysis
+
+   A total of 25 DEGs were used to perform GO enrichment analysis
+   ([79]Fig. 2C). For cellular component terms, 22 out of the 25 genes
+   were revealed to be located in the ‘nucleus’ and approximately 80% were
+   identified to participate in the ‘macromolecular complex’ (19 genes)
+   and ‘membrane-enclosed lumen’ (18 genes). In the biological process
+   category, the DEGs were associated with ‘biological regulation’ (22
+   genes), ‘metabolic process’ (22 genes), ‘cellular component
+   organization’ (21 genes) and ‘response to stimulus’ (21 genes). In the
+   molecular function category all 25 DEGs were associated with ‘protein
+   binding’ (25 genes).
+
+Pathway enrichment analysis of the hub genes
+
+   By uploading the 25 genes into ToppGene, 86 significant pathways were
+   identified. The biological processes involved in these pathways can be
+   divided into the following five main categories: i) viral infections
+   and cancer formation, including ‘viral carcinogenesis’ and ‘hepatitis
+   B’, ii) tumorigenesis and development, including ‘colorectal cancer’
+   and ‘proteoglycans in cancer’, iii) signal transduction, including
+   ‘PI3K-Akt signaling pathway’ and ‘AMPK signaling pathway’, iv)
+   endocrinology and metabolism, including ‘AGE-RAGE signaling pathway in
+   diabetic complications’ and ‘endocrine resistance’, and v) others,
+   including ‘genes encoding secreted soluble factors’ and ‘NFAT and
+   hypertrophy of the heart (transcription in the broken heart)’. In
+   addition, 19 pathways were identified to be downregulated and 17
+   pathways were revealed to be upregulated ([80]Table II).
+
+Table II.
+
+   Pathways enriched in three types of gynecological cancer.
+   Pathway Regulation P-value Genes in the pathway
+   Viral carcinogenesis – 3.43×10^−9 HIST1H2BD, CCND1, CDK1, HIST1H2BH,
+   CDC20, PIK3R1, HIST1H2BK, CCNA2
+   Hepatitis B – 9.66×10^−9 BIRC5, CCND1, BCL2, PIK3R1, PCNA, CXCL8, CCNA2
+   AMPK signaling pathway – 1.13×10^−7 CCND1, PPP2R5C, IGF1, ACACB,
+   PIK3R1, CCNA2
+   Oocyte meiosis – 1.31×10^−7 AURKA, PPP2R5C, IGF1, CDK1, CDC20, CCNB1
+   Cell cycle Up 1.31×10^−7 CCND1, CDK1, CDC20, PCNA, CCNA2, CCNB1
+   EGFR tyrosine kinase inhibitor resistance – 4.35×10^−7 FGF2, BCL2,
+   IGF1, PIK3R1, VEGFA
+   Pathways in cancer – 6.44×10^−7 FGF2, BIRC5, CCND1, BCL2, IGF1, PIK3R1,
+   CXCL8, VEGFA
+   Progesterone-mediated oocyte maturation – 1.15×10^−6 IGF1, CDK1,
+   PIK3R1, CCNA2, CCNB1
+   AGE-RAGE signaling pathway in diabetic complications – 1.35×10^−6
+   CCND1, BCL2, PIK3R1, CXCL8, VEGFA
+   HIF-1 signaling pathway – 1.49×10^−6 BCL2, IGF1, GAPDH, PIK3R1, VEGFA
+   Focal adhesion – 2.13×10^−6 CCND1, BCL2, IGF1, FYN, PIK3R1, VEGFA
+   PI3K-Akt signaling pathway – 3.48×10^−6 FGF2, CCND1, BCL2, PPP2R5C,
+   IGF1, PIK3R1, VEGFA
+   p53 Signaling Pathway – 3.94×10^−6 CCND1, BCL2, PCNA
+   IL-7 Signal Transduction Down 4.77×10^−6 BCL2, FYN, PIK3R1
+   Colorectal cancer – 5.72×10^−6 BIRC5, CCND1, BCL2, PIK3R1
+   p53 signaling pathway – 1.00×10^−5 CCND1, IGF1, CDK1, CCNB1
+   Melanoma – 1.00×10^−5 FGF2, CCND1, IGF1, PIK3R1
+   Cyclins and Cell Cycle Regulation Up 1.23×10^−5 CCND1, CDK1, CCNB1
+   Platinum drug resistance – 1.25×10^−5 BIRC5, BCL2, PIK3R1, TOP2A
+   Regulation of BAD phosphorylation Down 1.80×10^−5 BCL2, IGF1, PIK3R1
+   Prostate cancer – 2.52×10^−5 CCND1, BCL2, IGF1, PIK3R1
+   Endocrine resistance – 3.71×10^−5 CCND1, BCL2, IGF1, PIK3R1
+   Proteoglycans in cancer – 4.47×10^−5 FGF2, CCND1, IGF1, PIK3R1, VEGFA
+   Bladder cancer Up 7.25×10^−5 CCND1, CXCL8, VEGFA
+   Sphingolipid signaling pathway – 8.32×10^−5 BCL2, PPP2R5C, FYN, PIK3R1
+   FoxO signaling pathway – 1.29×10^−4 CCND1, IGF1, PIK3R1, CCNB1
+   Systemic lupus erythematosus Up 1.32×10^−4 H2AFZ, HIST1H2BD, HIST1H2BH,
+   HIST1H2BK
+   NFAT and Hypertrophy of the heart (Transcription in the broken heart)
+   Down 1.66×10^−4 FGF2, IGF1, PIK3R1
+   Breast cancer – 1.80×10^−4 FGF2, CCND1, IGF1, PIK3R1
+   Activation of Src by Protein-tyrosine phosphatase alpha Up 2.11×10^−4
+   CDK1, CCNB1
+   Sonic Hedgehog (SHH) Receptor Ptc1 Regulates cell cycle Up 2.11×10^−4
+   CDK1, CCNB1
+   AKAP95 role in mitosis and chromosome dynamics Up 2.52×10^−4 CDK1,
+   CCNB1
+   Glioma – 2.75×10^−4 CCND1, IGF1, PIK3R1
+   Pancreatic cancer – 2.75×10^−4 CCND1, PIK3R1, VEGFA
+   Expression of cyclins regulates progression through the cell cycle by
+   activating cyclin-dependent kinases. Up 2.98×10^−4 CCND1, CCNA2
+   The IGF-1 Receptor and Longevity Down 4.00×10^−4 IGF1, PIK3R1
+   Alcoholism Up 4.22×10^−4 H2AFZ, HIST1H2BD, HIST1H2BH, HIST1H2BK
+   B Cell Survival Pathway – 4.57×10^−4 BIRC5, PIK3R1
+   Small cell lung cancer – 6.12×10^−4 CCND1, BCL2, PIK3R1
+   Stathmin and breast cancer resistance to antimicrotubule agents Up
+   6.48×10^−4 CDK1, CCNB1
+   Epstein-Barr virus infection – 6.64×10^−4 BCL2, CDK1, PIK3R1, CCNA2
+   Skeletal muscle hypertrophy is regulated via AKT/mTOR pathway Down
+   7.19×10^−4 IGF1, PIK3R1
+   Rap1 signaling pathway – 7.54×10^−4 FGF2, IGF1, PIK3R1, VEGFA
+   IGF-1 Signaling Pathway Down 7.94×10^−4 IGF1, PIK3R1
+   Ras signaling pathway – 1.01×10^−3 FGF2, IGF1, PIK3R1, VEGFA
+   Erk and PI-3 Kinase Are Necessary for Collagen Binding in Corneal
+   Epithelia Down 1.04×10^−3 FYN, PIK3R1
+   Cell Cycle: G2/M Checkpoint Up 1.04×10^−3 CDK1, CCNB1
+   Influence of Ras and Rho proteins on G1 to S Transition – 1.22×10^−3
+   CCND1, PIK3R1
+   Genes related to IL4 rceptor signaling in B lymphocytes Down 1.32×10^−3
+   BCL2, PIK3R1
+   Inactivation of Gsk3 by AKT causes accumulation of b-catenin in
+   Alveolar Macrophages Up 1.32×10^−3 CCND1, PIK3R1
+   Cholinergic synapse Down 1.41×10^−3 BCL2, FYN, PIK3R1
+   Cell Cycle: G1/S Check Point Up 1.42×10^−3 CCND1, CDK1
+   VEGF, Hypoxia, and Angiogenesis – 1.52×10^−3 PIK3R1, VEGFA
+   HTLV–I infection – 1.57×10^−3 CCND1, CDC20, PIK3R1, PCNA
+   Control of skeletal myogenesis by HDAC and calcium/calmodulin-dependent
+   kinase (CaMK) Down 1.63×10^−3 IGF1, PIK3R1
+   Apoptosis-multiple species – 1.97×10^−3 BIRC5, BCL2
+   How Progesterone Initiates Oocyte Membrane Up 2.09×10^−3 CDK1, CCNB1
+   Measles – 2.36×10^−3 CCND1, FYN, PIK3R1
+   Aldosterone-regulated sodium reabsorption Down 2.47×10^−3 IGF1, PIK3R1
+   Apoptosis – 2.56×10^−3 BIRC5, BCL2, PIK3R1
+   IL-2 Receptor Beta Chain in T cell Activation Down 2.60×10^−3 BCL2,
+   PIK3R1
+   Signaling pathways regulating pluripotency of stem cells Down
+   2.62×10^−3 FGF2, IGF1, PIK3R1
+   Fluid shear stress and atherosclerosis – 2.78×10^−3 BCL2, PIK3R1, VEGFA
+   Phospholipase D signaling pathway – 3.01×10^−3 FYN, PIK3R1, CXCL8
+   Jak-STAT signaling pathway – 3.63×10^−3 CCND1, BCL2, PIK3R1
+   Members of the BCR signaling pathway Down 3.80×10^−3 BCL2, PIK3R1
+   Hedgehog signaling pathway – 3.96×10^−3 CCND1, BCL2
+   T Cell Receptor Signaling Pathway Down 3.96×10^−3 FYN, PIK3R1
+   Endometrial cancer – 4.47×10^−3 CCND1, PIK3R1
+   Genes encoding secreted soluble factors – 4.58×10^−3 FGF2, IGF1, CXCL8,
+   VEGFA
+   Acute myeloid leukemia – 5.39×10^−3 CCND1, PIK3R1
+   Non-small cell lung cancer – 5.97×10^−3 CCND1, PIK3R1
+   VEGF signaling pathway – 6.18×10^−3 PIK3R1, VEGFA
+   Viral myocarditis – 6.18×10^−3 CCND1, FYN
+   Longevity regulating pathway-multiple species Down 6.80×10^−3 IGF1,
+   PIK3R1
+   Renal cell carcinoma – 7.45×10^−3 PIK3R1, VEGFA
+   Fc epsilon RI signaling pathway – 8.13×10^−3 FYN, PIK3R1
+   Prolactin signaling pathway – 8.60×10^−3 CCND1, PIK3R1
+   Chronic myeloid leukemia – 8.84×10^−3 CCND1, PIK3R1
+   Longevity regulating pathway – 1.36×10^−2 IGF1, PIK3R1
+   Genes related to Wnt-mediated signal transduction Up 1.36×10^−2 CCND1,
+   GAPDH
+   Rheumatoid arthritis Up 1.39×10^−2 CXCL8, VEGFA
+   NF-kappa B signaling pathway – 1.54×10^−2 BCL2, CXCL8
+   Amoebiasis – 1.57×10^−2 PIK3R1, CXCL8
+   Cdc25 activates the cdc2/cyclin B complex to induce the G2/M
+   transition. Up 1.60×10^−2 CDK1
+   Inflammatory mediator regulation of TRP channels Down 1.60×10^−2 IGF1,
+   PIK3R1
+   [81]Open in a new tab
+
+Pathway crosstalk analysis
+
+   To further investigate how the identified pathways interact with each
+   other, a pathway crosstalk analysis was conducted among the pathways
+   that met the criteria. The approach was based on the assumption that
+   two pathways can be considered to be associated if they share a
+   proportion of genes ([82]18). A total of 45 pathways contained more
+   than two hub genes, of which 41 pathways met the criterion for
+   crosstalk analysis.
+
+   The network of crosstalk, which includes these 41 pathways, is
+   presented in [83]Fig. 3A. The thickness of edge connecting two nodes
+   represents the strength of the association between them, which was
+   measured by the mean value of OC and JC. Using MCODE, two major
+   clusters were identified from the whole network. The simple cluster
+   involves three pathways associated with cell cycle, including ‘Cell
+   cycle’, ‘Oocyte meiosis’ and ‘Cyclins and Cell Cycle Regulation’. The
+   complicated cluster containing a total of 32 nodes and 376 edges is
+   presented in [84]Fig. 3B. The five aforementioned types of pathways
+   were interconnected to form the complex network, which indicates the
+   complexity of the pathogenesis of CC, EC and VC.
+
+Figure 3.
+
+   [85]Figure 3.
+   [86]Open in a new tab
+
+   Pathway networks. (A) Model of the pathway network. The red circle
+   nodes indicate a pathway and the lines represent the interactions
+   between two pathways. The strength of the interaction is represented by
+   the thickness of the line, according to the mean value of JC and OC.
+   (B) Model of the core pathway network. Red circle nodes indicate a
+   pathway and the lines represent the interactions between two pathways
+   The strength of the interaction is represented by the thickness of the
+   line according to the mean value of JC and OC. JC, Jaccard coefficient;
+   OC, overlap coefficient.
+
+Gene-pathway network construction of DEGs
+
+   By mapping the hub genes into the complicated sub-network according to
+   the KEGG and Biocarta databases, a potential gene-pathway network was
+   constructed to verify the associations between the candidate pathways
+   and genes ([87]Fig. 4). This network included 37 important pathways and
+   18 hub genes, including CCND1 presented in the middle with direct or
+   indirect associations with all other genes. As the only overlapping
+   gene of all three groups, CCNA2 possessed complicated connections with
+   ‘viral carcinogenesis’, ‘hepatitis B’, ‘cell cycle’ and six other
+   pathways. In addition, insulin-like growth factor-1 (IGF1), fibroblast
+   growth factor 2 (FGF2) and CCND1 were located close to the middle of
+   the gene-pathway network.
+
+Figure 4.
+
+   [88]Figure 4.
+   [89]Open in a new tab
+
+   Gene-Pathway network. Orange diamonds indicate a pathway and circles
+   represent a gene. Red indicates genes in cervical cancer, yellow
+   represents genes in endometrial cancer and green indicates genes in
+   vulvar cancer.
+
+Sub gene-pathway network of DEGs
+
+   To screen the key factors, including genes and pathways, in the
+   gene-pathway network, the degrees of all of nodes were calculated and
+   nodes with a degree greater than the mean degree of all nodes were
+   selected ([90]Fig. 5). Seven genes (CCNA2, CDK1, CCND1, BCL2, IGF1,
+   FGF2 and VEGFA) and six pathways (‘Viral carcinogenesis’, ‘Hepatitis
+   B’, ‘Focal adhesion’, ‘Pathways in cancer’, ‘PI3K-Akt signaling
+   pathway’ and ‘Proteoglycans in cancer’) were selected. Since these gene
+   and pathways had more connections with other nodes, they were
+   considered to more likely serve a role in CC, EC and VS.
+
+Figure 5.
+
+   [91]Figure 5.
+   [92]Open in a new tab
+
+   Sub-molecular network of CC, EC and VC. Orange diamonds indicate a
+   pathway and circles represent a gene. Red indicates genes in CC, yellow
+   represent genes in EC and green indicates genes in VC. CC, cervical
+   cancer; EC, endometrial cancer; VC, vulvar cancer.
+
+Discussion
+
+   In the past few decades, gynecological cancer research has developed
+   rapidly, particularly regarding the recognition of etiological factors.
+   Although a number of studies have investigated CC, EC and VC
+   separately, few studies have focused on these three types of cancer in
+   combination. The aim of the present study was to perform a systematic
+   and comprehensive analysis to investigate the pathogenesis of CC, EC
+   and VC and make a preliminary assessment of the associations between
+   these three cancer types.
+
+   By performing an analysis of microarray data, 1,219 DEGs were
+   identified, including 138 in CC, 479 in EC and 734 in VC. Five DEGs
+   were revealed in all three cancer types, which suggests these genes may
+   participate in a number of important biological processes in
+   gynecological cancer and may serve as crucial biomarkers following
+   further research. Together with the 25 hub genes identified, these data
+   may provide a direction for future research on gynecological cancer and
+   assist with the identification of clinical biological targets.
+
+   Pathway enrichment analysis indicated that 86 pathways are closely
+   associated with the 25 hub genes. In particular, it was identified that
+   viral infection and carcinogenesis pathways were significantly
+   enriched, including ‘viral carcinogenesis’, ‘HTLV-1 infection’ and
+   ‘hepatitis B’, which supports the association of virus with the three
+   gynecological cancer types, particularly CC. Furthermore,
+   cancer-association pathways, including ‘pathways in cancer’ and
+   ‘proteoglycans in cancer’ were revealed to be associated with the
+   biological process of the three malignant tumor types. Notably,
+   multiple different types of human cancer, including melanoma, prostate
+   cancer, bladder cancer, breast cancer and glioma, were also identified
+   to be associated with the 25 hub genes. This indicates that
+   gynecological cancer types may exhibit homologous mechanisms with tumor
+   types of other systems.
+
+   With the gene-pathway sub-network model, seven critical hub genes and
+   six important pathways of the three gynecological cancer types were
+   identified. The hub genes with the highest degrees included CDK1, which
+   was enriched in CC and VC. As reported, CDK1 is a member of the Ser/Thr
+   protein kinase family and is encoded by cell division cycle gene 2
+   (cdc2) ([93]19). In addition, CDK1 has been revealed to serve a role in
+   numerous types of cancer, including EC ([94]20), breast cancer ([95]21)
+   and ovarian cancer ([96]22). Consistent with the present bioinformatics
+   results, CDK1 has been demonstrated to serve a comprehensive role in
+   mediating genetic networks involved in the progression of CC;
+   therefore, it may be an important therapeutic target for improving
+   prognosis ([97]23). A study regarding ovarian cancer identified that
+   CDK1 is associated with proliferation and can serve as a prognostic
+   factor in epithelial ovarian cancer ([98]22). In EC, the overexpression
+   of CDK1 in endometrial carcinoma cells is closely associated with the
+   occurrence of tumors, indicating a role in tumor prognosis ([99]24).
+   The CDK1 gene can contribute to the carcinogenesis of HPV ([100]25),
+   and CC and VC are associated with HPV infection; therefore, CDK1 may be
+   an important molecule in the pathogenesis of gynecological tumors.
+
+   Another cell cycle regulatory gene, CCNA2, was revealed as a shared DEG
+   of CC, EC and VC, and complicated connections were identified between
+   it and other nodes. According to recent studies, CCNA2 belongs to the
+   highly conversed cyclin family and is expressed in multiple tissues in
+   the human body, including numerous types of cancer, which indicates it
+   may serve a role in cancer transformation and progression
+   ([101]26,[102]27). Gao et al ([103]28) revealed that CCNA2 is a
+   prognostic biomarker for estrogen receptor-positive breast cancer and
+   is associated with Tamoxifen resistance. Combined with another
+   biological analysis of EC that demonstrated CCNA2 is one of the top two
+   upregulated nodes ([104]29), the present study hypothesizes that CCNA2
+   serves a role as a biomarker in gynecological tumors ([105]29). In
+   addition, a study associated with ovarian cancer revealed a similar
+   result, in which CCNA2 was upregulated in the chemo-resistant
+   epithelial ovarian cancer ([106]30). Therefore, it can be suggested
+   that CCNA2 is a potential biomarker in gynecological cancer; however,
+   this requires in vivo or in vitro experimental verification. CCND1 is
+   an important positive regulator of the G1/S phase of the cell cycle and
+   has been identified as a co-factor of HPV in the initiation of cervical
+   carcinogenesis ([107]31). Similar studies regarding EC and VC have also
+   widely been reported ([108]32–[109]34).
+
+   BCL2 and IGF1 were revealed as the only two downregulated genes in the
+   sub-network. BCL2 is an intracellular membrane protein that prevents
+   apoptotic cell death and overexpression of BCL2 can block p53-mediated
+   G1 arrest ([110]35). Kamaraddi et al ([111]36) demonstrated that BCL2
+   expression is higher in malignant lesions compared with premalignant
+   lesions, which differs from the current findings. It has been suggested
+   that alterations of BCL2 expression are associated with early events in
+   cervical tumorigenesis and a lower BCL2 expression level has also been
+   demonstrated to be associated with an improved 5-year survival rate and
+   prognosis ([112]37). The significance of BCL2 in gynecological tumors
+   requires further investigation. Furthermore, IGF1 is closely associated
+   with the occurrence of numerous tumor types; however, its exact
+   mechanism remains unclear. Iyer et al ([113]38) identified that IGF-1
+   expression levels in advanced CC increase with chemo-radiotherapy and
+   decline during follow-up ([114]38). With a limited specificity in
+   gynecologic tumors, IGF1 is of limited value in the early prediction of
+   gynecological tumors; however it may serve a role in targeted treatment
+   strategies, and the assessment and improvement of prognosis
+   ([115]39,[116]40).
+
+   Angiogenesis serves an important role in tumor growth, development,
+   progression and metastasis ([117]41). As a pro-angiogenesis factor,
+   VEGFA is involved in the proliferation, differentiation and migration
+   of endothelial cells, and participates in the invasion and metastasis
+   of numerous types of cancer ([118]42). Chen et al ([119]43)
+   demonstrated that VEGFA may be a target for inhibiting angiogenesis in
+   EC 42). Similarly, Hua and Tian ([120]44) revealed that CCL4 can
+   promote cell proliferation, invasion and migration of EC by targeting
+   the VEGFA signal pathway ([121]44). Combined with the present results,
+   this indicates that VEGFA serves an important role in gynecological
+   tumor invasion and metastasis.
+
+   FGF2 is a typical fibroblast growth factor that stimulates the growth
+   of various cell types, from fibroblasts to tumor cells ([122]45). In
+   addition, FGF2 is a fundamental signaling molecule in tumor-induced
+   angiogenesis ([123]46). It has been demonstrated that FGF2 is mitogenic
+   in various cell types and is associated with the regulation of tumor
+   angiogenesis and metastasis ([124]47). Certain studies regarding the
+   receptor family of FGF2 have revealed that it is associated with the
+   occurrence and development of CC, in addition to HPV16 infection
+   ([125]48,[126]49). Aberrant FGF/FGF receptor signaling has been
+   demonstrated in multiple types of tumor ([127]50,[128]51). The
+   expression level of FGF2 has been revealed to be higher in EC compared
+   with normal tissues, and the highest expression level was observed in
+   tumors with dedifferentiation, myometrial invasion and advanced staging
+   ([129]52). Therefore, angiogenesis has an important impact in the
+   pathogenesis of gynecological cancers.
+
+   ‘PI3K-Akt signaling pathway’, ‘hepatitis B’, ‘pathways in cancer’,
+   ‘focal adhesion’, ‘viral carcinogenesis’ and ‘proteoglycans in cancer’
+   were located in the sub-network, which indicates that these processes
+   serve an important role in the pathogenesis of CC, EC and VC. It is
+   understood that the PI3K/Akt signaling pathway serves a central role in
+   cell growth and proliferation, and it has also been suggested that its
+   deregulation is associated with cancer ([130]53). Yung et al ([131]54)
+   demonstrated that the activation of AMPK could significantly inhibit CC
+   cell growth. Similar studies regarding the PI3K/Akt pathway in EC have
+   also been reported ([132]55,[133]56), and it has been considered as a
+   therapeutic target ([134]57). According to previous studies, the
+   PI3K/Akt signaling pathway can serve as a therapeutic target in EC
+   ([135]57) and ovarian cancer ([136]58,[137]59), and can be mediated by
+   molecules, including VEGFA ([138]40). FGF2 has also been reported to
+   serve an angiogenic role by the PI3K/Akt pathway ([139]60).
+   Furthermore, BCL2 is a major downstream mediator of the PI3K/Akt
+   pathway and serves a pivotal role in tumor response ([140]61,[141]62).
+   It has been reported that CCNA2 expression promotes the migration,
+   invasion and metastasis of hepatocellular carcinoma and ovarian cancer
+   cells via the PI3K/Akt signaling pathway ([142]63). Therefore, this
+   crucial pathway in cancer cells may be involved in the early
+   developmental stages of formation and invasion. As indicated by the
+   present results, the molecular mechanisms underlying CC, EC and VC are
+   complicated, and further studies are required to fully understand their
+   pathological mechanisms.
+
+   Similarly, Suman and Mishra ([143]64) identified that the aurora kinase
+   pathway has a crucial function in the pathogenesis of five
+   gynecological cancer types, including breast cancer, EC, CC, ovarian
+   cancer and VC, by analyzing the common core genes from the
+   [144]GSE63678, [145]GSE57297 and [146]GSE26712 datasets. Furthermore,
+   the present study identified seven genes (CCNA2, CDK1, CCND1, BCL2,
+   IGF1, FGF2 and VEGFA) and six pathways (‘viral carcinogenesis’,
+   ‘hepatitis B’, ‘focal adhesion’, ‘pathways in cancer’, ‘PI3K-Akt
+   signaling pathway’ and ‘proteoglycans in cancer’) that may serve an
+   important role in CC, EC and VC. A number of factors are involved in
+   the progression of cancer; the present study focused on the factors
+   associated with the female reproductive system. The results may provide
+   comprehensive evidence that promotes the understanding of cancers of
+   the female genital tract. While previous studies have focused on
+   co-expressed DEGs ([147]23,[148]64), the present study aimed to
+   establish a gene-pathway network based on the analysis of DEGs.
+   Additionally, previous studies investigated genes co-expressed by the
+   five cancer types (breast cancer, EC, CC, ovarian cancer and VC).
+   However, the current study not only investigated the co-expressed DEGs
+   of CC, EC and VC, but also examined the DEGs co-expressed by any
+   combination of two of the cancer types. In summary, the current study
+   focused of the associations between three types of tumor, which may
+   make it more comprehensive compared with previous studies.
+
+   Notably, there are certain limitations to the present study. The sample
+   number was relatively small, which to a certain extent reduces the
+   credibility of gene enrichment. Subject to conditions, long-term
+   assessments of the patients' clinical conditions were not available. In
+   addition, the literature regarding the pathways associated with CC, EC
+   and EC, except for the PI3K/Akt pathway is limited; therefore, the
+   present study lacked a solid foundation to adequately discuss the
+   current results. Finally, certain genes that are associated with the
+   pathogenesis of gynecological types of cancer may not have been
+   statistically analyzed, possibly due to the exclusion criteria that was
+   applied.
+
+   In conclusion, the pathogenesis of CC, EC and VC is complicated. By
+   performing a comprehensive analysis, the present study revealed a
+   library of DEGs in CC, EC and VC, and identified 25 hub genes.
+   Subsequently, viral infection, tumorigenesis, inflammation and the
+   endocrine system were revealed to be involved in the development of
+   these three types of cancer. Finally, a molecular network of CC, EC and
+   VC was constructed. Most notably, it was identified that the PI3K/Akt
+   pathway serves an important role in the three types of gynecological
+   cancer and seven hub genes (CCNA2, CDK1, CCND1, FGF2, IGF1, BCL2 and
+   VEGFA) present in the sub-network may act as therapeutic targets, and
+   assist with early diagnosis and prevention. The present study may
+   support the elucidation of the underlying mechanisms in CC, EC and VC,
+   which would promote early detection and the development of targeted
+   therapy. Further investigations that aim to improve understanding of
+   the mechanisms of these three cancer types will be vital for developing
+   highly sensitive and multifactorial strategies for the prevention,
+   diagnosis and treatment of CC, VC and EC.
+
+Acknowledgements

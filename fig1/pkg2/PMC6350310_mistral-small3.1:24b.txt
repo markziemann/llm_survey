@@ -1,0 +1,27 @@
+Toxic stress response proteins were also more abundant in the UC patients compared to the control group. Toxic stress
+   abundances was 10.2 (SD = 3.4). In the group with low cluster 1 protein abundances the average Geboes score was 6.9 (SD = 4.1). This indicates that NOS2 expression is increased in
+   abundant in patients with higher inflammation scores. The NOS2 is a key
+   nitric oxide (NO) in response to inflammation. NO can promote
+   molecule. The increased NOS2 expression in the inflamed tissue is
+   consistent with previous reports of increased NOS2 expression in inflamed tissue.
+
+### Questions and Answers:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - **Not described**
+
+2. **Was a tool version number provided?**
+   - **Not described**
+
+3. **What gene set library was queried?**
+   - **Not described**
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - **Not described**
+
+5. **What statistical test was used for enrichment analysis?**
+   - **Not described**
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - **Not described**
+

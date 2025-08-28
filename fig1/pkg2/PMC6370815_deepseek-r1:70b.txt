@@ -1,0 +1,44 @@
+<think>
+Alright, I'm looking at this query where someone is asking about how pathway enrichment analysis was conducted in a scientific article. They want specific details extracted and organized into a table. The user has provided six questions that need answers based on the article's content.
+
+First, I'll start by understanding each of the questions:
+
+1. What tool was used for pathway enrichment analysis?
+2. Was a tool version number provided?
+3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)?
+4. Was a background gene list defined for pathway enrichment analysis?
+5. What statistical test was used for enrichment analysis?
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+
+I need to carefully go through the Methods section and possibly other parts of the article to find these details.
+
+Starting with question 1: The tool used for pathway enrichment analysis. In the Material and Methods section, under "Functional Enrichment Analysis," the article mentions using the R-package piano_1.16.4 for KEGG enrichment analysis. So, the primary tools are R with the piano package and possibly other built-in functions.
+
+Question 2: The version number of the tool. It does mention R-3.4.1 and piano_1.16.4, so yes, versions are provided.
+
+Question 3: Gene set libraries queried. They used KEGG pathways as mentioned in the text. Additionally, they reference GO annotations, so both GO and KEGG are utilized.
+
+Question 4: Background gene list. The article states that the background is the whole set of genes from the Agilent microarray, which serves as the background for analysis.
+
+Question 5: Statistical test used. It mentions Fisher’s exact test for enrichment assessment, specifically in the context of KEGG pathways using the piano package.
+
+Question 6: FDR correction. The article applies Benjamini-Hochberg correction to control multiple testing and false positives, so yes, it's used.
+
+I need to ensure I'm not missing any details from other sections. The Functional Enrichment Analysis part is quite thorough, mentioning both GO and KEGG, the tools like R and piano, the statistical methods, and background definitions.
+
+Putting this all together, each answer should be concise but accurate based on the provided text.
+</think>
+
+### Pathway Enrichment Analysis Details:
+
+| **Question**                                         | **Answer**                                                                                                                                                                                                 |
+|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1. What tool was used for pathway enrichment analysis?** | R-package `piano_1.16.4` and additional tools like the KEGG “User data mapping” tool for generating KEGG pathway plots.                                                                                             |
+| **2. Was a tool version number provided?**            | Yes, the versions are specified: `R-3.4.1`, `piano_1.16.4`.                                                                                                                                                   |
+| **3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)?** | Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG).                                                                                                                                      |
+| **4. Was a background gene list defined for pathway enrichment analysis?** | Yes, the background gene list corresponds to the whole set of genes represented on the Agilent 8 × 60 K Whole Human Genome Oligo Microarray.                                                                                   |
+| **5. What statistical test was used for enrichment analysis?** | Fisher’s exact test.                                                                                                                                                                                       |
+| **6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?** | Yes, Benjamini-Hochberg correction was applied to correct p-values for multiple testing.                                                                                                                         |
+
+Let me know if you'd like further clarification!
+

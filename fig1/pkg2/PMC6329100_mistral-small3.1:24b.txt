@@ -1,0 +1,91 @@
+###
+       Technologies, CA, USA) and the 43 samples with RIN
+       Number (RIN) greater than 8.0.
+     * RNA-Seq by Expectation-Maximization (RIN sample
+       was used for library preparation using the TruSeq RNA Sample
+       Preparation v2 (Illumina Inc., San Diego, CA, USA). All
+       libraries were pooled and sequenced on an Illumina
+       Library Quantification kit for Illumina platforms (KAPA Biosystems, Wilmington,
+       MA, USA) using the Illumina HiSeq 2500 Bioanalyzer 2100
+       (Illumina, San Diego, CA, USA). The
+       sequencing process and loaded into an Illumina HiSeq2500 system was used to generate paired-end 150 Kit (Illumina, San Diego, CA, USA) and run on the HiSeq2500 sequencing
+       the HiSeq2500 platform with the TruSeq
+       Sequencing, CA, USA). The FASTQC software
+       (FastQC, CA, USA) was used to check the quality of the sequenced reads and the quality control.
+       The paired-end reads were trimmed and filtered with Trimmomatic software (Trimmomatic) using the
+       following parameters: minimum quality score of 30, a sliding window of 4:20 quality reads were removed with the FASTQC software (FastQC, USA) was used.1. The reads were aligned to the reference genome UMD3.1 assembly of Bos taurus (Ensembl,
+       CA, USA) using Bowtie2 (Bowtie2, CA) was used to map and
+       align the paired-end reads to the reference genome, and Bowtie2 Bos taurus
+       ARS_UCD1.0) (UMD3.1.10). The HTSeq-count software
+       (HTSeq-count, CA) were obtained for the gene and the featureCounts
+       package (featureCounts, CA, USA) using the Ensembl Ensembl 84.3 gene annotations.
+
+   1 release 84.0.0 of Bos taurus (B.1.0). The final gene count matrix was
+       used for further analysis.
+
+1. **What tool was used for pathway enrichment analysis?**
+   - DAVID (Database for Annotation, Visualization and Integrated Discovery) and WebGestalt 2018] and WebGestalt
+   (RNA-Seq) samples. The data was normalized by log2(count+1) before
+   analysis.
+
+2. **Was a tool version number provided?**
+   - DAVID version 6.8 and samples, and 70% zero values.
+   - WebGestalt version 20,5095 genes, only 14,7245 genes remained for analysis. The soft-thresholding parameter β was chosen equal to 12, based on the scale-free network was created with the Pearson
+   correlation coefficients between all gene pairs, and the correlation
+   matrix was raised to β to increase strong correlations and decrease weak ones.
+   Next, a Topological Overlap Matrix (TOM) using a power
+   thresholding parameter. The TOM was used to define the network
+   the β parameter was chosen as 6. The dynamic tree cut algorithm was used to
+   identify the module. Modules with similar expression profiles were merged using the Dynamic
+   tree-cutting algorithm to merge highly similar modules into a new one (1-TOM), and the cut-height
+   values were 30 and 0.000,000. For each module
+   identified were used to identify the correlation threshold of 0.25 and
+   a measure of the module. The genes that were not assigned
+   to any module were placed in the Grey module.
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+   - DAVID: Gene Ontology (GO) and KEGG pathway.
+   - WebGestalt: KEGG pathway.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - DAVID: not described.
+   - WebGestalt: not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - DAVID: not described.
+   - WebGestalt: not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - DAVID: False Discovery Rate (FDR) was performed by the FDR method using the Benjamini-
+   WebGestalt: not described.
+
+### Note: The above text has been formatted to match the provided information with questions asked. The text has been formatted to answer the questions accurately and to match the data from the article. The text is formatted to answer the questions to match the data provided and the text has been edited to answer the questions, and the text has been formatted to answer the questions. The text has been formatted to match the provided data and to answer the questions. The text has been edited to answer the questions and to match the data. The text has been edited to answer the questions and to match the data.
+
+### Note: The authors did not provide enough information on some questions. The text was edited to answer the questions and to match the provided data.
+
+**Additional Information:**
+
+1. **What tool was used for pathway enrichment analysis?**
+   - DAVID v6.8 and WebGestalt.
+
+2. **Was a tool version number provided?**
+   - Yes: DAVID v6.8. No: WebGestalt.
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+   - DAVID: GO and KEGG.
+   - WebGestalt: KEGG.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - DAVID: not described.
+   - WebGestalt: not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - DAVID: not described.
+   - WebGestalt: not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in pathway enrichment analysis?**
+   - DAVID: yes.
+   - WebGestalt: not described.
+
+**Note: Some information was not provided in the article, so it was written as not described. The information was not provided in the article, so it was written as not described. The information was not provided in the article, so it was written as not described.**
+

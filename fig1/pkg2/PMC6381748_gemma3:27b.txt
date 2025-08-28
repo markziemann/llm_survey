@@ -1,0 +1,22 @@
+Okay, here's a breakdown of the pathway enrichment analysis methods used in the provided scientific article, based on careful review of the text and supplementary materials.  I'll present the information in a table format as requested.
+
+**Pathway Enrichment Analysis Methods – Details from the Article**
+
+| **Question** | **Answer** |
+|---|---|
+| **1. What tool was used for pathway enrichment analysis?** | Metacore® |
+| **2. Was a tool version number provided?** | Not described |
+| **3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?** | Gene Ontology (GO) - specifically used for cell process enrichment. The article also mentions use of kinase substrate enrichment analysis performed by KSEA (Kinase Substrate Enrichment Analysis) within Metacore®. |
+| **4. Was a background gene list defined for pathway enrichment analysis?** | Yes. The authors state, “Phospho-regulated proteins IDs (Uniprot KB) were matched to the corresponding genes. Subsequently genes were assigned to gene ontologies using Metacore®."  This implies they used the entire protein-coding genome (or a relevant subset) as the background against which to assess enrichment. |
+| **5. What statistical test was used for enrichment analysis?** | The article mentions p-value calculations for enrichment analysis, but does not specifically detail the statistical test used. |
+| **6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?** | Yes. The article states “False Discovery Rate (FDR)” was used for multiple testing correction when analyzing enrichment results. |
+
+**Important Considerations and Additional Notes from the Supplementary Materials:**
+
+*   **Multiple Enrichment Approaches:** The authors used a combination of enrichment analyses, including Gene Ontology (GO) enrichment for cell processes *and* a kinase-substrate enrichment analysis (KSEA) to identify regulated kinases.
+*   **KSEA Details:** KSEA is a proprietary method within Metacore®, focusing on identifying kinases and phosphatases whose substrates are significantly enriched among the regulated proteins.
+*   **Temporal Specificity:** Enrichment analyses were performed *at each time point* (5, 30, and 60 minutes) to identify dynamic changes in pathway regulation.
+*   **Data Sorting:** For gene ontology analyses, they calculated the standard deviation of the –Log10 (p-value) amongst the three timepoints and sorted the ontology in decreasing order to identify the most differentially affected categories.
+
+I hope this detailed breakdown is helpful! Let me know if you’d like any further clarification.
+

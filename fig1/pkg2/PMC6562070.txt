@@ -1,0 +1,560 @@
+Abstract
+
+Objective
+
+   Onset of multiple sclerosis (MS) occurs in childhood for approximately
+   5% of cases (pediatric MS, or ped‐MS). Epigenetic influences are
+   strongly implicated in MS pathogenesis in adults, including the
+   contribution from microRNAs (miRNAs), small noncoding RNAs that affect
+   gene expression by binding target gene mRNAs. Few studies have
+   specifically examined miRNAs in ped‐MS, but individuals developing MS
+   at an early age may carry a relatively high burden of genetic risk
+   factors, and miRNA dysregulation may therefore play a larger role in
+   the development of ped‐MS than in adult‐onset MS. This study aimed to
+   look for evidence of miRNA involvement in ped‐MS pathogenesis.
+
+Methods
+
+   GWAS results from 486 ped‐MS cases and 1362 controls from the U.S.
+   Pediatric MS Network and Kaiser Permanente Northern California
+   membership were investigated for miRNA‐specific signals. First,
+   enrichment of miRNA‐target gene network signals was evaluated using
+   MIGWAS software. Second, SNPs in miRNA genes and in target gene binding
+   sites (miR−SNPs) were tested for association with ped‐MS, and pathway
+   analysis was performed on associated target genes.
+
+Results
+
+   MIGWAS analysis showed that miRNA‐target gene signals were enriched in
+   GWAS (P = 0.038) and identified 39 candidate biomarker miRNA‐target
+   gene pairs, including immune and neuronal signaling genes. The miR‐SNP
+   analysis implicated dysregulation of miRNA binding to target genes in
+   five pathways, mainly involved in immune signaling.
+
+Interpretation
+
+   Evidence from GWAS suggests that miRNAs play a role in ped‐MS
+   pathogenesis by affecting immune signaling and other pathways.
+   Candidate biomarker miRNA‐target gene pairs should be further studied
+   for diagnostic, prognostic, and/or therapeutic utility.
+
+Introduction
+
+   Multiple sclerosis (MS) is an immune‐mediated demyelinating disease of
+   the central nervous system and a leading cause of neurological
+   disability in young adults. MS is typically diagnosed between the ages
+   of 20 and 40, but it is estimated that up to 5% of all cases experience
+   their first symptoms before the age of 18.[85]1, [86]2 While
+   pediatric‐onset MS (ped‐MS) and adult MS presentation largely overlap,
+   disease course in children is almost exclusively relapsing‐remitting,
+   with a higher relapse rate, and a longer time to development of
+   secondary progressive MS and disability.[87]2, [88]3, [89]4
+
+   MS is thought to result from a complex interplay of genetic,
+   epigenetic, and environmental risk factors.[90]5 MicroRNAs (miRNAs) are
+   epigenetic factors that have been investigated in MS, and over 170
+   miRNAs have been found to be differentially expressed in various
+   tissues in either adult‐onset MS or experimental autoimmune
+   encephalomyelitis (EAE) in mice.[91]6, [92]7, [93]8, [94]9, [95]10,
+   [96]11, [97]12, [98]13 One study specifically compared miRNA expression
+   levels in ped‐MS cases to pediatric controls, and 12 upregulated and
+   one downregulated miRNA were reported.[99]14 miRNAs are short (~22
+   nucleotides) noncoding RNAs that usually downregulate gene expression
+   by binding to specific sequences of messenger RNA (mRNA) transcripts,
+   targeting them for degradation and blocking protein translation, though
+   different miRNA functions have also been reported.[100]15 Target sites
+   generally lie in the 3’ untranslated regions (3’ UTRs) of mRNAs, but
+   binding in other regions is known to occur.[101]16 Because each miRNA
+   can target hundreds of genes, and any gene can be regulated by multiple
+   miRNAs, they have the potential to influence entire networks of genes
+   at once.
+
+   Single‐nucleotide polymorphisms (SNPs) in and around miRNA genes have
+   been associated with a number of autoimmune diseases, including
+   MS.[102]17 These miRNA SNPs can disrupt normal gene regulatory
+   functions by affecting miRNA expression levels and processing, but SNPs
+   in the target‐binding sites of mRNAs can also impact the normal
+   function of miRNAs. Strategies to examine target gene SNPs in addition
+   to miRNA gene SNPs have recently been developed and have implicated
+   specific miRNAs and target genes in the development of autoimmune and
+   other diseases.[103]18, [104]19, [105]20, [106]21
+
+   This study examined evidence of miRNA involvement in ped‐MS
+   susceptibility in two ways. First, genome‐wide association study (GWAS)
+   results were tested for enrichment of signals in miRNA‐target gene
+   networks utilizing MIGWAS software.[107]21, [108]22 Second, a miR‐SNP
+   association study was performed, and pathway analysis was used to
+   characterize target genes harboring miR‐SNPs associated with ped‐MS. We
+   define miR‐SNP as a SNP that is either (1) located in a gene that codes
+   for a miRNA, or (2) located in a miRNA‐binding site of a target gene.
+
+Methods
+
+Study participants
+
+   The study participants have been previously described,[109]23 but now
+   include additional ped‐MS cases with same inclusion/exclusion criteria.
+   Additionally, only participants who were genotyped using an Illumina
+   BeadChip array were included in this study. Briefly, patients with
+   onset of MS or clinically isolated syndrome (CIS) with two silent MRI
+   lesions suggestive of early MS before the age of 18 (n = 432) were
+   enrolled through the U.S. Network of Pediatric MS Centers.[110]3
+   Additional adult cases with onset prior to age 18 (n = 68) were
+   recruited retrospectively from the Kaiser Permanente Northern
+   California (KPNC) membership. All cases were confirmed to have MS using
+   established diagnostic criteria.[111]24, [112]25
+
+   Pediatric controls (n = 208) were enrolled through the U.S. Network of
+   Pediatric MS Centers.[113]3 Adult controls (n = 894) without a
+   diagnosis of MS, optic neuritis, transverse myelitis, or demyelinating
+   disease confirmed through electronic medical records were recruited
+   from KPNC and enrolled. A second set of previously described[114]26
+   female adult controls (n = 268) with no prior history of autoimmune
+   disease who were recruited as part of the University of California San
+   Francisco Mother‐Child Immunogenetic Study were also included.
+
+Data collection
+
+   DNA from participants was purified from either whole blood or saliva
+   samples. Genotyping was performed using Illumina Infinium 660K and
+   Human Omni Express BeadChip arrays. Genotype data were merged into a
+   single dataset and processed using PLINK 1.9.[115]27 SNPs with a minor
+   allele frequency (MAF) <1% or success rate <90% and samples with >10%
+   failed genotype calls were removed from analysis. To reduce confounding
+   due to population stratification, analyses were restricted to white
+   individuals, defined as having >=80% European ancestry identified using
+   SNP weights for European, West African, East Asian, and Native American
+   ancestral populations.[116]28 Related individuals were identified, and
+   only one randomly chosen person in any related group was retained for
+   analysis, with the exception that cases were preferentially retained in
+   instances where cases and controls were related. Classical
+   multidimensional scaling (MDS) was used to visualize study population
+   ancestry (Figure [117]S1) and include as covariates in subsequent
+   statistical analyses. Five outlier samples were removed from analysis.
+   SNP imputation was performed with reference haplotypes from Phase 3 of
+   the 1000 Genomes Project[118]29 using SHAPEIT2 and IMPUTE2.[119]30
+   Genotypes were called using the default hard‐call threshold of 90%
+   using PLINK. Imputed SNPs with info score <0.3, with MAF <1%, with
+   genotype call rate <90%, or not in Hardy–Weinberg equilibrium (HWE)
+   among controls (P < 0.00001) were removed. The final imputed dataset
+   consisted of 7 570 644 autosomal SNPs, of which 42 277 lay within the
+   major histocompatibility complex (MHC) region chr6:29570005‐33377657 in
+   GRCh37/hg19, spanning genes GABBR1 to KIFC1.[120]31 Presence of the
+   HLA‐DRB1*15:01 allele, the strongest genetic risk factor for MS, was
+   determined for each participant using the tag SNP rs3135388.[121]32
+   There were 486 cases and 1362 controls in the final dataset. Study
+   protocols were approved by all institutions, and informed consent or
+   assent was obtained from all participants, as previously
+   described.[122]23
+
+Statistical analyses—miRNA‐target gene network enrichment in GWAS (MIGWAS)
+
+   Genome‐wide association tests were performed on all autosomal SNPs
+   outside of the MHC using logistic regression and additive genetic
+   models in PLINK. Models included the first three MDS components to
+   adjust for residual confounding by population stratification.
+   Enrichment of miRNA‐target gene network signals in the GWAS results was
+   evaluated using MIGWAS software.[123]21, [124]22 Briefly, MIGWAS takes
+   GWAS P‐values as input, selects the lowest P‐value per miRNA and target
+   gene, and, for each of 179 different tissues with available miRNA
+   expression data from FANTOM5,[125]33 identifies the number of
+   miRNA‐target gene pairs that satisfy the following conditions: both the
+   miRNA and the target gene are associated with the outcome (P < 0.01),
+   there is a high binding score prediction for the pair, and the miRNA is
+   highly and specifically expressed in the tissue. Enrichment of
+   miRNA‐target gene signal is estimated by permuting GWAS P‐values 20 000
+   times and recomputing the number of miRNA‐target gene pairs that
+   satisfy the conditions to obtain an empirical null distribution of that
+   number. A P‐value for enrichment is then reported for each tissue, as
+   well as an overall enrichment P‐value that does not take tissue
+   expression into consideration is also reported. Enrichment P‐values of
+   0.05 or lower were considered significant. Candidate biomarker
+   miRNA‐target gene pairs are also reported, and are defined as pairs
+   where both the miRNA and target gene are nominally associated with the
+   outcome (P < 0.01) and the miRNA‐target gene binding prediction score
+   is in the top one percentile of all pairs.[126]22
+
+Statistical analyses—miR‐SNP association
+
+   miR‐SNPs were tested separately for association with ped‐MS. miR‐SNPs
+   in miRNA genes were identified using version 21 high‐confidence
+   annotations from the miRBase database.[127]34 Coordinates for 1877
+   miRNA genes were converted from build 38 to build 37 using the UCSC
+   Genome Browser liftOver tool[128]35 and intersected with imputed SNPs
+   in the ped‐MS dataset using BEDTools,[129]36 resulting in 267 miR‐SNPs
+   outside of the MHC and 8 within the MHC. miR‐SNPs in predicted
+   target‐binding sites in the 3’ UTRs of protein‐coding genes were
+   identified using the MirSNP database[130]18 and version 3.0 of the
+   PolymiRTS database.[131]19 SNPs in predicted target regions from either
+   database were intersected with the ped‐MS dataset, resulting in 51 725
+   target region miR‐SNPs outside of the MHC and 586 miR‐SNPs within the
+   MHC.
+
+   Each miR‐SNP was tested for association with ped‐MS using the same
+   logistic regression models as in the GWAS analysis, with the exception
+   that models for miR‐SNPs within the MHC also included the
+   HLA‐DRB1*15:01 tag SNP as a covariate. P‐values in each category of
+   association tests—miRNA gene SNPs or target gene SNPs, within or
+   outside of the MHC—were adjusted separately for multiple hypothesis
+   testing using the Benjamini–Hochberg procedure to control the false
+   discovery rate.[132]37 A threshold of 0.05 was used to determine
+   significance. In an effort to reduce the statistical burden of multiple
+   hypothesis tests, several sets of candidate mir‐SNPs were considered
+   separately: 897 miR‐SNPs in the 3'UTRs of genes proximal to 200 non‐MHC
+   loci identified in the latest adult‐onset MS genome‐wide association
+   study;[133]38 1063 miR‐SNPs experimentally supported by crosslinking,
+   ligation, and sequencing of hybrids (CLASH) experiments, including in
+   noncanonical binding sites and nonprotein‐coding genes;[134]16 19 516
+   miR‐SNPs predicted in the polymiRTS database to either create a new
+   miRNA‐binding site or disrupt a conserved miRNA‐binding site, with a
+   context+ score difference of less than −0.15 (more negative scores
+   indicate increased confidence that miRNA binding is disrupted); and one
+   miR‐SNP in the 3’ UTR of the HLA‐DRB1 gene.
+
+   Pathway analysis of target genes with mir‐SNPs that was nominally
+   associated with ped‐MS at P < 0.01 in the main association analysis was
+   conducted using PANTHER.[135]39 Statistical overrepresentation tests
+   were performed using a background list of only protein‐coding genes.
+   Each of nine available annotation datasets in the “PANTHER,” “GO,” and
+   “Reactome” pathways were tested using Fisher's Exact test with FDR
+   multiple test correction.
+
+Results
+
+   Characteristics of study participants are summarized in Table [136]1.
+   Average age of onset for ped‐MS cases was 14.3 years, and cases had
+   more copies of the HLA‐DRB1*15:01 allele than controls, as expected.
+   When plotted with HGDP reference populations, cases, and controls
+   clustered together near European individuals (Figure [137]S1).
+
+Table 1.
+
+   Characteristics of ped‐MS case and control individuals in the miR‐SNP
+   association study
+                                Ped‐MS cases Controls
+   N                            486          1362
+   Sex
+    Female                      362 (74)     1122 (82)
+    Male                        124 (26)     240 (18)
+   Age of onset                 14.3 (3.2)   –
+   Copies HLA‐DRB1*15:01 allele
+    0                           250 (51)     1005 (74)
+    1                           194 (40)     334 (24)
+    2                           42 (9)       23 (2)
+   [138]Open in a new tab
+
+   Table values are mean (SD) for continuous variables or n (%) for
+   categorical variables.
+
+miRNA‐target gene network enrichment in GWAS (MIGWAS)
+
+   Enrichment of miRNA‐target gene network signals was observed in the
+   ped‐MS GWAS results for 25 different tissues (P < 0.05) as well as
+   overall, without considering tissue‐specific miRNA expression
+   (P = 0.038). Results are summarized in Table [139]2. MIGWAS identified
+   39 candidate biomarker miRNA‐target gene pairs comprised of 16 unique
+   miRNAs and 37 unique genes (Table [140]3).
+
+Table 2.
+
+   Tissues enriched for miRNA‐target gene network signals (P < 0.05) in
+   ped‐MS GWAS results in the MIGWAS analysis
+   Tissue P‐value Fold change MIGWAS tissue category
+   Keratinized cell of the oral mucosa 0.002 4.07 gastrointestinal
+   Human spinal cord—adult sample 0.011 2.61 brain
+   Epithelial cell of amnion 0.014 2.99 fetal
+   Preadipocyte 0.020 2.42 fat
+   Amnion mesenchymal stem cell 0.020 2.74 fetal
+   Epithelial cell of alimentary canal 0.023 2.79 gastrointestinal
+   Synovial cell 0.025 2.25 joint
+   Epithelial cell of esophagus 0.026 2.28 gastrointestinal
+   Acinar cell of sebaceous gland 0.027 2.64 fat
+   Mast cell 0.029 2.49 immune
+   Nonpigmented ciliary epithelial cell 0.031 2.13 skin
+   Tracheal epithelial cell 0.033 2.59 lung
+   Smooth muscle cell of the internal thoracic artery 0.035 2.14 vascular
+   All (tissue‐naïve test) 0.038 1.68 ‐
+   Extraembryonic cell 0.036 2.42 fetal
+   Human renal cortical epithelial cell sample 0.039 1.79 kidney
+   Pericyte cell 0.041 2.02 others
+   Hair follicle dermal papilla cell 0.041 2.46 skin
+   Mesangial cell 0.043 2.03 kidney
+   Keratinizing barrier epithelial cell 0.043 2.54 others
+   Gingival epithelial cell 0.043 1.86 gastrointestinal
+   CD14‐positive CD16‐negative classical monocyte 0.044 2.30 immune
+   Exocrine cell 0.045 2.42 others
+   Epidermal cell 0.046 2.37 others
+   Omentum preadipocyte 0.047 2.25 fat
+   Keratinocyte 0.050 2.43 skin
+   [141]Open in a new tab
+
+   P‐values and fold changes are for enrichment of the number of
+   miRNA‐target gene pairs associated with ped‐MS (where the pair has a
+   high predicted binding score and the miRNA is highly expressed in the
+   tissue) compared to the empirical null distribution of the number of
+   such pairs.
+
+Table 3.
+
+   Candidate biomarker miRNA‐target gene pairs associated with ped‐MS in
+   MIGWAS
+   miRNA Genes Known miRNA expression associations in MS
+   hsa‐miR‐141 CD80, THAP5
+   hsa‐miR‐197 CD109, TSEN2 Decreased in T cells of patients treated with
+   IFN‐β [142]6
+   hsa‐miR‐200c SLC35B4 hsa‐miR‐200c increased in white matter[143]7;
+   hsa‐miR‐200a and hsa‐miR‐200b decreased in B cells[144]7; hsa‐miR‐200a
+   decreased in whole blood[145]8
+   hsa‐miR‐21 C11orf70, PLAA Increased in white matter[146]7; decreased in
+   peripheral blood of ped‐MS cases[147]14
+   hsa‐miR‐3128 CBL, SCLY
+   hsa‐miR‐3188 PRSS12
+   hsa‐miR‐3605 ARL6IP6 Increased in peripheral blood of ped‐MS
+   cases[148]14
+   hsa‐miR‐4277 ZNF286B
+   hsa‐miR‐4294 SLC37A4
+   hsa‐miR‐4498 NCS1, RAB35
+   hsa‐miR‐4649 HYOU1
+   hsa‐miR‐587 PRKRIR, UTP18
+   hsa‐miR‐599 PAPPA Increased in PBMCs[149]6 and decreased in B
+   cells[150]7
+   hsa‐miR‐608 ADPRH, CD109, CIITA, COX10, CYB561D1, EHD2, GAST, GLIS2,
+   HYOU1, NTSR1, PHF19, PIWIL3, PXN, SNAI1, SYNJ2BP, TFAP4, ZSCAN20
+   hsa‐miR‐744 TANC2 Increased in PBMCs[151]6
+   hsa‐miR‐875 EIF5A2, ERP29
+   [152]Open in a new tab
+
+   Pairs are candidate biomarkers if both the miRNA and target gene are
+   nominally associated with ped‐MS (P < 0.01) and the miRNA‐target gene
+   binding prediction score is in the top one percentile of all pairs. The
+   last column indicates previously observed MS associations in miRNA
+   expression studies. The “hsa‐” prefix in the miRNA names stands for
+   homo sapiens.
+
+miR‐SNP association
+
+   After adjusting P‐values for multiple hypothesis testing, no miR‐SNPs
+   were significantly associated with ped‐MS in the genome‐wide analyses
+   at FDR < 0.05. There were 255 target genes with 3’ UTR miR‐SNPs
+   associated at P < 0.01 in the genome‐wide analysis that were used as
+   input for pathway analyses. These genes were overrepresented in five
+   pathways in PANTHER (Table [153]4). Among the candidate miR‐SNP sets,
+   only one CLASH‐supported miR‐SNP, rs61075345 in the third exon of
+   TVP23B, was associated with ped‐MS (P = 4.59 × 10^−05, FDR = 0.047).
+
+Table 4.
+
+   Pathways in which the 255 protein‐coding genes containing miR‐SNPs
+   associated with ped‐MS (P < 0.01) are statistically overrepresented
+   Pathway name (PANTHER annotation source) # Protein‐coding genes in
+   pathway # Expected in 255 ped‐MS genes # Found in 255 ped‐MS genes
+   P‐value (FDR) Ped‐MS genes in pathway
+   Histamine H[1] Receptor mediated signaling (PANTHER Pathway) 43 0.58 5
+   0.035 GNG4, PLCB3, PLCG2, PRKCB, PRKCI
+   5‐HT[2] type receptor mediated signaling (PANTHER Pathway) 66 0.86 6
+   0.064 PLCB3, PRKCI, PLCG2, GNG4, PRKCB, SLC18A2
+   MHC Protein Complex (GO Cellular Component) 25 0.34 5 0.085 HLA‐DPB1,
+   HLA‐DQB1, HLA‐DRA, HLA‐A, HLA‐G
+   Integral component of lumenal side of endoplasmic reticulum membrane
+   (GO Cellular Component) 28 0.38 5 0.046 HLA‐DPB1, HLA‐DQB1, HLA‐DRA,
+   HLA‐A, HLA‐G
+   Interferon gamma signaling (Reactome Pathway) 90 1.21 9 0.014 HLA‐DPB1,
+   TRIM14, HLA‐DQB1, HLA‐DRA, HLA‐A, TRIM26/AFP, TRIM10, HLA‐G, CIITA
+   [154]Open in a new tab
+
+   For each pathway, the total number of protein‐coding genes in the
+   pathway is given, followed by the number of those genes expected by
+   chance to be found among the 255 ped‐MS associated protein‐coding
+   genes, the actual number found, the P‐value for statistical
+   overrepresentation (adjusted for multiple hypothesis tests), and the
+   list of ped‐MS associated genes in the pathway.
+
+Discussion
+
+   In this study, evidence that miRNAs are involved in ped‐MS pathogenesis
+   was sought using two different approaches that utilized genetic data
+   from the largest population of ped‐MS cases gathered to date.
+
+   The MIGWAS method identified enrichment of miRNA‐target gene networks
+   in ped‐MS GWAS results, and identified tissues in which miRNAs involved
+   in those networks are known to be highly expressed. Tissues included
+   gastrointestinal, brain, fetal, fat, joint, immune, lung, vascular,
+   skin, kidney, and other tissues (Table [155]2). While it is true that
+   immune and central nervous system tissues have clear roles in MS and
+   are generally prioritized first for study, there is evidence that
+   processes starting in other tissues may play a role in triggering MS
+   and also warrant investigation. For instance, smoking is hypothesized
+   to exert its effect on MS risk primarily through irritation and
+   inflammation of lung tissue, which in turn likely trigger (possibly
+   autoreactive) immune responses.[156]5 The highest enrichment observed
+   in this ped‐MS study was in a gastrointestinal tissue, keratinized
+   cells of the oral mucosa, and gastrointestinal tissues were
+   overrepresented in these results: four of the seven gastrointestinal
+   tissues tested were enriched for miRNA‐target gene network signals.
+   Evidence that miRNA dysregulation could specifically be occurring in
+   gastrointestinal tissues is notable because there is existing evidence
+   of a bidirectional relationship between MS and the gut microbiome,
+   where aberrant gut microbiomes found in MS patients contribute to a
+   proinflammatory state, and the autoreactive immune systems of MS
+   patients shape the gut microbiome.[157]40
+
+   Several genes identified in the MIGWAS candidate biomarker target‐gene
+   pairs are involved in immune signaling and activation (Table [158]3)
+   according to RefSeq annotations,[159]41 and are therefore particularly
+   promising targets of future research into the role miRNAs play in
+   ped‐MS development. CIITA is a “master regulator” of class II HLA gene
+   expression, and CD80 is a T‐cell membrane receptor that provides the
+   costimulatory signal necessary for T‐cell activation. CD109 is
+   expressed in activated T cells and regulates transforming growth factor
+   beta signaling. CBL is an enzyme required for targeting substrates for
+   degradation by the proteasome and is a negative regulator of many
+   signaling pathways triggered by activation of cell surface receptors.
+   TFAP4 is a transcription factor that activates both viral and cellular
+   genes. Two other MIGWAS genes with plausible roles in ped‐MS
+   pathogenesis affect neuronal differentiation and signaling. GLIS2 is
+   widely expressed at low levels in the neural tube and peripheral
+   nervous system and is thought to promote neuronal differentiation, and
+   NCS1 modulates synaptic transmission and synaptic plasticity and is
+   expressed predominantly in neurons. Three genes identified by MIGWAS
+   are involved in protein folding and homeostasis in the endoplasmic
+   reticulum (ER), which is notable because the ER lumen cellular
+   component was also identified in the miR‐SNP pathway analysis. The ER
+   lumen is where class I and II HLA proteins are assembled,[160]42 and
+   stress in the ER caused by accumulation of misfolded proteins (the
+   “unfolded protein response” or UPR) is associated with a number of
+   inflammatory diseases, including MS.[161]43 Of the MIGWAS‐identified
+   genes, HYOU1 is thought to play an important role in protein folding
+   and secretion in the ER. ERP29 localizes to the lumen of the ER and is
+   involved in the processing of secretory proteins. SLC37A4 regulates
+   transport from the cytoplasm to the lumen of the ER to maintain glucose
+   homeostasis and plays a role in calcium sequestration in the ER lumen.
+   Collectively, the genes in the 39 miRNA‐target gene pairs suggest that
+   miRNAs could be affecting ped‐MS through many mechanisms, including
+   immune signaling and activation, neuronal differentiation and
+   signaling, and protein folding in the ER. Finally, it is notable that
+   expression differences in five of the 16 candidate miRNAs identified by
+   MIGWAS, hsa‐mir‐197, hsa‐mir‐200c, hsa‐mir‐21, hsa‐mir‐599, and
+   hsa‐mir‐744, have been associated with MS or EAE in previous
+   studies,[162]6, [163]7 and two of them, hsa‐miR‐21 and hsa‐miR‐3605,
+   were differentially expressed in ped‐MS cases specifically (though
+   hsa‐miR‐21 failed a subsequent validation assay).[164]14 A follow‐up to
+   the ped‐MS expression study found that six of the 13 confirmed
+   ped‐MS‐associated miRNAs were also differentially expressed in
+   adults,[165]44 but hsa‐miR‐3605 was not among them, suggesting that it
+   could be a biomarker specific to ped‐MS.
+
+   In the miR‐SNP analysis, the single CLASH‐supported miR‐SNP associated
+   with ped‐MS resides in the TVP23B gene, which codes for a membrane
+   protein associated with diabetic retinopathy.[166]45 It is not
+   immediately clear how it may play a role in ped‐MS pathogenesis.
+   However, statistical overrepresentation tests of top miR‐SNP hits
+   yielded two receptor‐mediated signaling pathways with a more evident
+   relationship with ped‐MS. Five genes in the histamine H[1] receptor
+   pathway were found to have ped‐MS‐associated miR‐SNPs (Table [167]4).
+   Histamine is a ubiquitous compound in human tissues that acts as a
+   neurotransmitter and that is involved in inflammatory responses that
+   act through four different receptors, H[1]‐H[4]. It is thought that the
+   proinflammatory effects of histamine act through H[1] receptors.[168]46
+   Many of the same genes are also involved in the 5‐HT[2] type receptor
+   mediated signaling pathway. 5‐HT[2] is a subtype of serotonin
+   receptors. Similar to histamine, serotonin is a signaling molecule with
+   wide‐ranging effects that acts as both a neurotransmitter and a
+   hormone. The 5‐HT[2] class of hormone receptors is expressed on several
+   immune cell types.[169]47 Our results suggest that dysregulation of
+   genes involved in these signaling pathways by miRNAs increases ped‐MS
+   risk.
+
+   The other three pathways identified in the miR‐SNP analysis each
+   encompass many of the same genes, including several genes encoded in
+   the MHC (Table [170]4). Five class I and II HLA genes associated with
+   ped‐MS are in the MHC protein complex (GO cellular component). These
+   genes code for proteins that present antigens to T cells, and variants
+   in antigen‐presenting genes are the first‐documented and strongest
+   genetic risk factors for MS.[171]5, [172]38 The same five HLA genes are
+   part of the integral component of the luminal side of endoplasmic
+   reticulum (ER) membrane (GO Cellular Component). Of note, the genes
+   identified in the miR‐SNP analysis are different from those identified
+   in the MIGWAS analysis, but both methods point to dysregulation of
+   processes in the ER. The interferon gamma (IFN‐γ) signaling pathway
+   contains a total of nine ped‐MS‐associated genes. The role of IFN‐γ in
+   MS has been extensively studied, and, similar to histamine and
+   serotonin, it can have detrimental or beneficial effects on MS
+   depending on where and when it is active.[173]48 Our miR‐SNP analysis
+   findings indicate that aberrant regulation by miRNAs of genes in the
+   MHC protein complex, genes on the inner part of the ER lumen, or genes
+   involved in IFN‐γ signaling (which are not mutually exclusive genes),
+   could be contributing to ped‐MS pathogenesis.
+
+   This study had some limitations. It is possible that the SNPs
+   identified in the MIGWAS and miR‐SNP studies do not affect ped‐MS via
+   miRNA function but instead are associated due to linkage disequilibrium
+   with SNPs acting by other mechanisms. Another issue is that
+   miRNA‐target binding prediction is imperfect, and therefore some of the
+   miRNAs may not actually act on the genes identified in MIGWAS, and some
+   of the miR‐SNPs tested may not in reality impact miRNA function.
+   Because the study was restricted to a white population, results may not
+   be generalizable, and miRNA associations that exist in other non‐white
+   populations may have been missed.
+
+   An important strength of this study is that it utilized the largest
+   study population thus far for ped‐MS, which is a rare disease, and
+   therefore difficult to study. Furthermore, cases were ascertained by a
+   panel of pediatric MS specialists. Only samples genotyped on Illumina
+   microarrays were utilized, minimizing the possibility of imputation
+   bias, and rigorous quality control of microarray data was applied. By
+   assessing P‐values of SNPs in miRNA and target genes at the same time,
+   and by including miRNA expression data, MIGWAS was able to detect
+   signals that may be missed with traditional GWAS or miR‐SNP analysis.
+
+   In conclusion, this study provides evidence that ped‐MS risk is
+   influenced by miRNAs acting on immune signaling and other genes, and
+   several miRNA‐target gene pairs and specific tissues were nominated for
+   further study. Larger studies are needed to confirm these results, and
+   further work is needed to determine whether any miRNA‐mediated disease
+   processes are specific to the pediatric population.
+
+Conflicts of Interest
+
+   E. Waubant is site PI for a Novartis and Roche trial. She has
+   volunteered on an advisory board for a Novartis trial. She is a
+   nonremunerated advisor for clinical trial design to Novartis,
+   Biogen‐IDEC, Sanofi, Genentech, Serono, and Celgene. She has funding
+   from the NMSS, PCORI, and the Race to Erase MS. She is the section
+   editor for Annals of Clinical and Translational Neurology, and co‐Chief
+   editor for MS And Related Disorders. A. Waldman reports grants from NIH
+   (NINDS) NS071463 and from NMSS during the conduct of the study, as well
+   as funds for investigator‐initiated study from Ionis Pharmaceuticals
+   and Biogen Idec and grants from United Leukodystrophy Foundation
+   outside the submitted work. She is a consultant for Optum and has
+   received royalties from UpToDate. B. Greenberg has received grant
+   funding from Chugai, Medimmune, Medday, National Institutes of Health
+   (NIH), NMSS, Guthy Jackson Charitable Foundation, and Transverse
+   Myelitis Association. He has received consulting fees from Novartis,
+   EMD Serono, Celgene, and Alexion. L. Benson reports BG12 clinical trial
+   support from Biogen, grants from Boston Children's Hospital Office of
+   Faculty Development, travel funds from National MS Society, and
+   personal fees from National Vaccine Compensation Program outside the
+   submitted work. T.C. Casper reports grants from National MS Society. J.
+   Graves reports speaking honoraria from Novartis outside the submitted
+   work. B. Weinstock‐Guttman reports grants and personal fees from
+   Biogen, EMD Serono, Novartis, and Genentech, and personal fees from
+   Mallinckrodt outside the submitted work.
+
+Author Contributions
+
+   E.W. and L.F.B. contributed to the conception and design of the study.
+   J.S.G, T.C., A.T.W., T.L., T.S., A.B., L.K., B.M.B, B.W.G., G.A.,
+   J.M.T., M.R., J.H, S.C., J.N., Y.H., J.R., M.S.C, M.G., L.B., S.M.,
+   I.K., J.R., T.C.C., H.Q., D.Q., C.S., and E.W. contributed to
+   acquisition of data. B.R. and X.S. performed statistical analyses.
+   B.R., E.W., and L.F.B. drafted the manuscript, and all authors
+   reviewed, revised, and approved the final manuscript.
+
+Supporting information
+
+   Figure S1. Multidimensional scaling plot of ped‐MS cases (black) and
+   controls (gray) with ≥80% European ancestry who were included in the
+   GWAS, along with individuals from the Human Genome Diversity Project.
+   [174]Click here for additional data file.^ (576.5KB, docx)
+
+Acknowledgments

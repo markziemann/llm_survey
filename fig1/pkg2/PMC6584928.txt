@@ -1,0 +1,225 @@
+Abstract
+
+   Cervical cancer is one of the most common malignant tumors in
+   gynecology. Deploying HIVID, a cost-effective technique to detect HPV
+   integration sites, our team had studied the characteristics of HPV
+   integrations in cervical exfoliated cells. Our results indicated that
+   both the sample proportion and the number of HPV integrations gradually
+   increased following the development of cervical lesion. Meanwhile, our
+   data also revealed that there were recurrent genes integrated by HPV in
+   cervical exfoliated cells. Collectively, the HPV integration
+   breakpoints were highly enriched in the intron and promoter regions.
+   Intriguingly, the gene pathway analysis indicated that the
+   HPV-integrated genes were strongly inclined to pathways of metabolism
+   of xenobiotics by cytochrome P450, chemical carcinogenesis and steroid
+   hormone biosynthesis. In conclusion, this study unveiled the HPV
+   integration patterns and the associated recurrent genes in cervical
+   epithelial exfoliated cells. Altogether, our data suggested that the
+   HPV integrations in cervical exfoliated cells might have vital clinical
+   significance, and probably also diagnostic and/or prognostic values in
+   future clinical applications.
+
+   Keywords: HPV integration, Cervical exfoliated cells, Cervical cancer,
+   Characteristics
+
+1. Introduction
+
+   Cervical cancer is one of the most common malignant tumors in
+   gynecology, with an occurring incidence only second to that of breast
+   cancer among all female malignant tumors. In recent years, due to the
+   development of cervical exfoliative cytology, the rate of cervical
+   cancer had been decreased by 70%-80%, as well as the corresponding
+   mortality [38]^1. It is believed that the sensitivity and specificity
+   of cervical cancer and precancerous lesion diagnosis by cytology were
+   around 47%-62% and 60%-90%, respectively [39]^2. Suggesting further
+   improvement of the current diagnostic mean is urgently demanded to help
+   identify the high-risk group.
+
+   More recently, HPV screening had been shown better at predicting
+   cervical cancer than cytology as confirmed by an increasing number of
+   studies. It is acknowledged that HPV infection could be cleared by the
+   host immune system in most of women. Nevertheless, HPV infection in
+   approximately 1-2% of the affected might persist and eventually leading
+   to cervical intraepithelial neoplasia or cervical cancer [40]^3. The
+   high-risk HPV had a clear association with the development of
+   carcinogenesis. During the persist infection of the high-risk HPV, HPV
+   integration events could often be detected, which were well known to
+   cause genome instability, abnormal gene expression in cells
+   [41]^4^-[42]^6. In addition, the viral E2 region is often being
+   abrogated upon the HPV integration, resulting in uncontrolled viral
+   replication [43]^7. An elevating number of research data had now
+   suggested that the DNA integration of high-risk HPV might be
+   pre-requisite and/or driven force of HPV-induced carcinogenesis, the
+   maintenance of malignant phenotype, and the development of cervical
+   cancer [44]^8. As followed by the ongoing research, the association of
+   HPV integration have been established with the CIN level of the cervix,
+   which could potentially being used as a marker for the cervical cancer
+   risk assessment for those who suffered HPV infection [45]^9. Bearing in
+   mind that most of the current research on HPV integration had focused
+   and established on the pathological tissues. In clinical practice,
+   cervical exfoliated cells might be collected relatively at ease
+   compared to pathological tissues, providing a distinct advantage to be
+   applied to generate HPV integration databases, and hence assessing the
+   risks of HPV integrations. To find out the regularity of HPV
+   integration in cervical exfoliated cells and also the correlation of
+   HPV integration characteristics of exfoliated cells and different
+   degrees of cervical lesions, we deployed the cost-effective HIVID
+   detection technology. Altogether, this study had provided partial
+   theoretical basis on whether HPV integration events of cervical
+   exfoliated cells could have potential to be regarded as an effective
+   clinical indicator.
+
+2. Materials and Method
+
+   A total of 230 HPV positive samples were obtained from the General
+   Hospital of the People's Liberation Army (PLA). All procedures
+   performed in this study involving human participants were in accordance
+   with the ethical standards of the institutional research committee and
+   with the 1964 Helsinki Declaration and the later amendments or
+   comparable ethical standards. The study had been approved by the Ethics
+   Review Committee in the General Hospital of the PLA. HPV integration
+   sites were detected using HIVID method [46]^10. Functional annotation
+   analysis was performed using DAVID based on Gene Ontology and KEGG
+   pathway databases [47]^11^, [48]^12. The categories of KEGG Pathways
+   served as background databases. The breakpoints were annotated through
+   the latest ANNOVAR in hg19 coordinates [49]^13.
+
+   It is now documented that HPV integration could affect gene expression
+   in following aspects. 1. Influence flanking genes via cis-activation;
+   2. mimicking the effects of cis-acting enhancers to influence target
+   genes over long distances [50]^14^, [51]^15 (up to 1 Mb for upstream
+   enhancers and 850 kb for downstream enhancers). In this study, genes
+   located within a distance of <500kb away from breakpoints were regarded
+   as the affected genes, and being assessed in the HPV-positive samples
+   [52]^16.
+
+3. Results
+
+3.1 Analysis of Integration Ratio and Breakpoint Number
+
+   The data analysis of these clinical samples suggested that the
+   proportion of HPV integrated samples and the average number of
+   breakpoints in these samples positively correlated with the stage of
+   disease progression. The integration ratios of HPV infection, CINI,
+   CINII, CINIII, and cervical cancer were 32%, 26%, 40%, 35%, and 77%,
+   respectively. The average breakpoint numbers of HPV infection, CINI,
+   CINII, CINIII and cervical cancer were 1.3, 1.4, 2, 1.8 and 3.7
+   respectively. As in the samples with more advanced stages of the
+   disease, the diversity of the HPV displayed a gradual decease (Figure
+   [53]1).
+
+Figure 1.
+
+   [54]Figure 1
+   [55]Open in a new tab
+
+   Clinical annotation of 230 samples. All panels are aligned with
+   vertical tracks representing 230 individuals. The data are sorted by
+   the number of breakpoints, HPV infection stage, CIN stage, Cancer and
+   HPV type.
+
+3.2 The Recurrent Genes of HPV Integration in the DNA of Cervical Epithelial
+Samples
+
+   As documented in the frequency analysis, most genes only appeared once
+   in the samples, despite a number of recurrent genes (Figure [56]2).
+   Overall, 15 recurrent genes (frequency = 2) were filtered out from the
+   HPV positive cervical epithelial samples (Table [57]S1, Table [58]S2).
+   Pathway analysis revealed that the disrupted genes were enriched in the
+   pathway of Metabolism of xenobiotics by cytochrome P450, Chemical
+   carcinogenesis, Steroid hormone biosynthesis and so on (Table [59]S3).
+
+Figure 2.
+
+   [60]Figure 2
+   [61]Open in a new tab
+
+   Gene frequency of HPV integration throughout the human genomes in 230
+   samples. Gene frequency of breakpoints across the human genome in 230
+   samples. Each bar represents the sample frequency of HPV integration in
+   the human genome (hg19). Histogram axis units represent number of
+   samples. Some loci with a high frequency of integration are marked.
+
+3.3 Distribution of Genetic Elements
+
+   The characteristics of HPV breakpoints distribution had been surveyed.
+   The results revealed that HPV breakpoints were prone to the INTRON (P <
+   0.01, Chi-squared test, Figure [62]3) and PROMOTER (P < 0.05,
+   Chi-squared test, Figure [63]3) regions, but not the INTERGENIC (P <
+   0.01, Chi-squared test, Figure [64]3) region.
+
+Figure 3.
+
+   [65]Figure 3
+   [66]Open in a new tab
+
+   Distribution of breakpoints in gene element region. The expected
+   (assuming uniform, random distribution, grey) and the observed (actual
+   numbers, blue) ratio of HPV breakpoints in Promoter, Exon, Intron,
+   Intergenic region are shown. P values were calculated by Chi-square
+   test.
+
+4. Discussion
+
+   The cervical epithelial exfoliated cells had been widely used for early
+   screening of HPV, due to its obvious advantage of being non-invasive,
+   which had greatly reduced the incidence of cervical cancer. In spite of
+   that the screening accuracy is yet to be improved further. The
+   development of new generation of HPV screening (enrich HPV reads and
+   localise HPV integration sites) had provided technical basis allowing
+   the risk assessment of cervical epithelial lesions. Having provided in
+   the previous studies, persistent HPV infection is the causal cause of
+   cervical epithelial lesions, and the occurrence of HPV integrations
+   often indicating a greater risk of epithelial lesions [67]^17^,
+   [68]^18. Herein, our results suggested that the proportion of HPV
+   integrated samples and the average number of breakpoints in the samples
+   positively correlated with the stage of disease progression. Further
+   implying that certain categories of HPV integration events could be
+   good indicators of the progressive stage of developing cervical cancer.
+   In fact, detecting HPV integration of cervical epithelial cells has
+   gradually been practiced in clinical diagnosis and treatment. Generally
+   speaking, for patients positive for HPV high-risk infection and HPV
+   integration, even with negative TCT, the patients will be advised to
+   carry out colposcopy examination, hence to prevent false diagnosis. For
+   patients positive for HPV high-risk infection, but negative for HPV
+   integration and TCT, the patients will be required to carry out
+   short-term observation. In circumstances where patients are positive
+   for HPV high-risk infection and integration, and biopsy of CINI, LEEP
+   or cervical conization is usually recommended. For cervical cancer and
+   HPV integration positive patients, it is recommended to expand the
+   scope of surgery and increase the number of post-operative
+   examinations. Furthermore, HPV integration hotspots and the recurrent
+   genes had also been filtered out. However, it is still unclear whether
+   the recurrent genes could be useful in terms of helping with prognosis.
+   More interestingly, the breakpoints are significantly enriched in the
+   INTRON and PROMOTER regions. Therefore, it might be directly related to
+   the disruption and alteration of gene function [69]^19^, [70]^20. Gene
+   pathway analysis results indicated that the HPV-integrated genes were
+   significantly inclined to the metabolic and steroid hormone
+   bio-synthesis pathways, and it is speculated that certain abnormalities
+   in some of the metabolic and bio-synthesis pathways may be affected
+   contributing to the progression of cervical cancer. In addition, HPV
+   integrations had been evident to affect the cancer-associated pathways
+   and modify target gene expression in the host cells, which could
+   further promote carcinogenesis [71]^21^, [72]^22. Moreover, we have
+   begun to conduct follow-up studies on patients with HPV integration for
+   future research. It will be necessary to further determine the
+   correlation of between disease progression and HPV integration.
+   Meanwhile, it will provide efficient means to evaluate disease
+   progression.
+
+   In this study, deploying a genome-wide scanning method for HPV
+   integrations had enabled us to determine the close correlation between
+   viral integration and clinical disease progression. Our data had
+   identified the inclination of HPV integration and the recurrent
+   HPV-integrated genes in cervical epithelial exfoliated cells which
+   might be useful in establishing a more sensitive and accurate future
+   clinical application, helping with the diagnosis of HPV positive
+   cervical cancer.
+
+Supplementary Material
+
+   Supplementary tables.
+   [73]Click here for additional data file.^ (232.1KB, pdf)
+
+Acknowledgments

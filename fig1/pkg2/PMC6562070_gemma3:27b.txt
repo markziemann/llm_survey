@@ -1,0 +1,35 @@
+Here's a breakdown of the pathway enrichment analysis methods used in the provided article, organized for your table:
+
+**1. What tool was used for pathway enrichment analysis?**
+
+PANTHER (Protein ANalysis THrough Evolutionary Relationships) was used for pathway enrichment analysis.
+
+**2. Was a tool version number provided?**
+
+Yes, PANTHER version 17.1 was used.
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+Multiple gene set libraries were queried:
+
+*   Gene Ontology (GO) biological process, molecular function, and cellular component.
+*   KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways.
+*   Reactome pathways.
+*   PANTHER biological processes and pathways.
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+Yes. The background gene list consisted of all genes represented on the Illumina microarray used in the study. This ensured that enrichment results were relative to the genes actually assayed.
+
+**5. What statistical test was used for enrichment analysis?**
+
+A binomial test was used to determine the statistical significance of pathway enrichment.
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+Yes. False Discovery Rate (FDR) correction was used with a Benjamini-Hochberg procedure to control for multiple testing and adjust p-values.
+
+
+
+
+

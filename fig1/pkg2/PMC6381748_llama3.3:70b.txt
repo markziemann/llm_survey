@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+ Metacore® was used for gene ontology localization enrichment and cell process enrichment analysis.
+
+2. Was a tool version number provided?
+ Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+ Gene Ontology (GO) was queried.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+ Not described.
+
+5. What statistical test was used for enrichment analysis?
+ Not described, but p-values were calculated and reported.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+ Yes, False Discovery Rate (FDR) was reported in the tables (e.g., Table S5, Table S6, Table S7).
+

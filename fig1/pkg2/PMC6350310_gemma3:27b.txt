@@ -1,0 +1,41 @@
+Here's a breakdown of the pathway enrichment analysis methods used in the provided text, formatted for a table.
+
+**1. What tool was used for pathway enrichment analysis?**
+
+DAVID (Database for Annotation, Visualization and Integrated Discovery)
+
+**2. Was a tool version number provided?**
+
+No.
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+*   Gene Ontology (GO)
+*   KEGG (Kyoto Encyclopedia of Genes and Genomes)
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+Yes. The study used all identified proteins as the background for enrichment analysis.
+
+**5. What statistical test was used for enrichment analysis?**
+
+EASE score (Enhanced versus Simple Enrichment).
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+Yes. Benjamini-Hochberg correction was used to control the false discovery rate.
+
+
+
+**Table Summary**
+
+| Question                                  | Answer                      |
+|-------------------------------------------|-----------------------------|
+| Tool Used                                 | DAVID                       |
+| Tool Version                              | Not described               |
+| Gene Set Library                          | GO, KEGG                     |
+| Background Gene List Defined              | Yes (all identified proteins) |
+| Statistical Test                           | EASE score                  |
+| False Discovery Rate Correction Used      | Yes (Benjamini-Hochberg)     |
+
+

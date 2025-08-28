@@ -1,0 +1,12 @@
+Here's a breakdown of the pathway enrichment analysis details from the provided text, formatted for a table:
+
+| **Question** | **Answer** |
+|---|---|
+| 1. What tool was used for pathway enrichment analysis? | Blast all software and KEGG database. OmicsShare tools were used for creating Senior bubble charts. |
+| 2. Was a tool version number provided? | No |
+| 3. What gene set library was queried (eg: GO, KEGG, Reactome or other)? | KEGG database |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Yes, the library prepared from the NT-0 pooled samples was used as calibrators to normalize the DEGs |
+| 5. What statistical test was used for enrichment analysis? | Q-value was used to identify significantly enriched KEGG pathways (Q-value ≤0.05). |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes, false discovery rate (FDR) was used to control false positives, with a threshold of ≤0.05. |
+
+

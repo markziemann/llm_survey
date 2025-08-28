@@ -1,0 +1,31 @@
+To answer your questions regarding how pathway enrichment analysis was conducted in the scientific article, I'll extract and organize the relevant information based on the provided sections:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - The tool used for pathway enrichment analysis is KEGG (Kyoto Encyclopedia of Genes and Genomes).
+
+2. **Was a tool version number provided?**
+   - No, the article does not specify a version number for the KEGG tool.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - The gene set library queried is the KEGG database.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes, the background gene list is implied as "the library prepared from the NT-0 pooled samples" was used as calibrators to normalize DEGs in other libraries.
+
+5. **What statistical test was used for enrichment analysis?**
+   - The article does not explicitly mention the specific statistical test used within KEGG pathway annotation, but mentions that pathways with a Q-value ≤ 0.05 are significantly enriched, suggesting some form of statistical testing.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Yes, it is indicated that KEGG pathways with a Q-value ≤ 0.05 are considered significantly enriched, which suggests that FDR (False Discovery Rate) correction was applied.
+
+This information can be summarized into a table as follows:
+
+| Question                                                                 | Answer                                               |
+|--------------------------------------------------------------------------|------------------------------------------------------|
+| Tool used for pathway enrichment analysis                                | KEGG                                                 |
+| Tool version number provided                                             | Not described                                        |
+| Gene set library queried                                                 | KEGG database                                        |
+| Background gene list defined                                             | Yes (NT-0 pooled samples)                            |
+| Statistical test used for enrichment analysis                            | Not explicitly mentioned, Q-value ≤ 0.05 used        |
+| False discovery rate correction applied                                  | Yes                                                  |
+

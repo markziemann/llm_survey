@@ -1,0 +1,22 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is not described, but it mentions that "statistical overrepresentation tests" were used.
+
+2. Was a tool version number provided?
+Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The gene set libraries queried include GO (Gene Ontology) and Reactome, as well as other unspecified sources (e.g., "MHC protein complex" and "integral component of the luminal side of endoplasmic reticulum membrane").
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+The specific statistical test used is not described, but it mentions that "statistical overrepresentation tests" were used.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, the article mentions "false discovery rate" (in the limitations section), implying that some form of correction was considered, but it does not explicitly state that FDR correction was used for pathway enrichment analysis. However, in the context of the results, it seems likely that FDR correction was applied, as p-values are mentioned and the authors discuss "top miR-SNP hits". 
+
+Let me know if you'd like me to clarify anything!
+

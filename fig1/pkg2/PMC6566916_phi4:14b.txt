@@ -1,0 +1,33 @@
+Here is a collation of the requested information regarding the pathway enrichment analysis from the scientific article, based on the Methods section and other relevant parts:
+
+1. **Tool Used for Pathway Enrichment Analysis**:  
+   - The tool used was an R package named “q-value” as mentioned in the Proteome Data Analysis subsection.
+   
+2. **Tool Version Number Provided**:  
+   - No specific version number of the "q-value" tool is provided.
+
+3. **Gene Set Library Queried**:  
+   - Libraries queried included Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG).
+
+4. **Background Gene List Defined for Pathway Enrichment Analysis**:  
+   - The background gene list was defined using all the proteins as mentioned in the Proteome Data Analysis section.
+
+5. **Statistical Test Used for Enrichment Analysis**:  
+   - Fisher’s exact test was used to calculate p-values during enrichment analysis.
+
+6. **False Discovery Rate Correction Used**:  
+   - Yes, false discovery rate (FDR) correction was applied using the "q-value" package to control the number of false positives, with a significance threshold defined as FDR < 0.05.
+
+These details can be used to create a table for easier reference:
+
+| Question                                                                 | Answer                                  |
+|--------------------------------------------------------------------------|-----------------------------------------|
+| Tool Used for Pathway Enrichment Analysis                                | "q-value" R package                     |
+| Tool Version Number Provided                                             | Not described                           |
+| Gene Set Library Queried                                                 | GO, KEGG                                |
+| Background Gene List Defined                                             | All proteins used as background         |
+| Statistical Test Used for Enrichment Analysis                             | Fisher’s exact test                     |
+| False Discovery Rate Correction Used                                     | Yes (FDR < 0.05)                        |
+
+If you have any further questions or need additional details, feel free to ask!
+

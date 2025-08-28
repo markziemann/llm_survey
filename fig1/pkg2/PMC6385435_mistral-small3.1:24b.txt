@@ -1,0 +1,33 @@
+Sure, juiciness,
+   and taste panel. The data includes information on the SNPs, their
+   chromosome and their minor allele frequency. (XLSIM crossbred steers.
+   (XLS 37.5 kb positions in the Bos_taurus.1.2 genome build. The
+   names and the description are shown. (XLS 37 kb)
+
+   [229]Additional file 3:^ (69.5KB, xls)
+
+   The genes and enriched terms for the GO term enrichment analysis. The meat quality traits were measured in longissimus dorsi muscle
+   from Brahman-Angus crossbreed steers. The genes and their
+   corresponding gene ID and description are shown. The gene ID were retrieved
+   using Ensembl. (XLS 38 kb)
+
+---
+
+1. **What tool was used for pathway enrichment analysis?**
+   - DAVID (Database for Annotation, Visualization and Integrated Discovery) server was used for pathway enrichment analysis.
+
+2. **Was a tool version number provided?**
+   - Not described.
+
+3. **What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+   - GO (Gene Ontology)
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes. A list with 10,919 genes reported as expressed in bovine skeletal muscle by the EMBL-EBI Expression Atlas was used as background list for the tissue restricted gene enrichment analysis.
+
+5. **What statistical test was used for enrichment analysis?**
+   - Not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Yes. Significance of each enriched term was adjusted applying the Benjamini-Hochberg p-value correction.
+

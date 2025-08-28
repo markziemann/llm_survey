@@ -1,0 +1,40 @@
+Here's a breakdown of the pathway enrichment analysis methods described in the provided text, formatted for a table:
+
+**1. What tool was used for pathway enrichment analysis?**
+
+*   DAVID (Database for Annotation, Visualization and Integrated Discovery) version 6.8
+*   WebGestalt 2017 (WEB-based GEne SeT AnaLysis Toolkit)
+
+**2. Was a tool version number provided?**
+
+*   DAVID: Yes, version 6.8
+*   WebGestalt: Yes, 2017
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+*   Gene Ontology (GO) - BP, CC, and MF
+*   KEGG pathways
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+*   Yes, the *Bos taurus* genome was used as a background for both DAVID and WebGestalt analyses.
+
+**5. What statistical test was used for enrichment analysis?**
+
+*   Overrepresentation Enrichment Analysis (ORA) was used with both tools. The specific statistical test *within* ORA is not explicitly stated.
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+*   Yes. A False Discovery Rate (FDR) of 5% was used as a threshold for significance in both DAVID and WebGestalt analyses.
+
+**Table summarizing the information:**
+
+| Question                                | DAVID                     | WebGestalt               |
+| :-------------------------------------- | :------------------------ | :----------------------- |
+| **Tool Used**                           | DAVID v6.8                | WebGestalt 2017          |
+| **Gene Set Library**                    | GO (BP, CC, MF), KEGG     | KEGG                    |
+| **Background Gene List**                | *Bos taurus* Genome      | *Bos taurus* Genome     |
+| **Statistical Test**                    | ORA                        | ORA                       |
+| **FDR Correction**                      | Yes (FDR < 0.05)          | Yes (FDR < 0.05)         |
+
+

@@ -1,0 +1,33 @@
+<think>
+Okay, so I'm trying to figure out how the authors conducted their pathway enrichment analysis based on this article. Let me go through each question step by step.
+
+1. **What tool was used for pathway enrichment analysis?**
+   - Looking at the Methods section under "De novo assembly and functional annotation," it says they used Blast all software against the KEGG database. So, I think Blast all is the tool here.
+
+2. **Was a tool version number provided?**
+   - The text mentions Blast all software but doesn't specify any version numbers. So, no, it's not described.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - It clearly states they used the KEGG database for pathway annotation. So, the answer is KEGG.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - The article doesn't mention anything about using a specific background gene list. They just mapped DEGs to KEGG pathways without referencing a particular background set.
+
+5. **What statistical test was used for enrichment analysis?**
+   - In the Methods, they mention using Q-value ≤0.05 for pathway enrichment. Q-value is a measure that accounts for multiple testing, typically involving permutation tests or other methods, but the exact test isn't specified beyond the threshold.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - The article doesn't explicitly mention FDR correction. They talk about Q-value thresholds, which might imply some form of correction, but it's not clearly stated whether FDR was applied specifically.
+</think>
+
+| Question | Answer |
+|----------|--------|
+| 1. What tool was used for pathway enrichment analysis? | Blast all software |
+| 2. Was a tool version number provided? | Not described |
+| 3. What gene set library was queried (e.g., GO, KEGG, Reactome or other)? | KEGG |
+| 4. Was a background gene list defined for pathway enrichment analysis? | Not described |
+| 5. What statistical test was used for enrichment analysis? | Q-value ≤0.05 |
+| 6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Not explicitly mentioned, but Q-value implies some correction |
+
+The authors used Blast all software against the KEGG database without specifying a version or background gene list. They set a statistical threshold at Q-value ≤0.05 for pathway enrichment, suggesting possible FDR-based correction but didn't confirm it explicitly.
+

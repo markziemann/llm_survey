@@ -1,0 +1,11 @@
+Here is a collated table based on the output data:
+
+| Questions                                           | Output Data                                         |
+|---------------------------------------------------|-------------------------------------------------|
+| What tool was used for pathway enrichment analysis?    | not described   |
+| Was a tool version number provided?            | not described    |
+| What gene set library was queried (eg: GO, KEGG, Reactome or other)? | KEGG  |
+| Was a background gene list defined for pathway enrichment analysis? | not described    |
+| What statistical test was used for enrichment analysis?   | not described |
+| Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?   | not described   |
+

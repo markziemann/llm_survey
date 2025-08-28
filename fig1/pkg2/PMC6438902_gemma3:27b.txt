@@ -1,0 +1,40 @@
+Here's a breakdown of the pathway enrichment analysis methods described in the provided text, answered as requested for table creation:
+
+**1. What tool was used for pathway enrichment analysis?**
+
+*   Not explicitly stated as a single tool. The text mentions “functional module identification” and “annotation,” implying tools were used for these purposes, but doesn't name them specifically.
+
+**2. Was a tool version number provided?**
+
+*   Not described.
+
+**3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?**
+
+*   GO (Gene Ontology) and KEGG (Kyoto Encyclopedia of Genes and Genomes) are explicitly mentioned as gene set libraries used for annotation and functional module identification.
+
+**4. Was a background gene list defined for pathway enrichment analysis?**
+
+*   The text states they used “almost 90% of gene in *C. roseus*” for network construction which could be interpreted as the background list. However, there is no specific mention of defining a background list for the enrichment analysis itself.
+
+**5. What statistical test was used for enrichment analysis?**
+
+*   The text mentions “false discovery rate correction,” suggesting a statistical test was used, but does *not* specify the exact test used for the enrichment analysis.
+
+**6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+
+*   Yes, the text specifically states that “false discovery rate correction” was used.
+
+---
+
+Here's the data in a table format for easy collation:
+
+| Question                                              | Answer            |
+| ----------------------------------------------------- | ----------------- |
+| What tool was used for pathway enrichment analysis?   | Not described     |
+| Was a tool version number provided?                     | Not described     |
+| What gene set library was queried?                      | GO, KEGG          |
+| Was a background gene list defined?                     | Possibly, implied by use of ~90% of *C. roseus* genes |
+| What statistical test was used?                         | Not described     |
+| Was false discovery rate correction used?                | Yes               |
+
+

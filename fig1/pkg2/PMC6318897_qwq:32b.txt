@@ -1,0 +1,53 @@
+<think>
+Okay, I need to figure out how the pathway enrichment analysis was conducted in this article. Let me start by looking at the Methods section. The user mentioned to focus on the Methods but also check other sections if needed.
+
+First, the question is about the tool used for pathway enrichment. In the Methods under "DEG enrichment analysis," it says they used Blast2GO for Gene Ontology (GO) enrichment. For KEGG pathways, they mention using KOBAS software. So the tools are Blast2GO and KOBAS.
+
+Next, tool version numbers. The Methods list some package versions like EdgeR v3.20.1 and WGCNA v1.47, but for Blast2GO and KOBAS, there's no version specified. So probably not described.
+
+Gene set libraries: The GO and KEGG are explicitly mentioned. So the libraries are GO and KEGG.
+
+Background gene list: The description says they performed GO enrichment separately for up- and down-regulated DEGs. It doesn't mention using a background list beyond the DEGs, but typically, the background is all genes in the annotation. The text doesn't specify defining a separate background, so maybe it's not described.
+
+Statistical test: For GO, Blast2GO might use a hypergeometric test, but the user didn't mention the test type. The KEGG part via KOBAS likely uses a similar test, but again, the exact test isn't stated. The paper just says "significantly enriched terms/pathways with p-value <0.05."
+
+FDR correction: The DEG analysis used Benjamini-Hochberg, but for the enrichment, it says "significantly enriched GO terms were considered with p<0.05" without mentioning FDR. Wait, but sometimes the p-values in enrichment already apply FDR. The Methods don't explicitly state FDR correction for the enrichment analysis itself, so maybe it's not described.
+
+Putting this together, the answers should be:
+
+1. Tools: Blast2GO and KOBAS.
+2. Versions: Not provided.
+3. Gene sets: GO and KEGG.
+4. Background: Not described.
+5. Test: Not explicitly stated (maybe hypergeometric but not specified).
+6. FDR: Not mentioned, so probably not described.
+</think>
+
+1. **Tool used for pathway enrichment analysis?**  
+   Blast2GO (for GO enrichment) and KOBAS (for KEGG pathway enrichment).  
+
+2. **Tool version number provided?**  
+   No.  
+
+3. **Gene set library queried?**  
+   GO (Gene Ontology) and KEGG (Kyoto Encyclopedia of Genes and Genomes).  
+
+4. **Background gene list defined?**  
+   Not described. The analysis used DEGs annotated to GO/KEGG terms, but no explicit mention of a predefined background gene list (e.g., all annotated genes in the transcriptome).  
+
+5. **Statistical test used?**  
+   Not explicitly stated. GO enrichment used Blast2GO, which typically employs hypergeometric tests. KEGG enrichment via KOBAS likely used a similar statistical framework (e.g., hypergeometric or Fisher’s exact test), but the exact test is not specified.  
+
+6. **False discovery rate (FDR) correction used?**  
+   Not described. The results were filtered using a raw *p*-value threshold of ≤0.05, but no mention of FDR correction (e.g., Benjamini-Hochberg) for multiple testing in the enrichment analysis itself. FDR was applied in DEG analysis (EdgeR), but not explicitly for pathway enrichment.  
+
+**Summary Table:**  
+| Question | Answer |  
+|----------|--------|  
+| 1. Tool | Blast2GO (GO), KOBAS (KEGG) |  
+| 2. Version | Not described |  
+| 3. Gene set library | GO and KEGG |  
+| 4. Background gene list | Not described |  
+| 5. Statistical test | Not explicitly stated (likely hypergeometric/Fisher’s exact) |  
+| 6. FDR correction | Not described |
+

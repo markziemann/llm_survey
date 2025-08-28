@@ -1,0 +1,39 @@
+Thinking...
+We need to parse the article. The relevant section: 4.6 Proteome Data Analysis includes pathway enrichment. It says:
+
+"To analyze the potential functions of the proteins, we first reannotated the rice proteins. Briefly, rice proteins were mapped to multiple public databases, including the NCBI nonredundant (NR), Swiss-Prot/UniProt, Gene Ontology (GO), and Kyoto Encyclopedia of Genes and Genomes (KEGG) databases. Using all the proteins as background, we used the numbers of differentially expressed proteins (DEPs) to calculate the p-value and Q-value, which represented the significance of the enriched GO terms/KEGG pathways and the false discovery rate (FDR), respectively. The p-values were calculated by Fisher’s exact test, and the Q-values were calculated by an R package named “q-value” [58]. The threshold of significance was defined as FDR < 0.01." Wait earlier they said threshold p < 0.01? Let's search earlier. In the transcriptome analysis section, they used Mapman software for PageMan analysis [222]. And they defined threshold significance as p < 0.01. But that might be for enrichment analysis of Mapman? The question: "What tool was used for pathway enrichment analysis?" We saw Mapman software was used for PageMan analysis. That is a tool. They also used Fisher's exact test. Did they use other tools? They used "GeneNet" package for coexpression network analysis but that's not enrichment. In transcriptome analysis, they used Mapman for PageMan analysis. Mapman is used for annotation and visualizing GO/KEGG. Also, in proteome analysis they used Mapman? Wait, in the proteome data analysis: "We first reannotated the rice proteins. Briefly, rice proteins were mapped to multiple public databases, including the NCBI nonredundant (NR), Swiss-Prot/UniProt, Gene Ontology (GO), and Kyoto Encyclopedia of Genes and Genomes (KEGG) databases. Using all the proteins as background, we used the numbers of differentially expressed proteins (DEPs) to calculate the p-value and Q-value, which represented the significance of the enriched GO terms/KEGG pathways and the false discovery rate (FDR), respectively. The p-values were calculated by Fisher’s exact test, and the Q-values were calculated by an R package named “q-value” [58]. The threshold of significance was defined as FDR < 0.05."
+
+Also earlier, transcriptome analysis: "NOIseq was employed to calculate the log 2-fold change (log2FC) and probability value for each gene in every comparison, and strict criterion were used (log2FC > 1 or log2FC < -1, probability > 0.8). Mapman software was used for PageMan analysis [222], and we defined the threshold of significant enrichment term as p < 0.01." So they used Mapman PageMan analysis. They also used Mapman to analyze transcriptome? But for proteome, they used Mapman? Wait, they said: "To analyze the potential functions of the proteins, we first reannotated the rice proteins. Briefly, rice proteins were mapped to multiple public databases, including the NCBI nonredundant (NR), Swiss-Prot/UniProt, Gene Ontology (GO), and Kyoto Encyclopedia of Genes and Genomes (KEGG) databases. Using all the proteins as background, we used the numbers of differentially expressed proteins (DEPs) to calculate the p-value and Q-value, which represented the significance of the enriched GO terms/KEGG pathways and the false discovery rate (FDR), respectively. The p-values were calculated by Fisher’s exact test, and the Q-values were calculated by an R package named “q-value” [58]."
+
+Also earlier in transcriptome analysis: "Mapman software was used for PageMan analysis [222], and we defined the threshold of significant enrichment term as p < 0.01." So Mapman and PageMan. They didn't mention version. Did they mention Mapman version? They cited reference 222. Let's check that reference: "Mapman software was used for PageMan analysis [222], and we defined the threshold of significant enrichment term as p < 0.01." We need to see if version is described: not in text. The reference might be the Mapman manual. But not described. So "Not described".
+
+Gene set libraries: GO, KEGG. Also Mapman uses "MapMan bin categories" which is a set of categories. But we only need what's actually stated: GO and KEGG. Also Mapman may use Plant Ontology, but not mentioned. So we list GO, KEGG. Also Mapman might incorporate other libraries but not mentioned. They also mention "Gene Ontology (GO)", "KEGG", and "Swiss-Prot/UniProt" and "NCBI nonredundant (NR)" but those are annotation sources, not gene set libraries for enrichment. So gene set libraries used for enrichment: GO, KEKE. Also they may have used Mapman PageMan, which uses GO and KEGG. So include GO and KEGG. Also the "q-value" package is used for multiple testing correction.
+
+Now: Does the article describe using a custom or specific background gene list? They say "Using all the proteins as background". That is a specific background: all the proteins as background. So yes. They used the numbers of differentially expressed proteins (DEPs) to calculate p-value and Q-value, using all proteins as background. So answer: Yes.
+
+Statistical tests: Fisher's exact test. Also for transcriptome analysis, they mention "log 2-fold change and probability value for each gene ... using NOIseq". But that's not enrichment. For enrichment, they used Fisher's exact test. Also they used "Fisher’s exact test" in both transcriptome and proteome enrichment. They also mention "p-value threshold" but not FDR. They also mention Q-values via q-value package. So multiple testing correction applied: Yes. Because they mention Q-values and FDR < 0.05 threshold. So answer Yes.
+
+Now compile table:
+
+Columns: "Tool", "Version", "Gene Set Libraries", "Custom background used", "Statistical tests", "Multiple testing correction"
+
+Row: Mapman PageMan. Version: Not described. Libraries: GO, KEGG (explicitly). Background: Yes. Statistical test: Fisher's exact test. Multiple testing correction: Yes.
+
+Also maybe they used Mapman "PageMan analysis" which uses the same. So only one tool.
+
+Let's verify that the transcriptome analysis used Mapman PageMan analysis; they defined threshold p<0.01. That is for significance. The proteome analysis used the same approach: they reannotated proteins and used Fisher's exact test and Q-values. So again Mapman.
+
+Thus answer.
+
+Let's produce table.
+...done thinking.
+
+| Question | Answer |
+|----------|--------|
+| **What tool was used for pathway enrichment analysis?** | Mapman (PageMan) |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | Gene Ontology (GO); Kyoto Encyclopedia of Genes and Genomes (KEGG) |
+| **Does the article describe using a custom or specific background gene list for enrichment analysis?** | Yes |
+| **What statistical test(s) were used in enrichment analysis?** | Fisher’s exact test |
+| **Was multiple testing correction / FDR applied to enrichment analysis?** | Yes |
+

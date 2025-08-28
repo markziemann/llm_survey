@@ -1,0 +1,39 @@
+<think>
+Okay, let me try to figure out the answers to these questions about the pathway enrichment analysis in the given article. I'll go through each question one by one and check the Methods section and other parts of the text for clues.
+
+1. **What tool was used for pathway enrichment analysis?**
+   - Looking at the Methods section under "Functional Enrichment Analysis", it mentions using statistical software R-3.4.1 with the package forestplot_1.7.2. Also, the piano_1.16.4 package was applied for KEGG enrichment analysis. Additionally, they used the KEGG website's "User data mapping" tool. So the main tools are R with piano and forestplot packages, and KEGG's online tool.
+
+2. **Was a tool version number provided?**
+   - For R, the version is specified as 3.4.1. The forestplot package is version 1.7.2, and piano is 1.16.4. The KEGG tool's version isn't mentioned, but the others have versions listed. So yes, versions are provided for R and the R packages.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome, etc.)?**
+   - The text mentions Gene Ontology (GO) for biological processes and pathways. Also, KEGG pathways via MSigDB and the KEGG website. So both GO and KEGG were used.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - It says the background was "the whole gene sets with corresponding Entrez-IDs of the Agilent 8×60 K Whole Human Genome Oligo Microarray". So yes, the background is defined as the genes on that microarray platform.
+
+5. **What statistical test was used for enrichment analysis?**
+   - Fisher’s exact test was applied, as stated in the Methods under Functional Enrichment Analysis. Both for GO and KEGG via the piano package.
+
+6. **Was false discovery rate correction used to control the number of false positives?**
+   - Benjamini-Hochberg correction was used, mentioned in the Methods. They applied this correction for multiple testing in the enrichment analysis.
+
+Wait, let me cross-check each point again to be sure. 
+
+For question 4, the background is indeed the entire gene set from the microarray they used. 
+
+The statistical test is Fisher’s exact test with BH correction. 
+
+Yes, all the details seem to be there. The tools are R with specific packages and KEGG's tool. The gene sets are GO and KEGG. The versions are given for R and packages. Background is the microarray's gene list. FDR correction via BH is used. Okay, that's all covered.
+</think>
+
+| Question | Answer |
+|----------|--------|
+| 1. What tool was used for pathway enrichment analysis? | The tools used were R-3.4.1 with the `piano_1.16.4` package for KEGG enrichment and the KEGG website's "User data mapping" tool. Gene Ontology (GO) analysis was also performed using Fisher’s exact test with Benjamini-Hochberg correction, though the specific tool for GO is not explicitly named beyond general R usage. |
+| 2. Was a tool version number provided? | Yes: R-3.4.1, `forestplot_1.7.2`, and `piano_1.16.4`. The KEGG website tool’s version was not specified. |
+| 3. What gene set library was queried? | GO (Gene Ontology) for biological processes and pathways, and KEGG (Kyoto Encyclopedia of Genes and Genomes) via MSigDB. |
+| 4. Was a background gene list defined? | Yes: the background was the "whole gene sets with corresponding Entrez-IDs of the Agilent 8×60 K Whole Human Genome Oligo Microarray". |
+| 5. What statistical test was used? | Fisher’s exact test was used for both GO and KEGG enrichment analyses. |
+| 6. Was false discovery rate correction used? | Yes: Benjamini-Hochberg correction was applied to control false positives. |
+

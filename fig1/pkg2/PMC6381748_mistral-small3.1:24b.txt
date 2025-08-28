@@ -1,0 +1,26 @@
+To identify glucose-dependent regulated proteins, the same criteria described above was used to
+   identify regulated proteins. (2.5 and 16.7 mM
+   glucose), and includes information on the fold change, p-value, protein
+   accession number, protein name, gene name and FDR. (XLSX 48 kb)
+   stimulation. The table shows p-site quantification of five experimental replicates performed on both experimental
+   conditions (2.5 and 16.7 mM glucose), including delta differences and p-value, fold change,
+   protein accession number, protein name, gene name and FDR. (XLS 4 kb)
+
+1. **What tool was used for pathway enrichment analysis?**
+   - The authors used Metacore® for pathway enrichment analysis.
+
+2. **Was a tool version number provided?**
+   - Not described.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome, etc.)?**
+   - The authors used the gene ontology (GO) library.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Not described.
+
+5. **What statistical test was used for enrichment analysis?**
+   - Not described.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Yes, the authors used false discovery rate (FDR) in tables S4-S6.
+

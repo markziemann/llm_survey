@@ -1,0 +1,11 @@
+Here is the information collated into a table:
+
+| Question                                          | Answer                                                                                                                                                  |
+|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| What tool was used for pathway enrichment analysis?       | Mummichog                                                                                         |
+| Was a tool version number provided?          | Not described                                                                                            |
+| What gene set library was queried (eg: GO, KEGG, Reactome or other)?| KEGG                                                                                                      |
+| Was a background gene list defined?           | Not described                                                                                             |
+| What statistical test was used?         | Not described                                                                                    |
+| Was false discovery rate correction used?       | Not described                                                                               |
+

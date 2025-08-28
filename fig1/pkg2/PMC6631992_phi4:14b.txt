@@ -1,0 +1,31 @@
+Based on the provided article, here is the information regarding the pathway enrichment analysis:
+
+1. **What tool was used for pathway enrichment analysis?**
+   - ToppFun was used for pathway enrichment analysis.
+
+2. **Was a tool version number provided?**
+   - No, the version number of ToppFun was not provided.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - Multiple databases were queried: Gene Ontology (GO), Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway database, and the Molecular Signatures Database (MSigDB).
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes, a background gene set was described as containing all genes present in the datasets that were analyzed.
+
+5. **What statistical test was used for enrichment analysis?**
+   - The article does not specify which statistical test was used for enrichment analysis; thus, it is noted as "not described."
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Yes, a p-value cutoff of <0.05 with a Benjamini-Hochberg FDR threshold of 0.05 was applied, indicating that false discovery rate (FDR) correction was used.
+
+Here is how this information can be tabulated:
+
+| Question | Answer |
+|----------|--------|
+| What tool was used for pathway enrichment analysis? | ToppFun |
+| Was a tool version number provided? | No |
+| What gene set library was queried? | GO, KEGG, MSigDB |
+| Was a background gene list defined for pathway enrichment analysis? | Yes |
+| What statistical test was used for enrichment analysis? | Not described |
+| Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis? | Yes (Benjamini-Hochberg FDR threshold of 0.05) |
+

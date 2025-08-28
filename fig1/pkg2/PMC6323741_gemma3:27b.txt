@@ -1,0 +1,18 @@
+Here's a breakdown of the pathway enrichment analysis methods used in the provided text, formatted for a table as requested:
+
+| Question                                    | Answer                                                                                                |
+|---------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| 1. What tool was used for pathway enrichment analysis? | Mummichog                                                                                           |
+| 2. Was a tool version number provided?         | Not described                                                                                       |
+| 3. What gene set library was queried?        | KEGG (as indicated by "Matched Compound (KEGG by mummichog)")                                         |
+| 4. Was a background gene list defined?     | Not described. The article doesn't detail if a specific background list was used for the analysis. |
+| 5. What statistical test was used?         | Not described. The article doesn't mention the statistical test employed by Mummichog for enrichment. |
+| 6. Was false discovery rate correction used?| Yes, false discovery rate correction was used. The authors explicitly state, "False discovery rate correction was used to control the number of false positives in the pathway enrichment analysis."|
+
+
+
+**Important Notes:**
+
+*   The information is directly extracted from the provided text. If a detail isn't mentioned, it's marked as "Not described".
+*   The level of detail regarding the statistical methods is limited, as the article primarily focuses on the results rather than a detailed methodological description.
+

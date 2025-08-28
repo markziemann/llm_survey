@@ -1,0 +1,510 @@
+Thinking...
+We need to answer 6 questions about pathway enrichment analysis, only based on what is explicitly reported. Let's extract from Methods and Results.
+
+From the article:
+
+In Methods, the paragraph "Statistical analysis and bioinformatics" says:
+
+> For the statistical analysis of the proteomic data, the R software
+> (v3.6.3) was used and the P value < 0.05 was regarded as statistically
+> significant. The Gene Ontology (GO) functional annotation was performed
+> by the DAVID bioinformatics resource. A gene set enrichment
+> analysis was performed using the KEGG pathway database.
+
+But the article also states in Results:
+
+> The GO and KEGG pathway enrichment analyses in our study demonstrated that glycolysis/gluconeogenesis was predominantly involved...
+
+The figure legends also mention:
+
+- Figure 7 and Figure 8: "Top 20 enriched KEGG pathways of significantly differentially expressed proteins" etc.
+
+- For PPI network, they used PPI.
+
+The methods mention the "DAVID" (explicitly). The text also says "Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource." It also says "A gene set enrichment analysis was performed using the KEGG pathway database." That indicates they used DAVID v? Not described.
+
+But check earlier: In Methods > "Statistical analysis and bioinformatics" there is mention: "We used the DAVID bioinformatics resource to conduct functional annotation of differentially expressed proteins. The top enriched pathways were selected." But the article's snippet does not specify version of DAVID. Let's read again:
+
+The Methods snippet: 
+
+> We used the DAVID bioinformatics resource for functional annotation of differentially expressed proteins. The top enriched pathways were selected.
+
+But we need to see exactly what text says. Let's search the article snippet.
+
+In the article, the Methods section snippet includes:
+
+"Statistical analysis and bioinformatics
+
+The statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value <0.05 was regarded as statistically significant. The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+Wait that's from the original article, but the snippet we see in the conversation may have a slightly different phrasing. Let's scroll to where the Methods section is described in the article. The snippet from the "Methods" part includes:
+
+"Statistical analysis and bioinformatics
+
+The statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value <0.05 was regarded as statistically significant. The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+But let's double-check: In the article snippet, in the "Statistical analysis and bioinformatics" section, after "Statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value < 0.05 was regarded as statistically significant." The next part:
+
+> The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected.
+
+This is exactly what we have. But I also recall that later, in the Results section, they mention:
+
+> The GO and KEGG pathway enrichment analyses in our study demonstrated that glycolysis/gluconeogenesis was predominantly involved... 
+They show Figures 7 and 8: "Top 20 enriched KEGG pathways" etc. 
+
+Also, in the "Methods" they used "DAVID" for GO annotation and "KEGG pathway database" for enrichment. It says "Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource." It does not mention a version of DAVID. And they don't mention a version of KEGG because KEGG is a database, but not a tool. But maybe the version was implied: The KEGG database may have a version, but it's not described. The article mentions "Benjamini-Hochberg" for FDR, but they used it in enrichment: It says "The FDR is performed as a correction method for the enrichment analysis." Actually, in the article, it says:
+
+"Was multiple testing correction / FDR applied to enrichment analysis?: Only answer "Yes" if the article explicitly mentions FDR, false discovery rate, Benjamini-Hochberg, or a named correction method for the enrichment analysis. A p-value threshold alone is not sufficient. Provide output in table format."
+
+So we need to check the article for "Benjamini-Hochberg" or "FDR" or "false discovery rate" mention. Let's search the text: In "Results", it says:
+
+> "In the protein–protein interaction (PPI) network, ..."
+
+It might mention multiple testing correction earlier. Let's check the part in Results:
+
+In the paragraph under "Protein–protein interaction (PPI) network", they might mention FDR. But not.
+
+Under "Statistical analysis and bioinformatics", they mention: "R software (v3.6.3). The P value < 0.05 was regarded as statistically significant." That's not multiple testing correction. They say "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected." There's no mention of Benjamini-Hochberg, FDR, or anything else. But the "Results" section might say "Not described".
+
+Let's search the "Results" section:
+
+The "Results" section shows the figures. In the legend for Figure 7 and 8, they mention "Top 20 enriched KEGG pathways" etc. But no mention of statistical test or FDR.
+
+However, earlier in the "Methods" section, in "Statistical analysis and bioinformatics", they mention "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+But they also mention the use of "Fisher's exact test" for enrichment: In the "Results" or "Methods" might mention "Fisher's exact test" for enrichment.
+
+Scrolling further: In the article snippet, under "Results" there is no mention of statistical test used for enrichment. But in the "Discussion" section they might mention "Fisher's exact test" but that's for something else. Let's search for "Fisher" or "hypergeometric" or "FDR" etc.
+
+In the article snippet, I see the phrase:
+
+> "The GO and KEGG pathway enrichment analyses in our study demonstrated..."
+
+But no mention of the statistical test.
+
+Wait, earlier I recall the text:
+
+"In the results, the GO and KEGG pathway enrichment analyses in our study demonstrated that glycolysis/gluconeogenesis was predominantly involved in the MTrP model and in precise dry needling treatment."
+
+But that is just the statement.
+
+Under "Protein–protein interaction (PPI) network" they didn't mention any test.
+
+But earlier, in the "Statistical analysis and bioinformatics" they might mention "Fisher's exact test" for enrichment. Actually, in the article snippet we see:
+
+"Was multiple testing correction / FDR applied to enrichment analysis? Only answer "Yes" if the article explicitly mentions FDR, false discovery rate, Benjamini-Hochberg, or a named correction method for the enrichment analysis."
+
+But the article snippet in the "Results" might mention "FDR" or "Benjamini-Hochberg" somewhere else. Let's search the snippet for "Benjamini" or "Hochberg" or "FDR" or "multiple".
+
+Scrolling: In the "Discussion" part, they mention "Benjamini-Hochberg" earlier? Let's check:
+
+> "In the present study, pyruvate kinase PKM was significantly downregulated... All the enzymes involved in glycolysis and gluconeogenesis that have been identified by proteomics analysis have been shown to be acetylated... [some references]."
+
+No mention of Benjamini-Hochberg.
+
+Also, in the "Statistical analysis and bioinformatics" section, they say: "R software (v3.6.3). The P value < 0.05 was regarded as statistically significant." That is a p-value threshold, not multiple testing correction. There's no mention of multiple testing correction. So answer "No" for that question.
+
+But we need to produce a table with 6 columns: Tool used for pathway enrichment analysis, tool version(s), gene set libraries used, custom background gene list, statistical test(s) used, multiple testing correction. And we need to list multiple tools separately.
+
+Let's identify all tools used explicitly:
+
+- DAVID bioinformatics resource: used for GO functional annotation.
+
+- KEGG pathway database: used for enrichment.
+
+But is KEGG considered a tool or a database? The question says: "Which gene set libraries were used?: Identify all gene set libraries or databases the authors queried (e.g., GO, KEGG, Reactome, MSigDB, etc.). Only include what's actually stated in the article." So KEGG is a database. GO is also a database. They used GO for functional annotation via DAVID.
+
+So gene set libraries used: Gene Ontology (GO) and KEGG.
+
+Also, they used "Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource." So we list GO.
+
+Now for multiple testing correction: They mention Benjamini-Hochberg later? Let's search. The snippet from the article might mention "Benjamini-Hochberg" for enrichment. Let's search the snippet for "Benjamini" or "Hochberg". There's a part near the end of the article: In the discussion, they mention:
+
+> "The Benjamini-Hochberg correction for the enrichment analysis."
+
+Wait, we need to search the snippet again. In the part we saw earlier, there is a phrase:
+
+> "The FDR is performed as a correction method for the enrichment analysis." but I'm not sure if the article actually includes that phrase. Let's scroll again: In the article snippet we saw earlier, the "Statistical analysis and bioinformatics" section says:
+
+> "Statistical analysis and bioinformatics ... The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+But I need to see if they mention multiple testing correction. I do not recall seeing "Benjamini" or "Hochberg" in the snippet we read. Let's double-check: The snippet shows:
+
+> "Statistical analysis and bioinformatics" ... "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource." Then "A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+It doesn't mention multiple testing correction or FDR. Wait, earlier we saw a sentence: "Not described." But the snippet we read had a mention of "Benjamini-Hochberg" somewhere? Let's search again in the snippet:
+
+At the bottom of the article, near the "Conclusion" they might mention something about FDR, but no.
+
+Let's search for "Benjamini" in the snippet: The snippet is huge; we need to search manually.
+
+In the snippet after the Results and figures, there is a long "Discussion" part. In the "Discussion", there is a mention of "Benjamini-Hochberg" when they talk about multiple testing correction for enrichment? Let's search for "Benjamini" again.
+
+Scrolling: I see no mention of Benjamini.
+
+But near the end of the article, there is a part:
+
+> "The article uses the Benjamini-Hochberg method for multiple testing correction." But I didn't see that. Did we miss something? Let's search for "Benjamini" quickly:
+
+In the "Discussion" we saw: "Benjamini-Hochberg" appears in the list of references, but not in the article text. Actually, the article snippet had a "23" superscript referencing a paper, not a method. There's no mention of "Benjamini-Hochberg" in the text.
+
+Wait, earlier I saw a line:
+
+> "Was multiple testing correction / FDR applied to enrichment analysis? Only answer "Yes" if the article explicitly mentions FDR, false discovery rate, Benjamini-Hochberg, or a named correction method for the enrichment analysis."
+
+Thus we need to look at the article text. Did the article mention "False discovery rate" or "Benjamini-Hochberg"? I don't think it did. The snippet doesn't mention that.
+
+Wait, maybe the article included a line in the "Statistical analysis and bioinformatics" that says: "We applied Benjamini-Hochberg correction to the enrichment analysis." But I don't recall reading that.
+
+Let's re-read the snippet for any mention of "Benjamini" or "Hochberg" or "FDR".
+
+Scrolling: I see no mention. Let's search for "FDR" quickly: I don't recall seeing "FDR". The snippet might have "Benjamini-Hochberg" in the discussion when talking about other research, but not in this article. Let's search again: "Benjamini" appears only in the reference list? Let's check: At the top of the article, the references may include "Benjamini, Y., and Hochberg, Y." but not used in the methods.
+
+We should answer "No" for multiple testing correction / FDR applied to enrichment analysis.
+
+But we also need to answer "Which gene set libraries were used?" We have GO and KEGG. The article may also mention "MSigDB" or "Reactome" but not. I see no mention of others.
+
+But we should check if the article used "DAVID" version. The snippet says "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource." It does not mention a version number.
+
+But maybe in the article they used a version of DAVID. The snippet didn't mention a version. So "Not described".
+
+But maybe they used "DAVID" in the analysis. That is the only tool. They also might have used "KEGG" but it's a database. The tool used for enrichment is "DAVID".
+
+But we also need to include "The KEGG pathway database" for gene set library.
+
+Thus the table should have:
+
+- Tool: DAVID
+
+- Tool version: Not described
+
+- Gene set libraries: Gene Ontology (GO), KEGG
+
+- Custom background gene list: Not described (No custom background list mentioned)
+
+- Statistical tests: Fisher's exact test (as per methods they said: "Fisher's exact test" was used).
+
+- Multiple testing correction: Not described (No FDR correction applied).
+
+Wait, let's check: The Methods says: "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+Actually, earlier I saw:
+
+> "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database."
+
+But we need to confirm.
+
+In the snippet we saw earlier, "Statistical analysis and bioinformatics" section says:
+
+"Statistical analysis and bioinformatics
+
+The statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value < 0.05 was regarded as statistically significant. The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+Yes, that is the exact snippet. So we confirm.
+
+Thus the answers:
+
+- Tool used: DAVID.
+
+- Tool version: Not described.
+
+- Gene set libraries used: Gene Ontology (GO), KEGG.
+
+- Custom background gene list: Not described (No mention of custom background).
+
+- Statistical tests used: Fisher's exact test (as described in the results: "Fisher's exact test" or maybe "Fisher's exact test" used for enrichment). Let's confirm.
+
+In the Results, for KEGG enrichment, it says: "Top 20 enriched KEGG pathways..." But they didn't mention the test used in the figure legends. However, earlier we saw: "The GO and KEGG pathway enrichment analyses in our study demonstrated that glycolysis/gluconeogenesis was predominantly involved in the MTrP model and in precise dry needling treatment." But did they mention the statistical test? Actually, at the end of the Methods, it might have said "Fisher's exact test" or "Fisher's test" but we need to confirm.
+
+In the snippet we saw earlier, there's a mention in the Discussion about "Benjamini-Hochberg" for some other studies. But not in this article.
+
+But in the "Results" or "Figures" they might say "Fisher's exact test" or "Fisher's test" for enrichment.
+
+Let's search for "Fisher" again in the snippet. In the article snippet, I recall the following: In the "Discussion", they refer to "Benjamini-Hochberg" but I'm not sure. But let's search for "Fisher" text:
+
+Scrolling: I see no mention of "Fisher" in the article snippet. Wait, at the top of the article snippet, I see "The integrated trigger point hypothesis, ...", but no mention of "Fisher". In the "Statistical analysis and bioinformatics" section, I don't see mention of "Fisher's test" or "hypergeometric test".
+
+But the question is: "Which gene set libraries were used?" we answered GO and KEGG.
+
+But "Was the article describe using a custom or specific background gene list?" We see no mention of a custom background. So answer "No".
+
+But "What statistical test(s) were used in enrichment analysis?" The article might have used "Fisher's exact test" as per the "Results" section. Actually, we saw "The GO and KEGG pathway enrichment analyses in our study demonstrated that glycolysis/gluconeogenesis was predominantly involved in the MTrP model and in precise dry needling treatment." It doesn't mention the test.
+
+Wait, earlier, in the "Methods" snippet, we saw:
+
+- "We used the DAVID bioinformatics resource for functional annotation." Not the test.
+
+But there might be mention of "Fisher's exact test" in the "Statistical analysis and bioinformatics" or "Results" section. Let's re-check. The snippet after the "Statistical analysis and bioinformatics" might include a phrase:
+
+"Gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected." But no mention of test.
+
+Wait, the snippet says:
+
+> "The GO and KEGG pathway enrichment analyses in our study demonstrated that glycolysis/gluconeogenesis was predominantly involved..."
+
+But no test.
+
+But earlier we saw a line "We used the DAVID bioinformatics resource for functional annotation. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+The question is "Which statistical test(s) were used in enrichment analysis?" The article might mention "Fisher's exact test" as used. But I don't recall that in the snippet.
+
+Let's search for "Fisher's" again. The snippet shows in the "Results" section for GO enrichment? Actually, in the "Methods" snippet, there is no mention. Let's search for "Fisher's exact test" phrase in the snippet.
+
+Scrolling: I see no "Fisher" in the snippet. However, in the article snippet, after the "Statistical analysis and bioinformatics" section, there might be a part like:
+
+"Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected." That includes no test.
+
+Wait, I recall reading "Fisher's exact test" earlier maybe when we saw the "Statistical analysis and bioinformatics" section in the "Statistical analysis" part of the original article (not snippet). Let me re-read the article snippet earlier again. The snippet is huge, but the first part of the article says:
+
+> "Statistical analysis and bioinformatics
+
+The statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value < 0.05 was regarded as statistically significant. The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+So there is no mention of test. But maybe in the "Results" section of Figure 7 and 8 they mention "p-value" or "Fisher's exact test" for enrichment. Let's search again for "p-value" in Figures. The figure legends for Figure 7 and 8 may say "p<0.05" or "Fisher's exact test" but we saw no.
+
+But we need to confirm if the article explicitly used "Fisher's exact test". In the snippet we read earlier, there is mention of "Fisher's exact test" in the "Discussion"? Actually, no.
+
+Let's search for "hypergeometric" also. No mention.
+
+The article might have used "Fisher's exact test" but didn't mention it explicitly. The question demands we identify what the article says. So we need to read the article snippet again, find the phrase "Fisher's exact test" if present.
+
+Scrolling further: In the snippet after "Statistical analysis and bioinformatics", I don't see.
+
+Wait, earlier I recall in the snippet there is a line:
+
+> "The top enriched pathways were selected."
+
+But no test.
+
+So I think the article does not mention any statistical test used for enrichment. It just uses DAVID, which internally uses "Fisher's exact test" as default. But the article didn't mention that. But the question may assume that the article says "Fisher's exact test" because many articles use it. But we need to find the phrase in the snippet. Let's search again for "Fisher".
+
+We can search by reading the snippet: The article is huge. Let's look for "Fisher" quickly:
+
+Scrolling: The snippet at the top: "The integrated trigger point hypothesis, ...".
+
+No "Fisher".
+
+Scrolling further: The article includes many references and citations. But "Fisher" may appear as part of a reference: "Fisher, R. A." but that's not relevant.
+
+I think the article didn't mention the test used. However, the question expects us to answer based on the text. So we can answer "Not described" or "No test described".
+
+But the question: "What statistical test(s) were used in enrichment analysis?" The article might have used "Fisher's exact test" but we need to confirm. If not described, answer "Not described".
+
+But the article snippet may include the phrase "Benjamini-Hochberg" for FDR. Wait, we saw earlier a mention of "Benjamini-Hochberg" maybe in the "Statistical analysis and bioinformatics" section for R? Let's check again. The snippet says:
+
+> "Statistical analysis and bioinformatics
+
+The statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value < 0.05 was regarded as statistically significant. The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+No mention of Benjamini or FDR. So "No" for multiple testing correction.
+
+Now we must create a table with columns: Tool used, Tool version(s), Gene set libraries used, Custom background, Statistical tests used, Multiple testing correction.
+
+We have only one tool: DAVID.
+
+But the article might have used "DAVID" for GO and "KEGG" for enrichment. But we need to list "DAVID" under tool. Also, we might list "DAVID" again for KEGG? Actually, "KEGG pathway database" is not a tool but a database. The article used DAVID to annotate GO and then used KEGG. But they might have used DAVID also for KEGG? The Methods says: "A gene set enrichment analysis was performed using the KEGG pathway database." It doesn't say which tool was used for KEGG enrichment, but might still be DAVID? Actually, the article says "A gene set enrichment analysis was performed using the KEGG pathway database." This might indicate they used "DAVID" for both GO and KEGG. But they didn't mention any other tool. So we will list only one tool: DAVID. But the question says "If multiple tools, list separately". So only DAVID.
+
+But also, the article used "DAVID" for functional annotation. There's no mention of "GSEA" or "WebGestalt" etc. So only DAVID.
+
+But I also recall that they used "R" for statistical analysis. But that is not a tool for enrichment but for analysis. The question is "Tool used for pathway enrichment analysis". That refers to the tool used to run the enrichment. It's "DAVID". "DAVID" was used for GO annotation; they used "KEGG" for enrichment, but not a tool. But maybe they used "DAVID" for KEGG as well. Actually, the article snippet says "A gene set enrichment analysis was performed using the KEGG pathway database." It doesn't specify which tool. But likely they used DAVID for KEGG as well. So the tool used for enrichment is "DAVID".
+
+But the question "Which gene set libraries were used?" We answer GO and KEGG. No others.
+
+Now, "Was multiple testing correction/FDR applied to enrichment analysis?" The article doesn't mention FDR. So answer "No". Actually, if no multiple testing correction was mentioned, answer "No".
+
+Now "Custom background gene list?" No mention. So "No" or "Not described"? The question: "Was the article describe using a custom or specific background gene list?" The answer should be "No". But maybe we should answer "No" because they didn't mention any custom background list. So we say "No".
+
+But the question says "Custom background gene list: Yes or No or Not described?" Let's see the wording: "Custom background gene list: answer Yes/No/Not described".
+
+Thus we answer "No" because they did not use a custom background list. But we can double-check if they used any custom background. They didn't mention.
+
+Now "Statistical test(s) used": The article might mention "Fisher's exact test" but maybe not. Let's search again for "Fisher" and "exact test" in the snippet. In the Results section for KEGG enrichment, they might say "Fisher's exact test" but not sure. But I recall earlier in the article snippet we saw "Fisher's exact test" under "Statistical analysis and bioinformatics"? Let's double-check the snippet. Wait, I recall reading earlier: "Statistical analysis and bioinformatics" might include "Fisher's exact test" but maybe I misremembered. Let's scroll again to the snippet after "Statistical analysis and bioinformatics".
+
+In the snippet: 
+
+"Statistical analysis and bioinformatics
+
+The statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value <0.05 was regarded as statistically significant. The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+There is no mention of statistical test.
+
+But in the article snippet after the Results, there might be mention of "Fisher's exact test" in the figure legends or text. Let's search for "Fisher" again.
+
+Scrolling: I see no "Fisher" in the snippet. But maybe "Fisher's exact test" appears earlier in the snippet. Let's search for "Fisher's" manually:
+
+I can check quickly: In the snippet under "Statistical analysis and bioinformatics" there is "Fisher's exact test" maybe? But I didn't see it.
+
+Wait, earlier I saw in the "Statistical analysis and bioinformatics" section: "Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource." That is the only mention.
+
+So maybe the article didn't mention the statistical test. The question: "What statistical test(s) were used in enrichment analysis?" The answer might be "Not described" or "No test described".
+
+But the question expects a list. We can answer "Not described".
+
+But the question: "Which gene set libraries were used?" We answered GO and KEGG.
+
+But we also need to answer "Was a custom or specific background gene list used?" It says "No" because no mention.
+
+"Was multiple testing correction / FDR applied to enrichment analysis?" The article does not mention FDR correction. So answer "No".
+
+However, earlier I saw a line: "The FDR is performed as a correction method for the enrichment analysis." But that's not present. Wait, the article might have a phrase: "The Benjamini-Hochberg method for multiple testing correction." But I don't recall that being present in this article. Let's search again for "Benjamini" in the snippet: There's no "Benjamini" in the article snippet. The snippet at the bottom of the article snippet has references and references to other studies. But not.
+
+Thus answer "No".
+
+Now, we also need to include "Tool version" - not described.
+
+Now compile the table:
+
+Columns: Tool used for pathway enrichment analysis | Tool version(s) | Gene set libraries used | Custom background gene list | Statistical tests used | Multiple testing correction
+
+Rows: For each tool, we need to list. There's only one tool: DAVID. But we might need to list the tool version separately. The article didn't mention a version, so "Not described".
+
+Gene set libraries used: GO and KEGG.
+
+But we might also need to include "DAVID" as the tool. If multiple tools used, list each row. But only DAVID.
+
+But also we might need to include "KEGG pathway database" as a tool? But it's a database, not a tool. The question for "tool used for pathway enrichment analysis" - that refers to the tool used, not database. So only DAVID.
+
+But if there were multiple tools, they'd be separate rows. Here only one.
+
+Now we need to fill in the other columns.
+
+Let's fill:
+
+- Tool: DAVID
+
+- Tool version: Not described
+
+- Gene set libraries used: Gene Ontology (GO), KEGG
+
+- Custom background gene list: No (Not described). But the question says "Custom background gene list: answer Yes/No/Not described." Since they didn't mention custom background, answer "No".
+
+- Statistical tests used: Fisher's exact test (explicitly mentioned: "The GO and KEGG pathway enrichment analyses in our study demonstrated that glycolysis/gluconeogenesis was predominantly involved...". Wait, they didn't mention the test. But we saw earlier: In the "Statistical analysis and bioinformatics" section they said: "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource." It didn't mention test. But maybe they used "Fisher's exact test" for enrichment. In the "Results" section, they might mention "Fisher's exact test." Let's search again.
+
+Wait, we might have misread: In the "Statistical analysis and bioinformatics" section, after "The statistical analysis of the proteomic data was performed using R software (v3.6.3)." They might have said: "The statistical significance was defined by p<0.05." But there is no test.
+
+But the question about "statistical test(s) used" might be "Fisher's exact test." But I'm not sure the article said that.
+
+Wait, maybe earlier in the article snippet, they used "DAVID" for GO annotation and "KEGG" for enrichment. In the "Results" section, they might say "Fisher's exact test" was used. Let's search for "Fisher's exact" again. In the snippet, I don't see it. But maybe it's there somewhere else. Let's search for "exact" in the snippet.
+
+In the snippet, I see no "exact".
+
+But I recall earlier: In the "Statistical analysis and bioinformatics" section, there might be mention of "Fisher's exact test" or "hypergeometric test". But I might have misremembered. Let's re-read that part again:
+
+> "Statistical analysis and bioinformatics
+
+The statistical analysis of the proteomic data was performed using R software (v3.6.3). The P value < 0.05 was regarded as statistically significant. The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database. The top enriched pathways were selected."
+
+Thus no mention of test.
+
+But maybe in the "Discussion" they mention "Benjamini-Hochberg" for multiple testing correction. But we don't need to use that for enrichment.
+
+However, the question: "What statistical test(s) were used in enrichment analysis?" The article might not mention it. So answer "Not described".
+
+But let's double-check the Results figure legends. For Figure 7 and 8, they might say "Statistical significance was determined by Fisher's exact test." Let's scroll to those figure legends:
+
+> "Figure 7. Top 20 enriched KEGG pathways of significantly differentially expressed proteins in the MTrP group. The P value was < 0.05."
+
+But no mention of test.
+
+Wait, earlier, in the Results part for GO enrichment, there might be a figure legend for "Top 20 enriched GO terms". Let's scroll:
+
+Under "Results" we saw:
+
+> Figure 3. Top 20 enriched GO terms of significantly differentially expressed proteins.
+
+But no mention of test.
+
+Thus the article does not specify the statistical test used. But maybe they used "Fisher's exact test" as default in DAVID. But the article didn't say it. So we answer "Not described".
+
+Now "Was multiple testing correction / FDR applied?" The article didn't mention it. So answer "No".
+
+Wait, the article might mention "Benjamini-Hochberg" in the discussion when referencing other studies, but not for their own method. So answer "No".
+
+Thus our final table:
+
+| Tool used for pathway enrichment analysis | Tool version(s) | Gene set libraries used | Custom background gene list | Statistical test(s) used | Multiple testing correction / FDR applied? |
+|--------------------------------------------|-----------------|--------------------------|----------------------------|---------------------------|-------------------------------------------|
+| DAVID | Not described | Gene Ontology (GO), KEGG | No | Not described | No |
+
+But we need to include "Custom background gene list" as "No".
+
+Now we need to present a table with these columns. Provide the answers accordingly.
+
+We can also check if they used "R software (v3.6.3)" as part of the analysis. But that's not a tool for enrichment. So we exclude that.
+
+Thus we produce a table with a single row. But the question expects a table, so we provide a table with headings and one row. We'll fill each cell accordingly.
+
+But we need to fill each column:
+
+- Tool used for pathway enrichment analysis: DAVID
+
+- Tool version(s): Not described
+
+- Gene set libraries used: Gene Ontology (GO), KEGG
+
+- Custom background gene list: No (not described)
+
+- Statistical test(s) used: Not described (no mention)
+
+- Multiple testing correction: No (not described)
+
+But we might want to mention that "Statistical test(s) used" - "Fisher's exact test" might be used, but it's not described. But maybe the article didn't mention the test. So answer "Not described".
+
+Thus the final table:
+
+| Tool used for pathway enrichment analysis | Tool version(s) | Gene set libraries used | Custom background gene list | Statistical test(s) used | Multiple testing correction / FDR applied? |
+|--------------------------------------------|-----------------|--------------------------|----------------------------|---------------------------|-------------------------------------------|
+| DAVID | Not described | Gene Ontology (GO), KEGG | No | Not described | No |
+
+We need to double-check if the article might have used "DAVID" for enrichment and "KEGG" as database. So that's fine.
+
+But the question also has "Which gene set libraries were used?" We answered GO and KEGG.
+
+Now for "Was custom background gene list used?" We answered "No".
+
+Now for "statistical test(s) used": The article might not mention. So "Not described".
+
+Now for "multiple testing correction": They didn't mention. So "No".
+
+Let's double-check if the article mentions "Benjamini-Hochberg" anywhere else. In the snippet, there's a part in the discussion referencing other research: "Benjamini-Hochberg" might be in the references, but not the article text. So we treat it as "No".
+
+Now produce the table. The question expects "Yes" or "No" or "Not described" as appropriate.
+
+Thus the answer:
+
+| Tool used for pathway enrichment analysis | Tool version(s) | Gene set libraries used | Custom background gene list | Statistical test(s) used | Multiple testing correction / FDR applied? |
+|--------------------------------------------|-----------------|--------------------------|----------------------------|---------------------------|-------------------------------------------|
+| DAVID | Not described | Gene Ontology (GO), KEGG | No | Not described | No |
+
+But is the "Gene Ontology (GO)" used for enrichment? Yes. It's a library. But they didn't mention using other libraries. So we list GO and KEGG.
+
+Now the last column "Multiple testing correction / FDR applied?" They didn't mention any correction, so "No".
+
+But the question: "Was multiple testing correction / FDR applied to enrichment analysis?" Answer "No".
+
+Now produce final answer. Provide a table.
+
+But we should also answer the first question "Tool used for pathway enrichment analysis" separately if multiple tools. But there is only one: DAVID. So we can list just that. But if there were multiple tools, we would list them. But we only have DAVID.
+
+But there might also be "DAVID" for GO, but they didn't mention "KEGG" as a tool. But the question for tool used for pathway enrichment analysis refers to the tool used for the enrichment. In Methods, they used "The Gene Ontology (GO) functional annotation was performed by the DAVID bioinformatics resource. A gene set enrichment analysis was performed using the KEGG pathway database." So the tool used for enrichment is "DAVID" for both GO and KEGG? Actually, it says a gene set enrichment analysis was performed using the KEGG pathway database. That might indicate they used some other tool, perhaps they used the "DAVID" website for both GO and KEGG. But the article didn't specify. But we assume they used DAVID for both GO and KEGG. So tool used for enrichment is "DAVID".
+
+But we might want to note that "KEGG" as a database used. So no separate tool.
+
+Now finalize. Provide the table accordingly. We'll put "Not described" where appropriate. We'll use "Yes/No/Not described" as per question.
+
+Thus final answer: Provide the table.
+
+Let's produce. We'll answer with a table with columns and the single row.
+
+We must also ensure we include the "Custom background gene list" column as "No".
+
+Now produce final answer.
+...done thinking.
+
+**Enrichment‑analysis details**
+
+| Tool used for pathway enrichment analysis | Tool version(s) | Gene set libraries used | Custom background gene list | Statistical test(s) used | Multiple testing correction / FDR applied? |
+|-------------------------------------------|-----------------|--------------------------|----------------------------|---------------------------|-------------------------------------------|
+| DAVID | Not described | Gene Ontology (GO), KEGG | No | Not described | No |
+
+

@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tools used for pathway enrichment analysis were GOseq R package and KOBAS software.
+
+2. Was a tool version number provided?
+Yes, the version number of the DESeq R package (v1.18.0) was provided, but not for GOseq R package or KOBAS software.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The gene set libraries queried were GO and KEGG.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+Not described, but the DESeq R package uses a model based on the negative binomial distribution to identify differential gene expression.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, Benjamini and Hochberg’s approach was performed to adjust the obtained P-values for the differential gene expression analysis, but it is not explicitly stated if this was also applied to the pathway enrichment analysis. However, a corrected P-value ≤0.5 was used as the cutoff for GO enrichment analysis, and an adjusted P-value ≤0.01 was used for DEG identification.
+

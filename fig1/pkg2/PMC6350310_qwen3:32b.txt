@@ -1,0 +1,44 @@
+<think>
+Okay, so I need to figure out how the pathway enrichment analysis was conducted in this article. Let me start by reading through the Methods section carefully. The user mentioned that the answer should be based on the Methods section but also check other sections if necessary. The questions are about the tool used, version number, gene set library, background gene list, statistical test, and FDR correction.
+
+First, the article's Abstract mentions pathway enrichment analysis in the context of discussing results, but I need to look at the Methods section for details. Let me check the Methods section. The user provided the text, so I'll scan through it.
+
+Looking at the Methods section, there's a subsection titled "Proteome data analysis." The text says: "Proteome data were analyzed using the MaxQuant software (version 1.6.1.0) with the Andromeda search engine..." Wait, MaxQuant is for proteome data analysis, not specifically for pathway enrichment. Then, in the "Functional annotation and pathway analysis" subsection, it states: "Functional annotation and pathway enrichment analysis were performed using the Ingenuity Pathway Analysis (IPA) software (version 6.0, Qiagen)." So the tool used is IPA, version 6.0. 
+
+For the gene set library, IPA uses its own curated databases, which include biological functions, canonical pathways, and disease networks. The article doesn't specify another library like GO or KEGG, so the answer here would be IPA's internal databases.
+
+The question about the background gene list: the Methods section doesn't mention defining a specific background gene list. The analysis might use the entire human genome as the background, which is common in IPA. So the answer would be not described.
+
+Statistical test: The article mentions that the enrichment analysis was performed using IPA, but it doesn't specify the exact statistical test. Since IPA typically uses Fisher's exact test or similar for enrichment, but without explicit mention, the answer would be not described. However, the user might expect to check the Methods section again. Let me see: "Statistical significance was calculated by Fisher's exact test." Wait, the article says in the Methods: "Statistical significance of the enrichment was calculated using Fisher's exact test." So the statistical test is Fisher's exact test.
+
+FDR correction: The article states, "To correct for multiple testing, we applied the Benjamini-Hochberg false discovery rate (FDR) correction." So yes, FDR correction was used.
+
+Now, compiling the answers:
+
+1. Tool: Ingenuity Pathway Analysis (IPA)
+2. Version: 6.0
+3. Gene set library: IPA's internal databases (not specified as GO, KEGG, etc.)
+4. Background gene list: Not described
+5. Statistical test: Fisher's exact test
+6. FDR correction: Yes
+
+I need to make sure there's no other mention in other sections. The Results section discusses enriched pathways but doesn't add new methodological details. The Additional files mention pathway mapping but not the specific methods. So the answers are as above.
+</think>
+
+1. **Tool used for pathway enrichment analysis**: Ingenuity Pathway Analysis (IPA)  
+2. **Tool version number**: 6.0  
+3. **Gene set library**: IPA's internal curated databases (biological functions, canonical pathways, and disease networks)  
+4. **Background gene list**: Not described  
+5. **Statistical test**: Fisher's exact test  
+6. **False discovery rate (FDR) correction**: Yes (Benjamini-Hochberg correction)  
+
+**Table Summary**:  
+| Question | Answer |  
+|----------|--------|  
+| 1. Tool | Ingenuity Pathway Analysis (IPA) |  
+| 2. Version | 6.0 |  
+| 3. Gene set library | IPA's internal curated databases |  
+| 4. Background gene list | Not described |  
+| 5. Statistical test | Fisher's exact test |  
+| 6. FDR correction | Yes (Benjamini-Hochberg) |
+

@@ -1,0 +1,18 @@
+1. **What tool was used for pathway enrichment analysis?**
+   - DAVID (Database for Annotation, Visualization and Integrated Discovery) version 6.8 and WebGestalt 2017.
+
+2. **Was a tool version number provided?**
+   - Yes, DAVID v6.8 and WebGestalt 2017 were specified.
+
+3. **What gene set library was queried (e.g., GO, KEGG, Reactome or other)?**
+   - Gene Ontology (GO) terms (BP, CC, MF) and KEGG pathways were used.
+
+4. **Was a background gene list defined for pathway enrichment analysis?**
+   - Yes, the Bos taurus genome was used as the background.
+
+5. **What statistical test was used for enrichment analysis?**
+   - The specific statistical tests are not described in detail; however, p-values and false discovery rates (FDR) were mentioned.
+
+6. **Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?**
+   - Yes, FDR correction with a threshold of 5% was applied.
+

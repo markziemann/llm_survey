@@ -1,0 +1,20 @@
+Here are the answers to the questions about pathway enrichment analysis:
+
+1. What tool was used for pathway enrichment analysis?
+The tools used for pathway enrichment analysis were R-package piano_1.16.4 and the "User data mapping" tool on the KEGG website.
+
+2. Was a tool version number provided?
+Yes, the version number of the R-package piano was provided as 1.16.4, and the version of the statistical software R was 3.4.1.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+The gene set libraries queried were Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG).
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Yes, the background gene list was defined as the whole gene sets with corresponding Entrez-IDs of the Agilent 8 × 60K Whole Human Genome Oligo Microarray.
+
+5. What statistical test was used for enrichment analysis?
+The statistical test used for enrichment analysis was Fisher's exact test.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, Benjamini-Hochberg correction was used to control the number of false positives in the pathway enrichment analysis.
+

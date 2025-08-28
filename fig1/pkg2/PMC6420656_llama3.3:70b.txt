@@ -1,0 +1,20 @@
+Here are the answers to the questions:
+
+1. What tool was used for pathway enrichment analysis?
+The tool used for pathway enrichment analysis is MAGMA.
+
+2. Was a tool version number provided?
+Not described.
+
+3. What gene set library was queried (eg: GO, KEGG, Reactome or other)?
+Not described, but it appears that the authors used a custom approach focusing on known drug targets and drug classes based on the ATC classification.
+
+4. Was a background gene list defined for pathway enrichment analysis?
+Not described.
+
+5. What statistical test was used for enrichment analysis?
+The statistical test used is not explicitly stated as a traditional pathway enrichment test (e.g., hypergeometric test, Fisher's exact test), but the authors mention using "MAGMA pathway analysis" and "MAGMA gene-wise analysis", which likely involve a statistical framework for assessing associations.
+
+6. Was false discovery rate correction used to control the number of false positives in the pathway enrichment analysis?
+Yes, the authors mention using "-log[10](P)" units obtained from MAGMA pathway analysis, and they also discuss the use of "genetic scores" and "expression z-scores", but explicitly state that they used "false discovery rate correction" is not mentioned. However, it can be inferred that some form of multiple testing correction was applied as the authors discuss "-log[10](P)" values, which typically involve a statistical significance threshold that accounts for multiple tests. Nonetheless, to strictly answer the question based on explicit mentions: Not explicitly described as "false discovery rate correction", but the use of "-log[10](P)" suggests some form of correction for multiple testing was considered.
+
