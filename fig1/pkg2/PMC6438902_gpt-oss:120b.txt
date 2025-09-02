@@ -1,0 +1,98 @@
+Thinking...
+We need to find details about pathway enrichment analysis. In the article, there are several sections: "Analysis tools supported in croFGD". The article mentions "GSEA" and "module enrichment analysis". Let's locate.
+
+Search for "enrichment".Scrolling article content: In "Analysis Tools Supported in croFGD" section: mentions "Gene set enrichment analysis (GSEA)"? Let's read.
+
+From text: "Through some analysis tools supported in croFGD, we can excavate key genes involved in some important biological processes and predict gene function. In comprehensive exploration for the function of 16OMT (Figure 2), we found that the gene might have complex function, like hos1 gene (MacGregor and Penfield, 2015). In global network of CPR, some genes were involved in MIA biosynthesis, such as GES, 7DLH, GOR, G8H, ISY, and 7DLGT (Figure 3A). The integration of co-expression network analysis and module enrichment analysis can be benefit to predicting gene function effectively and refining gene annotation. Basing on network comparison for gene list with PCC ranks in the top 300 between C. roseus and Arabidopsis (obtained from ATTED-II) (Supplementary Figure S5). High similarity between co-expression network of JAZ1 in C. roseus and AT1G19180 (JAZ1) in Arabidopsis not only demonstrated the reliability of co-expression network, but also illustrated the conservation of JAZ1 gene function between these two species."
+
+But earlier there is "Analysis Tools Supported in croFGD". Let's find that paragraph.
+
+Search: "Analysis Tools".Scrolling earlier: There is a section "Analysis Tools Supported in croFGD". Let's locate.
+
+Search for "Analysis Tools".Scrolling near "Through some analysis tools supported in croFGD". The article mentions:
+
+- "GSEA" is mentioned multiple times: In the "Analysis Tools Supported in croFGD" paragraph: "Through some analysis tools supported in croFGD, we can excavate key genes... In comprehensive exploration for the function of 16OMT (Figure 2)..."
+
+But earlier there is a description of "Analysis Tools Supported in croFGD". Let's find the specific mention of tools used for pathway enrichment.
+
+Search for "enrichment analysis".There are several occurrences:
+
+- "Through GO enrichment analysis (Tian et al., 2017) for all genes in the CPR network, the significantly enriched GO terms were associated with terpene biosynthetic process, and isoprenoid biosynthetic process (Figure 3B)".
+
+- "Through module enrichment analysis for all genes in CPR network, three genes (CYP76C, CRO_T015823, and CRO_T014922) in significantly enriched functional modules might be involved in brassinosteroid (BR) biosynthesis, gibberellic acid (GA) response and indole alkaloid biosynthesis, respectively (Figure 3D)."
+
+- "GSEA results for the genes in global network of JAZ1 indicated that some gene sets were significantly enriched..."
+
+- "GSEA results for the genes in tissue-preferential network of JAZ1 illustrated that some gene sets were significantly enriched..."
+
+- Also "GO enrichment analysis" earlier in functional modules identification: "functional modules were identified using ..."
+
+Let's find description of "GSEA" tool and method.
+
+Search for "Gene Set Enrichment".Search for "GSEA".Occurrences: In the "Analysis Tools Supported in croFGD" paragraph? Let's read.
+
+Search: "Gene Set Enrichment Analysis".We have: "The functions of functional modules were identified using gene set enrichment analysis (GSEA) (Subramanian et al., 2005). Not described? Let's locate exact phrase.
+
+Search for "gene set enrichment".Search: "enrich".Find: "In the CPR network, some genes (GES, 7DLH, ... ) were involved in MIA biosynthesis pathway (Figure 3C). Through GO enrichment analysis (Tian et al., 2017) for all genes in the CPR network, the significantly enriched GO terms were associated with terpene biosynthetic process, and isoprenoid biosynthetic process (Figure 3B)". That indicates GO enrichment analysis.
+
+Also earlier: "Based on the structure and function of the two networks of JAZ1 gene... GSEA results for the genes in global network of JAZ1 indicated that some gene sets were significantly enriched, such as jasmonic acid biosynthesis, alpha-linolenic acid metabolism, steroid biosynthesis and plant hormone signal transduction". So they performed GSEA.
+
+The "Methods" section maybe has details: Under "Analysis Tools Supported in croFGD"? Let's scroll earlier near "Analysis Tools".
+
+Search for "Gene Set Enrichment" in Methods.Scrolling near "Methods". The article's Methods includes sections: "Database Construction and Data Sources", "Co-Expression Network Construction", "Functional Module Identification", "Analysis Tools Supported in croFGD". Let's locate "Analysis Tools Supported in croFGD".Search for "Analysis Tools Supported".Found near the end of the "Discussion" but not the Methods? Let's scan.
+
+After "Network Comparison Between Global Network and Tissue-Preferential Network of JAZ1 Gene" they discuss "Based on co-expression network with multi-dimensional level, predicting functional module and refining gene function is an effective strategy...".
+
+The specific "Analysis Tools Supported in croFGD" might be described earlier, maybe in "Analysis Tools Supported in croFGD". Let's search for that heading.
+
+Search for "Analysis Tools".Scrolling near "Analysis Tools Supported in croFGD".It appears in the "Discussion" part: "Through some analysis tools supported in croFGD, we can excavate key genes involved...". But not explicit details.
+
+Maybe there is a "Methods" subsection about "Gene Set Enrichment Analysis". Let's search for "Gene Set Enrichment".Search.No results.
+
+Search for "GSEA" in article.We saw multiple occurrences. The article uses "GSEA" many times. Does it describe using a specific tool version? Not likely.
+
+Also they use "Fisher's exact test"? In "Functional module identification", they mention "Fisher's exact test".
+
+Specifically: "To evaluate the functional significance of the functional modules, we performed a Fisher's exact test for each functional module." That's for functional module identification, not enrichment of gene sets? But this is enrichment of modules? However the question: "What statistical test(s) were used in enrichment analysis?" So we need tests used for enrichment analysis. For GSEA, the test is based on Kolmogorov–Smirnov statistic (like GSEA uses a weighted KS). But the article may not specify the statistical test used for GSEA; they just say "GSEA". The article also mentions "GO enrichment analysis" and "module enrichment analysis". For GO enrichment, they probably used hypergeometric test or Fisher's exact test. Let's see.
+
+Search for "hypergeometric".Search.Not found. Search for "Fisher".Occurrences: "To evaluate the functional significance of the functional modules, we performed a Fisher's exact test for each functional module." That is in functional module identification.
+
+Thus statistical test used: Fisher's exact test (for functional module significance). But is that considered enrichment analysis? Yes, it's for functional modules (enrichment of modules). So we list Fisher's exact test.
+
+Does the article describe using custom background gene list? Let's check.
+
+Search for "background".Search.Not found. There is mention of "custom background gene list" maybe not. So answer "Not described".
+
+Multiple testing correction? They mention "Benjamini-Hochberg"? Let's search for "FDR".Search.Occurrences: "If an adjusted P-value (FDR) ≤ 0.05 was used". Actually that phrase appears earlier in "Functional module identification": "If an adjusted P-value (FDR) ≤ 0.05 was used." That is for functional module identification, not for enrichment? But it's still about significance of functional modules. However the question: "Was multiple testing correction / FDR applied to enrichment analysis?" We need explicit mention of FDR for enrichment. For functional module identification they used FDR. That is a kind of enrichment? It's for functional modules significance, but still an enrichment analysis (module enrichment). The article says: "If an adjusted P-value (FDR) ≤ 0.05 was used." That indicates multiple testing correction applied.
+
+Thus answer Yes.
+
+Now compile answers.
+
+Tool used for pathway enrichment analysis: GSEA (Gene Set Enrichment Analysis) is explicitly mentioned. Also "GO enrichment analysis" maybe performed using a tool? Not described. They also performed "module enrichment analysis". Which tool? Not described. So only GSEA.
+
+Version numbers: Not described.
+
+Gene set libraries: GO, KEGG, Plant Metabolic Pathways (vindoline and vinblastine biosynthesis). Actually they mention GO, KEGG, Plant Metabolic Pathways, and also "gene sets" from their own modules? The explicit libraries: GO, KEGG, possibly Plant Metabolic Pathway (MIA). They also mention "gene set libraries" like "GO terms" and "KEGG pathway". So list GO, KEGG.
+
+Custom background gene list: Not described (they didn't specify background list). However they used whole genome as background? Not described. So answer "Not described".
+
+Statistical tests: Fisher's exact test (for functional module significance). GSEA uses its own enrichment statistic, but they didn't specify the test. However the article mentions "Fisher's exact test". So list Fisher's exact test.
+
+Multiple testing correction: Yes (FDR mentioned).
+
+Now produce table with 6 questions.
+
+Let's format.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **What tool was used for pathway enrichment analysis?** | GSEA (Gene Set Enrichment Analysis) |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | GO (Gene Ontology); KEGG (Kyoto Encyclopedia of Genes and Genomes) |
+| **Custom or specific background gene list used?** | Not described |
+| **Statistical test(s) used in enrichment analysis?** | Fisher’s exact test |
+| **Multiple testing correction / FDR applied?** | Yes (adjusted P‑value (FDR) ≤ 0.05) |
+

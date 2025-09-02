@@ -1,0 +1,30 @@
+Thinking...
+We need to locate pathway enrichment analysis method in Methods. Let's scan.
+
+In 4.6 Proteome Data Analysis:
+
+- To analyze the potential functions of the proteins, they first reannotated the rice proteins. Mapped to NR, Swiss-Prot/UniProt, GO, KEGG. Using all the proteins as background, we used numbers of DEPs to calculate p-value and Q-value, representing significance of enriched GO terms/KEGG pathways and false discovery rate (FDR). p-values calculated by Fisher’s exact test, Q-values by R package "q-value". Threshold significance defined as FDR <0.05.
+
+So enrichment tool: Not named? It says "reannotated the rice proteins" and "using all the proteins as background". No specific software named for enrichment besides R package "q-value". In transcriptome analysis (section 4.3) they mention MapMan software for PageMan analysis; defined threshold of significant enrichment term as p<0.01. That's also enrichment analysis (pathway). MapMan/PageMan? Let's read: "Mapman software was used for PageMan analysis, and we defined the threshold of significant enrichment term as p < 0.01."
+
+Thus tool: MapMan (PageMan). Version not described.
+
+Also later in 4.6 they mention "GO and KEGG databases" used for enrichment. Statistical test: Fisher's exact test. Q-values via R package "q-value". Multiple testing correction: Yes (FDR <0.05). Background gene list: they used all the proteins as background. That's described.
+
+Thus answer.
+
+Now compile table with columns: Question and Answer? Or list each Q.
+
+Let's format with rows per question.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **What tool was used for pathway enrichment analysis?** | MapMan (PageMan); GO/KEGG enrichment (performed via custom R scripts using Fisher’s exact test) |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | Gene Ontology (GO); Kyoto Encyclopedia of Genes and Genomes (KEGG) |
+| **Custom or specific background gene list used?** | Yes (all identified proteins/genes were used as background) |
+| **Statistical test(s) used in enrichment analysis?** | Fisher’s exact test |
+| **Multiple testing correction / FDR applied?** | Yes (FDR < 0.05) |
+

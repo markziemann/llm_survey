@@ -1,0 +1,36 @@
+Thinking...
+We need to answer 6 questions based on article details about pathway enrichment analysis.
+
+First question: "What tool was used for pathway enrichment analysis?" Look at Methods. In Methods we saw "Enrichment of drug classes and their drug-target networks" maybe they used MAGMA pathway analysis for drug class enrichment. Actually they used "Mann–Whitney–Wilcoxon (MWW) rank tests" for enrichment of drug classes, not typical pathway enrichment. But also they used "MAGMA pathway analysis" earlier for drug-target network. Let's locate.
+
+From Methods section: Under "Enrichment of drug classes" they wrote: "We tested for the enrichment of MDD GWAS association signals within major therapeutic classes defined by ATC code, using the complete set of drug-gene interactions (“annotation” dataset) or only curated ChEMBL and PDSP bioactivities (“bioactivity” dataset). We used the Benjamini and Hochberg false discovery rate (FDR) to correct for multiple testing whilst exploring more hypotheses (Fig. 2 and Supplementary Table 5). In the annotation dataset, 13 drug classes were significantly associated with MDD (FDR q-value < 0.05); in the more reliable bioactivity dataset, only five classes were identified as significant (Fig. 2). Both annotation and bioactivity datasets exhibited enrichment for psycholeptics (ATC code N05, P[bioactivity]=9.81×10^-6), antipsychotics (N05A, P[bioactivity]=1.71×10^-5), and sex hormones and modulators of the genital system (G03, P[bioactivity]=5.75×10^-5). Non-selective monoamine reuptake inhibitors (N06AA, a subclass of antidepressants) were only significant in the bioactivity dataset (P[bioactivity]=3.23×10^-3)."
+
+But what about pathway enrichment analysis? They used MAGMA pathway analysis. The term "pathway analysis" appears. In Methods they said: "Drug classes and their drug-target networks ... we used the Benjamini and Hochberg false discovery rate (FDR) to correct for multiple testing whilst exploring more hypotheses (Fig. 2 and Supplementary Table 5)." However, that appears to be for enrichment of drug classes (ATC). The enrichment test they used is Mann–Whitney–Wilcoxon (MWW) rank test, on drugs ordered by MAGMA pathway analysis p-value.
+
+Thus the enrichment analysis tool is MAGMA. They used "MAGMA pathway analysis". Did they state version? Not explicitly; they just mention MAGMA. So version not described.
+
+Which gene set libraries were used? They used drug-gene interaction datasets: "annotation" dataset (complete set of drug-gene interactions) and "bioactivity" dataset (curated ChEMBL and PDSP Ki data). They also used ATC classification for drug classes. So gene set libraries: ATC classification. Also they used "drug-gene interactions" from various databases: DGIdb? Actually they mention "complete set of drug-gene interactions ("annotation" dataset)" and curated ChEMBL and PDSP bioactivities ("bioactivity" dataset). So libraries: ATC code (Anatomical Therapeutic Chemical classification) for drug classes; drug-gene interaction datasets (annotation dataset) possibly from multiple sources but not named. So we list ATC code.
+
+Background gene list? Not described. They used MAGMA which inherently uses all genes? Not described. So answer: Not described.
+
+Statistical tests used in enrichment analysis: Mann–Whitney–Wilcoxon rank test (MWW). Also they mention Benjamini-Hochberg FDR for multiple testing correction.
+
+Multiple testing correction applied: Yes, they used Benjamini and Hochberg false discovery rate (FDR). Also Bonferroni correction used for drug class enrichment (they mention Bonferroni correction based on number of tested classes). So multiple testing correction: Yes.
+
+Now compile table with columns: Question, Answer(s). Need to list multiple items separately where needed.
+
+Answer format: Provide table.
+
+Let's produce.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **What tool was used for pathway enrichment analysis?** | MAGMA (pathway/gene‑set analysis) |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | ATC classification (drug classes) |
+| **Custom or specific background gene list used?** | Not described |
+| **Statistical test(s) used in enrichment analysis?** | Mann–Whitney–Wilcoxon (MWW) rank test |
+| **Multiple‑testing correction / FDR applied?** | Yes (Benjamini‑Hochberg FDR) |
+

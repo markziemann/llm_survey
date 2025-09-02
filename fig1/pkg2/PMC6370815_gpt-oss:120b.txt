@@ -1,0 +1,40 @@
+Thinking...
+We need to extract info about pathway enrichment analysis from methods etc.
+
+From text:
+
+Functional Enrichment Analysis section:
+
+"Genes were annotated with information from Gene Ontology (GO), which provides information on molecular function, as well as various pathway resources for information on involvement in biological signaling pathways. The Gene Ontology, biological processes/functions were used for the generation of ‘migo_bp’ annotations, and Gene Ontology pathways was the source of curated ‘migo_pathways’. The results are displayed in a bar chart, which gives an overview of the biological categories found most frequently among the genes of the input gene set. For an assessment of the true enrichment of a category, Fisher’s exact test with Benjamini-Hochberg correction for multiple testing was applied. Values of P ≤ 0.05 indicate a significant enrichment relative to the background (whole gene sets with corresponding Entrez-IDs of the Agilent 8 × 60 K Whole Human Genome Oligo Microarray) of the respective category."
+
+Later:
+
+"Moreover, statistical software R-3.4.1 (https://www.R-project.org) with additional package forestplot_1.7.2 (https://CRAN.R-project.org/package=forestplot) was used to create Fig. 4. R-package piano_1.16.4 was applied for KEGG enrichment analysis based on Fisher’s exact test and curated KEGG gene sets from MSigDB (http://software.broadinstitute.org/gsea/msigdb). KEGG pathway plots (Kyoto Encyclopedia of Genes and Genomes) were generated using the “User data mapping” tool on the KEGG website (http://www.kegg.jp)."
+
+Thus tools: R version 3.4.1, package piano 1.16.4, forestplot 1.7.2 (though forestplot is for plotting, not enrichment). Also "User data mapping" tool on KEGG website used for pathway plots.
+
+Earlier they mention "functional enrichment analysis" but not specific tool like DAVID. So answer: Tools used for enrichment analysis: R (version 3.4.1) with piano package (v1.16.4). Possibly also "KEGG User data mapping tool" but that's not a software per se.
+
+Enrichment tool versions: R-3.4.1, piano_1.16.4, forestplot_1.7.2 (if considered). No version for KEGG.
+
+Gene set libraries: Gene Ontology (GO) biological processes/functions (migo_bp), Gene Ontology pathways (migo_pathways), KEGG pathways (curated KEGG gene sets from MSigDB). Also mention MSigDB as source for KEGG sets.
+
+Custom/background list? Yes: background was whole gene sets with corresponding Entrez-IDs of the Agilent 8x60K microarray. So they used specific background list. So answer Yes.
+
+Statistical tests: Fisher’s exact test.
+
+Multiple testing correction: Yes, Benjamini-Hochberg correction.
+
+Now produce table with columns: Question, Answer(s). Provide succinct.
+
+...done thinking.
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Tool used for pathway enrichment analysis | R‑3.4.1 (statistical software); R‑package **piano** (v1.16.4) |
+| 2 | Enrichment tool version(s) described | R‑3.4.1; piano 1.16.4 (forestplot 1.7.2 is only for plotting, not enrichment) |
+| 3 | Gene set libraries used | Gene Ontology (GO) biological processes/functions (migo_bp); Gene Ontology pathways (migo_pathways); KEGG pathways (curated KEGG gene sets from MSigDB) |
+| 4 | Custom or specific background gene list used? | **Yes** – background = whole gene sets with Entrez‑IDs of the Agilent 8 × 60 K Whole Human Genome Oligo Microarray |
+| 5 | Statistical test(s) used in enrichment analysis | Fisher’s exact test |
+| 6 | Multiple testing correction / FDR applied? | **Yes** – Benjamini‑Hochberg correction applied |
+

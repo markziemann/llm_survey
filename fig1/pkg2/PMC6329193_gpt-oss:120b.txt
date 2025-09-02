@@ -1,0 +1,46 @@
+Thinking...
+We need to extract from article details about pathway enrichment analysis. Look at Methods section: under "Data quality control and read mapping..." not there. "DEG analysis" - they used DESeq for differential expression. Then "GO enrichment analysis of the DEGs was performed by the GOseq R package with a corrected P-value ≤0.5 as the cutoff. KOBAS software was used to test the statistical enrichment of the DEGs in the KEGG pathways."
+
+Thus for pathway enrichment analysis they used GOseq R package (for GO enrichment) and KOBAS software (for KEGG pathway enrichment). Also earlier they mention "GO and KEGG enrichment analysis were also employed..." but tools? They used "GOseq R package" and "KOBAS". They also used "STEM software" for temporal expression patterns, then "GO and KEGG enrichment analysis" again. So likely they used GOseq and KOBAS for enrichment. Also possibly "KOBAS" version not described. "GOseq R package" version not described. Gene set libraries: GO (Gene Ontology) and KEGG (Kyoto Encyclopedia of Genes and Genomes). Also possibly "not described" for background gene list.
+
+Statistical test: not described explicitly for enrichment analysis. Might be part of GOseq uses Wallenius non-central hypergeometric? But not described. So answer "Not described". Multiple testing correction: they mention "corrected P-value ≤0.5" for GO enrichment analysis, which implies correction. They used "corrected P-value ≤0.5" maybe from GOseq which uses "P-value" corrected for gene length bias; GOseq uses "Benjamini-Hochberg". But article says "GO enrichment analysis of the DEGs was performed by the GOseq R package with a corrected P-value ≤0.5 as the cutoff." That indicates correction (maybe corrected P-value). Not explicitly mention FDR or Benjamini-Hochberg. So "Not described". For KEGG enrichment they used KOBAS software to test statistical enrichment of the DEGs in KEGG pathways. No mention of multiple testing correction for KEGG. So answer "No" (or Not described). Let's answer accordingly.
+
+Also "Which gene set libraries were used?" GO and KEGG.
+
+Custom background list: Not described.
+
+Statistical test(s) used: Not described.
+
+Multiple testing correction: Not described.
+
+Now produce table with 6 questions.
+
+Let's format table with columns: Question, Answer.
+
+But they want separate answers for each question. Let's produce:
+
+Tool(s) used for pathway enrichment analysis: GOseq R package, KOBAS
+
+Enrichment tool version(s): Not described
+
+Gene set libraries used: GO, KEGG
+
+Custom background list used: Not described
+
+Statistical test(s) used: Not described
+
+Multiple testing correction applied: Not described
+
+Provide as table.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| Tool used for pathway enrichment analysis | GOseq R package; KOBAS |
+| Enrichment tool version(s) described | Not described |
+| Gene set libraries used | Gene Ontology (GO); KEGG |
+| Custom or specific background gene list used? | Not described |
+| Statistical test(s) used in enrichment analysis | Not described |
+| Multiple‑testing correction / FDR applied? | Not described |
+

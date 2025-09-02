@@ -1,0 +1,52 @@
+Thinking...
+We need to locate details in the article about pathway enrichment analysis. Look at Methods.
+
+The article is about integrated analysis of cervical, endometrial, vulvar cancers. The Methods sections: "Gene ontology and pathway enrichment analysis of hub genes". Let's read the relevant text.
+
+From the article (provided above). In Methods section:
+
+"Gene ontology and pathway enrichment analysis of hub genes
+
+The GO function and pathway enrichment analysis of hub genes were performed using the Database for Annotation, Visualization and Integrated Discovery (DAVID) database (https://david.ncifcrf.gov) (p≤0.05). The enrichment results for the hub genes in each cancer type were then visualized using the online tool (http://bioinformatics.psb.ugent.be/webtools/Venn/) (Supplementary Table S3)."
+
+Thus for pathway enrichment, they used DAVID. They also mention KEGG and Biocarta databases later for gene-pathway network. But for enrichment analysis they used DAVID.
+
+Which libraries were used? They mention GO function and pathway enrichment analysis. That implies GO terms and KEGG pathways, perhaps also Biocarta? But specifically they say "The GO function and pathway enrichment analysis of hub genes were performed using the Database for Annotation, Visualization and Integrated Discovery (DAVID) database". So gene set libraries: GO and "pathway" (likely KEGG, Biocarta). However, not explicitly said KEGG. Later in Results they say "Pathway enrichment analysis indicated that 86 pathways are closely associated with the 25 hub genes". They refer to KEGG and Biocarta databases for gene-pathway network: "By mapping the hub genes into the complicated sub-network according to the KEGG and Biocarta databases, a potential gene-pathway network was constructed". That is for constructing network, not necessarily enrichment. But for enrichment they used DAVID which includes KEGG pathway and GO. So we can list GO and KEGG (since DAVID uses KEGG). Also they may have used Biocarta? The pathway enrichment analysis used DAVID; DAVID includes KEGG and other pathways like Biocarta? The article later: "By mapping the hub genes into the complicated sub-network according to the KEGG and Biocarta databases". That is after enrichment. So libraries used for enrichment: GO and KEGG (implied by DAVID). Not explicit about Biocarta for enrichment. So we include GO and KEGG.
+
+Background gene list? Not described. They did not mention using custom background. So answer Not described.
+
+Statistical test used? Not described. They mention p≤0.05 threshold. No mention of hypergeometric, Fisher. So Not described.
+
+Multiple testing correction? Not described. They just use p≤0.05. So No.
+
+Now answer table.
+
+Columns: Question, Answer.
+
+But they want separate answers for each question.
+
+Maybe format:
+
+| Question | Answer |
+|---|---|
+| Tool used for pathway enrichment analysis | DAVID |
+| Enrichment tool version(s) | Not described |
+| Gene set libraries used | GO, KEGG |
+| Custom background gene list used? | Not described |
+| Statistical test(s) used | Not described |
+| Multiple testing correction applied? | No |
+
+Check if any other tool mentioned for pathway enrichment: They also used "ToppGene"? No. Only DAVID.
+
+Thus answer.
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| What tool was used for pathway enrichment analysis? | DAVID |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | GO, KEGG |
+| Does the article describe using a custom or specific background gene list for enrichment analysis? | Not described |
+| What statistical test(s) were used in enrichment analysis? | Not described |
+| Was multiple testing correction / FDR applied to enrichment analysis? | No |
+

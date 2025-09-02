@@ -1,0 +1,53 @@
+Thinking...
+We need to answer six questions about pathway enrichment analysis. We must extract from article text.
+
+Let's scan the Methods section for "DEG enrichment analysis". In Methods:
+
+"DEG enrichment analysis
+
+Gene Ontology (GO) enrichment analysis for all DEGs was performed separately for down- and up-regulated genes by Blast2GO software [62]. The functional classification of unigenes was performed using WEGO software [63]. The significantly enriched GO terms were considered those with a p-value less than 0.05. The DEG-related KEGG pathways were obtained using KOBAS software [64], and pathways with a p-value less than 0.05 were defined as significantly enriched pathways."
+
+So tools: Blast2GO for GO enrichment. KOBAS for KEGG pathway enrichment. Also they used WEGO for functional classification (but that's not enrichment; it's classification). The question: "What tool was used for pathway enrichment analysis?" So KOBAS is a tool for KEGG pathway enrichment. Also Blast2GO for GO enrichment. They also used WEGO but not enrichment. So answer includes Blast2GO and KOBAS.
+
+Version numbers? Not described.
+
+Gene set libraries: GO, KEGG. They also used "KOG" but that's for annotation, not enrichment. So answer: GO, KEGG.
+
+Custom background gene list? Not described. They didn't mention using a specific background list.
+
+Statistical test(s) used: Not described. The article just says "pathways with a p-value less than 0.05 were defined as significantly enriched". No test mentioned.
+
+Multiple testing correction applied? Not described. They only mention p-value threshold.
+
+Now we need to format a table with columns: Question, Answer.
+
+But we need separate lines for multiple tools.
+
+Let's produce a table with rows for each question.
+
+Possible format:
+
+| Question | Answer |
+|---|---|
+| Tool used for pathway enrichment analysis | Blast2GO; KOBAS |
+| Enrichment tool version(s) | Not described |
+| Gene set libraries used | GO; KEGG |
+| Custom background gene list used? | Not described |
+| Statistical test(s) used | Not described |
+| Multiple testing correction applied? | No (or Not described) |
+
+But we must choose between No or Not described. The article does not describe using a background list, so answer "Not described". For statistical test: Not described. For multiple testing correction: No (they didn't mention FDR). However they used "p-value threshold less than 0.05". That's not multiple testing correction. So answer "No".
+
+Thus table.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| What tool was used for pathway enrichment analysis? | Blast2GO; KOBAS |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | Gene Ontology (GO); KEGG |
+| Custom or specific background gene list used? | Not described |
+| What statistical test(s) were used in enrichment analysis? | Not described |
+| Was multiple testing correction / FDR applied to enrichment analysis? | No (not explicitly mentioned) |
+

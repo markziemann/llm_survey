@@ -1,0 +1,44 @@
+Thinking...
+We need to extract from article: "pathway enrichment analysis". Look at Methods: "DEGs were clustered by Short Time-series Expression Miner software (STEM)". Then "DEGs were subjected to KEGG pathway annotation using Blast all software against the KEGG database. KEGG pathways with a Q-value ≤0.05 are significantly enriched in DEGs."
+
+Earlier: "KEGG pathway enrichment analysis of DEGs and material content analysis confirmed that ...". In methods: "Then the DEGs were subjected to KEGG pathway annotation using Blast all software against the KEGG database." They mention "KEGG pathway annotation" not a specific tool like "KOBAS". The enrichment analysis: they used "KEGG pathway annotation". Not sure if they used any specific software. It says "using Blast all software against the KEGG database." That may be the tool for annotation, not enrichment.
+
+Also earlier: "Comparison of unigene expression among treatments was according to DEGSeq ... DEGs ...". But enrichment: "DEGs were clustered by Short Time-series Expression Miner software (STEM)." That's clustering, not enrichment.
+
+Then "KEGG pathways with a Q-value ≤0.05 are significantly enriched in DEGs." So they used KEGG. Statistical test? Not described. Multiple testing correction? They used Q-value ≤0.05 implying FDR? Q-value typically from Benjamini-Hochberg but not explicit. They say "Q-value ≤0.05 are significantly enriched". That's a multiple testing correction? Not explicitly stating method. So answer: Yes? The article mentions Q-value, which is a corrected p-value. But need to see if they explicitly state FDR. It says "KEGG pathways with a Q-value ≤0.05 are significantly enriched in DEGs." Q-value is often FDR. But they didn't say "FDR" or "Benjamini". But Q-value is a corrected p-value. Might count as multiple testing correction. The question: "Was multiple testing correction / FDR applied to enrichment analysis?" Only answer Yes if article explicitly mentions FDR, false discovery rate, Benjamini-Hochberg, or a named correction method for the enrichment analysis. It mentions "Q-value". Not exactly saying "FDR". But Q-value is derived from FDR. It's ambiguous. Probably treat as "Not described" because they didn't explicitly state FDR method. However they said "Q-value ≤0.05". Q-value is a type of FDR-adjusted p-value. It is a multiple testing correction. The article says "Q-value ≤0.05". That indicates they used multiple testing correction. So answer Yes.
+
+Statistical test: Not described.
+
+Now answer.
+
+Table with columns: Tool, Version, Gene set libraries, Background list, Statistical test, Multiple testing correction.
+
+Let's fill.
+
+Tool used for pathway enrichment analysis: KEGG pathway annotation (maybe using Blast all). But the tool is "Blast all software". Not a typical enrichment tool. The article says "DEGs were subjected to KEGG pathway annotation using Blast all software against the KEGG database." So tool: Blastall? Actually "Blast all software" is a tool for alignment, not enrichment. But they used it for annotation. For enrichment they used KEGG pathway analysis. The tool maybe "KEGG". Not a separate enrichment software. So answer: Not described for tool? The question: "What tool was used for pathway enrichment analysis?" The article explicitly mentions "KEGG pathway annotation". That's not a tool, but a database. It also says "Senior bubble charts were constructed using the OmicShare tools, a free online platform for data analysis". That's for visualization, not enrichment.
+
+Thus tool: Not described.
+
+Version: Not described.
+
+Gene set libraries: KEGG, GO, COG, Nr, UniProt, etc. For enrichment they used KEGG pathways. So gene set library: KEGG.
+
+Custom background: Not described.
+
+Statistical test: Not described.
+
+Multiple testing correction: Yes? It says "KEGG pathways with a Q-value ≤0.05 are significantly enriched in DEGs." That's a multiple testing correction. So answer Yes.
+
+Let's produce table.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **What tool was used for pathway enrichment analysis?** | Not described |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | KEGG |
+| **Custom/background gene list used?** | Not described |
+| **Statistical test(s) used in enrichment analysis?** | Not described |
+| **Multiple testing correction / FDR applied?** | Yes (Q‑value ≤0.05 reported) |
+

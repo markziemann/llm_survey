@@ -1,0 +1,48 @@
+Thinking...
+We need to examine the article for details on pathway enrichment analysis.
+
+Search for "enrichment" in the text: we saw "Gene ontology localization enrichment", "Gene ontology cell process enrichment", "Metacore®", etc.
+
+In Additional files, Table S5: "Gene ontology localization enrichment on significantly regulated phospho-proteins after 5, 30 and 60 min of glucose stimulation. ... The table displays a cell process enrichment analysis (p-value and false discovery rate, FDR)". They used Metacore®.
+
+In main text Results: "Gene ontology localization enrichment on significantly regulated phospho-proteins". Likely they used Metacore.
+
+Also "Gene ontology cell process enrichment" etc.
+
+Thus the tool: Metacore® (by Thomson Reuters). Not described version.
+
+Gene set libraries: Gene Ontology (GO) (cellular component? process?), perhaps also Metacore's own ontologies.
+
+Background list: Not described.
+
+Statistical test: Not described? Might be hypergeometric test but not mentioned. The KSEA analysis uses statistical significance of KSEA score; but that's not enrichment.
+
+In Additional file 5: "Kinase-substrate enrichment analysis" (KSEA) but that's for kinases, not pathways.
+
+Thus for pathway enrichment: they used Metacore® for gene ontology enrichment.
+
+Version: Not described.
+
+Gene set libraries: Gene ontology (cell process). Possibly also Mitocarta for mitochondrial proteins but that's not enrichment.
+
+Background list: Not described.
+
+Statistical test: Not described.
+
+Multiple testing correction: They mention "p-value (* ** p<0.001; ** p<0.01; * p<0.05)" and also "false discovery rate, FDR". In Table S5 description: "The table displays a cell process enrichment analysis (p-value and false discovery rate, FDR)". So yes, multiple testing correction applied.
+
+Thus answer.
+
+Now format table with rows for each question.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| What tool was used for pathway enrichment analysis? | Metacore® |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | Gene Ontology (cell process) |
+| Custom or specific background gene list used? | Not described |
+| Statistical test(s) used in enrichment analysis? | Not described |
+| Multiple testing correction / FDR applied? | Yes (FDR mentioned) |
+

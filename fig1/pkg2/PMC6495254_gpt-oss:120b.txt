@@ -1,0 +1,70 @@
+Thinking...
+We need details about pathway enrichment analysis. Look for methods. In discussion they mention term enrichment (Figure 5 D-F etc.) and functional clustering using STRING. Need to find Methods section. The excerpt doesn't include methods. Might be earlier in article not shown. The provided text is from Results and Discussion, not Methods. Need to locate statements about enrichment analysis: In Figures they say "Fisher's exact test and Benjamini-Hochberg correction". Let's search within given text: I recall reading: "We used data generated in this study, and to increase statistical accuracy we included tyrosine, arginine, and histidine ADP-ribosylation data from our previous study... For tyrosine ADP-ribosylation, we mainly noted a high propensity for these events to modify ribosomal proteins (Fig. 5D and supplemental Table S6)". It says "We used data generated in this study... we used to increase statistical accuracy we included ...". The enrichment analysis likely used Fisher's exact test and Benjamini-Hochberg correction. Look for "Fisher's exact test" mention: In earlier part: "We used data generated in this study, and to increase statistical accuracy we included tyrosine, arginine, and histidine ADP-ribosylation data from our previous study (22). For tyrosine ADP-ribosylation, we mainly noted a high propensity for these events to modify ribosomal proteins (Fig. 5D and supplemental Table S6), with no strong enrichment for any other processes compared with general ADP-ribosylation." Not mention statistical test.
+
+Later: "To further validate and visualize our observations, we subjected all proteins to functional clustering analysis through the STRING database, and then clustered interconnected proteins by the major function we derived for ADP-ribosylation of the specific amino acid types (supplemental Fig. S5)." So tool: STRING database used for functional clustering, not necessarily enrichment but maybe.
+
+Earlier: In Figure 4 and 5 they show term enrichment with "Fisher's exact test and Benjamini-Hochberg correction". Let's search: I recall reading: "For serine ADP-ribosylation ... using data generated in this study, and to increase statistical accuracy we included ... For tyrosine ADP-ribosylation, ... enriched processes ... The protein sequence context ..."
+
+Specifically for PTM enrichment analysis: "To this end, we used data generated in this study, and to increase statistical accuracy we included tyrosine, arginine, and histidine ADP-ribosylation data from our previous study (22). For tyrosine ADP-ribosylation, we mainly noted a high propensity for these events to modify ribosomal proteins (Fig. 5D and supplemental Table S6), with no strong enrichment for any other processes compared with general ADP-ribosylation."
+
+But they likely used "STRING" for clustering and "DAVID"? Not mentioned.
+
+Also earlier for functional enrichment of co-modified peptides: "Systems-wide mapping of these co-modified peptides suggests that ... co-targeting of the same residues, ADP-ribosylation and phosphorylation may frequently be targeted to the same regions of proteins." Might have used "Fisher's exact test". Actually earlier they mention: "We used data generated in this study, and to increase statistical accuracy we included ... For tyrosine ADP-ribosylation, we mainly noted a high propensity for these events to modify ribosomal proteins (Fig. 5D and supplemental Table S6)". This suggests GO term enrichment.
+
+They also mention: "To further validate and visualize our observations, we subjected all proteins to functional clustering analysis through the STRING database, and then clustered interconnected proteins by the major function we derived for ADP-ribosylation of the specific amino acid types (supplemental Fig. S5)." That's clustering, not enrichment.
+
+The article might have a Methods section not included in the excerpt. Since we only have the large excerpt, the Methods section not present. So many details might be "Not described".
+
+We need to answer 6 questions. Let's list:
+
+Tool(s) used for pathway enrichment analysis: Possibly "STRING" used for functional clustering, but enrichment analysis they used "Fisher's exact test" with "Benjamini-Hochberg correction". They also mention "Not described" for tool version.
+
+Gene set libraries: "GO" (Gene Ontology) is mentioned many times for enriched terms. Also "STRING" uses its own network. Not mention KEGG, Reactome. So only GO.
+
+Background gene list: They might have used "full nuclear proteome" as background? Not described explicitly. So "Not described".
+
+Statistical test: "Fisher's exact test" is explicitly mentioned for enrichment of serine residues and for co-targeting: In the methods for co-targeting they said "Fisher's exact test and Benjamini-Hochberg correction". That's for enrichment of co-targeting? Actually earlier: "We observed a significant overlap with phosphoserines. ... Specifically we used Fisher's exact test and Benjamini-Hochberg correction." Let's search: In text: "We observed a significant overlap with phosphoserines. ... Specifically those for which regulatory kinases are known. Biologically, this suggests a regulatory role for ADP-ribosylation...". Not certain.
+
+But there is a statement: "We used Fisher's exact test and Benjamini-Hochberg correction" earlier in the article when describing the enrichment of terms. Let's find: In the excerpt, they said: "We used data generated in this study... For tyrosine ADP-ribosylation, we mainly noted a high propensity for these events to modify ribosomal proteins (Fig. 5D and supplemental Table S6)". No test.
+
+But earlier: "Term enrichment was performed using Fisher's exact test and Benjamini-Hochberg correction." Not see.
+
+Let's search the excerpt for "Fisher". I see: "We used data generated in this study, and to increase statistical accuracy we included ... For tyrosine ADP-ribosylation, we mainly noted a high propensity for these events to modify ribosomal proteins (Fig. 5D and supplemental Table S6)". Not mention test.
+
+Later: "We used data generated in this study... We observed modification of ribosomal proteins ...". No.
+
+But earlier: In the results they say: "We used data generated in this study... For tyrosine ADP-ribosylation, we mainly noted a high propensity for these events to modify ribosomal proteins (Fig. 5D...)." No.
+
+Maybe earlier in the article they described enrichment analysis methodology in Methods: Not included.
+
+Thus we likely need to answer many "Not described".
+
+Check for "Fisher's exact test" earlier: In the excerpt: "We observed a drop in identification efficiency...". Not.
+
+Search: "hypergeometric". Not.
+
+Search for "Benjamini". There is mention: "We used a low amount of SA energy increased both identification...". Not.
+
+But there is: "We observed a drop in identification efficiency at the highest level of SA energy we tested". Not.
+
+Later: "Overall, we found that using EThcD fragmentation with a low amount of SA energy increased both identification and localization of ADP-ribosylation, compared with pure ETD fragmentation. However, compared with using either Lys-C or trypsin to digest the samples, we did not observe a lot of complementarity between analyzing samples with either ETD or EThcD, with EThcD generally outperforming ETD." No.
+
+So the enrichment analysis details not described in the provided excerpt.
+
+Thus answer: Tool: Not described. Version: Not described. Gene set libraries: Not described. Custom background: Not described. Statistical test: Not described. Multiple testing correction: Not described.
+
+But we need to answer with table format.
+
+Let's produce table with rows for each question.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| What tool was used for pathway enrichment analysis? | Not described |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | Not described |
+| Does the article describe using a custom or specific background gene list for enrichment analysis? | Not described |
+| What statistical test(s) were used in enrichment analysis? | Not described |
+| Was multiple testing correction / FDR applied to enrichment analysis? | Not described |
+

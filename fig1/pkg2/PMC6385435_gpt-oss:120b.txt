@@ -1,0 +1,52 @@
+Thinking...
+We need to parse the Methods section regarding gene enrichment analysis. Let's read the "Gene enrichment analysis" subsection.
+
+From the text:
+
+"Gene enrichment analysis
+
+A tissue restricted gene enrichment was performed for each GWA. The methodology described by Baranzini et al. [[188]109] was modified and carried out using in-house JAVA scripts. From each GWA, all SNPs with p-value ≤0.05 were included in the gene enrichment analysis and were defined as “raw” associated SNPs. Raw associated SNPs were assigned to genes if they were located inside a gene or within 3 kilobases upstream or downstream from a gene. Gene locations were obtain using Biomart from the Bos taurus UMD 3.1.1 assembly in Ensembl [[189]110, [190]111]. The tissue restriction was performed by filtering genes expressed in bovine skeletal muscle, based on a list of 10,919 genes reported by the EMBL-EBI Expression Atlas (Additional file [191]12). The list included genes reported as expressed in at least one of the two types of experiments with codes E-MTAB-2798 and E-MTAB-2596. This list was also used as a background list in the tissue restricted gene enrichment analysis. The correlation between the raw associated SNPs within each gene was calculated based on their p-value, and SNPs were considered correlated when r^2 > ±0.3. A set of the most significant uncorrelated SNPs for each gene were retained for each gene. When all raw associated SNPs within a gene were correlated, the gene was included only once in the final gene list. Genes with more than one raw associated uncorrelated SNPs were included as many times as the number of uncorrelated SNPs in the final gene list to identify genes with possibly multiple functional polymorphisms. The maximum number of raw associated uncorrelated SNPs for one gene was three (Additional file [192]13).
+
+The available GO terms for molecular function, cellular component and biological process were included in the analysis using a GO term estimation for the background list in DAVID Bioinformatic Resources 6.8 server [[193]112]. A total number of 105, 89, 85, 92, 81, 86, and 95 GO terms for WBSF, marbling, cooking loss, tenderness, juiciness, connective tissue, and flavor, respectively, were included (Additional file [194]14). Gene lists with 1714, 1636, 1632, 1753, 1753, 1666, and 1684 genes for WBSF, marbling, cooking loss, tenderness, juiciness, connective tissue, and flavor, respectively, were used (Additional file [195]14). Gene enrichment was calculated using the hypergeometric test available in the Apache Commons Mathematics Library for JAVA [[196]113]. The Benjamini-Hochberg p-value correction was performed for each pathway by trait. The R package “limma” [[197]114] was used to visualize gene overlapping between traits if the same pathway was determined as enriched in numerous traits.
+
+A second analysis was performed using DAVID Bioinformatic Resources 6.8 server [[198]112]. SNPs with p-value ≤0.05 from each GWA analysis were assigned to genes as described in the tissue restricted gene enrichment. All genes were included in the list only once (Additional file [199]14), regardless of how many uncorrelated associated SNP they contained. A total number of 2762, 2634, 2720, 2788, 2840, 2685, and 2764 genes for WBSF, marbling, cooking loss, tenderness, juiciness, connective tissue, and flavor, respectively, were included in the gene list (Additional file [200]4). The default DAVID background list was used during the analysis."
+
+Thus, they used two enrichment approaches:
+
+- Tissue restricted gene enrichment: custom method using in-house Java scripts and hypergeometric test from Apache Commons Math library. They also used GO terms from Ensembl gene lists as libraries (GO terms for molecular function, cellular component, biological process). They also used DAVID for a second analysis.
+
+- The second analysis: DAVID Bioinformatic Resources 6.8 server (so tool DAVID version 6.8). Also earlier they used DAVID 6.8 for functional classification (maybe also for enrichment). They mention "DAVID Bioinformatic Resources 6.8 server". They also mention "the hypergeometric test available in the Apache Commons Mathematics Library for JAVA". So statistical test: hypergeometric test.
+
+- Multiple testing correction: They mention "The Benjamini-Hochberg p-value correction was performed for each pathway by trait." That is correction for enrichment. So Yes.
+
+Now we need to answer each question.
+
+1. What tool was used for pathway enrichment analysis? They used:
+
+- In-house JAVA scripts for tissue-restricted gene enrichment (but that's not a standard tool; however it's an "in-house" method). It used hypergeometric test from Apache Commons Mathematics Library. This counts as a tool? The question: "List all tools or software packages used (e.g., DAVID, GSEA, Enrichr, etc.) that are explicitly mentioned in the article for enrichment analysis. Do not include tools used only for preprocessing (e.g., Salmon)." So the tools for enrichment: "DAVID Bioinformatic Resources 6.8 server", "Apache Commons Mathematics Library for JAVA". Possibly also "in-house JAVA scripts". Should we list that as a tool? It is a custom script, but it's a software component. The question says "If more than one tool, method, or database is used, list all of them separately." So we list: "DAVID Bioinformatic Resources 6.8", "Apache Commons Mathematics Library for JAVA". Also "in-house JAVA scripts". However it's not a named tool but it's a custom script. Should we list it? It says "list all tools or software packages used (e.g., DAVID, GSEA, Enrichr, etc.) that are explicitly mentioned in the article for enrichment analysis." In-house Java scripts are a software package? It's custom code, but still a software component. It might be considered a tool. The phrase "tools" could include "Apache Commons Mathematics Library". I'd list both.
+
+2. Were enrichment tool version(s) described? DAVID version 6.8 is described. Apache Commons Math Library version? Not described. So we list version for DAVID: 6.8. For Apache Commons Math Library: Not described.
+
+3. Which gene set libraries were used? They mention "GO terms" (Gene Ontology). They also talk about "GO term estimation for the background list in DAVID". No mention of KEGG, Reactome, etc. So only GO (molecular function, cellular component, biological process). So answer: "Gene Ontology (GO)".
+
+4. Does the article describe using a custom or specific background gene list for enrichment analysis? Yes, they used a background list: "List of 10,919 genes reported as expressed in bovine skeletal muscle" from EMBL-EBI Expression Atlas. This was used as background in the tissue restricted gene enrichment. Also for DAVID they used the default background list. So they described a specific background for the tissue restricted analysis, and default for DAVID. So answer: Yes.
+
+5. What statistical test(s) were used in enrichment analysis? Hypergeometric test (explicitly mentioned). Also "hypergeometric test available in the Apache Commons Mathematics Library". So answer: hypergeometric test.
+
+6. Was multiple testing correction / FDR applied to enrichment analysis? They say "The Benjamini-Hochberg p-value correction was performed for each pathway by trait." That's multiple testing correction. So Yes.
+
+Now produce table with columns: Question, Answer(s). Possibly multiple rows.
+
+Let's format as table with rows for each question.
+
+...done thinking.
+
+| # | Question | Answer |
+|---|---|---|
+| 1 | What tool was used for pathway enrichment analysis? | DAVID Bioinformatic Resources 6.8; Apache Commons Mathematics Library for JAVA (hypergeometric test implementation); in‑house JAVA scripts |
+| 2 | Were enrichment tool version(s) described? | DAVID 6.8; Apache Commons Mathematics Library – Not described |
+| 3 | Which gene set libraries were used? | Gene Ontology (GO) – molecular function, cellular component, biological process |
+| 4 | Does the article describe using a custom or specific background gene list for enrichment analysis? | Yes |
+| 5 | What statistical test(s) were used in enrichment analysis? | Hypergeometric test |
+| 6 | Was multiple testing correction / FDR applied to enrichment analysis? | Yes (Benjamini‑Hochberg correction)
+
