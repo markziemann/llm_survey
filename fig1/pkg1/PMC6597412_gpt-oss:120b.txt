@@ -1,0 +1,89 @@
+Thinking...
+We need to locate description of pathway enrichment analysis in Methods. Let's search the text.
+
+Scrolling through Methods earlier: I saw "Target prediction and enrichment analysis" maybe under Methods? Actually there is a heading "Target prediction and enrichment analysis". Let's locate that part.
+
+Scrolling: after "Target prediction and enrichment analysis" in Results they described using 9 online databases to predict target genes. Then "These genes were subjected to GO and pathway enrichment analyses". But not specific tool.
+
+In Methods, there is a section "Target prediction and enrichment analysis" maybe. Let's search earlier.
+
+Scrolling upward earlier: The Methods included "Target prediction and enrichment analysis" as a heading? I saw it under Results, but maybe they have it as part of Methods? In the Methods earlier there was "Target prediction and enrichment analysis" not included. Let's check.
+
+Going back: After "Target prediction and enrichment analysis" heading appears in Results: yes there is a subheading "Target prediction and enrichment analysis" under Results. In Methods there may be a separate section but not included above. Let's examine earlier sections again: The Methods sections listed include: "Data acquisition and processing", "Differential expression analysis", "Survival analysis and receiver operating characteristic (ROC) curve analysis", "Cell culture", "RNA extraction and qRT-PCR", "Cell proliferation assay", "Cell apoptosis assay", "Cell migration assay", "Target prediction and enrichment analysis", "Statistical analysis". Yes there is a "Target prediction and enrichment analysis" under Methods.
+
+We need to extract the details there.
+
+Let's locate that text: The Methods excerpt includes:
+
+"Target prediction and enrichment analysis
+
+   To investigate the mechanisms underlying miR-148b-3p, miR-190b, and
+   miR-429 functions, 9 online databases were scanned to predict target
+   genes. We gathered target genes predicted by at least 4 algorithms to
+   obtain 405 target genes for miR-148b-3p, 76 target genes for miR-190b,
+   and 299 target genes for miR-429 ([100]Supplementary Table 2). These
+   genes were subjected to GO and pathway enrichment analyses
+   ([101]Supplementary Tables 3, [102]4, [103]5). The result revealed that
+   the targets of candidate miRNAs were involved in several critical
+   cancer-related pathways, including transforming growth factor
+   (TGF)-beta signaling pathway, Wnt signaling pathway, p53 pathway, p38
+   mitogen-activated protein kinase (MAPK) pathway and mammalian target of
+   rapamycin (mTOR) signaling pathway ([104]Figure 6)."
+
+So the tool used for pathway enrichment analysis is not explicitly named. It just says "GO and pathway enrichment analyses". No specific software like DAVID, GSEA. So answer "Not described".
+
+Were enrichment tool version(s) described? No.
+
+Which gene set libraries were used? It mentions GO (Gene Ontology) and pathways; could include pathways like TGF-beta, Wnt, p53, MAPK, mTOR. But those are pathways, not libraries like KEGG. It says "GO and pathway enrichment analyses". So gene set libraries: GO (Gene Ontology). Pathway library unspecified; could be KEGG, but not stated. So we only list GO.
+
+Does article describe using a custom or specific background gene list? Not described.
+
+Statistical tests used in enrichment analysis? Not described.
+
+Multiple testing correction? Not described.
+
+Thus produce table with six rows.
+
+Let's list tools: Not described.
+
+Version(s): Not described.
+
+Gene set libraries: GO (explicit). Pathways not a library; just "pathway enrichment analyses". But not specify library like KEGG. So only GO.
+
+Custom background: Not described.
+
+Statistical test(s): Not described.
+
+Multiple testing correction: No (or Not described). The question: "Was multiple testing correction / FDR applied to enrichment analysis?" Answer: No (since not mentioned). So we put "No".
+
+Now format table.
+
+Columns: Question, Answer.
+
+We need to list each tool separately; but none described.
+
+Thus:
+
+| Question | Answer |
+|---|---|
+| What tool was used for pathway enrichment analysis? | Not described |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | GO |
+| Does the article describe using a custom or specific background gene list for enrichment analysis? | Not described |
+| What statistical test(s) were used in enrichment analysis? | Not described |
+| Was multiple testing correction / FDR applied to enrichment analysis? | No |
+
+Check if they used any tool like "DAVID". Not mentioned.
+
+Thus final answer.
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| What tool was used for pathway enrichment analysis? | Not described |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | GO |
+| Does the article describe using a custom or specific background gene list for enrichment analysis? | Not described |
+| What statistical test(s) were used in enrichment analysis? | Not described |
+| Was multiple testing correction / FDR applied to enrichment analysis? | No |
+

@@ -1,0 +1,75 @@
+Thinking...
+We need to extract from the article (Methods, Results, etc.) the details about pathway enrichment analysis.
+
+First, locate where enrichment analysis is described.
+
+From the Methods section (under "Data acquisition and statistical analyses"):
+
+- "Differentially reactive antigens were determined using class comparison analyses (BRB-Array Tools)". That's not enrichment.
+
+- Then later: "Differentially reactive protein names were submitted and analyzed with Ingenuity ([156]https://www.qiagen.com/ingenuity) using Global Canonical Pathways (GCP) tool, which utilize right-tailed Fisher’s exact test for p-value calculations."
+
+- "Pathway-commons analyses were implemented in Webgestalt (Web-based Gene-set Analysis Toolkit; [157]http://webgestalt.org) [[158]69, [159]70, [160]71], which incorporate various tools different from Ingenuity. Webgestalt uses hypergeometric test for enrichment analyses and for each analysis the top 10 most significant categories were selected (as at least 2 proteins per category)."
+
+- "Comparing identified differentially reactive antigens (as gene set) with other publicly available microarray results we used Molecular Signature Database (MSigDB) within GSEA, where oncogenic and immunologic signatures were tested ([161]http://software.broadinstitute.org/gsea/index.jsp) [[162]72, [163]73]."
+
+- "Cytogenetic mapping (enrichment) analysis was also performed in GSEA, then UCSC table browser and Genome graph tools were used to illustrate genomic locations."
+
+- "For KEGG (Kyoto Encyclopedia of Genes and Genomes), Reactome, Interpro protein domain-based functional classification and protein-protein interactions analysis and visualization we have utilized String (Search Tool for the Retrieval of Interacting Genes/Proteins; [164]https://string-db.org/) protein interaction database or through Reactome website ([165]https://reactome.org) [[166]74, [167]75, [168]76, [169]77]."
+
+Thus, tools used for enrichment:
+
+- Ingenuity (no version specified)
+- WebGestalt (no version specified)
+- GSEA (Gene Set Enrichment Analysis) (using MSigDB; version not described)
+- String (for protein-protein interactions and possibly functional classification) – but is that considered enrichment? It is used for KEGG, Reactome, Interpro classification and interactions; the question: "tool was used for pathway enrichment analysis" includes String? String is used for KEGG and Reactome enrichment? In text: "For KEGG (Kyoto Encyclopedia of Genes and Genomes), Reactome, Interpro protein domain-based functional classification and protein-protein interactions analysis and visualization we have utilized String ...". This suggests they used String for KEGG, Reactome, Interpro classification, but String is a protein interaction database that can do enrichment (functional enrichment). So we should list it.
+
+Also Reactome website used directly (maybe not a tool but website). But we can consider "Reactome" as a gene set library.
+
+Additionally, they used "Molecular Signature Database (MSigDB) within GSEA" for oncogenic and immunologic signatures.
+
+So we have tools: Ingenuity, WebGestalt, GSEA (as part of MSigDB), String.
+
+Version numbers: Not described for any of these.
+
+Gene set libraries used: Global Canonical Pathways (Ingenuity uses its own), Pathway Commons (via WebGestalt) — but Pathway Commons is a database. But they also mention "Molecular Signature Database (MSigDB)" for oncogenic and immunologic signatures. For enrichment they also used KEGG, Reactome, InterPro, Cytogenetic mapping (GSEA). They also used "Webgestalt" which incorporates various gene sets but they selected top 10 categories; not specific library mentioned, but they used "Pathway-commons analyses" and "Webgestalt" uses hypergeometric test. The actual gene set libraries used: Not explicitly stated beyond "Pathway-commons analyses were implemented in Webgestalt". WebGestalt supports many libraries but they didn't specify which; maybe they used the default (not described). However they said "comparing identified differentially reactive antigens (as gene set) with other publicly available microarray results we used Molecular Signature Database (MSigDB) within GSEA, where oncogenic and immunologic signatures were tested." So gene set libraries: MSigDB (oncogenic, immunologic signatures). Also they performed KEGG and Reactome via String. So libraries: KEGG, Reactome, InterPro. Also "Global Canonical Pathways" from Ingenuity (i.e., Ingenuity's canonical pathways). So we list those.
+
+Background gene list: They mention "For each analysis, as background proteins (i.e. random entries), we have used all annotated proteins presented on the 16k protein microarray; except for cytogenetic map analyses (GSEA) where the whole human genome (as gene-positions) was applied (Genome Reference Consortium Human Build 38)." So yes they used a custom background (all annotated proteins on array). So answer: Yes.
+
+Statistical test(s) used: Ingenuity uses right-tailed Fisher’s exact test. WebGestalt uses hypergeometric test. GSEA (for MSigDB) uses ... not described? Actually GSEA uses its own algorithm, but not mentioned. For KEGG/Reactome via String maybe uses hypergeometric test (String uses hypergeometric). But they specifically mention "Webgestalt uses hypergeometric test for enrichment analyses". And Ingenuity uses right-tailed Fisher's exact test. So list both.
+
+Multiple testing correction: For Ingenuity they mention "False Discovery Rates (FDR)" maybe? In methods: "Differentially reactive antigens were determined using class comparison analyses (BRB-Array Tools) at the significance thresholds for univariate tests of p≤0.001 and minimum fold changes of 1.5 between groups." That's for differential antigens, not enrichment. For enrichment: In Ingenuity they calculate p-values, but they didn't mention correction. In WebGestalt they just select top 10 categories, no mention of correction. However earlier they say "Only answer Yes if the article explicitly mentions FDR, false discovery rate, Benjamini-Hochberg, or a named correction method for the enrichment analysis." In the article they mention "False Discovery Rates (FDR)" in Table Supplementary (for antigens). Not for enrichment. In Ingenuity they maybe display FDR? In the Results they show "p-values and False Discovery Rates (FDR)" for differential antigens, not for pathways. In pathway analysis they mention p-values but not FDR correction. So answer: No (not described). Or "Not described". The question: "Was multiple testing correction / FDR applied to enrichment analysis?" We need explicit mention. The article says "We used right-tailed Fisher’s exact test for p-value calculations." It doesn't mention FDR for enrichment. So answer: No.
+
+Now compile the answers.
+
+We need table format with rows for each question? Or column headings? Provide table with fields.
+
+Let's construct:
+
+| Question | Answer |
+|---|---|
+| Tool(s) used for pathway enrichment analysis | Ingenuity, WebGestalt, GSEA, String, Reactome website |
+| Enrichment tool version(s) | Not described |
+| Gene set libraries used | Ingenuity Global Canonical Pathways, Molecular Signature Database (MSigDB) oncogenic and immunologic signatures, KEGG, Reactome, InterPro, Pathway Commons (via WebGestalt) |
+| Custom background gene list used? | Yes |
+| Statistical test(s) used | Fisher’s exact test (right‑tailed), hypergeometric test |
+| Multiple testing correction applied? | No |
+
+Make sure to separate tools that are explicitly mentioned.
+
+Check if they used "WebGestalt" version? Not described.
+
+Check if they used "String" version? Not described.
+
+Thus final.
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **Tool(s) used for pathway enrichment analysis** | Ingenuity, WebGestalt, GSEA (via MSigDB), String, Reactome website |
+| **Enrichment tool version(s) described** | Not described |
+| **Gene set libraries used** | Ingenuity Global Canonical Pathways, Molecular Signature Database (MSigDB) oncogenic and immunologic signatures, KEGG, Reactome, InterPro, Pathway‑Commons (via WebGestalt) |
+| **Custom or specific background gene list used?** | Yes |
+| **Statistical test(s) used in enrichment analysis** | Right‑tailed Fisher’s exact test, hypergeometric test |
+| **Multiple‑testing correction / FDR applied to enrichment analysis?** | No |
+

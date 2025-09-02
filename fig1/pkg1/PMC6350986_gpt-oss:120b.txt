@@ -1,0 +1,46 @@
+Thinking...
+We need to locate details about pathway enrichment analysis in the Methods. Search text for "enrichment". In Materials and methods section, there is "Statistics" and "GSEA". Let's read.
+
+In Methods, after "Gene annotations were obtained from Vectorbase using BioMart. Functional groups were assigned to the following categories: ...". That is classification, not enrichment.
+
+Earlier in Results, they talk about "GSEA", "Gene set enrichment analysis". Let's locate.
+
+In the article: I recall reading "For GSEA, the mitochondrial and redox categories were combined". So they used GSEA? But maybe they used Gene Set Enrichment Analysis (GSEA) conceptually to test for over-representation of functional groups among high association set. Let's search.
+
+In "Statistics" paragraph: "Descriptive statistics were calculated in R (version 3.0.2). The ratio of variant sites per nucleotide of aligned reads was calculated as follows: binomial probability distributions were performed and hypergeometric tests were calculated; each functional subset was compared to the corresponding group within the set of all coding genes (n = 14,626). This analysis allowed us to identify the gene sets that were enriched compared to similar categories among all coding genes."
+
+So they performed hypergeometric tests for functional subsets. That is enrichment analysis. Did they use a tool? Not described as a specific software; they used "hypergeometric tests" probably implemented in R. No specific tool like DAVID.
+
+In the "Functional groups were assigned to the following categories:" they listed categories and then "For GSEA, the mitochondrial and redox categories were combined". So they mention GSEA, but GSEA is a method (Gene Set Enrichment Analysis) but also a tool; they may be using the term generically. They say "For GSEA, the mitochondrial and redox categories were combined". That suggests they used Gene Set Enrichment Analysis conceptually, but not a specific tool. No version.
+
+Thus answer:
+
+Tool used: Not described? Actually they didn't mention a tool; they just performed hypergeometric test. So "Not described". Or maybe they used "Benjamini-Hochberg False Discovery Rate" for gene-wise averages, not enrichment. That is separate. For enrichment they used hypergeometric test, but no tool.
+
+Thus table:
+
+Tool(s) used for pathway enrichment analysis: Not described
+
+Version(s): Not described
+
+Gene set libraries: Not described
+
+Custom background: Not described (maybe they used all coding genes as background; they said "compared to corresponding group within the set of all coding genes". That indicates they used all coding genes as background. So answer: Yes? Actually they described using "each functional subset was compared to the corresponding group within the set of all coding genes (n = 14,626)." That's a background list. So "Yes".
+
+Statistical test: hypergeometric test
+
+Multiple testing correction: Not described (they did hypergeometric test and maybe used p-value threshold, but not FDR). So "No".
+
+Now format table with rows for each question.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **Tool used for pathway enrichment analysis** | Not described |
+| **Enrichment tool version(s)** | Not described |
+| **Gene set libraries used** | Not described |
+| **Custom/background gene list used?** | Yes (all coding genes, n = 14,626) |
+| **Statistical test(s) used** | Hypergeometric test |
+| **Multiple‑testing correction applied** | No |
+

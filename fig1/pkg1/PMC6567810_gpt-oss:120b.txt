@@ -1,0 +1,33 @@
+Thinking...
+We need to read article for pathway enrichment analysis details. The article includes a methods? Not displayed earlier. In the given text, we saw a section in results: "We studied the KEGG pathways of selected target genes so as to further uncover the biological function of the EV-miRNAs (Figure. 6f). The most enriched dysfunctional pathways included the insulin signalling pathway, Wnt signalling pathway, FoxO signalling pathway and mTOR signalling pathway, etc. The KEGG pathway analysis reveals the function of the signature EV-miRNAs partly, and signal-related function was highlighted among all the subsystems, which was consistent with GO terms of these selected genes."
+
+Earlier: "We studied the KEGG pathways of selected target genes so as to further uncover the biological function of the EV-miRNAs (Figure. 6f)."
+
+So the tool used for pathway enrichment analysis? Not explicit; they mention using "KEGG pathway analysis", "GO terms". But not mention software (e.g., DAVID, KOBAS). Could be "Cytoscape" for network visualization, not enrichment.
+
+Search for methods: Not provided in given excerpt; only results mention "The most enriched dysfunctional pathways included the insulin signalling pathway, Wnt signalling pathway, FoxO signalling pathway and mTOR signalling pathway, etc. The KEGG pathway analysis reveals the function ...". No mention of tool.
+
+Thus: tool: Not described.
+
+Version: Not described.
+
+Gene set libraries: GO, KEGG (explicitly mentioned). Possibly also mention "target genes were selected", but not described as background.
+
+Custom background: Not described.
+
+Statistical tests: Not described.
+
+Multiple testing correction: Not described.
+
+Let's answer.
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **What tool was used for pathway enrichment analysis?** | Not described |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | GO, KEGG |
+| **Custom or specific background gene list used?** | Not described |
+| **Statistical test(s) used in enrichment analysis?** | Not described |
+| **Multiple testing correction / FDR applied?** | No |
+

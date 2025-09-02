@@ -1,0 +1,37 @@
+Thinking...
+We need to locate methods for pathway enrichment analysis. Let's scan article.
+
+In Results section: "Signaling pathway analysis was performed. As expected, we found that Wnt signaling pathway was significantly enriched." In Methods:
+
+"DMRs and DMGs Identify
+
+   EdgeR integrated in the R packages MEDIPS with 200 bp window size was used to identify DMRs between different groups (cite). MEDIPS identified DMRs between groups by calculating Wilcoxon rank tests for the reads per million (rpm) values of each window (cite MEDIPS). DMRs were filtered for windows with p < 0.01. Further, ChIPseeker was performed to annotate the DMRs in gene level, and only the genes with promoter annotated by DMRs were defined as differential methylated genes (DMGs) (Yu et al., 2015). All DMGs were subsequently analyzed with GO and KEGG pathway of the DAVID web server (Huang da et al., 2009)."
+
+Thus pathway enrichment analysis used DAVID (web server). Version not described. Gene set libraries: GO and KEGG pathways. Did they use custom background? Not described. Statistical test: Not described. Usually DAVID uses modified Fisher Exact (EASE). But article didn't specify. So "Not described". Multiple testing correction? Not described. So answer.
+
+Need to list tools: DAVID web server.
+
+Version: Not described.
+
+Gene set libraries: GO, KEGG.
+
+Custom background: Not described.
+
+Statistical test(s): Not described.
+
+Multiple testing correction: Not described.
+
+Now produce table format with columns: Question, Answer(s). Possibly multiple rows.
+
+Let's produce.
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **What tool was used for pathway enrichment analysis?** | DAVID web server |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | Gene Ontology (GO), KEGG pathway |
+| **Custom or specific background gene list used?** | Not described |
+| **Statistical test(s) used in enrichment analysis?** | Not described |
+| **Multiple‑testing correction / FDR applied?** | Not described |
+

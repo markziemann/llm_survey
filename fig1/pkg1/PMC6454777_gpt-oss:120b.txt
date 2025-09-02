@@ -1,0 +1,58 @@
+Thinking...
+We need to read article details. Pathway enrichment analysis described in Methods.
+
+Search in Methods: "Functional annotation of identified tumor suppressors and oncogenes": they used "DAVID functional annotation tool". It says "DAVID functional annotation tool (https://david.ncifcrf.gov/)".
+
+Also "Pathway enrichment analysis": GSEA was performed using "GSEA (http://software.broadinstitute.org/gsea/index.jsp)". That is for results, not methods maybe. In Methods: "Gene set enrichment analysis (GSEA) was performed using GSEA (http://software.broadinstitute.org/gsea/index.jsp)". That is for enrichment.
+
+Also "Pathway enrichment analysis" may have been done using "clusterProfiler"? Not mentioned.
+
+Check text: In Results they talk about "Pathway enrichment analyses" of identified tumor suppressors and oncogenes. Which tool used? Not explicit maybe they used "DAVID". Let's search.
+
+In the methods: "Functional annotation of identified tumor suppressors and oncogenes" section: they used DAVID. That is a functional annotation tool, which includes pathway enrichment (GO, KEGG). It says "The functional annotation of the identified tumor suppressors and oncogenes was performed using the Database for Annotation, Visualization and Integrated Discovery (DAVID) functional annotation tool (https://david.ncifcrf.gov/)".
+
+Thus enrichment analysis tool: DAVID.
+
+Version: Not described.
+
+Gene set libraries: Not described in article. However DAVID uses many libraries (GO, KEGG etc). Not explicitly mentioned which libraries they used. So "Not described".
+
+Custom background: Not described. They likely used default background. So answer "Not described".
+
+Statistical test used in enrichment analysis: Not described. DAVID uses modified Fisher exact (EASE) test, but not mentioned. So "Not described".
+
+Multiple testing correction: Not described. They only mention p<0.05 significance.
+
+Later they performed GSEA in a separate part: "Gene set enrichment analysis (GSEA) was performed using GSEA (http://software.broadinstitute.org/gsea/index.jsp)". That's also an enrichment analysis. Need to include GSEA.
+
+Thus tools: DAVID, GSEA.
+
+Version numbers: Not described for both.
+
+Gene set libraries used for GSEA: "gene set libraries or databases" They used "gene set libraries from GSEA"? Actually they used "gene set libraries downloaded from MSigDB" maybe? Let's check. In methods they described "Gene set enrichment analysis (GSEA) was performed using GSEA (http://software.broadinstitute.org/gsea/index.jsp)". Not mention which gene sets. In Results they mention "GSEA (http://software.broadinstitute.org/gsea/index.jsp)" and refer to "GSEA plots" but not specify library. However they used "GSE62043" dataset and "top 200 marker genes" etc. Not about libraries.
+
+Thus gene set libraries: Not described.
+
+Custom background: Not described.
+
+Statistical test used: Not described.
+
+Multiple testing correction: Not described.
+
+Now create table with 6 questions.
+
+Columns: Q1 tool, Q2 version, Q3 gene set libraries, Q4 custom background, Q5 statistical test, Q6 multiple testing correction.
+
+Provide answer.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| **What tool was used for pathway enrichment analysis?** | DAVID; GSEA |
+| **Were enrichment tool version(s) described?** | Not described |
+| **Which gene set libraries were used?** | Not described |
+| **Custom or specific background gene list used?** | Not described |
+| **Statistical test(s) used in enrichment analysis?** | Not described |
+| **Multiple testing correction / FDR applied?** | No |
+

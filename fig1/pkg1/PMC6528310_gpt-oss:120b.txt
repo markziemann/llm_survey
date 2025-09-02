@@ -1,0 +1,30 @@
+Thinking...
+We need to locate methods for pathway enrichment analysis. Let's search article text. It mentions IPA (Ingenuity Pathway Analysis). In Results: "IPA pathway analysis". Also earlier: "canonical pathway analysis using the IPA (Ingenuity Pathway Analysis) software". Need exact phrasing. Let's scan.
+
+In the text above, there is mention: "The IPA pathway analysis did not link..." and "The IPA pathway analysis". Also "IPA canonical pathway analysis" etc.
+
+Look for Methods section: not present in the excerpt. The given article text is a continuous piece with headings but Methods section may be omitted. We need to locate details about how pathway enrichment analysis was conducted. The excerpt includes details of results: they used "IPA pathway analysis" and "canonical pathway analysis using the IPA (Ingenuity Pathway Analysis) software". The version not given.
+
+Gene set libraries: IPA uses its own curated knowledge base; not explicitly mentioned which libraries (e.g., KEGG). Not described.
+
+Custom background: Not described.
+
+Statistical tests: Possibly "Fisher's exact test" used by IPA, but not stated. Let's see if article mentions "Fisher's exact test". Search: Not present in excerpt. They mention p-values and "p = 0.0036 (PYS vs. HPG, two-way ANOVA)" etc., but for enrichment they only mention "p-value" thresholds? In the description: "The p-value was calculated using the right-tailed Fisher's exact test" is typical for IPA but not explicitly stated. I don't see that phrase. So "Not described".
+
+Multiple testing correction: Not described.
+
+Thus answer.
+
+Let's craft table with rows for each question.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| What tool was used for pathway enrichment analysis? | Ingenuity Pathway Analysis (IPA) |
+| Were enrichment tool version(s) described? | Not described |
+| Which gene set libraries were used? | Not described |
+| Custom or specific background gene list used? | Not described |
+| Statistical test(s) used in enrichment analysis? | Not described |
+| Multiple testing correction / FDR applied? | No |
+

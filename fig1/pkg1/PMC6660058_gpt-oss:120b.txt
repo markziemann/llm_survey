@@ -1,0 +1,49 @@
+Thinking...
+We need to extract information about pathway enrichment analysis. Look at Materials and Methods, especially "RNA microarray analysis" part. Let's read that paragraph again:
+
+"RNA microarray analysis
+
+   Total RNA was corresponding extracted and purified from HPF samples via
+   RNeasy Mini kit (Qiagen®, Valencia CA, USA) as the initial material and
+   then qualified by Agilent model 2100 Bioanalyzer (Agilent Technologies,
+   Palo Alto CA, USA). All RNA samples were labeled with the GeneChip
+   3′IVT Express Kit (Affymetrix, Santa Clara CA, USA), hybridized,
+   washed, and scanned to the arrays with GeneAtlas Hybridization, Wash,
+   and Stain Kit (Affymetrix, Santa Clara CA, USA), as described by the
+   manufacturer. Normalization genes were identically represented on the
+   GeneChip Human Genome U133 Plus 2.0 Array (Affymetrix, Santa Clara CA,
+   USA). Expression of genes was then generated after log2 transformation
+   and normalization with GeneSpring software (Agilent Technologies, Palo
+   Alto CA, USA). To uncover the significance of genes for further
+   analysis, cutoff values for gene expression results greater than ±
+   1.5-fold-change were further overlaid onto Ingenuity Pathway Analysis
+   (IPA; QIAGEN, Valencia, CA, USA) to estimate canonical pathways,
+   downstream effects, and potential upstream regulators. in response to
+   PM."
+
+The above mentions "Ingenuity Pathway Analysis (IPA; QIAGEN, Valencia, CA, USA)". That is a tool for pathway enrichment. So answer tool: Ingenuity Pathway Analysis (IPA). Version? Not described.
+
+Gene set libraries: It says "canonical pathways, downstream effects, and potential upstream regulators". But not explicitly naming GO, KEGG, etc. So gene set libraries not described. Could be IPA's internal libraries, but not explicitly listed. So answer "Not described".
+
+Custom background: Not described.
+
+Statistical test: Not described. They mention cutoff values > ±1.5-fold-change, but that's for selection of genes, not enrichment. No explicit statistical test.
+
+Multiple testing correction: Not described.
+
+Thus we will produce table with 6 questions.
+
+Let's prepare output.
+
+...done thinking.
+
+| Question | Answer |
+|---|---|
+| Tool used for pathway enrichment analysis | Ingenuity Pathway Analysis (IPA) |
+| Enrichment tool version(s) described | Not described |
+| Gene set libraries used | Not described |
+| Custom/background gene list used? | Not described |
+| Statistical test(s) used | Not described |
+| Multiple testing correction applied? | No |
+
+
