@@ -7,6 +7,7 @@ phi4:14b	KOBAS, BLAST2GO	Not described	GO, KEGG	Not described	Not described	Yes	
 qwen3:32b	KOBAS, BLAST2GO	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6318897
 qwq:32b	KOBAS, BLAST2GO	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6318897
 gpt-oss:20b	Blast2GO, KOBAS	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6318897
+gpt-oss:120b	Blast2GO, KOBAS	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	1	PMC6318897
 GPT-4.1-nano	KOBAS	Not described	KEGG	Not described	Not described	Not described	0.5	1	0.5	1	1	1	PMC6318897
 GPT-4.1-mini	KOBAS	Not described	KEGG	Not described	Not described	Not described	0.5	1	0.5	1	1	1	PMC6318897
 GPT-4.1	KOBAS, BLAST2GO, WEGO	Not described	GO, KEGG	Not described	Not described	Not described	0.5	1	1	1	1	1	PMC6318897
@@ -21,6 +22,7 @@ phi4:14b	Mummichog	Not described	KEGG	Not described	Not described	Not described	
 qwen3:32b	Not mentioned	Not described	Not described	Not described	Not described	Not described	0	0	0	0	1	0	PMC6323741
 qwq:32b	Mummichog	0.9.3	KEGG	Not described	Fisher's exact test	Yes	1	1	1	0	0	1	PMC6323741
 gpt-oss:20b	Mummichog	Not described	KEGG	Not described	Fisher's exact test	Not described	1	0	1	0	0	0	PMC6323741
+gpt-oss:120b	Mummichog	Not described	KEGG	Not described	Fisher's exact test	Not described	1	1	1	0	0	1	PMC6323741
 GPT-4.1-nano	Mummichog	1.0.9	KEGG	Not described	Fisher's exact test	Yes	1	1	1	0	0	1	PMC6323741
 GPT-4.1-mini	Mummichog	1.0.9	KEGG	Not described	Fisher's exact test, permutation test	Yes	1	1	1	0	0	1	PMC6323741
 GPT-4.1	Mummichog	1.0.9	KEGG	Not described	Fisher's exact test	Yes	1	1	1	0	0	1	PMC6323741
@@ -35,6 +37,7 @@ phi4:14b	Not described	Not described	GO, KEGG	Not described	Not described	Not de
 qwen3:32b	KEGG	Not described	KEGG	Not described	Not described	Not described	0	1	0.5	0	1	0	PMC6327913
 qwq:32b	KOBAS	3	KEGG	Not described	Hypergeometric test	Yes	0	0	0.5	0	0	1	PMC6327913
 gpt-oss:20b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	0	1	1	0	0	0	PMC6327913
+gpt-oss:120b	Not described	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	0	0	0	PMC6327913
 GPT-4.1-nano	Not described	Not described	GO, KEGG	Not described	Fisher's exact test	Yes	1	1	1	0	1	1	PMC6327913
 GPT-4.1-mini	Not described	Not described	GO, KEGG	Yes	Fisher's exact test	Yes	1	1	1	1	1	1	PMC6327913
 GPT-4.1	Not described	Not described	GO, KEGG	Yes	Fisher's exact test	Yes	1	1	1	1	1	1	PMC6327913
@@ -49,6 +52,7 @@ phi4:14b	DAVID, WebGestalt	Yes	GO, KEGG	Not described	Not described	Yes	1	1	1	0	
 qwen3:32b	DAVID, WebGestalt	Yes	GO, KEGG	Yes	Not described	Yes	1	1	1	1	1	1	PMC6329100
 qwq:32b	DAVID, WebGestalt	Yes	GO, KEGG	Not described	Not described	Yes	1	1	1	0	1	1	PMC6329100
 gpt-oss:20b	DAVID, WebGestalt	Yes	GO, KEGG	Yes	Not described	Yes	1	1	1	1	1	1	PMC6329100
+gpt-oss:120b	DAVID, WebGestalt	Yes	GO, KEGG	Yes 	Not described	Yes	1	1	1	1	1	1	PMC6329100
 GPT-4.1-nano	DAVID, WebGestalt	Yes	GO, KEGG	Yes	Not described	Yes	1	1	1	1	1	1	PMC6329100
 GPT-4.1-mini	DAVID, WebGestalt	Yes	GO, KEGG	Yes	Not described	Yes	1	1	1	1	1	1	PMC6329100
 GPT-4.1	DAVID, WebGestalt	Yes	GO, KEGG	Yes	Not described	Yes	1	1	1	1	1	1	PMC6329100
@@ -63,6 +67,7 @@ phi4:14b	GOSeq, KOBAS	Not described	GO, KEGG	Not described	Not described	Yes	1	1
 qwen3:32b	GOSeq, KOBAS	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	0	PMC6329193
 qwq:32b	GOSeq, KOBAS	Not described	GO, KEGG	Not described	Not mentioned	Not described	1	1	1	1	1	0	PMC6329193
 gpt-oss:20b	GOSeq, KOBAS	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	0	PMC6329193
+gpt-oss:120b	GOseq; KOBAS	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	1	1	0	PMC6329193
 GPT-4.1-nano	GOSeq, KOBAS	Not described	GO, KEGG	Not described	Not described	Yes	1	1	1	1	1	1	PMC6329193
 GPT-4.1-mini	GOSeq, KOBAS	Not described	GO, KEGG	Not described	Not described	Yes	1	1	1	1	1	1	PMC6329193
 GPT-4.1	GOSeq, KOBAS	Not described	GO, KEGG	Not described	Not described	Yes	1	1	1	1	1	1	PMC6329193
@@ -77,9 +82,10 @@ phi4:14b	DAVID	Not described	GO	Not described	Not described	Yes	1	1	1	0	1	1	PMC6
 qwen3:32b	DAVID	Not described	Not described	Not described	Not described	Not described	1	1	0	0	1	0	PMC6341764
 qwq:32b	DAVID	Not described	Not described	Not described	Not described	Yes	1	1	0	0	1	1	PMC6341764
 gpt-oss:20b	DAVID	Not described	GO	Not described	Not described	Not described	1	1	1	0	1	0	PMC6341764
+gpt-oss:120b	DAVID	Not described	GO	Yes 	Not described	Not described	1	1	1	1	1	0	PMC6341764
 GPT-4.1-nano	DAVID	Not described	Default	Yes	Not described	Yes	1	1	0	1	1	1	PMC6341764
 GPT-4.1-mini	DAVID	Not described	GO	Yes	Not described	Not described	1	1	1	1	1	0	PMC6341764
-GPT-4.1	DAVID	Not described	GO	Yes	Not described	FAILED	1	1	1	1	1	0	PMC6341764
+GPT-4.1	DAVID	Not described	GO	Yes	Not described	Not described	1	1	1	1	1	0	PMC6341764
 Haiku3.5	DAVID	Not described	Not described	Not described	Not described	Not described	1	1	0	0	1	0	PMC6341764
 Sonnet4	DAVID	Not described	Not described	Yes	Not described	Not described	1	1	0	1	1	0	PMC6341764
 human	DAVID	No	GO	Yes	Not mentioned	Yes							PMC6341764
@@ -91,6 +97,7 @@ phi4:14b	Not described	Not described	Not described	Not described	Not described	N
 qwen3:32b	GSEA	Not described	MSigDB	Yes	Fisher's exact test	Yes	0	1	0	0	0	0	PMC6350310
 qwq:32b	Not described	Not described	GO	Not described	Not described	Not described	0	1	1	1	1	1	PMC6350310
 gpt-oss:20b	ClueGO, Cytoscape	Yes	GO, KEGG, Reactome	Yes	Hypergeometric test, Fisher's exact test	Not described	1	0	0.33	0	0	1	PMC6350310
+gpt-oss:120b	DAVID, GSEA	Yes for david	GO, KEGG	Not described	Not described	Not described	0	0	0.5	1	1	1	PMC6350310
 GPT-4.1-nano	ClueGO	Not described	GO, KEGG, GSEA, Uniprot, InterPro, Reactome, PROSITE, WIKIPathwaysHumanCYC	Not described	Not described	Not described	1	1	0.2	1	1	1	PMC6350310
 GPT-4.1-mini	ClueGO	Not described	GO, KEGG, GSEA, Uniprot, InterPro, Reactome, PROSITE, WIKIPathwaysHumanCYC	Not described	Not described	Not described	1	1	0.2	1	1	1	PMC6350310
 GPT-4.1	ClueGO	Not described	GO, KEGG, GSEA, Uniprot, InterPro, Reactome, PROSITE, WIKIPathwaysHumanCYC	Not described	Not described	Not described	1	1	0.2	1	1	1	PMC6350310
@@ -105,11 +112,12 @@ phi4:14b	MEV, Piano	Yes	GO, KEGG, MSigDB	Not described	Fisher's exact test	Yes	0
 qwen3:32b	GO, Piano	Yes	GO, KEGG	Yes	Fisher's exact test	Yes	0.5	1	1	1	1	1	PMC6370815
 qwq:32b	R, piano, KEGG	Yes	GO, KEGG	Yes	Fisher's exact test	Yes	0.33	1	1	1	1	1	PMC6370815
 gpt-oss:20b	Piano	Yes	GO, KEGG	Yes	Fisher's exact test	Yes	1	1	1	1	1	1	PMC6370815
+gpt-oss:120b	R, Piano	Yes 1.16.4	GO, KEGG	Yes 	Fisher's exact test	Yes	0.5	1	1	1	1	1	PMC6370815
 GPT-4.1-nano	Piano	1.16.4	GO, KEGG, MSigB	Not described	Fisher's exact test	Yes	1	1	0.67	0	1	1	PMC6370815
 GPT-4.1-mini	R, piano, KEGG	Yes	GO, KEGG, MSigB	Yes	Fisher's exact test	Yes	0.33	1	0.67	1	1	1	PMC6370815
-GPT-4.1	piano, R	1.16.4	GO, KEGG, MSigB	Yes	Fisher's exact test	Yes	0.5	1	0.67	1	1	1	PMC6370815
+GPT-4.1	R, piano, KEGG, forestplot	1.16.4	GO, KEGG, MSigB	Yes	Fisher's exact test	Yes	0.33	1	0.67	1	1	1	PMC6370815
 Haiku3.5	Piano	1.16.4	GO, KEGG, MSigB	Yes	Fisher's exact test	Yes	1	1	0.67	1	1	1	PMC6370815
-Sonnet4	Pano, KEGG website	1.16.4	GO, KEGG, MSigB	Yes	Fisher's exact test	Yes	0.5	1	0.67	1	1	1	PMC6370815
+Sonnet4	Piano, KEGG website	1.16.4	GO, KEGG, MSigB	Yes	Fisher's exact test	Yes	0.5	1	0.67	1	1	1	PMC6370815
 human	Piano for KEGG, Not mentioned for GO	Yes	GO, KEGG	Yes	Fisher's exact test	Yes							PMC6370815
 deepseek-r1:70b	Metacore	Not described	GO	Not described	Not described	Yes	1	1	1	1	0	1	PMC6381748
 gemma3:27b	Metacore	Not described	GO	Not described	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6381748
@@ -119,6 +127,7 @@ phi4:14b	Not described	Not described	Not described	Not described	Not described	N
 qwen3:32b	Metacore	Not described	GO	Not described	Not described	Yes	1	1	1	1	0	1	PMC6381748
 qwq:32b	Metacore	Not described	GO	Not described	Not described	Yes	1	1	1	1	0	1	PMC6381748
 gpt-oss:20b	Metacore	Not described	GO	Not described	Not described	Yes	1	1	1	1	0	1	PMC6381748
+gpt-oss:120b	Metacore	Not described	GO	Not described	Not described	Yes	1	1	1	1	0	1	PMC6381748
 GPT-4.1-nano	Metacore	Not described	GO	Not described	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6381748
 GPT-4.1-mini	Metacore	Not described	GO	Not described	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6381748
 GPT-4.1	Metacore	Not described	GO	Not described	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6381748
@@ -133,6 +142,7 @@ phi4:14b	DAVID	Yes	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6385435
 qwen3:32b	DAVID	Yes	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6385435
 qwq:32b	DAVID	Yes	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6385435
 gpt-oss:20b	DAVID	6.8	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6385435
+gpt-oss:120b	DAVID, Custom JAVA scripts	Yes for david	GO	Yes 	Hypergeometric test	Yes	0.5	1	1	1	1	1	PMC6385435
 GPT-4.1-nano	DAVID	6.8	GO	Yes	Hypergeometric test	Yes	1	1	1	1	1	1	PMC6385435
 GPT-4.1-mini	TR-enrich, DAVID	6.8 for david	GO	Yes	Hypergeometric test	Yes	0.5	1	1	1	1	1	PMC6385435
 GPT-4.1	DAVID, Apache commons JAVA script	6.8	GO	Yes	Hypergeometric test	Yes	0.5	1	1	1	1	1	PMC6385435
@@ -147,6 +157,7 @@ phi4:14b	Not described	Not described	Not described	Not described	Not described	Y
 qwen3:32b	clusterProfiler	Not described	MSigDB	Yes	Fisher's exact test	Yes	0	0	0	0	0	1	PMC6420656
 qwq:32b	clusterProfiler, Enrichr	only clusterprofiler	MSigDB	Not described	Hypergeometric test	Yes	0	0	0	1	0	1	PMC6420656
 gpt-oss:20b	MAGMA	Not described	ATC drug classes	Not described	Mann-Whitney-Wilcoxon	Yes	1	0	1	1	1	1	PMC6420656
+gpt-oss:120b	MAGMA	Not described	Drug gene sets	Not described	Mann-Whitney-Wilcoxon test	Yes	1	0	1	1	1	1	PMC6420656
 GPT-4.1-nano	MAGMA	1.06	Not described	Not described	Mann-Whitney-Wilcoxon	Yes	1	1	0	1	1	1	PMC6420656
 GPT-4.1-mini	MAGMA	1.06	Drug gene sets	Not described	Mann-Whitney-Wilcoxon	Yes	1	1	1	1	1	1	PMC6420656
 GPT-4.1	MAGMA	1.06	Drug gene sets	Not described	Mann-Whitney-Wilcoxon	Yes	1	1	1	1	1	1	PMC6420656
@@ -161,6 +172,7 @@ phi4:14b	GO, DAVID	Not described	GO	Yes	Not described	Yes	0	1	0.5	1	1	1	PMC64389
 qwen3:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	0	1	0	PMC6438902
 qwq:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	0	1	0	PMC6438902
 gpt-oss:20b	GSEA	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	0	1	0	PMC6438902
+gpt-oss:120b	GSEA	Not described	GO, KEGG	Not described	Fisher's exact test	Yes	1	1	1	0	0	1	PMC6438902
 GPT-4.1-nano	GSEA	Not described	GO, gene fams, plantCyc, KEGG, miRNA targets	Not described	Not described	Yes	1	1	0.5	0	1	1	PMC6438902
 GPT-4.1-mini	GSEA	Not described	GO, gene fams, plantCyc, KEGG, miRNA targets	Yes	Fisher's exact test	Yes	1	1	0.5	1	0	1	PMC6438902
 GPT-4.1	GSEA	Not described	GO, gene fams, plantCyc, KEGG, miRNA targets	Yes	Fisher's exact test	Yes	1	1	0.5	1	0	1	PMC6438902
@@ -175,6 +187,7 @@ phi4:14b	Not described	Not described	Not described	Not described	Not described	N
 qwen3:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	0	0	0	PMC6495254
 qwq:32b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	0	0	0	PMC6495254
 gpt-oss:20b	STRING	Not described	Not described	Not described	Fisher's exact test	Not described	0	1	0	0	1	0	PMC6495254
+gpt-oss:120b	Not described	Not described	Not described	Not described	Not described	Not described	0	1	0	0	0	0	PMC6495254
 GPT-4.1-nano	Perseus (fisher test)	Not described	GO, CORUM, Interpro	Yes	Fisher's exact test	Yes	1	1	0.75	1	1	1	PMC6495254
 GPT-4.1-mini	Perseus, Fisher's exact test, STRING	Yes for STRING	GO, UniProt keywords, Pfam, InterPro,  CORUM	Not described	Fisher's exact test	Yes	0.5	0.5	1	0	1	1	PMC6495254
 GPT-4.1	Perseus	Not described	GO, UniProt keywords, Pfam, InterPro,  CORUM	Yes	Fisher's exact test	Yes	1	1	1	1	1	1	PMC6495254
@@ -189,6 +202,7 @@ phi4:14b	MetaboAnalyst	4	Not described	Not described	Not described	Not described
 qwen3:32b	MetaboAnalyst	4	Not described	Not described	Not described	Not described	1	1	1	1	1	0	PMC6521312
 qwq:32b	MetaboAnalyst	4	Not described	Not described	Not described	Not described	1	1	1	1	1	0	PMC6521312
 gpt-oss:20b	MetaboAnalyst	4	Not described	Not described	Not described	Not described	1	1	1	1	1	0	PMC6521312
+gpt-oss:120b	MetaboAnalyst (MetPA)	v4	Not described	Not described	Not described	Not described	1	1	1	1	1	0	PMC6521312
 GPT-4.1-nano	MetaboAnalyst	Not described	Not described	Not described	Not described	Yes	1	0	1	1	1	1	PMC6521312
 GPT-4.1-mini	MetaboAnalyst	4	Not described	Not described	Not described	Yes	1	1	1	1	1	1	PMC6521312
 GPT-4.1	MetaboAnalyst	4	Not described	Not described	Not described	Yes	1	1	1	1	1	1	PMC6521312
@@ -203,6 +217,7 @@ phi4:14b	Not described	Not described	KEGG	Not described	Hypergeometric test	Yes	
 qwen3:32b	BLAST all	Not described	KEGG	Not described	Not described	Yes	1	1	0.25	1	1	1	PMC6537181
 qwq:32b	Not described	Not described	KEGG	Not described	Not described	Yes	0	1	0.25	1	1	1	PMC6537181
 gpt-oss:20b	BLAST	Not described	KEGG	Not described	Not described	Not described	1	1	0.25	1	1	0	PMC6537181
+gpt-oss:120b	Not described	Not described	KEGG	Not described	Not described	Yes	0	1	0.25	1	1	1	PMC6537181
 GPT-4.1-nano	BLAST	Not described	KEGG	Not described	Not described	Not described	1	1	0.25	1	1	0	PMC6537181
 GPT-4.1-mini	BLAST all	Not described	KEGG	Not described	Not described	Yes	1	1	0.25	1	1	1	PMC6537181
 GPT-4.1	BLAST all	Not described	KEGG	Not described	Not described	Yes	1	1	0.25	1	1	1	PMC6537181
@@ -217,6 +232,7 @@ phi4:14b	DAVID, KEGG, Reactome	Not described	GO, KEGG, Reactome	Not described	Hy
 qwen3:32b	Not described	Not described	KEGG	Not described	Not described	Not described	0	0	0.33	1	1	0	PMC6539991
 qwq:32b	DAVID	6.8	GO, KEGG	Not described	Hypergeometric test	Yes	0	0	0.67	1	0	1	PMC6539991
 gpt-oss:20b	clusterProfiler	Not described	GO	Not described	Not described	Yes	0	0	0.33	1	1	1	PMC6539991
+gpt-oss:120b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	0	0	0.67	1	1	0	PMC6539991
 GPT-4.1-nano	ToppGene	Not described	KEGG, Biocarta	Not described	Not described	Yes	0.5	0	0.67	1	1	1	PMC6539991
 GPT-4.1-mini	ToppGene	Not described	KEGG, Biocarta	Not described	Not described	Yes	0.5	0	0.67	1	1	1	PMC6539991
 GPT-4.1	ToppGene	Not described	KEGG, Biocarta	Not described	Not described	Yes	0.5	0	0.67	1	1	1	PMC6539991
@@ -231,6 +247,7 @@ phi4:14b	Enrichr, DAVID, GSEA	Not described	GO, KEGG, Reactome, MSigDB	Not descr
 qwen3:32b	Not described	Not described	GO, Reactome	Not described	Not described	Yes	0	1	0.67	0	0	1	PMC6562070
 qwq:32b	Not described	Not described	GO, Reactome	Not described	Not described	Yes	0	1	0.67	0	0	1	PMC6562070
 gpt-oss:20b	PANTHER	Not described	GO, PANTHER, Reactome	Not described	Not described	Yes	0.5	1	0.5	0	0	1	PMC6562070
+gpt-oss:120b	PANTHER	Not described	PANTHER pathways, GO CC, Reactome	Not described	Not described	Yes	0.5	1	0.5	0	0	1	PMC6562070
 GPT-4.1-nano	PANTHER	Not described	GO, Reactome, PANTHER pathways	Yes 	Fisher's exact test	Yes	0.5	1	0.5	1	0.5	1	PMC6562070
 GPT-4.1-mini	PANTHER	Not described	GO, PANTHER, Reactome	Yes 	Fisher's exact test	Yes	0.5	1	0.5	1	0.5	1	PMC6562070
 GPT-4.1	PANTHER	Not described	GO, PANTHER, Reactome	Yes 	Fisher's exact test	Yes	0.5	1	0.5	1	0.5	1	PMC6562070
@@ -245,6 +262,7 @@ phi4:14b	GO, KEGG	Not described	GO, KEGG	Not described	Fisher's exact test	Yes	0
 qwen3:32b	Not described	Not described	GO, KEGG	Not described	Fisher's exact test	Yes	0	1	1	0	1	1	PMC6566916
 qwq:32b	Not described	Not described	GO, KEGG	Yes 	Fisher's exact test	Yes	0	1	1	1	1	1	PMC6566916
 gpt-oss:20b	Mapman (pageman)	Not described	GO, KEGG	Yes 	Fisher's exact test	Yes	1	1	1	1	1	1	PMC6566916
+gpt-oss:120b	MapMan, GO/KEGG with custom R scripts	Not described	GO, KEGG	Yes 	Fisher's exact test	Yes	0.5	1	1	1	1	1	PMC6566916
 GPT-4.1-nano	Mapman (pageman)	Not described	GO, KEGG	Not described	Fisher's exact test	Yes	1	1	1	0	1	1	PMC6566916
 GPT-4.1-mini	WEGO, MapMan, Fisher test	Not described	GO, KEGG	Yes 	Fisher's exact test	Yes	0.33	1	1	1	1	1	PMC6566916
 GPT-4.1	Not described	Not described	GO, KEGG	Yes 	Fisher's exact test	Yes	0	1	1	1	1	1	PMC6566916
@@ -259,20 +277,22 @@ phi4:14b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	
 qwen3:32b	DAVID	Not described	GO, KEGG	Yes 	Not described	Not described	1	1	1	1	1	1	PMC6584928
 qwq:32b	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	0	1	1	PMC6584928
 gpt-oss:20b	DAVID	Not described	GO, KEGG	Yes 	Not described	Not described	1	1	1	1	1	1	PMC6584928
+gpt-oss:120b	DAVID	Not described	GO, KEGG	Yes 	Not described	Not described	1	1	1	1	1	1	PMC6584928
 GPT-4.1-nano	DAVID	Not described	GO, KEGG	Yes 	Not described	Not described	1	1	1	1	1	1	PMC6584928
 GPT-4.1-mini	DAVID	Not described	GO, KEGG	Yes 	Not described	Not described	1	1	1	1	1	1	PMC6584928
 GPT-4.1	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	0	1	1	PMC6584928
 Haiku3.5	DAVID	Not described	GO, KEGG	Not described	Not described	Not described	1	1	1	0	1	1	PMC6584928
 Sonnet4	DAVID	Not described	GO, KEGG	Yes 	Not described	Not described	1	1	1	1	1	1	PMC6584928
 human	DAVID	No	GO, KEGG	Yes	No	No							PMC6584928
-deepseek-r1:70b	ToppFun 	Not described	GO, miRNA targets	Not described	FDR	Yes	1	1	0.5	0	0	1	PMC6631992
+deepseek-r1:70b	ToppFun 	Not described	GO, miRNA targets	Not described	FDR	Yes	1	1	1	0	0	1	PMC6631992
 gemma3:27b	ToppGene, DAVID	Not described	GO	Not described	Hypergeometric test	Yes	1	1	0.5	0	1	1	PMC6631992
 llama3.3:70b	ToppFun 	Not described	GO	Not described	Not described	Yes	1	1	0.5	0	0	1	PMC6631992
 mistral-small3.1:24b	Top5	Not described	GO	Not described	Not described	Yes	0	1	0.5	0	0	1	PMC6631992
 phi4:14b	ToppFun 	Not described	GO, miRNA targets	Not described	Not described	Yes	1	1	1	0	0	1	PMC6631992
 qwen3:32b	Not described	Not described	GO	Not described	Not described	Yes	0	1	0.5	0	0	1	PMC6631992
 qwq:32b	Not described	Not described	GO	Not described	Not described	Not described	0	1	0.5	0	0	0	PMC6631992
-gpt-oss:20b	ToppFun 	Not described	GO, mirtarbase, PITA	Not described	Not described	Yes	1	1	0.5	0	0	1	PMC6631992
+gpt-oss:20b	ToppFun 	Not described	GO, mirtarbase, PITA	Not described	Not described	Yes	1	1	0.67	0	0	1	PMC6631992
+gpt-oss:120b	ToppFun 	Not described	GO, miRTarBase, PITA 	Not described	Not described	Yes	1	1	0.67	0	0	1	PMC6631992
 GPT-4.1-nano	ToppFun 	Not described	GO, pathway, regulome, phenotype, parmacome, bibliome	Yes 	Hypergeometric test	Yes	1	1	0.2	1	1	1	PMC6631992
 GPT-4.1-mini	ToppFun 	Not described	GO, miR targets, pathway, regulome, phenotype, parmacome, bibliome	Yes 	Hypergeometric test	Yes	1	1	0.2	1	1	1	PMC6631992
 GPT-4.1	ToppFun 	Not described	GO, miRNA targets	Not described	Hypergeometric test	Yes	1	1	1	0	1	1	PMC6631992
